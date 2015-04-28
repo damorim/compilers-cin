@@ -1,0 +1,50 @@
+package ast;
+
+import ast.visitors.*;
+
+public class ASTSamples {
+
+    //   x : integer ; x mod 10
+    public static Node sample1() {
+        Declaration d = new Declaration(new Id("x"), new IntType());
+        Expression e = new Mod(new Id("x"), new Num(10));
+        return new Program(d, e);
+    }
+
+    //   x : array [1] of integer ; x[0]
+    public static Node sample2() {
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
+        Expression e = new ArrayIndexing(new Id("x"), new Num(0));
+        return new Program(d, e);
+    }
+ 
+    //   x : integer ; x[0]
+    public static Node sample3() {
+        Declaration d = new Declaration(new Id("x"), new IntType());
+        Expression e = new ArrayIndexing(new Id("x"), new Num(0));
+        return new Program(d, e);
+    }
+   
+    //   x : integer ; x mod 10
+    public static Node sample4() {
+        Declaration d = new Declaration(new Id("x"), new IntType());
+        Expression e = new Mod(new Id("x"), new Num(10));
+        return new Program(d, e);
+    }
+    
+    //   x : integer ; x mod "a"
+    public static Node sample5() {
+        Declaration d = new Declaration(new Id("x"), new IntType());
+        Expression e = new Mod(new Id("x"), new Literal('a'));
+        return new Program(d, e);
+    }
+
+    //   x : integer ; x["a"]
+    public static Node sample6() {
+        Declaration d = new Declaration(new Id("x"), new IntType());
+        Expression e = new ArrayIndexing(new Id("x"), new Literal('a'));
+        return new Program(d, e);
+    }
+
+
+}
