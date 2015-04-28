@@ -39,9 +39,9 @@ public class ASTSamples {
         return new Program(d, e);
     }
 
-    //   x : integer ; x["a"]
+   //   x : array [1] of integer ; x["a"]
     public static Node sample6() {
-        Declaration d = new Declaration(new Id("x"), new IntType());
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
         Expression e = new ArrayIndexing(new Id("x"), new Literal('a'));
         return new Program(d, e);
     }
