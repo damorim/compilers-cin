@@ -4,18 +4,17 @@
 
 2. Decompress the pin distribution file 
 
-----
+3. Set the PIN_ROOT variable in "Makefile" and "run.sh" to the directory where pin was decompressed
 
-Mateus, o arquivo .so nao esta sendo genrado apos execucao de build.sh.
+4. Run "build.sh". 
 
-Tentei comentar a linha de PIN_ROOT de dentro do Makefile e dar uma export externamente (foi o que eu entendi do tutorial).
+5. Check the addresses of the global variables of "test.out" with the "nm" command.
 
-Enfim, estou recebendo a mensagem abaixo.
+6. Update "address.in" with the information from the previous step. Please pay
+   attention to the file format.
 
-make: *** No rule to make target `/Users/damorim/projects/compilers-cin/pin/out/memorytrace.so'.  Stop.
+7. Run "run.sh".
 
-* estou fazendo isto do meu mac
+8. You should find in "trace.out" the name and value of the variables that
+   were read during the execution of the program.
 
----
-
-Outro comentario: percebi que vc. ***nao*** usou o parametro -e, a partir de build.sh, como indicado para compilar a ferramenta pin.

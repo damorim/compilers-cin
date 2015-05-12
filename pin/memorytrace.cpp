@@ -1,21 +1,37 @@
-#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <string>
+#include <stdlib.h>
 #include "pin.H"
 
+using namespace std;
 
-FILE * trace;
+fstream outfile;
+fstream infile;
+map<long,string> pointerMap;
+
+KNOB<string> KnobInputFile(KNOB_MODE_WRITEONCE, "pintool",	"i", "addresses.in", "name of the file with addresses to be watched");
+KNOB<string> KnobOutputFile(KNOB_MODE_WRITEONCE, "pintool",	"o", "values.out", "name of the file to write the results");
 
 // Print a memory read record
 VOID RecordMemRead(VOID * ip, VOID * addr)
 {
-  int value;
-  PIN_SafeCopy(&value, addr, sizeof(int));
-  fprintf(trace,"memread: pos=%p, val=%d\n", addr, value);
+  map<long,string>::iterator it = pointerMap.find((long) addr);
+  if (it != pointerMap.end()) {
+	int value;
+	//TODO handle non-integer values
+	PIN_SafeCopy(&value, addr, sizeof(int));
+	outfile << "memread: name=" << it->second << ", val=" << value << "\n";
+  }
+  
+  //  fprintf(trace,"memread: pos=%p, val=%d\n", addr, value);
 }
 
 // Print a memory write record
 VOID RecordMemWrite(VOID * ip, VOID * addr)
 {
-    fprintf(trace,"%p: W %p\n", ip, addr);
+  //    fprintf(trace,"%p: W %p\n", ip, addr);
 }
 
 // Is called for every instruction and instruments reads and writes
@@ -55,8 +71,8 @@ VOID Instruction(INS ins, VOID *v)
 
 VOID Fini(INT32 code, VOID *v)
 {
-    fprintf(trace, "#eof\n");
-    fclose(trace);
+  outfile.close();
+  infile.close();
 }
 
 /* ===================================================================== */
@@ -78,7 +94,28 @@ int main(int argc, char *argv[])
 {
     if (PIN_Init(argc, argv)) return Usage();
 
-    trace = fopen("memorytrace.out", "w");
+	infile.open(KnobInputFile.Value().c_str(),ios::in);
+	outfile.open(KnobOutputFile.Value().c_str(),ios::out);
+
+	if (infile.is_open() && outfile.is_open()) {
+	  string address;
+	  while (getline(infile, address, ' ')) {
+		string name;
+		getline(infile, name);
+
+		//pointers are represented in hexadecimal
+		long pointerAddr = strtol(address.c_str(),NULL,16);
+		pointerMap[pointerAddr] = name;
+	  }
+
+	  for (map<long,string>::iterator it=pointerMap.begin(); it!=pointerMap.end(); ++it)
+		outfile << it->first << " => " << it->second << '\n';
+
+	} else {
+	  PIN_ERROR( "Error opening input/output files!\n" 
+              + KNOB_BASE::StringKnobSummary() + "\n");
+	  return -1;
+	}
 
     INS_AddInstrumentFunction(Instruction, 0);
     PIN_AddFiniFunction(Fini, 0);
