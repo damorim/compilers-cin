@@ -5,7 +5,7 @@
 # IMPORTANT: set PIN_ROOT to the directory where #  
 # the pin executable is located in your machine! #
 ##################################################
-PIN_ROOT := /home/mateus/tools/pin-2.14-71313-gcc.4.4.7-linux/
+PIN_ROOT := /home/damorim/Tools/pin-2.14-71313-gcc.4.4.7-linux/
 CONFIG_ROOT := $(PIN_ROOT)/source/tools/Config
 
 include $(CONFIG_ROOT)/makefile.config
