@@ -12,7 +12,7 @@
 # object (.so, our pintool) for the 64-bit (obj-intel64) instruction
 # set.
 machine=`uname -m`
-dirname="obj-intel64/"
+dirname="obj-intel64"
 if [ $machine == "i686" ]
 then
     ## this is for my old x61s
