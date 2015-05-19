@@ -17,6 +17,7 @@ enum var_type {
   T_BOOL,
   T_CHARP,
   T_INTP,
+  T_VOIDP,
   T_ENUM,
   T_LONG,
   T_UNK
@@ -34,6 +35,8 @@ var_type toEnum(string type) {
 	return T_INTP;
   else if (type == "char*") 
 	return T_CHARP;
+  else if (type == "void*") 
+	return T_VOIDP;
   else if (type == "HOST_WIDE_INT")
 	return T_WIDE;
   else if (type == "bool")
@@ -86,6 +89,7 @@ VOID RecordMemRead(VOID * ip, VOID * addr)
 	  }
 	  break;
 	case T_INTP:
+	case T_VOIDP: //FIXME void* can represent multiple data types
 	  {
 	  int* pointer;
 	  PIN_SafeCopy(&pointer, addr, sizeof(int*));

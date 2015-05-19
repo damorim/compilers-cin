@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Performs the instrumentation 
+
+# TODO share the value of this variable with the makefile
+PIN_ROOT="/home/mateus/tools/pin-2.14-71313-gcc.4.4.7-linux"
+TOOL_ROOT="/home/mateus/workspace/compilers-cin/pin"
+
+XGCC_ADDRESSES="/home/mateus/workspace/gcc/xgcc-addresses.in"
+XGCC_TRACE_OUT="/home/mateus/workspace/gcc/xgcc-trace.out"
+
+#echo "Current PIN_ROOT:$PIN_ROOT"
+${PIN_ROOT}/pin -t ${TOOL_ROOT}/obj-intel64/memorytrace.so -i ${XGCC_ADDRESSES} -o ${XGCC_TRACE_OUT} -- ./xgcc-orig $@

@@ -1,0 +1,27 @@
+steps:
+
+- replace xgcc (in objdir/gcc) with the script (renaming the binary to xgcc-orig)
+
+- dump gcc struct by:
+ - running gdb on xgcc-orig
+ - calling 'source gdb-dump-optstruct'
+ - getting the addresses of the vars in dump-struct.txt
+
+- update addresses on the file xgcc-addresses.in with the result from the previous step 
+  - emacs' rectangle cut/yank (C-x r k and C-x r y) will help with that
+
+- run xgcc
+
+- check output file (xgcc-trace.out)
+
+
+TODO:
+
+- make it work with dejagnu test suite (currently having problems with the name of the old binary)
+- repeat the process with the cc1 binary
+  - xgcc invokes cc1 to perform the compilation. Both binaries have a global_options structure
+- Update memorytrace.cpp with the correct size of the types (ex: 1-sized bools...)
+
+to run a test:
+
+$ make check-gcc RUNTESTFLAGS="dg.exp=Werror-1.c"
