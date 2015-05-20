@@ -1,27 +1,32 @@
-steps:
+* steps:
 
-- replace xgcc (in objdir/gcc) with the script (renaming the binary to xgcc-orig)
+- Update the variables in the scripts (need to work on that later)
 
-- dump gcc struct by:
- - running gdb on xgcc-orig
- - calling 'source gdb-dump-optstruct'
- - getting the addresses of the vars in dump-struct.txt
+- In the objdir/gcc folder:
+  - replace xgcc with the provided script (renaming the binary to xgcc-orig)
+  - replace cc1 with the provided script (renaming the binary to cc1-orig)
 
-- update addresses on the file xgcc-addresses.in with the result from the previous step 
-  - emacs' rectangle cut/yank (C-x r k and C-x r y) will help with that
+- Extract the pointers to the members of global_options (global
+  variable of type gcc_options): 
+  - run gdb on xgcc-orig/cc1-orig
+  - execute 'source gdb-dump-optstruct' in the gdb prompt
+  - update the input file ({xgcc|cc1}-addresses.in) with the pointers in
+    dump-struct.txt
+	- emacs' rectangle cut/yank (C-x r k and C-x r y) can help with that
 
-- run xgcc
+- Run a test (ex: 'make check-gcc RUNTESTFLAGS="dg.exp=Werror-1.c"')
+  - Remember to execute the command from the objdir folder.
 
-- check output file (xgcc-trace.out)
+- check output files (xgcc-trace.out, cc1-trace.out)
 
 
-TODO:
+* Notes
 
-- make it work with dejagnu test suite (currently having problems with the name of the old binary)
-- repeat the process with the cc1 binary
-  - xgcc invokes cc1 to perform the compilation. Both binaries have a global_options structure
+ - The code was tested on gcc 5.1.0, in a ubuntu x64 machine.
+
+* TODO:
+
 - Update memorytrace.cpp with the correct size of the types (ex: 1-sized bools...)
-
-to run a test:
-
-$ make check-gcc RUNTESTFLAGS="dg.exp=Werror-1.c"
+- Make it faster: instrumenting all memory access is too slow!
+  - Currently, every memory access = one lookup in a map
+- Make the scripts portable (or at least reuse the values of some variables)

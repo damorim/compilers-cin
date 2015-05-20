@@ -6,11 +6,11 @@
 PIN_ROOT="/home/mateus/tools/pin-2.14-71313-gcc.4.4.7-linux"
 TOOL_ROOT="/home/mateus/workspace/compilers-cin/pin"
 
-XGCC_ADDRESSES="/home/mateus/workspace/gcc/xgcc-addresses.in"
-XGCC_TRACE_OUT="/home/mateus/workspace/gcc/xgcc-trace.out"
+CC1_ADDRESSES="/home/mateus/workspace/gcc/cc1-addresses.in"
+CC1_TRACE_OUT="/home/mateus/workspace/gcc/cc1-trace.out"
 
 #source: http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 SCRIPT_DIR=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)
 
 #echo "Current PIN_ROOT:$PIN_ROOT"
-${PIN_ROOT}/pin -t ${TOOL_ROOT}/obj-intel64/memorytrace.so -i ${XGCC_ADDRESSES} -o ${XGCC_TRACE_OUT} -- ${SCRIPT_DIR}/xgcc-orig $@
+${PIN_ROOT}/pin -t ${TOOL_ROOT}/obj-intel64/memorytrace.so -i ${CC1_ADDRESSES} -o ${CC1_TRACE_OUT} -- ${SCRIPT_DIR}/cc1-orig $@
