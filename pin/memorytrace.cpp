@@ -1,15 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <vector>
 #include <string>
 #include <sstream>
 #include <stdlib.h>
 #include "pin.H"
 
 using namespace std;
-
-fstream outfile;
-fstream infile;
 
 enum var_type {
   T_INT,
@@ -23,9 +21,20 @@ enum var_type {
   T_UNK
 };
 
+enum callback_status {
+  NOT_EXECUTED,
+  DISABLED,
+  ENABLED
+};
+
 struct var_info {
   string name;
   var_type type;
+};
+
+struct callback_data {
+  callback_status status;
+  var_info* vinfo;
 };
 
 var_type toEnum(string type) {
@@ -49,72 +58,100 @@ var_type toEnum(string type) {
 	return T_UNK;
 }
 
+//----------
+// GLOBALS |
+//----------
+
+fstream outfile;
+fstream infile;
+
 map<long,var_info> pointerMap;
+vector<callback_data> statusVec (10000000);
+int callback_counter = 0;
 
 KNOB<string> KnobInputFile(KNOB_MODE_WRITEONCE, "pintool",	"i", "addresses.in", "name of the file with addresses to be watched");
 KNOB<string> KnobOutputFile(KNOB_MODE_WRITEONCE, "pintool",	"o", "values.out", "name of the file to write the results");
 
-// Print a memory read record
-VOID RecordMemRead(VOID * ip, VOID * addr)
-{
-  map<long,var_info>::iterator it = pointerMap.find((long) addr);
-  if (it != pointerMap.end()) {
-	ostringstream svalue;
 
-	switch (it->second.type) {
-	case T_INT:
-	case T_BOOL:
-	case T_ENUM:
-	  {
+
+// Print a memory read record
+VOID RecordMemRead(UINT32 s_index, VOID * addr)
+{
+  callback_data cdata = statusVec[s_index];
+  switch (cdata.status) {
+  
+  case DISABLED: //nothing to do, just return.
+	return; 
+	break;
+
+  case NOT_EXECUTED: //check if it is an interesting var, and then update the "cache"
+	{
+	  map<long,var_info>::iterator it = pointerMap.find((long) addr);
+	  if (it != pointerMap.end()) {
+		cdata.status = ENABLED;
+		cdata.vinfo = &(it->second);
+	  } else {
+		cdata.status = DISABLED;
+		return; // status updated. this callback is disabled, time to get out.
+	  }
+	}
+	break;
+  case ENABLED: // nothing specific here.
+	break;
+  }
+
+  //pointer found, let's continue with the tracing
+  ostringstream svalue;
+  var_info* vinfo = cdata.vinfo;
+	
+  switch (vinfo->type) {
+  case T_INT:
+  case T_BOOL:
+  case T_ENUM:
+	{
 	  int value;
 	  PIN_SafeCopy(&value, addr, sizeof(int));
 	  svalue << value;
-	  }
-	  break;
-	case T_WIDE:
-	case T_LONG:
-	  {
+	}
+	break;
+  case T_WIDE:
+  case T_LONG:
+	{
 	  long value;
 	  PIN_SafeCopy(&value, addr, sizeof(long));
 	  svalue << value;
-	  }
-	  break;
-	case T_CHARP:
-	  {
+	}
+	break;
+  case T_CHARP: //TODO read the entire string and not only the first char
+	{
 	  char* pointer;
 	  PIN_SafeCopy(&pointer, addr, sizeof(char*));
 	  char value;
 	  PIN_SafeCopy(&value, pointer, sizeof(char));
 	  svalue << value;
-	  }
-	  break;
-	case T_INTP:
-	case T_VOIDP: //FIXME void* can represent multiple data types
-	  {
+	}
+	break;
+  case T_INTP:
+  case T_VOIDP: //FIXME void* can represent multiple data types (like an Object in java)
+	{
 	  int* pointer;
 	  PIN_SafeCopy(&pointer, addr, sizeof(int*));
 	  int value;
 	  PIN_SafeCopy(&value, pointer, sizeof(int));
 	  svalue  << value;
-	  }
-	  break;
-	case T_UNK:
-	  svalue << "ERROR! T_UNK types should never appear at this point!";
-	  break;
 	}
-	outfile << "memread: name=" << it->second.name << ", val=" << svalue.str() << "\n";
+	break;
+  case T_UNK:
+	svalue << "ERROR! T_UNK types should never appear at this point!";
+	break;
   }
-  
-  //  fprintf(trace,"memread: pos=%p, val=%d\n", addr, value);
+  outfile << "memread: name=" << vinfo->name << ", val=" << svalue.str() << "\n";
 }
 
-// Print a memory write record
-VOID RecordMemWrite(VOID * ip, VOID * addr)
-{
-  //    fprintf(trace,"%p: W %p\n", ip, addr);
-}
 
-// Is called for every instruction and instruments reads and writes
+
+
+// Is called for every instruction; instruments reads 
 VOID Instruction(INS ins, VOID *v)
 {
     // Instruments memory accesses using a predicated call, i.e.
@@ -122,19 +159,22 @@ VOID Instruction(INS ins, VOID *v)
     //
     // On the IA-32 and Intel(R) 64 architectures conditional moves and REP 
     // prefixed instructions appear as predicated instructions in Pin.
+  if (INS_IsMemoryRead(ins) && !INS_IsPrefetch(ins) && !INS_IsStackRead(ins)) {
     UINT32 memOperands = INS_MemoryOperandCount(ins);
 
     // Iterate over each memory operand of the instruction.
-    for (UINT32 memOp = 0; memOp < memOperands; memOp++)
-    {
-        if (INS_MemoryOperandIsRead(ins, memOp))
-        {
-            INS_InsertPredicatedCall(
-                ins, IPOINT_BEFORE, (AFUNPTR)RecordMemRead,
-                IARG_INST_PTR,
-                IARG_MEMORYOP_EA, memOp,
-                IARG_END);
-        }
+    for (UINT32 memOp = 0; memOp < memOperands; memOp++) {
+	  if (INS_MemoryOperandIsRead(ins, memOp)) {
+		callback_data placeholder = {NOT_EXECUTED,NULL};
+		statusVec.push_back(placeholder);
+		INS_InsertPredicatedCall(
+								 ins, IPOINT_BEFORE, (AFUNPTR)RecordMemRead,
+								 // IARG_INST_PTR,
+								 IARG_UINT32, callback_counter++,
+								 IARG_MEMORYOP_EA, memOp,
+								 IARG_END);
+		  
+	  }
         // Note that in some architectures a single memory operand can be 
         // both read and written (for instance incl (%eax) on IA-32)
         // In that case we instrument it once for read and once for write.
@@ -147,6 +187,7 @@ VOID Instruction(INS ins, VOID *v)
         //         IARG_END);
         // }
     }
+  }
 }
 
 VOID Fini(INT32 code, VOID *v)
