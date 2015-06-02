@@ -1,0 +1,105 @@
+<<<<<<< .mine
+package callret;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Stack;
+
+public class Util {
+
+  public List<Stack<String>> partitionStacks(List<Stack<String>> reqs, String meth, int k) {
+    Map<String, Stack<String>> map = new HashMap<String, Stack<String>>();
+    for (Stack<String> stack : reqs) {
+      for (int i = 0; i < stack.size(); i++) {
+        if (stack.get(i).equals(meth)) {
+          int a = i - k/2;
+          int b = i + k/2;
+          boolean pred1 = a >= 0;
+          boolean pred2 = b < reqs.size();
+          StringBuffer key = new StringBuffer();
+          if (pred1 && pred2) {
+            for (int j = a; i <= b; j++) {
+              key.append(stack.get(j));   
+            }            
+          } else if (pred1) {
+            for (int j = reqs.size() - a; i < reqs.size(); j++) {
+              key.append(stack.get(j));
+            }
+          } else if (pred2) {
+            for (int j = 0; i < a; j++) {
+              key.append(stack.get(j));
+            }
+          } else {
+            for (int j = 0; i < reqs.size(); j++) {
+              key.append(stack.get(j));
+            }
+          }
+          String keyStr = key.toString();
+          Stack<String> repr = map.get(keyStr);
+          if (repr == null) {
+            map.put(keyStr, stack);
+          }
+          break;
+        }
+      }
+    }
+    return new ArrayList<Stack<String>>(map.values());
+  }
+
+}
+=======
+package callret;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Stack;
+
+public class Util {
+
+  public static List<Stack<String>> partitionStacks(List<Stack<String>> reqs, String meth, int k) {
+    Map<String, Stack<String>> map = new HashMap<String, Stack<String>>();
+    for (Stack<String> stack : reqs) {
+      for (int i = 0; i < stack.size(); i++) {
+        if (stack.get(i).equals(meth)) {
+          int a = i - k/2;
+          int b = i + k/2;
+          boolean pred1 = a >= 0;
+          boolean pred2 = b < stack.size();
+          StringBuffer key = new StringBuffer();
+          System.err.println("a=" + a + " b=" + b + " size=" + stack.size());
+          if (pred1 && pred2) {
+            for (int j = a; j <= b; j++) {
+              key.append(stack.get(j));   
+            }            
+          } else if (pred1) {
+            for (int j = a; j < stack.size(); j++) {
+              key.append(stack.get(j));
+            }
+          } else if (pred2) {
+            for (int j = 0; j < b; j++) {
+              key.append(stack.get(j));
+            }
+          } else {
+            for (int j = 0; j < stack.size(); j++) {
+              key.append(stack.get(j));
+            }
+          }
+          String keyStr = key.toString();
+          System.err.println("keystr found: " + keyStr);
+          Stack<String> repr = map.get(keyStr);
+          if (repr == null) {
+            map.put(keyStr, stack);
+          }
+          break;
+        }
+      }
+    }
+    return new ArrayList<Stack<String>>(map.values());
+  }
+
+}
+>>>>>>> .r839

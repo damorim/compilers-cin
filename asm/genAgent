@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source common
+
+(cd ${CURRDIR}/bin;
+    find . -name "*.class" | \
+	grep "instr" | \
+	xargs jar cvfm ${CURRDIR}/iagent.jar ${CURRDIR}/manifest.mf 
+)
+

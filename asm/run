@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source common
+
+java -cp $CLASSPATH \
+    -javaagent:iagent.jar \
+    instr.Wrapper examples.Foo
