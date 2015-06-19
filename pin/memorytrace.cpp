@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <cstring>
 #include <stdlib.h>
 #include "pin.H"
 
@@ -126,9 +127,14 @@ VOID RecordMemRead(UINT32 s_index, VOID * addr)
 	{
 	  char* pointer;
 	  PIN_SafeCopy(&pointer, addr, sizeof(char*));
-	  char value;
-	  PIN_SafeCopy(&value, pointer, sizeof(char));
-	  svalue << value;
+	  if (pointer != NULL) {
+		char value[1000];
+		//	  PIN_SafeCopy(&value, pointer, sizeof(char));
+		strncpy(value,pointer,sizeof(value));
+		svalue << string(value);
+	  } else {
+		svalue << "(null)";
+	  }
 	}
 	break;
   case T_INTP:
@@ -145,7 +151,7 @@ VOID RecordMemRead(UINT32 s_index, VOID * addr)
 	svalue << "ERROR! T_UNK types should never appear at this point!";
 	break;
   }
-  outfile << "memread: name=" << vinfo->name << ", val=" << svalue.str() << "\n";
+  outfile << "[splat] " << vinfo->name << " : " << svalue.str() << "\n";
 }
 
 
@@ -243,8 +249,8 @@ int main(int argc, char *argv[])
 		}
 	  }
 
-	  for (map<long,var_info>::iterator it=pointerMap.begin(); it!=pointerMap.end(); ++it)
-		outfile << it->first << " => " << it->second.name << " " << it-> second.type << '\n';
+	  // for (map<long,var_info>::iterator it=pointerMap.begin(); it!=pointerMap.end(); ++it)
+		//		outfile << it->first << " => " << it->second.name << " " << it-> second.type << '\n';
 
 	} else {
 	  PIN_ERROR( "Error opening input/output files!\n" 
