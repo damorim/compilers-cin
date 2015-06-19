@@ -1,0 +1,9 @@
+digraph "DirectedGraph" {
+ graph [concentrate = true];
+ center=true;
+ fontsize=6;
+ node [ color=blue,shape="box"fontsize=6,fontcolor=black,fontname=Arial];
+ edge [ color=black,fontsize=6,fontcolor=black,fontname=Arial];
+"void negocios/ManipularLivro.cadastrarLivro(dados/entidades/Livro)"[color="red", fontsize="6", fontname="Arial"];
+"void negocios/ManipularLivro.<init>(dados/repositorio/interfaces/RepositorioLivro)" -> "void negocios/ManipularLivro.cadastrarLivro(dados/entidades/Livro)" [label="dados/repositorio/interfaces/RepositorioLivro negocios/ManipularLivro.generico : 18" ]
+}

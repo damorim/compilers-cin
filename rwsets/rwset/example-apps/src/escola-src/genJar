@@ -1,0 +1,11 @@
+#!/bin/bash
+
+JARFILE="escola.jar"
+find . -name "*.java" | xargs javac -cp ../poi-3.11-20141221.jar
+find . -name "*.class" | xargs jar -cvf ${JARFILE}
+#jar -uvf ${JARFILE} *.txt 
+mv ${JARFILE} ../..
+find . -name "*.class" | xargs rm
+
+
+

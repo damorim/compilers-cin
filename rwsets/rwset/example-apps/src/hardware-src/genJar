@@ -1,0 +1,11 @@
+#!/bin/bash
+
+JARFILE="hardware.jar"
+find . -name "*.java" | xargs javac
+find . -name "*.class" | xargs jar -cvf ${JARFILE}
+jar -uvf ${JARFILE} *.txt 
+mv ${JARFILE} ../..
+find . -name "*.class" | xargs rm
+
+
+

@@ -1,0 +1,34 @@
+This is an implementation of a popular lightweight static analysis
+called Read-Write Sets analysis (RWSets), which can be used to capture
+inter-procedural code dependencies, i.e, dependencies across
+procedures pontentially located across different modules of the
+application.  This can be used for several applications, including
+change-impact analysis.
+
+The RWSet algorithm computes the transitive closure of field reads
+(respectively, field writes) for each application method.  For that,
+it first computes direct dependencies (original from parameters and
+class fields) for each method and then propagates these direct
+dependencies through the edges of the call-graph (we used a 0-CFA
+implementation).  The algorithm then computes, for each pair of
+methods, the intersection across their read and write sets.  A
+read-write dependency is declared if a non-empty intersection is
+observed.
+
+To cite RWSets:
+
+@MasterThesis{emami-1993,
+  Author="Maryam Emami",
+  School="McGill University",
+  Year="1993",
+  Title="A practical interprocedural alias analysis for an optimizing/parallelizing C compiler"
+}
+
+Our implementation builds on the T. J. WAtson Libraries for Analysis
+(WALA).  To cite WALA:
+
+@Misc{wala-web,
+   Title="T. J. Watson Libraries for Analysis (WALA)",
+   Note="\url{wala.sourceforge.net}"
+}
+
