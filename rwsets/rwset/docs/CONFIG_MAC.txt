@@ -1,0 +1,10 @@
+=========== wala.properties ============
+
+Update the property "java_runtime_dir" on file
+<rootdir>/dat/wala.properties to point to your jre installation.
+There is a commented line for the proper directory, please uncomment.
+
+=========== Java 1.7 ============
+
+If you are a MAC user, you may want to read the instructions in the
+following link on how to switch JDK versions http://goo.gl/9fv4Uw.
