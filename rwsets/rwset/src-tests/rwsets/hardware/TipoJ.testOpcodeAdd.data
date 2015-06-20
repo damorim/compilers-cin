@@ -1,9 +1,0 @@
-digraph "DirectedGraph" {
- graph [concentrate = true];
- center=true;
- fontsize=6;
- node [ color=blue,shape="box"fontsize=6,fontcolor=black,fontname=Arial];
- edge [ color=black,fontsize=6,fontcolor=black,fontname=Arial];
-"void hardware/TipoJ.<init>()"[color="red", fontsize="6", fontname="Arial"];
-"void hardware/TipoJ.<init>()" -> "void hardware/TipoJ.<init>()" [label="java/util/List hardware/TipoJ.OPCODE : 8" ]
-}

@@ -1,9 +1,0 @@
-digraph "DirectedGraph" {
- graph [concentrate = true];
- center=true;
- fontsize=6;
- node [ color=blue,shape="box"fontsize=6,fontcolor=black,fontname=Arial];
- edge [ color=black,fontsize=6,fontcolor=black,fontname=Arial];
-"void classesBase/Boletim.inserirDisciplina(classesBase/Disciplina)"[color="red", fontsize="6", fontname="Arial"];
-"void classesBase/Boletim.setDisciplinas(dados/RepositorioArrayDisciplina)" -> "void classesBase/Boletim.inserirDisciplina(classesBase/Disciplina)" [label="dados/RepositorioArrayDisciplina classesBase/Boletim.disciplinas : 26" ]
-}
