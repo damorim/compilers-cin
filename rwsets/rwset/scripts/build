@@ -1,0 +1,40 @@
+#!/bin/bash
+
+## this is the name of the project directory.
+CURRDIR="$(X=`pwd` && find $X -name "common" | sed "s/common//").."
+
+## load variable definitions to help scripts (e.g., CLASSPATH, BINDIR, etc.)
+source ${CURRDIR}/scripts/common
+
+## create bin dir if it does not exist
+mkdir -p ${BINDIR}
+
+## compile source and tests
+find ${SRCDIR} -name *.java | xargs javac -g -cp $CLASSPATH -d ${BINDIR}
+find ${SRCTESTSDIR} -name *.java | xargs javac -g -cp $CLASSPATH -d ${BINDIR}
+
+## report number of classes generated
+NUM=`find ${BINDIR} -name *class | wc -l`
+echo "compiled $NUM classes"
+
+## moving resources into build directories
+cp `find ${DATADIR} -name "*.txt" | xargs` ${BINDIR}
+cp `find ${DATADIR} -name "*.xml" | xargs` ${BINDIR}
+cp `find ${DATADIR} -name "*.properties" | xargs` ${BINDIR}
+
+## generating jar files
+(cd $CURRDIR/example-apps;
+    
+    ./genAppJar Area
+    
+    ###As outras aplicações foram comentadas###
+    #./genAppJar coffee
+    #./genAppJar foo
+    #(cd src/hardware-src; ./genJar )
+    #(cd src/logica-src; ./genJar )
+    
+# missing libraries 
+# (cd src/biblioteca-src;  ./genJar )
+# (cd src/escola-src; ./genJar )
+    
+)

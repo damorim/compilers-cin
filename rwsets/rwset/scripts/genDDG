@@ -1,0 +1,81 @@
+#!/bin/bash
+
+## this is the name of the project directory.
+CURRDIR="$(X=`pwd` && find $X -name "common" | sed "s/common//").."
+
+## create symbolic link if running this script from here
+if [[ `pwd` == *"scripts"* ]]
+then
+    ln -s ${CURRDIR}/results
+fi
+
+exit
+
+## load variable definitions to help scripts (e.g., CLASSPATH, BINDIR, etc.)
+source ${CURRDIR}/scripts/common
+JARSDIR="${CURRDIR}/example-apps"
+
+## complete this as you add new examples
+case "$1" in
+    "101" ) 
+	### 101 project
+	NAME="101"
+	JARFILE="${JARSDIR}/101.jar"
+	PREFIX="companies101/org/softlang"
+	LINE="37"
+	CLASS="Lcompanies101/org/softlang/swing/model/Model"
+	METHOD="getTotal()Ljava/lang/String;"
+	;;
+    "coffee" ) 
+	### coffee project
+	NAME="$1"
+	JARFILE="${JARSDIR}/coffee.jar"
+	PREFIX="coffee"
+	LINE="99"
+	CLASS="Lcoffeemaker/CoffeeMaker"
+	METHOD="editRecipe(Lcoffeemaker/Recipe;Lcoffeemaker/Recipe;)Z"
+	;;
+	"Area" ) 
+	### Area project
+	NAME="$1"
+	JARFILE="${JARSDIR}/Area.jar"
+	PREFIX="Area"
+	LINE="6"
+	CLASS="LArea/Circunferencia"	
+	METHOD="setMedida(Ljava/Int, Ljava/Double)Z"
+	;;
+    "foo" ) 
+	### default
+	echo "running default app foo"
+	JARFILE="${JARSDIR}/foo.jar"
+	PREFIX="foo"
+	LINE="22"
+	CLASS="Lfoo/B"
+	METHOD="n_(Lfoo/A;Lfoo/C;)V"
+	;;
+    * ) 
+	echo "please inform the name of the subject "
+	exit;
+esac
+
+## make sure you build first
+${CURRDIR}/scripts/build
+
+## call java depend.Main
+java -cp "${CURRDIR}:${BINDIR}:${LIBDIR}/wala-r3501-slice.jar:${CLASSPATH}:${JARFILE}" \
+    depend.Main \
+    -appJar=${JARFILE} \
+    -printWalaWarnings=false \
+    -exclusionFile=ExclusionAllJava.txt \
+    -exclusionFileForCallGraph=ExclusionForCallGraph.txt \
+    -dotPath=${DOTPATH} \
+    -appPrefix=${PREFIX} \
+    -listAppClasses=false \
+    -listAllClasses=false \
+    -listAppMethods=false \
+    -genCallGraph=false \
+    -measureTime=false \
+    -targetLine=${LINE} \
+    -targetClass=${CLASS} \
+    -targetMethod=${METHOD} \
+    -reportType=dot ## [list, dot]
