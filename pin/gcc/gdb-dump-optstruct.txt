@@ -1,788 +1,621 @@
 set logging off
 set logging file dump-struct.txt
 set logging on
-print &global_options.x_recip_mask
-print &global_options.x_frame_larger_than_size
-print &global_options.x_ix86_isa_flags
-print &global_options.x_ix86_isa_flags_explicit
-print &global_options.x_larger_than_size
-print &global_options.x_dump_base_name_prefixed
-print &global_options.x_exit_after_options
-print &global_options.x_flag_dump_all_passed
-print &global_options.x_flag_opts_finished
-print &global_options.x_flag_stack_usage_info
-print &global_options.x_flag_warn_unused_result
-print &global_options.x_in_lto_p
-print &global_options.x_use_gnu_debug_info_extensions
-print &global_options.x_warn_frame_larger_than
-print &global_options.x_warn_larger_than
-print &global_options.x_help_enum_printed
-print &global_options.x_help_printed
-print &global_options.x_main_input_basename
-print &global_options.x_main_input_filename
-print &global_options.x_debug_info_level
-print &global_options.x_write_symbols
-print &global_options.x_debug_struct_generic[DINFO_USAGE_NUM_ENUMS]
-print &global_options.x_debug_struct_ordinary[DINFO_USAGE_NUM_ENUMS]
-print &global_options.x_flag_stack_check
-print &global_options.x_param_values
-print &global_options.x_flag_complex_method
-print &global_options.x_flag_debug_asm
-print &global_options.x_flag_dump_rtl_in_asm
-print &global_options.x_flag_evaluation_order
-print &global_options.x_flag_gen_aux_info
-print &global_options.x_flag_generate_lto
-print &global_options.x_flag_generate_offload
-print &global_options.x_flag_print_asm_name
-print &global_options.x_flag_shlib
-print &global_options.x_ix86_target_flags_explicit
-print &global_options.x_main_input_baselength
-print &global_options.x_optimize
-print &global_options.x_optimize_debug
-print &global_options.x_optimize_fast
-print &global_options.x_optimize_size
-print &global_options.x_recip_mask_explicit
-print &global_options.x_rtl_dump_and_exit
-print &global_options.x_target_flags
-print &global_options.x_flag_sanitize
-print &global_options.x_flag_sanitize_recover
-print &global_options.x_help_columns
-print &global_options.x_initial_max_fld_align
-print &global_options.x_flag_instrument_functions_exclude_files
-print &global_options.x_flag_instrument_functions_exclude_functions
-print &global_options.x_help_flag
-print &global_options.x_no_sysroot_suffix
-print &global_options.x_flag_preprocess_only
-print &global_options.x_warn_abi
-print &global_options.x_warn_abi_tag
-print &global_options.x_warn_address
-print &global_options.x_warn_aggregate_return
-print &global_options.x_warn_aggressive_loop_optimizations
-print &global_options.x_warn_aliasing
-print &global_options.x_warn_align_commons
-print &global_options.x_warn_ampersand
-print &global_options.x_warn_array_bounds
-print &global_options.x_warn_array_temporaries
-print &global_options.x_warn_assign_intercept
-print &global_options.x_warn_attributes
-print &global_options.x_warn_bad_function_cast
-print &global_options.x_warn_bool_compare
-print &global_options.x_cpp_warn_builtin_macro_redefined
-print &global_options.x_warn_cxx_compat
-print &global_options.x_warn_cxx0x_compat
-print &global_options.x_warn_cxx14_compat
-print &global_options.x_warn_c_binding_type
-print &global_options.x_warn_c90_c99_compat
-print &global_options.x_warn_c99_c11_compat
-print &global_options.x_warn_cast_align
-print &global_options.x_warn_cast_qual
-print &global_options.x_warn_char_subscripts
-print &global_options.x_warn_character_truncation
-print &global_options.x_warn_chkp
-print &global_options.x_warn_clobbered
-print &global_options.x_cpp_warn_comment
-print &global_options.x_warn_compare_reals
-print &global_options.x_warn_conditionally_supported
-print &global_options.x_warn_conversion
-print &global_options.x_warn_conversion_extra
-print &global_options.x_warn_conversion_null
-print &global_options.x_warn_coverage_mismatch
-print &global_options.x_warn_cpp
-print &global_options.x_warn_ctor_dtor_privacy
-print &global_options.x_cpp_warn_date_time
-print &global_options.x_warn_declaration_after_statement
-print &global_options.x_warn_delete_incomplete
-print &global_options.x_warn_delnonvdtor
-print &global_options.x_warn_deprecated
-print &global_options.x_warn_deprecated_decl
-print &global_options.x_warn_designated_init
-print &global_options.x_warn_disabled_optimization
-print &global_options.x_warn_discarded_array_qualifiers
-print &global_options.x_warn_discarded_qualifiers
-print &global_options.x_warn_div_by_zero
-print &global_options.x_warn_double_promotion
-print &global_options.x_warn_ecpp
-print &global_options.x_warn_empty_body
-print &global_options.x_cpp_warn_endif_labels
-print &global_options.x_warn_enum_compare
-print &global_options.x_warnings_are_errors
-print &global_options.x_extra_warnings
-print &global_options.x_flag_extraneous_semicolon
-print &global_options.x_flag_fatal_errors
-print &global_options.x_warn_float_conversion
-print &global_options.x_warn_float_equal
-print &global_options.x_warn_format_contains_nul
-print &global_options.x_warn_format_extra_args
-print &global_options.x_warn_format_nonliteral
-print &global_options.x_warn_format_security
-print &global_options.x_warn_format_signedness
-print &global_options.x_warn_format_y2k
-print &global_options.x_warn_format_zero_length
-print &global_options.x_warn_format
-print &global_options.x_warn_free_nonheap_object
-print &global_options.x_warn_function_elimination
-print &global_options.x_warn_ignored_qualifiers
-print &global_options.x_warn_implicit
-print &global_options.x_warn_implicit_function_declaration
-print &global_options.x_warn_implicit_int
-print &global_options.x_warn_implicit_interface
-print &global_options.x_warn_implicit_procedure
-print &global_options.x_warn_incompatible_pointer_types
-print &global_options.x_warn_inh_var_ctor
-print &global_options.x_warn_init_self
-print &global_options.x_warn_inline
-print &global_options.x_warn_int_conversion
-print &global_options.x_warn_int_to_pointer_cast
-print &global_options.x_warn_intrinsic_shadow
-print &global_options.x_warn_intrinsics_std
-print &global_options.x_warn_invalid_memory_model
-print &global_options.x_warn_invalid_offsetof
-print &global_options.x_cpp_warn_invalid_pch
-print &global_options.x_warn_jump_misses_init
-print &global_options.x_warn_line_truncation
-print &global_options.x_cpp_warn_literal_suffix
-print &global_options.x_warn_logical_not_paren
-print &global_options.x_warn_logical_op
-print &global_options.x_warn_long_long
-print &global_options.x_warn_main
-print &global_options.x_warn_maybe_uninitialized
-print &global_options.x_warn_memset_transposed_args
-print &global_options.x_warn_missing_braces
-print &global_options.x_warn_missing_declarations
-print &global_options.x_warn_missing_field_initializers
-print &global_options.x_cpp_warn_missing_include_dirs
-print &global_options.x_warn_missing_parameter_type
-print &global_options.x_warn_missing_prototypes
-print &global_options.x_cpp_warn_multichar
-print &global_options.x_warn_narrowing
-print &global_options.x_warn_nested_externs
-print &global_options.x_warn_noexcept
-print &global_options.x_warn_nontemplate_friend
-print &global_options.x_warn_nonvdtor
-print &global_options.x_warn_nonnull
-print &global_options.x_cpp_warn_normalize
-print &global_options.x_warn_odr_violations
-print &global_options.x_warn_old_style_cast
-print &global_options.x_warn_old_style_declaration
-print &global_options.x_warn_old_style_definition
-print &global_options.x_warn_openmp_simd
-print &global_options.x_flag_newer
-print &global_options.x_warn_overflow
-print &global_options.x_warn_overlength_strings
-print &global_options.x_warn_overloaded_virtual
-print &global_options.x_warn_override_init
-print &global_options.x_warn_packed
-print &global_options.x_warn_packed_bitfield_compat
-print &global_options.x_warn_padded
-print &global_options.x_warn_parentheses
-print &global_options.x_pedantic
-print &global_options.x_warn_pmf2ptr
-print &global_options.x_warn_pointer_arith
-print &global_options.x_warn_pointer_sign
-print &global_options.x_warn_pointer_to_int_cast
-print &global_options.x_warn_pragmas
-print &global_options.x_warn_property_assign_default
-print &global_options.x_warn_protocol
-print &global_options.x_warn_psabi
-print &global_options.x_warn_real_q_constant
-print &global_options.x_warn_realloc_lhs
-print &global_options.x_warn_realloc_lhs_all
-print &global_options.x_warn_redundant_decls
-print &global_options.x_flag_redundant
-print &global_options.x_warn_reorder
-print &global_options.x_warn_return_local_addr
-print &global_options.x_warn_return_type
-print &global_options.x_warn_selector
-print &global_options.x_warn_sequence_point
-print &global_options.x_warn_shadow
-print &global_options.x_warn_shadow_ivar
-print &global_options.x_warn_shift_count_negative
-print &global_options.x_warn_shift_count_overflow
-print &global_options.x_warn_sign_compare
-print &global_options.x_warn_sign_conversion
-print &global_options.x_warn_sign_promo
-print &global_options.x_warn_sized_deallocation
-print &global_options.x_warn_sizeof_array_argument
-print &global_options.x_warn_sizeof_pointer_memaccess
-print &global_options.x_warn_stack_protect
-print &global_options.x_warn_stack_usage
-print &global_options.x_warn_strict_aliasing
-print &global_options.x_warn_strict_null_sentinel
-print &global_options.x_warn_strict_overflow
-print &global_options.x_warn_strict_prototypes
-print &global_options.x_warn_strict_selector_match
-print &global_options.x_warn_suggest_attribute_const
-print &global_options.x_warn_suggest_attribute_format
-print &global_options.x_warn_suggest_attribute_noreturn
-print &global_options.x_warn_suggest_attribute_pure
-print &global_options.x_warn_suggest_final_methods
-print &global_options.x_warn_suggest_final_types
-print &global_options.x_warn_override
-print &global_options.x_warn_surprising
-print &global_options.x_warn_switch
-print &global_options.x_warn_switch_bool
-print &global_options.x_warn_switch_default
-print &global_options.x_warn_switch_enum
-print &global_options.x_warn_sync_nand
-print &global_options.x_warn_synth
-print &global_options.x_warn_system_headers
-print &global_options.x_warn_tabs
-print &global_options.x_warn_target_lifetime
-print &global_options.x_warn_traditional
-print &global_options.x_warn_traditional_conversion
-print &global_options.x_warn_trampolines
-print &global_options.x_cpp_warn_trigraphs
-print &global_options.x_warn_type_limits
-print &global_options.x_warn_undeclared_selector
-print &global_options.x_cpp_warn_undef
-print &global_options.x_warn_underflow
-print &global_options.x_warn_uninitialized
-print &global_options.x_warn_unknown_pragmas
-print &global_options.x_warn_unsafe_loop_optimizations
-print &global_options.x_warn_unsuffixed_float_constants
-print &global_options.x_warn_unused
-print &global_options.x_warn_unused_but_set_parameter
-print &global_options.x_warn_unused_but_set_variable
-print &global_options.x_warn_unused_dummy_argument
-print &global_options.x_warn_unused_function
-print &global_options.x_warn_unused_label
-print &global_options.x_warn_unused_local_typedefs
-print &global_options.x_cpp_warn_unused_macros
-print &global_options.x_warn_unused_parameter
-print &global_options.x_warn_unused_result
-print &global_options.x_warn_unused_value
-print &global_options.x_warn_unused_variable
-print &global_options.x_warn_use_without_only
-print &global_options.x_warn_useless_cast
-print &global_options.x_warn_varargs
-print &global_options.x_cpp_warn_variadic_macros
-print &global_options.x_warn_vector_operation_performance
-print &global_options.x_warn_virtual_move_assign
-print &global_options.x_warn_vla
-print &global_options.x_warn_volatile_register_var
-print &global_options.x_warn_write_strings
-print &global_options.x_warn_zero_as_null_pointer_constant
-print &global_options.x_warn_zerotrip
-print &global_options.x_aux_info_file_name
-print &global_options.x_aux_base_name
-print &global_options.x_dump_base_name
-print &global_options.x_dump_dir_name
-print &global_options.x_flag_pic
-print &global_options.x_flag_pie
-print &global_options.x_flag_abi_compat_version
-print &global_options.x_flag_abi_version
-print &global_options.x_flag_access_control
-print &global_options.x_ada_specs_parent
-print &global_options.x_flag_aggressive_function_elimination
-print &global_options.x_flag_aggressive_loop_optimizations
-print &global_options.x_flag_align_commons
-print &global_options.x_align_functions
-print &global_options.x_align_jumps
-print &global_options.x_align_labels
-print &global_options.x_align_loops
-print &global_options.x_flag_all_intrinsics
-print &global_options.x_flag_allow_leading_underscore
-print &global_options.x_flag_allow_parameterless_variadic_functions
-print &global_options.x_common_deferred_options
-print &global_options.x_flag_no_asm
-print &global_options.x_flag_assert
-print &global_options.x_flag_associative_math
-print &global_options.x_flag_asynchronous_unwind_tables
-print &global_options.x_flag_auto_inc_dec
-print &global_options.x_flag_auto_profile
-print &global_options.x_auto_profile_file
-print &global_options.x_flag_automatic
-print &global_options.x_flag_backslash
-print &global_options.x_flag_backtrace
-print &global_options.x_flag_blas_matmul_limit
-print &global_options.x_flag_bootstrap_classes
-print &global_options.x_flag_bounds_check
-print &global_options.x_flag_branch_on_count_reg
-print &global_options.x_flag_branch_probabilities
-print &global_options.x_flag_branch_target_load_optimize
-print &global_options.x_flag_branch_target_load_optimize2
-print &global_options.x_flag_btr_bb_exclusive
-print &global_options.x_flag_building_libgcc
-print &global_options.x_flag_no_builtin
-print &global_options.x_flag_caller_saves
-print &global_options.x_flag_check_data_deps
-print &global_options.x_flag_check_new
-print &global_options.x_flag_check_pointer_bounds
-print &global_options.x_flag_check_references
-print &global_options.x_flag_chkp_incomplete_type
-print &global_options.x_flag_chkp_check_read
-print &global_options.x_flag_chkp_check_write
-print &global_options.x_flag_chkp_first_field_has_own_bounds
-print &global_options.x_flag_chkp_instrument_calls
-print &global_options.x_flag_chkp_instrument_marked_only
-print &global_options.x_flag_chkp_narrow_bounds
-print &global_options.x_flag_chkp_narrow_to_innermost_arrray
-print &global_options.x_flag_chkp_optimize
-print &global_options.x_flag_chkp_store_bounds
-print &global_options.x_flag_chkp_zero_dynamic_size_as_infinite
-print &global_options.x_flag_chkp_use_fast_string_functions
-print &global_options.x_flag_chkp_use_nochk_string_functions
-print &global_options.x_flag_chkp_use_static_bounds
-print &global_options.x_flag_chkp_use_static_const_bounds
-print &global_options.x_flag_chkp_use_wrappers
-print &global_options.x_flag_chkp_zero_input_bounds_for_main
-print &global_options.x_flag_cilkplus
-print &global_options.x_flag_coarray
-print &global_options.x_flag_combine_stack_adjustments
-print &global_options.x_flag_no_common
-print &global_options.x_flag_compare_debug
-print &global_options.x_flag_compare_debug_opt
-print &global_options.x_flag_compare_elim_after_reload
-print &global_options.x_flag_conserve_space
-print &global_options.x_flag_conserve_stack
-print &global_options.x_max_constexpr_depth
-print &global_options.x_flag_convert
-print &global_options.x_flag_cprop_registers
-print &global_options.x_flag_cray_pointer
-print &global_options.x_flag_crossjumping
-print &global_options.x_flag_cse_follow_jumps
-print &global_options.x_flag_cx_fortran_rules
-print &global_options.x_flag_cx_limited_range
-print &global_options.x_flag_data_sections
-print &global_options.x_flag_dce
-print &global_options.x_flag_debug_types_section
-print &global_options.x_flag_declone_ctor_dtor
-print &global_options.x_flag_deduce_init_list
-print &global_options.x_flag_default_double
-print &global_options.x_flag_default_integer
-print &global_options.x_flag_default_real
-print &global_options.x_flag_defer_pop
-print &global_options.x_flag_delayed_branch
-print &global_options.x_flag_delete_dead_exceptions
-print &global_options.x_flag_delete_null_pointer_checks
-print &global_options.x_flag_devirtualize
-print &global_options.x_flag_ltrans_devirtualize
-print &global_options.x_flag_devirtualize_speculatively
-print &global_options.x_flag_diagnostics_show_color
-print &global_options.x_flag_diagnostics_show_caret
-print &global_options.x_flag_diagnostics_show_option
-print &global_options.x_flag_dollar_ok
-print &global_options.x_flag_dse
-print &global_options.x_flag_dump_ada_spec
-print &global_options.x_flag_dump_ada_spec_slim
-print &global_options.x_flag_dump_final_insns
-print &global_options.x_flag_dump_fortran_optimized
-print &global_options.x_flag_dump_fortran_original
-print &global_options.x_flag_dump_go_spec
-print &global_options.x_flag_dump_noaddr
-print &global_options.x_flag_dump_passes
-print &global_options.x_flag_dump_unnumbered
-print &global_options.x_flag_dump_unnumbered_links
-print &global_options.x_flag_dwarf2_cfi_asm
-print &global_options.x_flag_early_inlining
-print &global_options.x_flag_elide_constructors
-print &global_options.x_flag_eliminate_dwarf2_dups
-print &global_options.x_flag_debug_only_used_symbols
-print &global_options.x_flag_eliminate_unused_debug_types
-print &global_options.x_flag_emit_class_debug_always
-print &global_options.x_flag_emit_class_files
-print &global_options.x_flag_enforce_eh_specs
-print &global_options.x_flag_exceptions
-print &global_options.x_flag_excess_precision_cmdline
-print &global_options.x_flag_expensive_optimizations
-print &global_options.x_flag_extern_tls_init
-print &global_options.x_flag_external_blas
-print &global_options.x_flag_f2c
-print &global_options.x_flag_fat_lto_objects
-print &global_options.x_flag_filelist_file
-print &global_options.x_flag_finite_math_only
-print &global_options.x_flag_fixed_line_length
-print &global_options.x_flag_float_store
-print &global_options.x_flag_new_for_scope
-print &global_options.x_flag_force_classes_archive_check
-print &global_options.x_flag_forward_propagate
-print &global_options.x_flag_fp_contract_mode
-print &global_options.x_flag_free_line_length
-print &global_options.x_flag_friend_injection
-print &global_options.x_flag_frontend_optimize
-print &global_options.x_flag_no_function_cse
-print &global_options.x_flag_function_sections
-print &global_options.x_flag_gcse
-print &global_options.x_flag_gcse_after_reload
-print &global_options.x_flag_gcse_las
-print &global_options.x_flag_gcse_lm
-print &global_options.x_flag_gcse_sm
-print &global_options.x_flag_no_gnu_keywords
-print &global_options.x_flag_next_runtime
-print &global_options.x_flag_tm
-print &global_options.x_flag_gnu_unique
-print &global_options.x_flag_gnu89_inline
-print &global_options.x_go_check_divide_overflow
-print &global_options.x_go_check_divide_zero
-print &global_options.x_flag_graphite
-print &global_options.x_flag_graphite_identity
-print &global_options.x_flag_guess_branch_prob
-print &global_options.x_flag_hash_synchronization
-print &global_options.x_flag_hoist_adjacent_loads
-print &global_options.x_flag_no_ident
-print &global_options.x_flag_if_conversion
-print &global_options.x_flag_if_conversion2
-print &global_options.x_flag_implement_inlines
-print &global_options.x_flag_implicit_inline_templates
-print &global_options.x_flag_implicit_none
-print &global_options.x_flag_implicit_templates
-print &global_options.x_flag_indirect_classes
-print &global_options.x_flag_indirect_dispatch
-print &global_options.x_flag_indirect_inlining
-print &global_options.x_flag_inhibit_size_directive
-print &global_options.x_flag_init_real
-print &global_options.x_flag_no_inline
-print &global_options.x_flag_inline_atomics
-print &global_options.x_flag_inline_functions
-print &global_options.x_flag_inline_functions_called_once
-print &global_options.x_flag_inline_small_functions
-print &global_options.x_flag_instrument_function_entry_exit
-print &global_options.x_flag_integer4_kind
-print &global_options.x_flag_ipa_cp
-print &global_options.x_flag_ipa_cp_alignment
-print &global_options.x_flag_ipa_cp_clone
-print &global_options.x_flag_ipa_icf
-print &global_options.x_flag_ipa_icf_functions
-print &global_options.x_flag_ipa_icf_variables
-print &global_options.x_flag_ipa_profile
-print &global_options.x_flag_ipa_pta
-print &global_options.x_flag_ipa_pure_const
-print &global_options.x_flag_ipa_ra
-print &global_options.x_flag_ipa_reference
-print &global_options.x_flag_ipa_sra
-print &global_options.x_flag_ira_algorithm
-print &global_options.x_flag_ira_hoist_pressure
-print &global_options.x_flag_ira_loop_pressure
-print &global_options.x_flag_ira_region
-print &global_options.x_flag_ira_share_save_slots
-print &global_options.x_flag_ira_share_spill_slots
-print &global_options.x_flag_ira_verbose
-print &global_options.x_flag_isolate_erroneous_paths_attribute
-print &global_options.x_flag_isolate_erroneous_paths_dereference
-print &global_options.x_default_ivar_visibility
-print &global_options.x_flag_ivopts
-print &global_options.x_flag_jni
-print &global_options.x_flag_jump_tables
-print &global_options.x_flag_keep_inline_dllexport
-print &global_options.x_flag_keep_inline_functions
-print &global_options.x_flag_keep_static_consts
-print &global_options.x_flag_lax_vector_conversions
-print &global_options.x_flag_leading_underscore
-print &global_options.x_flag_lifetime_dse
-print &global_options.x_flag_live_range_shrinkage
-print &global_options.x_flag_local_ivars
-print &global_options.x_flag_loop_block
-print &global_options.x_flag_loop_interchange
-print &global_options.x_flag_loop_optimize_isl
-print &global_options.x_flag_loop_parallelize_all
-print &global_options.x_flag_loop_strip_mine
-print &global_options.x_flag_loop_unroll_jam
-print &global_options.x_flag_lra_remat
-print &global_options.x_flag_lto_compression_level
-print &global_options.x_flag_lto_odr_type_mering
-print &global_options.x_flag_lto_partition
-print &global_options.x_flag_lto_report
-print &global_options.x_flag_lto_report_wpa
-print &global_options.x_flag_lto
-print &global_options.x_flag_ltrans
-print &global_options.x_ltrans_output_list
-print &global_options.x_flag_errno_math
-print &global_options.x_flag_max_array_constructor
-print &global_options.x_flag_max_errors
-print &global_options.x_flag_max_stack_var_size
-print &global_options.x_flag_max_subrecord_length
-print &global_options.x_mem_report
-print &global_options.x_mem_report_wpa
-print &global_options.x_flag_merge_constants
-print &global_options.x_flag_merge_debug_strings
-print &global_options.x_flag_module_private
-print &global_options.x_flag_modulo_sched
-print &global_options.x_flag_modulo_sched_allow_regmoves
-print &global_options.x_flag_move_loop_invariants
-print &global_options.x_flag_ms_extensions
-print &global_options.x_flag_nil_receivers
-print &global_options.x_flag_non_call_exceptions
-print &global_options.x_flag_no_nonansi_builtin
-print &global_options.x_flag_nothrow_opt
-print &global_options.x_flag_objc_abi
-print &global_options.x_flag_objc_call_cxx_cdtors
-print &global_options.x_flag_objc_direct_dispatch
-print &global_options.x_flag_objc_exceptions
-print &global_options.x_flag_objc_gc
-print &global_options.x_flag_objc_nilcheck
-print &global_options.x_flag_objc_sjlj_exceptions
-print &global_options.x_flag_objc1_only
-print &global_options.x_flag_offload_abi
-print &global_options.x_flag_omit_frame_pointer
-print &global_options.x_flag_openacc
-print &global_options.x_flag_openmp
-print &global_options.x_flag_openmp_simd
-print &global_options.x_flag_opt_info
-print &global_options.x_flag_optimize_sibling_calls
-print &global_options.x_flag_optimize_sci
-print &global_options.x_flag_optimize_strlen
-print &global_options.x_flag_pack_derived
-print &global_options.x_flag_pack_struct
-print &global_options.x_flag_partial_inlining
-print &global_options.x_flag_pcc_struct_return
-print &global_options.x_flag_peel_loops
-print &global_options.x_flag_no_peephole
-print &global_options.x_flag_peephole2
-print &global_options.x_flag_permissive
-print &global_options.x_flag_plan9_extensions
-print &global_options.x_post_ipa_mem_report
-print &global_options.x_pre_ipa_mem_report
-print &global_options.x_flag_predictive_commoning
-print &global_options.x_flag_prefetch_loop_arrays
-print &global_options.x_flag_pretty_templates
-print &global_options.x_profile_flag
-print &global_options.x_profile_arc_flag
-print &global_options.x_flag_profile_correction
-print &global_options.x_profile_data_prefix
-print &global_options.x_flag_profile_reorder_functions
-print &global_options.x_profile_report
-print &global_options.x_flag_profile_use
-print &global_options.x_flag_profile_values
-print &global_options.x_flag_protect_parens
-print &global_options.x_flag_range_check
-print &global_options.x_flag_real4_kind
-print &global_options.x_flag_real8_kind
-print &global_options.x_flag_realloc_lhs
-print &global_options.x_flag_reciprocal_math
-print &global_options.x_flag_record_gcc_switches
-print &global_options.x_flag_record_marker
-print &global_options.x_flag_recursive
-print &global_options.x_flag_reduced_reflection
-print &global_options.x_flag_ree
-print &global_options.x_flag_rename_registers
-print &global_options.x_flag_reorder_blocks
-print &global_options.x_flag_reorder_blocks_and_partition
-print &global_options.x_flag_reorder_functions
-print &global_options.x_flag_repack_arrays
-print &global_options.x_flag_replace_objc_classes
-print &global_options.x_flag_report_bug
-print &global_options.x_go_require_return_statement
-print &global_options.x_flag_rerun_cse_after_loop
-print &global_options.x_flag_resched_modulo_sched
-print &global_options.x_flag_rounding_math
-print &global_options.x_flag_rtti
-print &global_options.x_flag_sanitize_undefined_trap_on_error
-print &global_options.x_flag_sched_critical_path_heuristic
-print &global_options.x_flag_sched_dep_count_heuristic
-print &global_options.x_flag_sched_group_heuristic
-print &global_options.x_flag_schedule_interblock
-print &global_options.x_flag_sched_last_insn_heuristic
-print &global_options.x_flag_sched_pressure
-print &global_options.x_flag_sched_rank_heuristic
-print &global_options.x_flag_schedule_speculative
-print &global_options.x_flag_sched_spec_insn_heuristic
-print &global_options.x_flag_schedule_speculative_load
-print &global_options.x_flag_schedule_speculative_load_dangerous
-print &global_options.x_flag_sched_stalled_insns
-print &global_options.x_flag_sched_stalled_insns_dep
-print &global_options.x_sched_verbose_param
-print &global_options.x_flag_sched2_use_superblocks
-print &global_options.x_flag_schedule_fusion
-print &global_options.x_flag_schedule_insns
-print &global_options.x_flag_schedule_insns_after_reload
-print &global_options.x_flag_second_underscore
-print &global_options.x_flag_section_anchors
-print &global_options.x_flag_sel_sched_pipelining
-print &global_options.x_flag_sel_sched_pipelining_outer_loops
-print &global_options.x_flag_sel_sched_reschedule_pipelined
-print &global_options.x_flag_selective_scheduling
-print &global_options.x_flag_selective_scheduling2
-print &global_options.x_flag_semantic_interposition
-print &global_options.x_flag_short_double
-print &global_options.x_flag_short_enums
-print &global_options.x_flag_short_wchar
-print &global_options.x_flag_show_column
-print &global_options.x_flag_shrink_wrap
-print &global_options.x_flag_sign_zero
-print &global_options.x_flag_signaling_nans
-print &global_options.x_flag_signed_bitfields
-print &global_options.x_flag_signed_char
-print &global_options.x_flag_signed_zeros
-print &global_options.x_flag_simd_cost_model
-print &global_options.x_flag_single_precision_constant
-print &global_options.x_flag_sized_deallocation
-print &global_options.x_flag_split_ivs_in_unroller
-print &global_options.x_flag_split_stack
-print &global_options.x_flag_split_wide_types
-print &global_options.x_flag_ssa_phiopt
-print &global_options.x_flag_stack_arrays
-print &global_options.x_flag_stack_protect
-print &global_options.x_flag_stack_reuse
-print &global_options.x_flag_stack_usage
-print &global_options.x_flag_detailed_statistics
-print &global_options.x_flag_stdarg_opt
-print &global_options.x_flag_store_check
-print &global_options.x_flag_strict_aliasing
-print &global_options.x_flag_strict_enums
-print &global_options.x_flag_strict_overflow
-print &global_options.x_flag_strict_volatile_bitfields
-print &global_options.x_flag_sync_libcalls
-print &global_options.x_flag_syntax_only
-print &global_options.x_template_backtrace_limit
-print &global_options.x_flag_test_coverage
-print &global_options.x_flag_thread_jumps
-print &global_options.x_flag_threadsafe_statics
-print &global_options.x_time_report
-print &global_options.x_flag_tls_default
-print &global_options.x_flag_toplevel_reorder
-print &global_options.x_flag_tracer
-print &global_options.x_flag_trapping_math
-print &global_options.x_flag_trapv
-print &global_options.x_flag_tree_bit_ccp
-print &global_options.x_flag_tree_builtin_call_dce
-print &global_options.x_flag_tree_ccp
-print &global_options.x_flag_tree_ch
-print &global_options.x_flag_ssa_coalesce_vars
-print &global_options.x_flag_tree_copy_prop
-print &global_options.x_flag_tree_copyrename
-print &global_options.x_flag_tree_cselim
-print &global_options.x_flag_tree_dce
-print &global_options.x_flag_tree_dom
-print &global_options.x_flag_tree_dse
-print &global_options.x_flag_tree_forwprop
-print &global_options.x_flag_tree_fre
-print &global_options.x_flag_tree_loop_distribute_patterns
-print &global_options.x_flag_tree_loop_distribution
-print &global_options.x_flag_tree_loop_if_convert
-print &global_options.x_flag_tree_loop_if_convert_stores
-print &global_options.x_flag_tree_loop_im
-print &global_options.x_flag_tree_loop_ivcanon
-print &global_options.x_flag_tree_loop_optimize
-print &global_options.x_flag_tree_loop_vectorize
-print &global_options.x_flag_tree_live_range_split
-print &global_options.x_flag_tree_parallelize_loops
-print &global_options.x_flag_tree_partial_pre
-print &global_options.x_flag_tree_phiprop
-print &global_options.x_flag_tree_pre
-print &global_options.x_flag_tree_pta
-print &global_options.x_flag_tree_reassoc
-print &global_options.x_flag_tree_scev_cprop
-print &global_options.x_flag_tree_sink
-print &global_options.x_flag_tree_slp_vectorize
-print &global_options.x_flag_tree_slsr
-print &global_options.x_flag_tree_sra
-print &global_options.x_flag_tree_switch_conversion
-print &global_options.x_flag_tree_tail_merge
-print &global_options.x_flag_tree_ter
-print &global_options.x_flag_tree_vectorize
-print &global_options.x_flag_tree_vrp
-print &global_options.x_flag_underscoring
-print &global_options.x_flag_unit_at_a_time
-print &global_options.x_flag_unroll_all_loops
-print &global_options.x_flag_unroll_loops
-print &global_options.x_flag_unsafe_loop_optimizations
-print &global_options.x_flag_unsafe_math_optimizations
-print &global_options.x_flag_unswitch_loops
-print &global_options.x_flag_unwind_tables
-print &global_options.x_flag_use_atomic_builtins
-print &global_options.x_flag_use_boehm_gc
-print &global_options.x_flag_use_cxa_atexit
-print &global_options.x_flag_use_cxa_get_exception_ptr
-print &global_options.x_flag_use_divide_subroutine
-print &global_options.x_flag_use_linker_plugin
-print &global_options.x_flag_var_tracking
-print &global_options.x_flag_var_tracking_assignments
-print &global_options.x_flag_var_tracking_assignments_toggle
-print &global_options.x_flag_var_tracking_uninit
-print &global_options.x_flag_variable_expansion_in_unroller
-print &global_options.x_flag_vect_cost_model
-print &global_options.x_flag_verbose_asm
-print &global_options.x_flag_visibility_ms_compat
-print &global_options.x_default_visibility
-print &global_options.x_flag_value_profile_transformations
-print &global_options.x_flag_vtable_verify
-print &global_options.x_flag_vtv_counts
-print &global_options.x_flag_vtv_debug
-print &global_options.x_flag_weak
-print &global_options.x_flag_web
-print &global_options.x_flag_whole_program
-print &global_options.x_flag_working_directory
-print &global_options.x_flag_wpa
-print &global_options.x_flag_wrapv
-print &global_options.x_flag_zero_initialized_in_bss
-print &global_options.x_flag_zero_link
-print &global_options.x_dwarf_version
-print &global_options.x_flag_gen_declaration
-print &global_options.x_debug_generate_pub_sections
-print &global_options.x_dwarf_record_gcc_switches
-print &global_options.x_dwarf_split_debug_info
-print &global_options.x_dwarf_strict
-print &global_options.x_flag_gtoggle
-print &global_options.x_imultiarch
-print &global_options.x_plugindir_string
-print &global_options.x_ix86_abi
-print &global_options.x_ix86_pmode
-print &global_options.x_ix86_align_data_type
-print &global_options.x_flag_android
-print &global_options.x_ix86_arch_string
-print &global_options.x_ix86_asm_dialect
-print &global_options.x_linux_libc
-print &global_options.x_ix86_branch_cost
-print &global_options.x_ix86_cmodel
-print &global_options.x_flag_dispatch_scheduler
-print &global_options.x_ix86_dump_tunes
-print &global_options.x_flag_fentry
-print &global_options.x_ix86_force_drap
-print &global_options.x_ix86_fpmath
-print &global_options.x_ix86_incoming_stack_boundary_arg
-print &global_options.x_ix86_section_threshold
-print &global_options.x_ix86_tune_memcpy_strategy
-print &global_options.x_ix86_tune_memset_strategy
-print &global_options.x_ix86_tune_no_default
-print &global_options.x_flag_nop_mcount
-print &global_options.x_ix86_preferred_stack_boundary_arg
-print &global_options.x_ix86_recip_name
-print &global_options.x_flag_record_mcount
-print &global_options.x_ix86_regparm
-print &global_options.x_flag_skip_rax_setup
-print &global_options.x_ix86_sse2avx
-print &global_options.x_ix86_stack_protector_guard
-print &global_options.x_ix86_force_align_arg_pointer
-print &global_options.x_ix86_stringop_alg
-print &global_options.x_ix86_tls_dialect
-print &global_options.x_ix86_tune_ctrl_string
-print &global_options.x_ix86_tune_string
-print &global_options.x_ix86_veclibabi_type
-print &global_options.x_asm_file_name
-print &global_options.x_pass_exit_codes
-print &global_options.x_flag_pedantic_errors
-print &global_options.x_use_pipes
-print &global_options.x_print_file_name
-print &global_options.x_print_multi_directory
-print &global_options.x_print_multi_lib
-print &global_options.x_print_multi_os_directory
-print &global_options.x_print_multiarch
-print &global_options.x_print_prog_name
-print &global_options.x_print_search_dirs
-print &global_options.x_print_sysroot
-print &global_options.x_print_sysroot_headers_suffix
-print &global_options.x_quiet_flag
-print &global_options.x_report_times
-print &global_options.x_flag_undef
-print &global_options.x_verbose_flag
-print &global_options.x_version_flag
-print &global_options.x_inhibit_warnings
-print &global_options.x_wrapper_string
-print &global_options.x_VAR_malign_functions_
-print &global_options.x_VAR_malign_jumps_
-print &global_options.x_VAR_malign_loops_
-print &global_options.x_VAR_mpc32
-print &global_options.x_VAR_mpc64
-print &global_options.x_VAR_mpc80
-print &global_options.frontend_set_flag_associative_math
-print &global_options.frontend_set_flag_cx_limited_range
-print &global_options.frontend_set_flag_finite_math_only
-print &global_options.frontend_set_flag_errno_math
-print &global_options.frontend_set_flag_reciprocal_math
-print &global_options.frontend_set_flag_rounding_math
-print &global_options.frontend_set_flag_signaling_nans
-print &global_options.frontend_set_flag_signed_zeros
-print &global_options.frontend_set_flag_trapping_math
-print &global_options.frontend_set_flag_unsafe_math_optimizations
+
+printf "0x%x recip_mask int\n",&global_options.x_recip_mask
+printf "0x%x frame_larger_than_size long\n",&global_options.x_frame_larger_than_size
+printf "0x%x ix86_isa_flags long\n",&global_options.x_ix86_isa_flags
+printf "0x%x ix86_isa_flags_explicit long\n",&global_options.x_ix86_isa_flags_explicit
+printf "0x%x larger_than_size long\n",&global_options.x_larger_than_size
+printf "0x%x exit_after_options bool\n",&global_options.x_exit_after_options
+printf "0x%x flag_dump_all_passed bool\n",&global_options.x_flag_dump_all_passed
+printf "0x%x flag_opts_finished bool\n",&global_options.x_flag_opts_finished
+printf "0x%x flag_stack_usage_info bool\n",&global_options.x_flag_stack_usage_info
+printf "0x%x flag_warn_unused_result bool\n",&global_options.x_flag_warn_unused_result
+printf "0x%x in_lto_p bool\n",&global_options.x_in_lto_p
+printf "0x%x use_gnu_debug_info_extensions bool\n",&global_options.x_use_gnu_debug_info_extensions
+printf "0x%x warn_frame_larger_than bool\n",&global_options.x_warn_frame_larger_than
+printf "0x%x warn_larger_than bool\n",&global_options.x_warn_larger_than
+printf "0x%x help_enum_printed char\n",&global_options.x_help_enum_printed
+printf "0x%x help_printed char\n",&global_options.x_help_printed
+printf "0x%x main_input_basename char\n",&global_options.x_main_input_basename
+printf "0x%x main_input_filename char\n",&global_options.x_main_input_filename
+printf "0x%x debug_info_level int\n",&global_options.x_debug_info_level
+printf "0x%x write_symbols int\n",&global_options.x_write_symbols
+printf "0x%x debug_struct_generic int\n",&global_options.x_debug_struct_generic
+printf "0x%x debug_struct_ordinary int\n",&global_options.x_debug_struct_ordinary
+printf "0x%x flag_stack_check int\n",&global_options.x_flag_stack_check
+printf "0x%x param_values int\n",&global_options.x_param_values
+printf "0x%x flag_complex_method int\n",&global_options.x_flag_complex_method
+printf "0x%x flag_debug_asm int\n",&global_options.x_flag_debug_asm
+printf "0x%x flag_dump_rtl_in_asm int\n",&global_options.x_flag_dump_rtl_in_asm
+printf "0x%x flag_evaluation_order int\n",&global_options.x_flag_evaluation_order
+printf "0x%x flag_gen_aux_info int\n",&global_options.x_flag_gen_aux_info
+printf "0x%x flag_generate_lto int\n",&global_options.x_flag_generate_lto
+printf "0x%x flag_print_asm_name int\n",&global_options.x_flag_print_asm_name
+printf "0x%x flag_shlib int\n",&global_options.x_flag_shlib
+printf "0x%x main_input_baselength int\n",&global_options.x_main_input_baselength
+printf "0x%x optimize int\n",&global_options.x_optimize
+printf "0x%x optimize_debug int\n",&global_options.x_optimize_debug
+printf "0x%x optimize_fast int\n",&global_options.x_optimize_fast
+printf "0x%x optimize_size int\n",&global_options.x_optimize_size
+printf "0x%x recip_mask_explicit int\n",&global_options.x_recip_mask_explicit
+printf "0x%x rtl_dump_and_exit int\n",&global_options.x_rtl_dump_and_exit
+printf "0x%x target_flags int\n",&global_options.x_target_flags
+printf "0x%x help_columns int\n",&global_options.x_help_columns
+printf "0x%x initial_max_fld_align int\n",&global_options.x_initial_max_fld_align
+printf "0x%x flag_instrument_functions_exclude_files void\n",&global_options.x_flag_instrument_functions_exclude_files
+printf "0x%x flag_instrument_functions_exclude_functions void\n",&global_options.x_flag_instrument_functions_exclude_functions
+printf "0x%x help_flag int\n",&global_options.x_help_flag
+printf "0x%x no_sysroot_suffix int\n",&global_options.x_no_sysroot_suffix
+printf "0x%x flag_preprocess_only int\n",&global_options.x_flag_preprocess_only
+printf "0x%x warn_abi int\n",&global_options.x_warn_abi
+printf "0x%x warn_abi_tag int\n",&global_options.x_warn_abi_tag
+printf "0x%x warn_address int\n",&global_options.x_warn_address
+printf "0x%x warn_aggregate_return int\n",&global_options.x_warn_aggregate_return
+printf "0x%x warn_aggressive_loop_optimizations int\n",&global_options.x_warn_aggressive_loop_optimizations
+printf "0x%x warn_array_bounds int\n",&global_options.x_warn_array_bounds
+printf "0x%x warn_assign_intercept int\n",&global_options.x_warn_assign_intercept
+printf "0x%x warn_attributes int\n",&global_options.x_warn_attributes
+printf "0x%x warn_bad_function_cast int\n",&global_options.x_warn_bad_function_cast
+printf "0x%x warn_cxx_compat int\n",&global_options.x_warn_cxx_compat
+printf "0x%x warn_cxx0x_compat int\n",&global_options.x_warn_cxx0x_compat
+printf "0x%x warn_cast_align int\n",&global_options.x_warn_cast_align
+printf "0x%x warn_cast_qual int\n",&global_options.x_warn_cast_qual
+printf "0x%x warn_char_subscripts int\n",&global_options.x_warn_char_subscripts
+printf "0x%x warn_clobbered int\n",&global_options.x_warn_clobbered
+printf "0x%x warn_conversion int\n",&global_options.x_warn_conversion
+printf "0x%x warn_conversion_null int\n",&global_options.x_warn_conversion_null
+printf "0x%x warn_coverage_mismatch int\n",&global_options.x_warn_coverage_mismatch
+printf "0x%x warn_cpp int\n",&global_options.x_warn_cpp
+printf "0x%x warn_ctor_dtor_privacy int\n",&global_options.x_warn_ctor_dtor_privacy
+printf "0x%x warn_declaration_after_statement int\n",&global_options.x_warn_declaration_after_statement
+printf "0x%x warn_delnonvdtor int\n",&global_options.x_warn_delnonvdtor
+printf "0x%x warn_deprecated int\n",&global_options.x_warn_deprecated
+printf "0x%x warn_deprecated_decl int\n",&global_options.x_warn_deprecated_decl
+printf "0x%x warn_disabled_optimization int\n",&global_options.x_warn_disabled_optimization
+printf "0x%x warn_div_by_zero int\n",&global_options.x_warn_div_by_zero
+printf "0x%x warn_double_promotion int\n",&global_options.x_warn_double_promotion
+printf "0x%x warn_ecpp int\n",&global_options.x_warn_ecpp
+printf "0x%x warn_empty_body int\n",&global_options.x_warn_empty_body
+printf "0x%x warn_enum_compare int\n",&global_options.x_warn_enum_compare
+printf "0x%x warnings_are_errors int\n",&global_options.x_warnings_are_errors
+printf "0x%x extra_warnings int\n",&global_options.x_extra_warnings
+printf "0x%x flag_extraneous_semicolon int\n",&global_options.x_flag_extraneous_semicolon
+printf "0x%x flag_fatal_errors int\n",&global_options.x_flag_fatal_errors
+printf "0x%x warn_float_equal int\n",&global_options.x_warn_float_equal
+printf "0x%x warn_format_contains_nul int\n",&global_options.x_warn_format_contains_nul
+printf "0x%x warn_format_extra_args int\n",&global_options.x_warn_format_extra_args
+printf "0x%x warn_format_nonliteral int\n",&global_options.x_warn_format_nonliteral
+printf "0x%x warn_format_security int\n",&global_options.x_warn_format_security
+printf "0x%x warn_format_y2k int\n",&global_options.x_warn_format_y2k
+printf "0x%x warn_format_zero_length int\n",&global_options.x_warn_format_zero_length
+printf "0x%x warn_format int\n",&global_options.x_warn_format
+printf "0x%x warn_free_nonheap_object int\n",&global_options.x_warn_free_nonheap_object
+printf "0x%x warn_ignored_qualifiers int\n",&global_options.x_warn_ignored_qualifiers
+printf "0x%x warn_implicit int\n",&global_options.x_warn_implicit
+printf "0x%x warn_implicit_function_declaration int\n",&global_options.x_warn_implicit_function_declaration
+printf "0x%x warn_implicit_int int\n",&global_options.x_warn_implicit_int
+printf "0x%x warn_inh_var_ctor int\n",&global_options.x_warn_inh_var_ctor
+printf "0x%x warn_init_self int\n",&global_options.x_warn_init_self
+printf "0x%x warn_inline int\n",&global_options.x_warn_inline
+printf "0x%x warn_int_to_pointer_cast int\n",&global_options.x_warn_int_to_pointer_cast
+printf "0x%x warn_invalid_memory_model int\n",&global_options.x_warn_invalid_memory_model
+printf "0x%x warn_invalid_offsetof int\n",&global_options.x_warn_invalid_offsetof
+printf "0x%x warn_jump_misses_init int\n",&global_options.x_warn_jump_misses_init
+printf "0x%x warn_logical_op int\n",&global_options.x_warn_logical_op
+printf "0x%x warn_long_long int\n",&global_options.x_warn_long_long
+printf "0x%x warn_main int\n",&global_options.x_warn_main
+printf "0x%x warn_maybe_uninitialized int\n",&global_options.x_warn_maybe_uninitialized
+printf "0x%x warn_missing_braces int\n",&global_options.x_warn_missing_braces
+printf "0x%x warn_missing_declarations int\n",&global_options.x_warn_missing_declarations
+printf "0x%x warn_missing_field_initializers int\n",&global_options.x_warn_missing_field_initializers
+printf "0x%x warn_missing_parameter_type int\n",&global_options.x_warn_missing_parameter_type
+printf "0x%x warn_missing_prototypes int\n",&global_options.x_warn_missing_prototypes
+printf "0x%x warn_mudflap int\n",&global_options.x_warn_mudflap
+printf "0x%x warn_narrowing int\n",&global_options.x_warn_narrowing
+printf "0x%x warn_nested_externs int\n",&global_options.x_warn_nested_externs
+printf "0x%x warn_noexcept int\n",&global_options.x_warn_noexcept
+printf "0x%x warn_nontemplate_friend int\n",&global_options.x_warn_nontemplate_friend
+printf "0x%x warn_nonvdtor int\n",&global_options.x_warn_nonvdtor
+printf "0x%x warn_nonnull int\n",&global_options.x_warn_nonnull
+printf "0x%x warn_old_style_cast int\n",&global_options.x_warn_old_style_cast
+printf "0x%x warn_old_style_declaration int\n",&global_options.x_warn_old_style_declaration
+printf "0x%x warn_old_style_definition int\n",&global_options.x_warn_old_style_definition
+printf "0x%x flag_newer int\n",&global_options.x_flag_newer
+printf "0x%x warn_overflow int\n",&global_options.x_warn_overflow
+printf "0x%x warn_overlength_strings int\n",&global_options.x_warn_overlength_strings
+printf "0x%x warn_overloaded_virtual int\n",&global_options.x_warn_overloaded_virtual
+printf "0x%x warn_override_init int\n",&global_options.x_warn_override_init
+printf "0x%x warn_packed int\n",&global_options.x_warn_packed
+printf "0x%x warn_packed_bitfield_compat int\n",&global_options.x_warn_packed_bitfield_compat
+printf "0x%x warn_padded int\n",&global_options.x_warn_padded
+printf "0x%x warn_parentheses int\n",&global_options.x_warn_parentheses
+printf "0x%x pedantic int\n",&global_options.x_pedantic
+printf "0x%x warn_pmf2ptr int\n",&global_options.x_warn_pmf2ptr
+printf "0x%x warn_pointer_arith int\n",&global_options.x_warn_pointer_arith
+printf "0x%x warn_pointer_sign int\n",&global_options.x_warn_pointer_sign
+printf "0x%x warn_pointer_to_int_cast int\n",&global_options.x_warn_pointer_to_int_cast
+printf "0x%x warn_pragmas int\n",&global_options.x_warn_pragmas
+printf "0x%x warn_property_assign_default int\n",&global_options.x_warn_property_assign_default
+printf "0x%x warn_protocol int\n",&global_options.x_warn_protocol
+printf "0x%x warn_psabi int\n",&global_options.x_warn_psabi
+printf "0x%x warn_redundant_decls int\n",&global_options.x_warn_redundant_decls
+printf "0x%x flag_redundant int\n",&global_options.x_flag_redundant
+printf "0x%x warn_reorder int\n",&global_options.x_warn_reorder
+printf "0x%x warn_return_local_addr int\n",&global_options.x_warn_return_local_addr
+printf "0x%x warn_return_type int\n",&global_options.x_warn_return_type
+printf "0x%x warn_selector int\n",&global_options.x_warn_selector
+printf "0x%x warn_sequence_point int\n",&global_options.x_warn_sequence_point
+printf "0x%x warn_shadow int\n",&global_options.x_warn_shadow
+printf "0x%x warn_sign_compare int\n",&global_options.x_warn_sign_compare
+printf "0x%x warn_sign_conversion int\n",&global_options.x_warn_sign_conversion
+printf "0x%x warn_sign_promo int\n",&global_options.x_warn_sign_promo
+printf "0x%x warn_sizeof_pointer_memaccess int\n",&global_options.x_warn_sizeof_pointer_memaccess
+printf "0x%x warn_stack_protect int\n",&global_options.x_warn_stack_protect
+printf "0x%x warn_stack_usage int\n",&global_options.x_warn_stack_usage
+printf "0x%x warn_strict_aliasing int\n",&global_options.x_warn_strict_aliasing
+printf "0x%x warn_strict_null_sentinel int\n",&global_options.x_warn_strict_null_sentinel
+printf "0x%x warn_strict_overflow int\n",&global_options.x_warn_strict_overflow
+printf "0x%x warn_strict_prototypes int\n",&global_options.x_warn_strict_prototypes
+printf "0x%x warn_strict_selector_match int\n",&global_options.x_warn_strict_selector_match
+printf "0x%x warn_suggest_attribute_const int\n",&global_options.x_warn_suggest_attribute_const
+printf "0x%x warn_suggest_attribute_format int\n",&global_options.x_warn_suggest_attribute_format
+printf "0x%x warn_suggest_attribute_noreturn int\n",&global_options.x_warn_suggest_attribute_noreturn
+printf "0x%x warn_suggest_attribute_pure int\n",&global_options.x_warn_suggest_attribute_pure
+printf "0x%x warn_switch int\n",&global_options.x_warn_switch
+printf "0x%x warn_switch_default int\n",&global_options.x_warn_switch_default
+printf "0x%x warn_switch_enum int\n",&global_options.x_warn_switch_enum
+printf "0x%x warn_sync_nand int\n",&global_options.x_warn_sync_nand
+printf "0x%x warn_synth int\n",&global_options.x_warn_synth
+printf "0x%x warn_system_headers int\n",&global_options.x_warn_system_headers
+printf "0x%x warn_traditional int\n",&global_options.x_warn_traditional
+printf "0x%x warn_traditional_conversion int\n",&global_options.x_warn_traditional_conversion
+printf "0x%x warn_trampolines int\n",&global_options.x_warn_trampolines
+printf "0x%x warn_type_limits int\n",&global_options.x_warn_type_limits
+printf "0x%x warn_undeclared_selector int\n",&global_options.x_warn_undeclared_selector
+printf "0x%x warn_uninitialized int\n",&global_options.x_warn_uninitialized
+printf "0x%x warn_unknown_pragmas int\n",&global_options.x_warn_unknown_pragmas
+printf "0x%x warn_unsafe_loop_optimizations int\n",&global_options.x_warn_unsafe_loop_optimizations
+printf "0x%x warn_unsuffixed_float_constants int\n",&global_options.x_warn_unsuffixed_float_constants
+printf "0x%x warn_unused int\n",&global_options.x_warn_unused
+printf "0x%x warn_unused_but_set_parameter int\n",&global_options.x_warn_unused_but_set_parameter
+printf "0x%x warn_unused_but_set_variable int\n",&global_options.x_warn_unused_but_set_variable
+printf "0x%x warn_unused_function int\n",&global_options.x_warn_unused_function
+printf "0x%x warn_unused_label int\n",&global_options.x_warn_unused_label
+printf "0x%x warn_unused_local_typedefs int\n",&global_options.x_warn_unused_local_typedefs
+printf "0x%x cpp_warn_unused_macros int\n",&global_options.x_cpp_warn_unused_macros
+printf "0x%x warn_unused_parameter int\n",&global_options.x_warn_unused_parameter
+printf "0x%x warn_unused_result int\n",&global_options.x_warn_unused_result
+printf "0x%x warn_unused_value int\n",&global_options.x_warn_unused_value
+printf "0x%x warn_unused_variable int\n",&global_options.x_warn_unused_variable
+printf "0x%x warn_useless_cast int\n",&global_options.x_warn_useless_cast
+printf "0x%x warn_varargs int\n",&global_options.x_warn_varargs
+printf "0x%x cpp_warn_variadic_macros int\n",&global_options.x_cpp_warn_variadic_macros
+printf "0x%x warn_vector_operation_performance int\n",&global_options.x_warn_vector_operation_performance
+printf "0x%x warn_virtual_move_assign int\n",&global_options.x_warn_virtual_move_assign
+printf "0x%x warn_vla int\n",&global_options.x_warn_vla
+printf "0x%x warn_volatile_register_var int\n",&global_options.x_warn_volatile_register_var
+printf "0x%x warn_write_strings int\n",&global_options.x_warn_write_strings
+printf "0x%x warn_zero_as_null_pointer_constant int\n",&global_options.x_warn_zero_as_null_pointer_constant
+printf "0x%x aux_info_file_name char\n",&global_options.x_aux_info_file_name
+printf "0x%x aux_base_name char\n",&global_options.x_aux_base_name
+printf "0x%x dump_base_name char\n",&global_options.x_dump_base_name
+printf "0x%x dump_dir_name char\n",&global_options.x_dump_dir_name
+printf "0x%x flag_pic int\n",&global_options.x_flag_pic
+printf "0x%x flag_pie int\n",&global_options.x_flag_pie
+printf "0x%x flag_abi_version int\n",&global_options.x_flag_abi_version
+printf "0x%x flag_access_control int\n",&global_options.x_flag_access_control
+printf "0x%x ada_specs_parent char\n",&global_options.x_ada_specs_parent
+printf "0x%x flag_aggressive_loop_optimizations int\n",&global_options.x_flag_aggressive_loop_optimizations
+printf "0x%x align_functions int\n",&global_options.x_align_functions
+printf "0x%x align_jumps int\n",&global_options.x_align_jumps
+printf "0x%x align_labels int\n",&global_options.x_align_labels
+printf "0x%x align_loops int\n",&global_options.x_align_loops
+printf "0x%x flag_allow_parameterless_variadic_functions int\n",&global_options.x_flag_allow_parameterless_variadic_functions
+printf "0x%x flag_no_asm int\n",&global_options.x_flag_no_asm
+printf "0x%x flag_assert int\n",&global_options.x_flag_assert
+printf "0x%x flag_associative_math int\n",&global_options.x_flag_associative_math
+printf "0x%x flag_asynchronous_unwind_tables int\n",&global_options.x_flag_asynchronous_unwind_tables
+printf "0x%x flag_auto_inc_dec int\n",&global_options.x_flag_auto_inc_dec
+printf "0x%x flag_bootstrap_classes int\n",&global_options.x_flag_bootstrap_classes
+printf "0x%x flag_bounds_check int\n",&global_options.x_flag_bounds_check
+printf "0x%x flag_branch_on_count_reg int\n",&global_options.x_flag_branch_on_count_reg
+printf "0x%x flag_branch_probabilities int\n",&global_options.x_flag_branch_probabilities
+printf "0x%x flag_branch_target_load_optimize int\n",&global_options.x_flag_branch_target_load_optimize
+printf "0x%x flag_branch_target_load_optimize2 int\n",&global_options.x_flag_branch_target_load_optimize2
+printf "0x%x flag_btr_bb_exclusive int\n",&global_options.x_flag_btr_bb_exclusive
+printf "0x%x flag_building_libgcc int\n",&global_options.x_flag_building_libgcc
+printf "0x%x flag_no_builtin int\n",&global_options.x_flag_no_builtin
+printf "0x%x common_deferred_options void\n",&global_options.x_common_deferred_options
+printf "0x%x flag_caller_saves int\n",&global_options.x_flag_caller_saves
+printf "0x%x flag_check_data_deps int\n",&global_options.x_flag_check_data_deps
+printf "0x%x flag_check_new int\n",&global_options.x_flag_check_new
+printf "0x%x flag_check_references int\n",&global_options.x_flag_check_references
+printf "0x%x flag_combine_stack_adjustments int\n",&global_options.x_flag_combine_stack_adjustments
+printf "0x%x flag_no_common int\n",&global_options.x_flag_no_common
+printf "0x%x flag_compare_debug int\n",&global_options.x_flag_compare_debug
+printf "0x%x flag_compare_debug_opt char\n",&global_options.x_flag_compare_debug_opt
+printf "0x%x flag_compare_elim_after_reload int\n",&global_options.x_flag_compare_elim_after_reload
+printf "0x%x flag_conserve_space int\n",&global_options.x_flag_conserve_space
+printf "0x%x flag_conserve_stack int\n",&global_options.x_flag_conserve_stack
+printf "0x%x max_constexpr_depth int\n",&global_options.x_max_constexpr_depth
+printf "0x%x flag_cprop_registers int\n",&global_options.x_flag_cprop_registers
+printf "0x%x flag_crossjumping int\n",&global_options.x_flag_crossjumping
+printf "0x%x flag_cse_follow_jumps int\n",&global_options.x_flag_cse_follow_jumps
+printf "0x%x flag_cx_fortran_rules int\n",&global_options.x_flag_cx_fortran_rules
+printf "0x%x flag_cx_limited_range int\n",&global_options.x_flag_cx_limited_range
+printf "0x%x flag_data_sections int\n",&global_options.x_flag_data_sections
+printf "0x%x flag_dce int\n",&global_options.x_flag_dce
+printf "0x%x flag_debug_types_section int\n",&global_options.x_flag_debug_types_section
+printf "0x%x flag_deduce_init_list int\n",&global_options.x_flag_deduce_init_list
+printf "0x%x flag_defer_pop int\n",&global_options.x_flag_defer_pop
+printf "0x%x flag_delayed_branch int\n",&global_options.x_flag_delayed_branch
+printf "0x%x flag_delete_dead_exceptions int\n",&global_options.x_flag_delete_dead_exceptions
+printf "0x%x flag_delete_null_pointer_checks int\n",&global_options.x_flag_delete_null_pointer_checks
+printf "0x%x flag_devirtualize int\n",&global_options.x_flag_devirtualize
+printf "0x%x flag_diagnostics_show_caret int\n",&global_options.x_flag_diagnostics_show_caret
+printf "0x%x flag_diagnostics_show_option int\n",&global_options.x_flag_diagnostics_show_option
+printf "0x%x flag_dse int\n",&global_options.x_flag_dse
+printf "0x%x flag_dump_ada_spec int\n",&global_options.x_flag_dump_ada_spec
+printf "0x%x flag_dump_ada_spec_slim int\n",&global_options.x_flag_dump_ada_spec_slim
+printf "0x%x flag_dump_final_insns char\n",&global_options.x_flag_dump_final_insns
+printf "0x%x flag_dump_go_spec char\n",&global_options.x_flag_dump_go_spec
+printf "0x%x flag_dump_noaddr int\n",&global_options.x_flag_dump_noaddr
+printf "0x%x flag_dump_passes int\n",&global_options.x_flag_dump_passes
+printf "0x%x flag_dump_unnumbered int\n",&global_options.x_flag_dump_unnumbered
+printf "0x%x flag_dump_unnumbered_links int\n",&global_options.x_flag_dump_unnumbered_links
+printf "0x%x flag_dwarf2_cfi_asm int\n",&global_options.x_flag_dwarf2_cfi_asm
+printf "0x%x flag_early_inlining int\n",&global_options.x_flag_early_inlining
+printf "0x%x flag_elide_constructors int\n",&global_options.x_flag_elide_constructors
+printf "0x%x flag_eliminate_dwarf2_dups int\n",&global_options.x_flag_eliminate_dwarf2_dups
+printf "0x%x flag_debug_only_used_symbols int\n",&global_options.x_flag_debug_only_used_symbols
+printf "0x%x flag_eliminate_unused_debug_types int\n",&global_options.x_flag_eliminate_unused_debug_types
+printf "0x%x flag_emit_class_debug_always int\n",&global_options.x_flag_emit_class_debug_always
+printf "0x%x flag_emit_class_files int\n",&global_options.x_flag_emit_class_files
+printf "0x%x flag_enforce_eh_specs int\n",&global_options.x_flag_enforce_eh_specs
+printf "0x%x flag_exceptions int\n",&global_options.x_flag_exceptions
+printf "0x%x flag_excess_precision_cmdline int\n",&global_options.x_flag_excess_precision_cmdline
+printf "0x%x flag_expensive_optimizations int\n",&global_options.x_flag_expensive_optimizations
+printf "0x%x flag_extern_tls_init int\n",&global_options.x_flag_extern_tls_init
+printf "0x%x flag_fat_lto_objects int\n",&global_options.x_flag_fat_lto_objects
+printf "0x%x flag_filelist_file int\n",&global_options.x_flag_filelist_file
+printf "0x%x flag_finite_math_only int\n",&global_options.x_flag_finite_math_only
+printf "0x%x flag_float_store int\n",&global_options.x_flag_float_store
+printf "0x%x flag_new_for_scope int\n",&global_options.x_flag_new_for_scope
+printf "0x%x flag_force_classes_archive_check int\n",&global_options.x_flag_force_classes_archive_check
+printf "0x%x flag_forward_propagate int\n",&global_options.x_flag_forward_propagate
+printf "0x%x flag_fp_contract_mode int\n",&global_options.x_flag_fp_contract_mode
+printf "0x%x flag_friend_injection int\n",&global_options.x_flag_friend_injection
+printf "0x%x flag_no_function_cse int\n",&global_options.x_flag_no_function_cse
+printf "0x%x flag_function_sections int\n",&global_options.x_flag_function_sections
+printf "0x%x flag_gcse int\n",&global_options.x_flag_gcse
+printf "0x%x flag_gcse_after_reload int\n",&global_options.x_flag_gcse_after_reload
+printf "0x%x flag_gcse_las int\n",&global_options.x_flag_gcse_las
+printf "0x%x flag_gcse_lm int\n",&global_options.x_flag_gcse_lm
+printf "0x%x flag_gcse_sm int\n",&global_options.x_flag_gcse_sm
+printf "0x%x flag_no_gnu_keywords int\n",&global_options.x_flag_no_gnu_keywords
+printf "0x%x flag_next_runtime int\n",&global_options.x_flag_next_runtime
+printf "0x%x flag_tm int\n",&global_options.x_flag_tm
+printf "0x%x flag_gnu89_inline int\n",&global_options.x_flag_gnu89_inline
+printf "0x%x go_check_divide_overflow int\n",&global_options.x_go_check_divide_overflow
+printf "0x%x go_check_divide_zero int\n",&global_options.x_go_check_divide_zero
+printf "0x%x flag_graphite int\n",&global_options.x_flag_graphite
+printf "0x%x flag_graphite_identity int\n",&global_options.x_flag_graphite_identity
+printf "0x%x flag_guess_branch_prob int\n",&global_options.x_flag_guess_branch_prob
+printf "0x%x flag_hash_synchronization int\n",&global_options.x_flag_hash_synchronization
+printf "0x%x flag_hoist_adjacent_loads int\n",&global_options.x_flag_hoist_adjacent_loads
+printf "0x%x flag_no_ident int\n",&global_options.x_flag_no_ident
+printf "0x%x flag_if_conversion int\n",&global_options.x_flag_if_conversion
+printf "0x%x flag_if_conversion2 int\n",&global_options.x_flag_if_conversion2
+printf "0x%x flag_implement_inlines int\n",&global_options.x_flag_implement_inlines
+printf "0x%x flag_implicit_inline_templates int\n",&global_options.x_flag_implicit_inline_templates
+printf "0x%x flag_implicit_templates int\n",&global_options.x_flag_implicit_templates
+printf "0x%x flag_indirect_classes int\n",&global_options.x_flag_indirect_classes
+printf "0x%x flag_indirect_dispatch int\n",&global_options.x_flag_indirect_dispatch
+printf "0x%x flag_indirect_inlining int\n",&global_options.x_flag_indirect_inlining
+printf "0x%x flag_inhibit_size_directive int\n",&global_options.x_flag_inhibit_size_directive
+printf "0x%x flag_no_inline int\n",&global_options.x_flag_no_inline
+printf "0x%x flag_inline_atomics int\n",&global_options.x_flag_inline_atomics
+printf "0x%x flag_inline_functions int\n",&global_options.x_flag_inline_functions
+printf "0x%x flag_inline_functions_called_once int\n",&global_options.x_flag_inline_functions_called_once
+printf "0x%x flag_inline_small_functions int\n",&global_options.x_flag_inline_small_functions
+printf "0x%x flag_instrument_function_entry_exit int\n",&global_options.x_flag_instrument_function_entry_exit
+printf "0x%x flag_ipa_cp int\n",&global_options.x_flag_ipa_cp
+printf "0x%x flag_ipa_cp_clone int\n",&global_options.x_flag_ipa_cp_clone
+printf "0x%x flag_ipa_profile int\n",&global_options.x_flag_ipa_profile
+printf "0x%x flag_ipa_pta int\n",&global_options.x_flag_ipa_pta
+printf "0x%x flag_ipa_pure_const int\n",&global_options.x_flag_ipa_pure_const
+printf "0x%x flag_ipa_reference int\n",&global_options.x_flag_ipa_reference
+printf "0x%x flag_ipa_sra int\n",&global_options.x_flag_ipa_sra
+printf "0x%x flag_ira_algorithm int\n",&global_options.x_flag_ira_algorithm
+printf "0x%x flag_ira_hoist_pressure int\n",&global_options.x_flag_ira_hoist_pressure
+printf "0x%x flag_ira_loop_pressure int\n",&global_options.x_flag_ira_loop_pressure
+printf "0x%x flag_ira_region int\n",&global_options.x_flag_ira_region
+printf "0x%x flag_ira_share_save_slots int\n",&global_options.x_flag_ira_share_save_slots
+printf "0x%x flag_ira_share_spill_slots int\n",&global_options.x_flag_ira_share_spill_slots
+printf "0x%x flag_ira_verbose int\n",&global_options.x_flag_ira_verbose
+printf "0x%x flag_ivopts int\n",&global_options.x_flag_ivopts
+printf "0x%x flag_jni int\n",&global_options.x_flag_jni
+printf "0x%x flag_jump_tables int\n",&global_options.x_flag_jump_tables
+printf "0x%x flag_keep_inline_dllexport int\n",&global_options.x_flag_keep_inline_dllexport
+printf "0x%x flag_keep_inline_functions int\n",&global_options.x_flag_keep_inline_functions
+printf "0x%x flag_keep_static_consts int\n",&global_options.x_flag_keep_static_consts
+printf "0x%x flag_lax_vector_conversions int\n",&global_options.x_flag_lax_vector_conversions
+printf "0x%x flag_leading_underscore int\n",&global_options.x_flag_leading_underscore
+printf "0x%x flag_loop_block int\n",&global_options.x_flag_loop_block
+printf "0x%x flag_loop_interchange int\n",&global_options.x_flag_loop_interchange
+printf "0x%x flag_loop_optimize_isl int\n",&global_options.x_flag_loop_optimize_isl
+printf "0x%x flag_loop_parallelize_all int\n",&global_options.x_flag_loop_parallelize_all
+printf "0x%x flag_loop_strip_mine int\n",&global_options.x_flag_loop_strip_mine
+printf "0x%x flag_lto_compression_level int\n",&global_options.x_flag_lto_compression_level
+printf "0x%x flag_lto_partition_1to1 int\n",&global_options.x_flag_lto_partition_1to1
+printf "0x%x flag_lto_partition_balanced int\n",&global_options.x_flag_lto_partition_balanced
+printf "0x%x flag_lto_partition_max int\n",&global_options.x_flag_lto_partition_max
+printf "0x%x flag_lto_partition_none int\n",&global_options.x_flag_lto_partition_none
+printf "0x%x flag_lto_report int\n",&global_options.x_flag_lto_report
+printf "0x%x flag_lto char\n",&global_options.x_flag_lto
+printf "0x%x flag_ltrans int\n",&global_options.x_flag_ltrans
+printf "0x%x ltrans_output_list char\n",&global_options.x_ltrans_output_list
+printf "0x%x flag_errno_math int\n",&global_options.x_flag_errno_math
+printf "0x%x flag_max_errors int\n",&global_options.x_flag_max_errors
+printf "0x%x mem_report int\n",&global_options.x_mem_report
+printf "0x%x mem_report_wpa int\n",&global_options.x_mem_report_wpa
+printf "0x%x flag_merge_constants int\n",&global_options.x_flag_merge_constants
+printf "0x%x flag_merge_debug_strings int\n",&global_options.x_flag_merge_debug_strings
+printf "0x%x flag_modulo_sched int\n",&global_options.x_flag_modulo_sched
+printf "0x%x flag_modulo_sched_allow_regmoves int\n",&global_options.x_flag_modulo_sched_allow_regmoves
+printf "0x%x flag_move_loop_invariants int\n",&global_options.x_flag_move_loop_invariants
+printf "0x%x flag_ms_extensions int\n",&global_options.x_flag_ms_extensions
+printf "0x%x flag_mudflap int\n",&global_options.x_flag_mudflap
+printf "0x%x flag_mudflap_ignore_reads int\n",&global_options.x_flag_mudflap_ignore_reads
+printf "0x%x flag_nil_receivers int\n",&global_options.x_flag_nil_receivers
+printf "0x%x flag_non_call_exceptions int\n",&global_options.x_flag_non_call_exceptions
+printf "0x%x flag_no_nonansi_builtin int\n",&global_options.x_flag_no_nonansi_builtin
+printf "0x%x flag_nothrow_opt int\n",&global_options.x_flag_nothrow_opt
+printf "0x%x flag_objc_abi int\n",&global_options.x_flag_objc_abi
+printf "0x%x flag_objc_call_cxx_cdtors int\n",&global_options.x_flag_objc_call_cxx_cdtors
+printf "0x%x flag_objc_direct_dispatch int\n",&global_options.x_flag_objc_direct_dispatch
+printf "0x%x flag_objc_exceptions int\n",&global_options.x_flag_objc_exceptions
+printf "0x%x flag_objc_gc int\n",&global_options.x_flag_objc_gc
+printf "0x%x flag_objc_nilcheck int\n",&global_options.x_flag_objc_nilcheck
+printf "0x%x flag_objc_sjlj_exceptions int\n",&global_options.x_flag_objc_sjlj_exceptions
+printf "0x%x flag_objc1_only int\n",&global_options.x_flag_objc1_only
+printf "0x%x flag_omit_frame_pointer int\n",&global_options.x_flag_omit_frame_pointer
+printf "0x%x flag_openmp int\n",&global_options.x_flag_openmp
+printf "0x%x flag_opt_info int\n",&global_options.x_flag_opt_info
+printf "0x%x flag_regmove int\n",&global_options.x_flag_regmove
+printf "0x%x flag_optimize_sibling_calls int\n",&global_options.x_flag_optimize_sibling_calls
+printf "0x%x flag_optimize_sci int\n",&global_options.x_flag_optimize_sci
+printf "0x%x flag_optimize_strlen int\n",&global_options.x_flag_optimize_strlen
+printf "0x%x flag_pack_struct int\n",&global_options.x_flag_pack_struct
+printf "0x%x flag_partial_inlining int\n",&global_options.x_flag_partial_inlining
+printf "0x%x flag_pcc_struct_return int\n",&global_options.x_flag_pcc_struct_return
+printf "0x%x flag_peel_loops int\n",&global_options.x_flag_peel_loops
+printf "0x%x flag_no_peephole int\n",&global_options.x_flag_no_peephole
+printf "0x%x flag_peephole2 int\n",&global_options.x_flag_peephole2
+printf "0x%x flag_permissive int\n",&global_options.x_flag_permissive
+printf "0x%x flag_plan9_extensions int\n",&global_options.x_flag_plan9_extensions
+printf "0x%x post_ipa_mem_report int\n",&global_options.x_post_ipa_mem_report
+printf "0x%x pre_ipa_mem_report int\n",&global_options.x_pre_ipa_mem_report
+printf "0x%x flag_predictive_commoning int\n",&global_options.x_flag_predictive_commoning
+printf "0x%x flag_prefetch_loop_arrays int\n",&global_options.x_flag_prefetch_loop_arrays
+printf "0x%x flag_pretty_templates int\n",&global_options.x_flag_pretty_templates
+printf "0x%x profile_flag int\n",&global_options.x_profile_flag
+printf "0x%x profile_arc_flag int\n",&global_options.x_profile_arc_flag
+printf "0x%x flag_profile_correction int\n",&global_options.x_flag_profile_correction
+printf "0x%x profile_data_prefix char\n",&global_options.x_profile_data_prefix
+printf "0x%x profile_report int\n",&global_options.x_profile_report
+printf "0x%x flag_profile_use int\n",&global_options.x_flag_profile_use
+printf "0x%x flag_profile_values int\n",&global_options.x_flag_profile_values
+printf "0x%x flag_reciprocal_math int\n",&global_options.x_flag_reciprocal_math
+printf "0x%x flag_record_gcc_switches int\n",&global_options.x_flag_record_gcc_switches
+printf "0x%x flag_reduced_reflection int\n",&global_options.x_flag_reduced_reflection
+printf "0x%x flag_ree int\n",&global_options.x_flag_ree
+printf "0x%x flag_rename_registers int\n",&global_options.x_flag_rename_registers
+printf "0x%x flag_reorder_blocks int\n",&global_options.x_flag_reorder_blocks
+printf "0x%x flag_reorder_blocks_and_partition int\n",&global_options.x_flag_reorder_blocks_and_partition
+printf "0x%x flag_reorder_functions int\n",&global_options.x_flag_reorder_functions
+printf "0x%x flag_replace_objc_classes int\n",&global_options.x_flag_replace_objc_classes
+printf "0x%x go_require_return_statement int\n",&global_options.x_go_require_return_statement
+printf "0x%x flag_rerun_cse_after_loop int\n",&global_options.x_flag_rerun_cse_after_loop
+printf "0x%x flag_resched_modulo_sched int\n",&global_options.x_flag_resched_modulo_sched
+printf "0x%x flag_rounding_math int\n",&global_options.x_flag_rounding_math
+printf "0x%x flag_rtti int\n",&global_options.x_flag_rtti
+printf "0x%x flag_asan int\n",&global_options.x_flag_asan
+printf "0x%x flag_tsan int\n",&global_options.x_flag_tsan
+printf "0x%x flag_sched_critical_path_heuristic int\n",&global_options.x_flag_sched_critical_path_heuristic
+printf "0x%x flag_sched_dep_count_heuristic int\n",&global_options.x_flag_sched_dep_count_heuristic
+printf "0x%x flag_sched_group_heuristic int\n",&global_options.x_flag_sched_group_heuristic
+printf "0x%x flag_schedule_interblock int\n",&global_options.x_flag_schedule_interblock
+printf "0x%x flag_sched_last_insn_heuristic int\n",&global_options.x_flag_sched_last_insn_heuristic
+printf "0x%x flag_sched_pressure int\n",&global_options.x_flag_sched_pressure
+printf "0x%x flag_sched_rank_heuristic int\n",&global_options.x_flag_sched_rank_heuristic
+printf "0x%x flag_schedule_speculative int\n",&global_options.x_flag_schedule_speculative
+printf "0x%x flag_sched_spec_insn_heuristic int\n",&global_options.x_flag_sched_spec_insn_heuristic
+printf "0x%x flag_schedule_speculative_load int\n",&global_options.x_flag_schedule_speculative_load
+printf "0x%x flag_schedule_speculative_load_dangerous int\n",&global_options.x_flag_schedule_speculative_load_dangerous
+printf "0x%x flag_sched_stalled_insns int\n",&global_options.x_flag_sched_stalled_insns
+printf "0x%x flag_sched_stalled_insns_dep int\n",&global_options.x_flag_sched_stalled_insns_dep
+printf "0x%x sched_verbose_param int\n",&global_options.x_sched_verbose_param
+printf "0x%x flag_sched2_use_superblocks int\n",&global_options.x_flag_sched2_use_superblocks
+printf "0x%x int flag_schedule_insns_after_reload int\n",&global_options.x_flag_schedule_insns_after_reload
+printf "0x%x flag_section_anchors int\n",&global_options.x_flag_section_anchors
+printf "0x%x flag_sel_sched_pipelining int\n",&global_options.x_flag_sel_sched_pipelining
+printf "0x%x flag_sel_sched_pipelining_outer_loops int\n",&global_options.x_flag_sel_sched_pipelining_outer_loops
+printf "0x%x flag_sel_sched_reschedule_pipelined int\n",&global_options.x_flag_sel_sched_reschedule_pipelined
+printf "0x%x flag_selective_scheduling int\n",&global_options.x_flag_selective_scheduling
+printf "0x%x flag_selective_scheduling2 int\n",&global_options.x_flag_selective_scheduling2
+printf "0x%x flag_short_double int\n",&global_options.x_flag_short_double
+printf "0x%x flag_short_enums int\n",&global_options.x_flag_short_enums
+printf "0x%x flag_short_wchar int\n",&global_options.x_flag_short_wchar
+printf "0x%x flag_show_column int\n",&global_options.x_flag_show_column
+printf "0x%x flag_shrink_wrap int\n",&global_options.x_flag_shrink_wrap
+printf "0x%x flag_signaling_nans int\n",&global_options.x_flag_signaling_nans
+printf "0x%x flag_signed_bitfields int\n",&global_options.x_flag_signed_bitfields
+printf "0x%x flag_signed_char int\n",&global_options.x_flag_signed_char
+printf "0x%x flag_signed_zeros int\n",&global_options.x_flag_signed_zeros
+printf "0x%x flag_single_precision_constant int\n",&global_options.x_flag_single_precision_constant
+printf "0x%x flag_split_ivs_in_unroller int\n",&global_options.x_flag_split_ivs_in_unroller
+printf "0x%x flag_split_stack int\n",&global_options.x_flag_split_stack
+printf "0x%x flag_split_wide_types int\n",&global_options.x_flag_split_wide_types
+printf "0x%x flag_stack_protect int\n",&global_options.x_flag_stack_protect
+printf "0x%x flag_stack_reuse int\n",&global_options.x_flag_stack_reuse
+printf "0x%x flag_stack_usage int\n",&global_options.x_flag_stack_usage
+printf "0x%x flag_detailed_statistics int\n",&global_options.x_flag_detailed_statistics
+printf "0x%x flag_store_check int\n",&global_options.x_flag_store_check
+printf "0x%x flag_strict_aliasing int\n",&global_options.x_flag_strict_aliasing
+printf "0x%x flag_strict_enums int\n",&global_options.x_flag_strict_enums
+printf "0x%x flag_strict_overflow int\n",&global_options.x_flag_strict_overflow
+printf "0x%x flag_strict_volatile_bitfields int\n",&global_options.x_flag_strict_volatile_bitfields
+printf "0x%x flag_sync_libcalls int\n",&global_options.x_flag_sync_libcalls
+printf "0x%x flag_syntax_only int\n",&global_options.x_flag_syntax_only
+printf "0x%x template_backtrace_limit int\n",&global_options.x_template_backtrace_limit
+printf "0x%x flag_test_coverage int\n",&global_options.x_flag_test_coverage
+printf "0x%x flag_thread_jumps int\n",&global_options.x_flag_thread_jumps
+printf "0x%x flag_threadsafe_statics int\n",&global_options.x_flag_threadsafe_statics
+printf "0x%x time_report int\n",&global_options.x_time_report
+printf "0x%x flag_tls_default int\n",&global_options.x_flag_tls_default
+printf "0x%x flag_toplevel_reorder int\n",&global_options.x_flag_toplevel_reorder
+printf "0x%x flag_tracer int\n",&global_options.x_flag_tracer
+printf "0x%x flag_trapping_math int\n",&global_options.x_flag_trapping_math
+printf "0x%x flag_trapv int\n",&global_options.x_flag_trapv
+printf "0x%x flag_tree_bit_ccp int\n",&global_options.x_flag_tree_bit_ccp
+printf "0x%x flag_tree_builtin_call_dce int\n",&global_options.x_flag_tree_builtin_call_dce
+printf "0x%x flag_tree_ccp int\n",&global_options.x_flag_tree_ccp
+printf "0x%x flag_tree_ch int\n",&global_options.x_flag_tree_ch
+printf "0x%x flag_ssa_coalesce_vars int\n",&global_options.x_flag_ssa_coalesce_vars
+printf "0x%x flag_tree_copy_prop int\n",&global_options.x_flag_tree_copy_prop
+printf "0x%x flag_tree_copyrename int\n",&global_options.x_flag_tree_copyrename
+printf "0x%x flag_tree_cselim int\n",&global_options.x_flag_tree_cselim
+printf "0x%x flag_tree_dce int\n",&global_options.x_flag_tree_dce
+printf "0x%x flag_tree_dom int\n",&global_options.x_flag_tree_dom
+printf "0x%x flag_tree_dse int\n",&global_options.x_flag_tree_dse
+printf "0x%x flag_tree_forwprop int\n",&global_options.x_flag_tree_forwprop
+printf "0x%x flag_tree_fre int\n",&global_options.x_flag_tree_fre
+printf "0x%x flag_tree_loop_distribute_patterns int\n",&global_options.x_flag_tree_loop_distribute_patterns
+printf "0x%x flag_tree_loop_distribution int\n",&global_options.x_flag_tree_loop_distribution
+printf "0x%x flag_tree_loop_if_convert int\n",&global_options.x_flag_tree_loop_if_convert
+printf "0x%x flag_tree_loop_if_convert_stores int\n",&global_options.x_flag_tree_loop_if_convert_stores
+printf "0x%x flag_tree_loop_im int\n",&global_options.x_flag_tree_loop_im
+printf "0x%x flag_tree_loop_ivcanon int\n",&global_options.x_flag_tree_loop_ivcanon
+printf "0x%x flag_tree_loop_optimize int\n",&global_options.x_flag_tree_loop_optimize
+printf "0x%x flag_tree_live_range_split int\n",&global_options.x_flag_tree_live_range_split
+printf "0x%x flag_tree_parallelize_loops int\n",&global_options.x_flag_tree_parallelize_loops
+printf "0x%x flag_tree_partial_pre int\n",&global_options.x_flag_tree_partial_pre
+printf "0x%x flag_tree_phiprop int\n",&global_options.x_flag_tree_phiprop
+printf "0x%x flag_tree_pre int\n",&global_options.x_flag_tree_pre
+printf "0x%x flag_tree_pta int\n",&global_options.x_flag_tree_pta
+printf "0x%x flag_tree_reassoc int\n",&global_options.x_flag_tree_reassoc
+printf "0x%x flag_tree_scev_cprop int\n",&global_options.x_flag_tree_scev_cprop
+printf "0x%x flag_tree_sink int\n",&global_options.x_flag_tree_sink
+printf "0x%x flag_tree_slp_vectorize int\n",&global_options.x_flag_tree_slp_vectorize
+printf "0x%x flag_tree_slsr int\n",&global_options.x_flag_tree_slsr
+printf "0x%x flag_tree_sra int\n",&global_options.x_flag_tree_sra
+printf "0x%x flag_tree_switch_conversion int\n",&global_options.x_flag_tree_switch_conversion
+printf "0x%x flag_tree_tail_merge int\n",&global_options.x_flag_tree_tail_merge
+printf "0x%x flag_tree_ter int\n",&global_options.x_flag_tree_ter
+printf "0x%x flag_tree_vect_loop_version int\n",&global_options.x_flag_tree_vect_loop_version
+printf "0x%x flag_tree_vectorize int\n",&global_options.x_flag_tree_vectorize
+printf "0x%x flag_tree_vrp int\n",&global_options.x_flag_tree_vrp
+printf "0x%x flag_unit_at_a_time int\n",&global_options.x_flag_unit_at_a_time
+printf "0x%x flag_unroll_all_loops int\n",&global_options.x_flag_unroll_all_loops
+printf "0x%x flag_unroll_loops int\n",&global_options.x_flag_unroll_loops
+printf "0x%x flag_unsafe_loop_optimizations int\n",&global_options.x_flag_unsafe_loop_optimizations
+printf "0x%x flag_unsafe_math_optimizations int\n",&global_options.x_flag_unsafe_math_optimizations
+printf "0x%x flag_unswitch_loops int\n",&global_options.x_flag_unswitch_loops
+printf "0x%x flag_unwind_tables int\n",&global_options.x_flag_unwind_tables
+printf "0x%x flag_use_atomic_builtins int\n",&global_options.x_flag_use_atomic_builtins
+printf "0x%x flag_use_boehm_gc int\n",&global_options.x_flag_use_boehm_gc
+printf "0x%x flag_use_cxa_atexit int\n",&global_options.x_flag_use_cxa_atexit
+printf "0x%x flag_use_cxa_get_exception_ptr int\n",&global_options.x_flag_use_cxa_get_exception_ptr
+printf "0x%x flag_use_divide_subroutine int\n",&global_options.x_flag_use_divide_subroutine
+printf "0x%x flag_var_tracking int\n",&global_options.x_flag_var_tracking
+printf "0x%x flag_var_tracking_assignments int\n",&global_options.x_flag_var_tracking_assignments
+printf "0x%x flag_var_tracking_assignments_toggle int\n",&global_options.x_flag_var_tracking_assignments_toggle
+printf "0x%x flag_var_tracking_uninit int\n",&global_options.x_flag_var_tracking_uninit
+printf "0x%x flag_variable_expansion_in_unroller int\n",&global_options.x_flag_variable_expansion_in_unroller
+printf "0x%x flag_vect_cost_model int\n",&global_options.x_flag_vect_cost_model
+printf "0x%x flag_verbose_asm int\n",&global_options.x_flag_verbose_asm
+printf "0x%x flag_visibility_ms_compat int\n",&global_options.x_flag_visibility_ms_compat
+printf "0x%x default_visibility int\n",&global_options.x_default_visibility
+printf "0x%x flag_value_profile_transformations int\n",&global_options.x_flag_value_profile_transformations
+printf "0x%x flag_weak int\n",&global_options.x_flag_weak
+printf "0x%x flag_web int\n",&global_options.x_flag_web
+printf "0x%x flag_whole_program int\n",&global_options.x_flag_whole_program
+printf "0x%x flag_working_directory int\n",&global_options.x_flag_working_directory
+printf "0x%x flag_wpa int\n",&global_options.x_flag_wpa
+printf "0x%x flag_wrapv int\n",&global_options.x_flag_wrapv
+printf "0x%x flag_zero_initialized_in_bss int\n",&global_options.x_flag_zero_initialized_in_bss
+printf "0x%x flag_zero_link int\n",&global_options.x_flag_zero_link
+printf "0x%x dwarf_version int\n",&global_options.x_dwarf_version
+printf "0x%x flag_gen_declaration int\n",&global_options.x_flag_gen_declaration
+printf "0x%x debug_generate_pub_sections int\n",&global_options.x_debug_generate_pub_sections
+printf "0x%x dwarf_record_gcc_switches int\n",&global_options.x_dwarf_record_gcc_switches
+printf "0x%x dwarf_split_debug_info int\n",&global_options.x_dwarf_split_debug_info
+printf "0x%x dwarf_strict int\n",&global_options.x_dwarf_strict
+printf "0x%x flag_gtoggle int\n",&global_options.x_flag_gtoggle
+printf "0x%x imultiarch char\n",&global_options.x_imultiarch
+printf "0x%x plugindir_string char\n",&global_options.x_plugindir_string
+printf "0x%x ix86_abi int\n",&global_options.x_ix86_abi
+printf "0x%x ix86_pmode int\n",&global_options.x_ix86_pmode
+printf "0x%x flag_android int\n",&global_options.x_flag_android
+printf "0x%x ix86_arch_string char\n",&global_options.x_ix86_arch_string
+printf "0x%x ix86_asm_dialect int\n",&global_options.x_ix86_asm_dialect
+printf "0x%x linux_libc int\n",&global_options.x_linux_libc
+printf "0x%x ix86_branch_cost int\n",&global_options.x_ix86_branch_cost
+printf "0x%x ix86_cmodel int\n",&global_options.x_ix86_cmodel
+printf "0x%x flag_dispatch_scheduler int\n",&global_options.x_flag_dispatch_scheduler
+printf "0x%x flag_fentry int\n",&global_options.x_flag_fentry
+printf "0x%x ix86_force_drap int\n",&global_options.x_ix86_force_drap
+printf "0x%x ix86_fpmath int\n",&global_options.x_ix86_fpmath
+printf "0x%x ix86_incoming_stack_boundary_arg int\n",&global_options.x_ix86_incoming_stack_boundary_arg
+printf "0x%x ix86_section_threshold int\n",&global_options.x_ix86_section_threshold
+printf "0x%x ix86_preferred_stack_boundary_arg int\n",&global_options.x_ix86_preferred_stack_boundary_arg
+printf "0x%x ix86_recip_name char\n",&global_options.x_ix86_recip_name
+printf "0x%x ix86_regparm int\n",&global_options.x_ix86_regparm
+printf "0x%x ix86_sse2avx int\n",&global_options.x_ix86_sse2avx
+printf "0x%x ix86_force_align_arg_pointer int\n",&global_options.x_ix86_force_align_arg_pointer
+printf "0x%x ix86_stringop_alg int\n",&global_options.x_ix86_stringop_alg
+printf "0x%x ix86_tls_dialect int\n",&global_options.x_ix86_tls_dialect
+printf "0x%x ix86_tune_string char\n",&global_options.x_ix86_tune_string
+printf "0x%x ix86_veclibabi_type int\n",&global_options.x_ix86_veclibabi_type
+printf "0x%x asm_file_name char\n",&global_options.x_asm_file_name
+printf "0x%x pass_exit_codes int\n",&global_options.x_pass_exit_codes
+printf "0x%x flag_pedantic_errors int\n",&global_options.x_flag_pedantic_errors
+printf "0x%x use_pipes int\n",&global_options.x_use_pipes
+printf "0x%x print_file_name char\n",&global_options.x_print_file_name
+printf "0x%x print_multi_directory int\n",&global_options.x_print_multi_directory
+printf "0x%x print_multi_lib int\n",&global_options.x_print_multi_lib
+printf "0x%x print_multi_os_directory int\n",&global_options.x_print_multi_os_directory
+printf "0x%x print_multiarch int\n",&global_options.x_print_multiarch
+printf "0x%x print_prog_name char\n",&global_options.x_print_prog_name
+printf "0x%x print_search_dirs int\n",&global_options.x_print_search_dirs
+printf "0x%x print_sysroot int\n",&global_options.x_print_sysroot
+printf "0x%x print_sysroot_headers_suffix int\n",&global_options.x_print_sysroot_headers_suffix
+printf "0x%x quiet_flag int\n",&global_options.x_quiet_flag
+printf "0x%x report_times int\n",&global_options.x_report_times
+printf "0x%x flag_undef int\n",&global_options.x_flag_undef
+printf "0x%x verbose_flag int\n",&global_options.x_verbose_flag
+printf "0x%x version_flag int\n",&global_options.x_version_flag
+printf "0x%x inhibit_warnings int\n",&global_options.x_inhibit_warnings
+printf "0x%x wrapper_string char\n",&global_options.x_wrapper_string
+printf "0x%x VAR_malign_functions_ int\n",&global_options.x_VAR_malign_functions_
+printf "0x%x VAR_malign_jumps_ int\n",&global_options.x_VAR_malign_jumps_
+printf "0x%x VAR_malign_loops_ int\n",&global_options.x_VAR_malign_loops_
+printf "0x%x VAR_mpc32 int\n",&global_options.x_VAR_mpc32
+printf "0x%x VAR_mpc64 int\n",&global_options.x_VAR_mpc64
+printf "0x%x VAR_mpc80 int\n",&global_options.x_VAR_mpc80
+printf "0x%x frontend_set_flag_associative_math bool\n",&global_options.frontend_set_flag_associative_math
+printf "0x%x frontend_set_flag_cx_limited_range bool\n",&global_options.frontend_set_flag_cx_limited_range
+printf "0x%x frontend_set_flag_finite_math_only bool\n",&global_options.frontend_set_flag_finite_math_only
+printf "0x%x frontend_set_flag_errno_math bool\n",&global_options.frontend_set_flag_errno_math
+printf "0x%x frontend_set_flag_reciprocal_math bool\n",&global_options.frontend_set_flag_reciprocal_math
+printf "0x%x frontend_set_flag_rounding_math bool\n",&global_options.frontend_set_flag_rounding_math
+printf "0x%x frontend_set_flag_signaling_nans bool\n",&global_options.frontend_set_flag_signaling_nans
+printf "0x%x frontend_set_flag_signed_zeros bool\n",&global_options.frontend_set_flag_signed_zeros
+printf "0x%x frontend_set_flag_trapping_math bool\n",&global_options.frontend_set_flag_trapping_math
+printf "0x%x frontend_set_flag_unsafe_math_optimizations bool\n",&global_options.frontend_set_flag_unsafe_math_optimizations
+
 set logging off
 set logging file gdb.txt
