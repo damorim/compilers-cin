@@ -3,6 +3,8 @@ public class PosFixPrinter implements Visitor {
     public void visit(Expr exp) {
         if (exp instanceof LiteralExpr) {
             visit((LiteralExpr)exp);
+        } else if (exp instanceof BinaryExpr) {
+            visit((BinaryExpr)exp);
         } else {
             throw new RuntimeException("MISSING CASE");
         }
