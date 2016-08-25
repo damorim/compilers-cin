@@ -8,3 +8,8 @@ dependencies {
    testCompile 'junit:junit:4.+'
    compile 'com.google.code.javaparser:javaparser:1.0.11'
 }
+
+task execute(type:JavaExec) {
+   main = mainClass
+   classpath = sourceSets.main.runtimeClasspath
+}
