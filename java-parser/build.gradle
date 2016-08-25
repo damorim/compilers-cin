@@ -1,4 +1,8 @@
-apply plugin: 'java' 
+apply plugin: 'java'
+
+## necessary to indicate which class you want to run as main
+apply plugin:'application'
+mainClassName = "Main"
 
 repositories {
    mavenCentral()         
@@ -7,9 +11,4 @@ repositories {
 dependencies {
    testCompile 'junit:junit:4.+'
    compile 'com.google.code.javaparser:javaparser:1.0.11'
-}
-
-task execute(type:JavaExec) {
-   main = mainClass
-   classpath = sourceSets.main.runtimeClasspath
 }
