@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "example 1"
+grep "[0-9]" sampletext.txt
+
+echo "example 2"
+grep "[a-z]\|[A-Z]" sampletext.txt
