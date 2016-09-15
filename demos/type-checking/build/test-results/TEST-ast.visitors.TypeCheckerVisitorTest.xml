@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ast.visitors.TypeCheckerVisitorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-09-15T18:28:13" hostname="wahoo" time="0.012">
+  <properties/>
+  <testcase name="arrayIndexingExceptional" classname="ast.visitors.TypeCheckerVisitorTest" time="0.006"/>
+  <testcase name="nonIntIndex" classname="ast.visitors.TypeCheckerVisitorTest" time="0.001"/>
+  <testcase name="arrayIndexing" classname="ast.visitors.TypeCheckerVisitorTest" time="0.0"/>
+  <testcase name="functionBadParam" classname="ast.visitors.TypeCheckerVisitorTest" time="0.0"/>
+  <testcase name="functionTest" classname="ast.visitors.TypeCheckerVisitorTest" time="0.001"/>
+  <testcase name="mod" classname="ast.visitors.TypeCheckerVisitorTest" time="0.001"/>
+  <testcase name="modExceptional" classname="ast.visitors.TypeCheckerVisitorTest" time="0.0"/>
+  <system-out><![CDATA[ast.Program@6a4e2784ast.visitors.TypeCheckerVisitor@6a359162
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
