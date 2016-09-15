@@ -3,8 +3,8 @@ type-checking.  We base our discussion in the following grammar.
 
 // P = D ; E
 // D = id : T
-// T = char | integer | array [ num ] of T 
-// E = literal | num | E mod E | E[E] | id
+// T = char | integer | array [ num ] of T | T -> T
+// E = literal | num | E mod E | E[E] | id | E(E)
 
 We are using the Gradle build system.  The build.gradle file is a
 minimal build file, chracterizing main tasks of the build process.

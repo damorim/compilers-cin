@@ -43,4 +43,20 @@ public class TypeCheckerVisitorTest {
         TypeCheckerVisitor vis = new TypeCheckerVisitor();
         p.accept(vis);
     }
+
+    @Test
+    public void functionTest() {
+        Program p = (Program) ASTSamples.sample7();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        System.out.println("" + p + vis);
+        p.accept(vis);
+    }
+
+    @Test(expected=TypeError.class)
+    public void functionBadParam() {
+        Program p = (Program) ASTSamples.sample8();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        p.accept(vis);
+    }    
+    
 }

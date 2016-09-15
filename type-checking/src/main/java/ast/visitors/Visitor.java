@@ -13,6 +13,7 @@ public interface Visitor {
     public void visit(ArrayType type);
     public void visit(CharType type);
     public void visit(IntType type);
+    public void visit(FunctionType type);    
 
     // subtypes of Expression
     public void visit(Expression expression);
@@ -21,5 +22,6 @@ public interface Visitor {
     public void visit(Num expression);
     public void visit(ArrayIndexing expression);
     public void visit(Literal expression);
+    public void visit(FunctionCall expression);    
 }
 

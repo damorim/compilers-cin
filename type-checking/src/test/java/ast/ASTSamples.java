@@ -46,5 +46,19 @@ public class ASTSamples {
         return new Program(d, e);
     }
 
+    //   x : int -> char ; x(5)
+    public static Node sample7() {
+        Declaration d = new Declaration(new Id("x"), new FunctionType(new IntType(), new CharType()));
+        Expression e = new FunctionCall(new Id("x"), new Num(5));
+        return new Program(d, e);
+    }
+
+    //   x : char - int ; x(5)
+    public static Node sample8() {
+        Declaration d = new Declaration(new Id("x"), new FunctionType(new CharType(),new IntType()));
+        Expression e = new FunctionCall(new Id("x"), new Num(5));
+        return new Program(d, e);
+    }
+
 
 }

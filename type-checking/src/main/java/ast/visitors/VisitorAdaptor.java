@@ -29,6 +29,9 @@ public class VisitorAdaptor implements Visitor {
     @Override
     public void visit(IntType type){}
 
+    @Override
+    public void visit(FunctionType type){}
+
     // subtypes of Expression    
     @Override
     public void visit(Expression expression) { 
@@ -42,6 +45,8 @@ public class VisitorAdaptor implements Visitor {
             visit((ArrayIndexing) expression);
         } else if (expression instanceof Literal) {
             visit((Literal) expression);
+        } else if (expression instanceof FunctionCall) {
+            visit((FunctionCall) expression);
         } else {
             throw new UnsupportedOperationException();
         }
@@ -67,5 +72,11 @@ public class VisitorAdaptor implements Visitor {
 
     @Override
     public void visit(Literal expression){}
+
+    @Override
+    public void visit(FunctionCall expression){
+        expression.getE1().accept(this);
+        expression.getE2().accept(this);        
+    }    
     
 }

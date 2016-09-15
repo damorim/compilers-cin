@@ -1,10 +1,10 @@
 package ast;
 
-public class ArrayIndexing extends Expression {
+public class FunctionCall extends Expression {
 
     private Expression e1, e2; // e1[e2]
 
-    public ArrayIndexing(Expression e1, Expression e2) {
+    public FunctionCall(Expression e1, Expression e2) {
         this.e1 = e1;
         this.e2 = e2;
     }
@@ -16,6 +16,5 @@ public class ArrayIndexing extends Expression {
     public Expression getE2() {
         return e2;
     }
-    
 		
 }
