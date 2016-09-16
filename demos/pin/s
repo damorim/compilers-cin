@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## compile silly program
+g++ -o perfectnum perfectnum.cpp
+
+## build tool
+TOOL="calltrace"
+make clean
+mkdir -p obj-intel64
+make obj-intel64/${TOOL}.so PIN_ROOT=${PIN_ROOT}
+
+## call /bin/ls using instrumentation
+pin -t obj-intel64/${TOOL}.so -o perfectnum-calltrace.txt -- ./perfectnum
+

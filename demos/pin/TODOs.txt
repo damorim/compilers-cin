@@ -1,4 +1,0 @@
-- check if we can define PIN_ROOT only once (use "source" from another file?)
-- combine variable and call trace (are these tools modular?)
-- create tiny subject that simulates the use of configuration variables in gcc
-- explain in a super short design document what are the relevant data structures used in example .cpp file

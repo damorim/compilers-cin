@@ -1,3 +1,3 @@
-pin-*
-*dSYM*
-*.log
+obj-intel64
+perfectnum
+perfectnum-calltrace.txt
