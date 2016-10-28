@@ -1,6 +1,6 @@
 Ordem Cronologica das Aulas
 
-PARTE 1
+Analise
 =======
 
 intro.pptx
@@ -9,7 +9,8 @@ analise-lexica.pptx
 analise-sintatica.pptx
 analise-semantica.pptx
 
-PARTE 2
+Sintese
 =======
 
-...aguarde...
+representacoes-intermediarias.pptx
+...
