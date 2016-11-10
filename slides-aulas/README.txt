@@ -14,3 +14,5 @@ Sintese
 
 representacoes-intermediarias.pptx
 analise-estatica.pptx
+slicing.pptx (estudo de caso)
+ambiente-exec-e-geracao-codigo.pptx
