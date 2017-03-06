@@ -1,0 +1,62 @@
+Compiladores 2015.1 2EE
+Prof. Marcelo d'Amorim
+
+1. Complete a definição da gramática de atributos abaixo que define
+regras para construção da árvore sintática.
+
+Program   := Vardecl ; Stmt
+VarDecl   := boolean id
+Exp       := BoolExp    { Exp.node = BoolExp.node /* nada criado */}
+Stmt      := id = Exp
+           | If Exp then Stmt
+BoolExp   := True       { BoolExp.node = new BoolConstant(true); }
+           | False 
+           | id
+
+
+
+2. O esquema a seguir mostra uma otimização de código realizada por um compilador para uma linguagem imperativa.  Como vimos, toda otimização possui duas partes: análise e transformação.  Explique como compilador realiza análise, considerando a otimização abaixo.
+
+i = x + y + 1;
+j = x + y;
+
+=>
+
+t1 = x + y;
+i = t1 + 1;
+j = t1
+
+
+
+3. O que é dependência de dados e de dependência de controle?  Ilustre com exemplo(s).
+
+
+4. Ilustre o control-flow graph da função abaixo:
+
+public int egcd(int a, int b) {
+    if (a == 0)
+        return b;
+    while (b != 0) {
+        if (a > b)
+            a = a - b;
+        else
+            b = b - a;
+    }
+    return a;
+}
+
+
+
+5. Sobre ambiente de execução.  Mostre os vários elementos do estado
+do programa no ponto em destaque.
+
+class Node {
+  Node next;
+  void add(Node n) {
+    this.next = n;
+    /* AQUI */
+  }
+  public static void main(String[] args) {
+    (new Node()).add(new Node());
+  }
+}

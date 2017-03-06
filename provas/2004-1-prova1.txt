@@ -1,0 +1,16 @@
+Prova 1 de Teoria e Implementacao de Linuagens Computacionais - 11/07/2004
+========================================================================== 
+
+
+1) Descreva como podem ser implementados analisadores sintaticos,
+   e quais as vantagens/desvantagens de cada implementacao.
+
+2) Qual a diferenca entre parse tree e abstract syntax tree?
+   (ou seja, o que sao, para que servem, suas caracteristicas). 
+   De um exemplo.
+
+3) Qual a diferenca entre uma linguagem com escopo estatico e com
+   escopo dinamico?
+
+4) Descreva utilizando diagramas tombstone o processo de compilacao
+   e execucao de um programa em Java.

@@ -1,0 +1,33 @@
+Final de compiladores 2011.2
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Explique o que é e para que serve um diagrama de
+Tombstone.
+
+2. (1 ponto) O que é bootstrapping no contexto de compiladores.
+
+2. (1 ponto) Na gramática abaixo, Id representa um identificador da
+linguagem.  Por exemplo, identificador como em Pascal ou Java.  Em uma
+linguagem de programação imperativa, o que poderia representar o
+símbolo não terminal A?
+
+A := Id "(" B ")"
+B := Id | Id "," B
+
+3. (1 ponto) Construa uma string aceita pela gramática acima e sua
+árvore sintática correspondente.
+
+4. (2 pontos) Mostre detalhadamente todos os passos na
+construção de um visitor que irá coletar todos os
+identificadores de uma árvore do tipo A (onde A corresponde ao
+símbolo não terminal da gramática da questão 2).
+
+5. (2 pontos) Explique, com exemplos, o que são dependências de
+dados e controle.
+
+6. (2 pontos) Durante a disciplina usamos exemplos mostrando como
+identificar dependências de dados com o formato SSA.  Entretanto,
+todos os exemplos, foram de dependências dentro de procedimento
+(intra-procedural).  (a) Mostre exemplos de dependência que escapam
+o escopo de um procedimento (inter-procedural).  (b) Por que você
+acha que é mais complexo capturar estes tipos de dependência?

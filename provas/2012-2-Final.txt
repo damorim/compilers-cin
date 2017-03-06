@@ -1,0 +1,34 @@
+Prova Final de Compiladores (e Segunda Chamada)
+Prof. Marcelo d'Amorim
+
+1. Escreva uma gramatica livre de contexto capaz de reconhecer
+expressoes aritmeticas e booleanas.  Sua gratica deve reconhecer as
+strings abaixo:
+
+  x * y + z
+
+  x > (y * z)
+
+2. Escreva um parser recursivo descendente para esta gramatica.
+
+3. Para que server um checador de tipos?  De exemplos de uso e
+explique como vc. pode implementar um (checador de tipos).
+
+4. Coloque os programas abaixo no formato SSA.
+
+  int foo(int x) {
+    int y = 0;
+    if (x > 10) {
+      y++;
+    } 
+    return y;
+  }
+
+  int bar(int x) {
+    int y = 0;
+    while (x > 10) {
+      y++;
+    }
+    return y;
+  } 
+

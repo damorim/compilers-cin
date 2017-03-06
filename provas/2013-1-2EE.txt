@@ -1,0 +1,53 @@
+2EE Compiladores IF688
+Prof. Marcelo d'Amorim
+
+1. (2.5) Construa o "points-to graph" para o programa abaixo.
+Identifique as células de memória (vértices) e as referências para
+estas células (arestas).
+
+static class Cell { int v;  
+  Cell(int v) { this.v = v; }
+}
+
+main() {
+  List<String> l = OPT1 ? new LinkedList<String>() : new ArrayList<String>();
+  l.add(new Cell(5));
+  l.add(OPT2 ? new Cell(10) : new Cell(5));    
+}
+
+2. (2.5) Coloque o programa abaixo no formato SSA.
+
+int i = 1;
+while (i <= 100) {
+  if (i % 2 == 0) {
+    i+=3;
+  } else {
+    i++;
+  }
+}; print(i)
+
+3. (2.5) Que optimizações de código das que vimos em sala poderíamos
+aplicar no exemplo abaixo?  Identifique a(s) análise(s) de código que
+dão suporte a estas optimizações.
+
+double pi = Math.PI;
+double C = 10; 
+double sum = 0;
+for (int i = 0; i < N; i++) {
+  sum = pi * C * i;
+}
+
+4. (2.5) Ilustre o estado do programa em cada ponto indicado.
+
+main() {
+  Cell[] cells = new Cell[2];
+  cells[0] = new Cell(10);
+  /*1*/ 
+  foo(cells);
+  /*3*/
+}
+
+void foo(Cell[] cells) { 
+  cells[cells.length-1] = cells[0]; 
+  /*2*/
+}

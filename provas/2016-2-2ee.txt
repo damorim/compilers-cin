@@ -1,0 +1,121 @@
+﻿2EE IF688 (Compiladores), 6 de Dezembro de 2016
+Prof. Marcelo d'Amorim
+
+1. (2 pontos) Marque as opções corretas:
+
+- A criação de um objeto resulta em modificação 
+  (  ) na área estática (  ) na pilha  (  ) na heap (  ) no contador
+
+- Variáveis globais são armazenadas
+  (  ) na área estática (  ) na pilha  (  ) na heap (  ) no contador
+
+- Variáveis locais de uma função tipicamente são armazenadas
+  (  ) na área estática (  ) na pilha  (  ) na heap (  ) no contador
+
+- O retorno de uma chamada de método modifica
+  (  ) a área estática  (  ) a pilha  (  ) a heap (  ) contador
+
+- Um registro de ativação contém endereço de retorno do chamador de
+  uma função.
+  (  ) verdadeiro (  ) falso
+  
+- Não é possível ter "memory leaks" em uma linguagem com tipos fortes,
+  como Java.
+  (  ) verdadeiro (  ) falso
+  
+- O garbage collector "mark-and-sweep" pode ser ativado (entrar em
+  execução) a qualquer momento durante a execução do programa.
+  (  ) verdadeiro (  ) falso
+
+- O garbage collector "reference counting" não onera o custo execução
+  de uma instrução.
+  (  ) verdadeiro (  ) falso
+
+- O gerenciador de memória é embutido em um programa compilado e é
+  responsável por fazer a interface com o sistema operacional
+  
+  (  ) verdadeiro (  ) falso  
+
+- Considerando modelo de concorrência de memória compartilhada, uma
+  thread do programa possui sua própria pilha e contador (program
+  counter).
+  (  ) verdadeiro (  ) falso    
+
+
+2. (2 pontos) Descreva as otimizações (análise e transformação) que o
+compilador pode realizar no programa abaixo.  Indique a razão da
+otimização em cada caso.
+
+double pi = Math.PI;
+double C = 10; 
+double sum = 0;
+
+double crazy (int N) {
+ for (int i = 0; i < N; i++) {
+   sum = pi * C * i;
+ }
+ return sum/N;
+}
+
+main() {
+  print(crazy(10));
+}
+
+
+3. (1 ponto) Qual a vantagem de se usar um assembler como o ilasm,
+oferecido pela Microsoft?
+
+
+
+
+
+4. (2 pontos) Construa o control flow graph (CFG) para o programa
+abaixo.  Dica: primeiro transforme o for loop em while para depois
+construir o CFG.
+
+public static Integer[] insertionSort(Integer[] array) {
+  for (int i = 1; i < array.length; i++) {
+    int a = array[i]; int j;
+    for (j = i - 1; j >= 0 && array[j] > a; j--) {
+      array[j + 1] = array[j];
+      array[j] = a;
+    }} return array;
+}
+
+
+5. (1 ponto) Coloque o código abaixo no formato SSA e indique suas
+dependências de dados
+
+int z = -1;
+
+void diff(int x, int y) {
+  if (x > y) {
+    int tmp = x;
+    x = y;
+    y = tmp;
+  }
+  z = y - x;
+}
+
+6. (1 ponto) Explique como análise de ponteiros pode acelerar a
+execução do programa abaixo.  Observação: Os casos 1 e 2 se aplicam
+apenas a linguagem com (algumas) checagens dinâmicas, como Java ou
+Python.
+
+Caso 1: Acesso a campos
+  int x = o.val;
+
+Caso 2: Chamada de funções
+  o.foo();
+
+Caso 3: Comparações
+  if (o == null) ...
+  
+  ou 
+
+  if (o1 == o2) ...
+
+
+7. (1 ponto) Explique como análise de ponteiros pode melhorar precisão
+de call graphs de linguagens orientadas a objeto.  Dica: Lembre de
+"dynamic dispatching", uma característica central de linguagens OO.

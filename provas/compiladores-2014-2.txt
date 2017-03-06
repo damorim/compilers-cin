@@ -1,0 +1,123 @@
+Prova de Compiladores - 2014.2
+Prof. Marcelo d'Amorim
+
+1. [ 1 ponto ] Marque V ou F para as afirmações abaixo:
+
+(   ) Análise Semântica é realizada após Análise Sintática e tem o papel
+de capturar alguns erros de programação não relacionados a sintaxe do
+programa.
+
+(   ) A otimização de código é realizada pelo front-end do compilador.
+
+(   ) Para o garbage collector liberar uma célula de memória não pode
+ser possível alcançar esta célula através de qualquer outra célula que
+é definitivamente alcançável como, por exemplo, aquelas células
+referenciadas através da pilha e da área estática do programa.
+
+(   ) Análise de ponteiros habilita a construção de call-graphs mais
+precisos em linguagens orientadas a objeto pois permite a descoberta
+de certas de arestas que não podems ser realizadas.
+
+2. [ 1 ponto ] Implemente na linguagem de sua preferencia um parser
+recursivo descendente para a BNF abaixo:
+
+ A -> B  c
+ B -> b1 B | b2
+
+3. [ 1 ponto ] Mostre uma string aceita pela linguagem acima e a
+árvore abstrata corresponde, usando o parser que você escreveu na
+questão 2.
+
+4. [ 2 pontos ] Considerando o programa abaixo indique:
+
+ - uma otimização de código, apresentada em aula, que pode ser
+   aplicada.  mostre o resultado da otimização.
+
+ - para a otimização indicada, explique que análise de código ela
+   necessita (e.g., reachable definitions).
+
+z = 3
+x = 1
+while (x > 0) {
+ if (x = 1) then
+  y = 7
+ else
+  y = z + 4
+ x = 3
+ print y
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ---> continua --->
+
+
+
+
+
+
+
+
+
+
+5. [ 2,5 pontos ] Mostre o control-flow graph e o call-graph para o
+programa abaixo.
+
+#include<stdio.h>
+ 
+long factorial(int);
+ 
+int main()
+{
+  int n;
+  long f;
+ 
+  printf("Enter an integer to find factorial\n");
+  scanf("%d", &n); 
+ 
+  if (n < 0)
+    printf("Negative integers are not allowed.\n");
+  else
+  {
+    f = factorial(n);
+    printf("%d! = %ld\n", n, f);
+  }
+ 
+  return 0;
+}
+ 
+long factorial(int n)
+{
+  if (n == 0)
+    return 1;
+  else
+    return(n * factorial(n-1));
+}
+
+
+6 [ 2,5 pontos ] Considerando o programa Java abaixo, mostre o estado
+do programa nos pontos em destaque.  Destaque todos os elementos de
+estado do programa.
+
+class StringArray {
+    String[] ar; int idx;
+    StringArray(int size) {
+        ar = new String[size]; /* 1 */
+    }
+    void add(String s) { ar[idx++] = s; /* 2 */ }
+    public static void main(String[] args) {
+        (new StringArray(10)).add("Hello");
+    }
+}

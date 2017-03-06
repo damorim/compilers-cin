@@ -1,0 +1,38 @@
+Prova de Compiladores - 1/2001 - 19/04/2001
+===========================================
+
+1) (2.0) Quais os passos normalmente presentes em um compilador, 
+   e qual a funcao de cada um deles? 
+   Como esses passos interagem/se comunicam?
+
+2) (2.0) Indique se e' possivel escrever uma expressao regular descrevendo
+   os seguintes tokens da linguagem C. Se sim, escreva a expressao
+   regular. Se nao, explique porque, e diga o que faria para reconhecer
+   esses tokens em um compilador de C.
+   a) identificadores em C: sequencia de um ou mais letras ou numeros;
+      o caracter '_' conta como uma letra; o primeiro caracter tem que
+      ser uma letra.
+   b) constantes de ponto flutuante em C: 
+      consistem de uma parte inteira, um ponto,
+      uma parte fracional, um 'e' ou um 'E', um expoente
+      inteiro (opcionalmente com sinal), e opcionalmente um sufixo 
+      com o tipo, que deve ser 'f','F','l' ou 'L'. A parte inteira e 
+      fracional sao sequencias de digitos. A parte inteira ou a parte
+      fracional (mas nao as duas) pode estar ausente. O ponto decimal
+      ou o 'e' (ou 'E') e o expoente (mas nao os dois) podem estar ausentes.
+
+3) (2.0) Como pode ser especificada formalmente a sintaxe de uma linguagem?
+   Que preocupacoes se deve ter ao projetar a sintaxe de uma linguagem?
+
+4) (2.0) O que sao arvores sintaticas abstratas? sao o mesmo que parse trees?
+   Como funcionam e para que servem traducoes dirigidas por sintaxe?
+   
+5) (1.0) Descreva como deve ser realizada a verificacao de tipos para 
+   o seguinte statement, que faz uma atribuicao de um valor a um array,
+   na linguagem C:
+   IDENTIFIER [ EXPRESSION ] = EXPRESSION
+
+6) (1.0) Qual a diferenca entre polimorfismo e overloading?
+   De exemplos.
+
+

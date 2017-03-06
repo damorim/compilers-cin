@@ -1,0 +1,48 @@
+Compiladores 2011.1E, Segunda Chamada 
+Prof. Marcelo d'Amorim
+
+2. (5 pontos) Coloque o trecho de código abaixo em Static Single
+Assignment form (SSA) e explique a utlidade de SSA.
+
+x = ...; y = ...;
+while (x > 0) {
+  if ((++x%2) == 0) { 
+    y += 2; 
+  }
+}
+
+3. (5 pontos) Para o programa abaixo, faça:
+
+  (a) Construa o control flow graph (CFG) 
+
+  (b) Indique, usando o CFG, as dependências de dados e controle do programa.
+
+  (c) Explique a utilidade disto.
+
+public void add(int info) {
+  if (root == null) {
+    this.root = new Node(info);
+  } else {
+    Node temp = root;
+    while (true) {
+      if (temp.info < info) {
+        if (temp.right == null) {
+          temp.right = new Node(info);
+          break;
+        } else {
+          temp = temp.right;
+        }
+      } else if (temp.info > info) {
+        if (temp.left == null) {
+          temp.left = new Node(info);
+          break;
+        } else {
+          temp = temp.left;
+        }
+      } else {
+        return;
+      }
+    }
+  }
+  this.size = this.size + 1;
+}

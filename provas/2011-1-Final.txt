@@ -1,0 +1,11 @@
+Final de compiladores
+Prof. Marcelo d'Amorim
+
+1. (6 pontos) Explique com exemplos o que são dependências de dados e
+controle de um programa.
+
+2. (4 pontos) Escreva um parser recursivo descente para a gramática
+abaixo.
+
+A := Id "(" B ")"
+B := Id | Id "," B

@@ -1,0 +1,62 @@
+﻿2EE Compiladores
+Prof. Marcelo d'Amorim
+
+1. (1 pontos) Marque a opção correta:
+
+- Normalmente as variáveis globais são armazenadas
+  (  ) estaticamente  (  ) na pilha  (  ) na heap 
+
+- Normalmente a criação de um objeto resulta em modificação 
+  (  ) da área estática  (  ) da pilha  (  ) da heap 
+
+- Normalmente uma thread do programa possui sua própria pilha e contador (program counter)
+  (  ) verdadeiro  (  ) falso
+
+- Normalmente variáveis locais são armazenadas
+    (  ) estaticamente  (  ) na pilha  (  ) na heap
+
+- Normalmente o retorno de uma chamada de método modifica
+   (  ) a área estática  (  ) a pilha  (  ) a heap 
+
+2. (1 ponto) Coloque o trecho de código abaixo em Static Single
+Assignment form (SSA).
+
+X = ...; y = ...;
+while (x > 0) {
+  if (x%2 == 0) { x -= 2; } else { x -= 1; }  y += 1;
+}
+
+3. (3 pontos) Construa o control flow graph (CFG) para o programa
+abaixo e indique, usando o CFG, as dependências de dados e controle do
+programa.
+
+dica: primeiro transforme o for loop em while para depois construir o
+CFG.
+
+public static Integer[] insertionSort(Integer[] array) {
+  for (int i = 1; i < array.length; i++) {
+    int a = array[i]; int j;
+    for (j = i - 1; j >= 0 && array[j] > a; j--) {
+      array[j + 1] = array[j];
+      array[j] = a;
+    }} return array;
+}
+
+4. (2 pontos) O que faz e quais vantagens de se usar um assembler como o ilasm?
+
+5. (3 ponto) Descreva as transições de estado (em cada um dos componentes de estado) durante a execução do trecho de código Java abaixo.
+
+class Node {
+ int val;  Node left, right;
+ Node(int val) { this.val = val; }
+ Node(Node left, Node right, int val) {
+   this.left = left; this.right = right;
+   this.val = val;
+ }
+ public static void main(String[] args) {
+   Node node1 = new Node(-2);
+   Node node2 = new Node(2);
+   Node node3 = new Node(node1, node2, 0);
+ }
+}
+

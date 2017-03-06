@@ -1,0 +1,57 @@
+Prova de Compiladores - 06/02/2002
+==================================
+
+
+1) (2.0) Descreva/explique como a soma 
+   nas expressoes abaixo pode ser compilada
+   (ou nao), por exemplo em uma linguagem como C.
+   f e' uma variavel do tipo float e i e' uma
+   variavel do tipo int.
+
+   a) i = 3 + 4
+
+   b) f = 3.1 + 4.1
+
+   c) f = 3 + 4.1
+
+   d) f = 3 + 4
+
+   e) i = 3.1 + 4
+
+2) (2.0) Dadas as expressoes regulares abaixo,
+   descreva-as e de exemplos de strings reconhecidas
+   por elas.
+
+   a) [A-Za-z][A-Za-z0-9]+
+
+   b) [0-9]+\.[0-9]*
+
+   c) [0-9]*\.[0-9]+
+
+   d) [0-9]+\.?[0-9][eE][\+\-]?[0-9]+
+
+3) (2.0) Como podem ser classificados os parsers
+   e quais as vantagens e desvantagens de cada um
+   deles?
+
+Gramatica para as proximas questoes:
+
+   Program : Statement
+
+   Statement : "if" Expression "then" Statement
+             | Statement ";" Statement
+             | identifier = Expression
+
+   Expression : identifier | number 
+              | Expression '+' Expression
+              | Expression '!=' Expression
+
+
+4) (2.0) A gramatica acima possui ambiguidades?
+   Explique, e em caso afirmativo faca as mudancas para
+   elimina-la(s).
+
+5) (2.0) Estenda a gramatica acima para suportar declaracao de
+   variaveis e seus tipos, e descreva como deve ser feita a verificacao de 
+   tipos para a linguagem. Assuma que a linguagem possui apenas
+   inteiros, caracteres e booleanos.

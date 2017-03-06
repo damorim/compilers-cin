@@ -1,0 +1,74 @@
+Prova de Compiladores - 2/2002 - 19/02/2003
+===========================================
+
+Aluno: _____________________________________
+
+- Normalmente as variáveis globais são armazenadas
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Normalmente as variáveis locais estáticas são armazenadas
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Normalmente estruturas de dados como listas são armazenadas
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Normalmente argumentos são passados para métodos/funções
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- A coleta de lixo é um mecanismo utilizado para gerenciar a memória alocada
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Arrays estáticos (tamanho fixo) podem ser alocados
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Arrays dinâmicos podem ser alocados
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+- Normalmente as variáveis locais são armazenadas
+  (  ) na pilha     (  ) na heap       (  ) estaticamente
+
+Indique as afirmações verdadeiras ou falsas:
+(  ) Normalmente existem duas pilhas no ambiente de execução, uma para os frames 
+     e outra para variáveis locais.
+
+(  ) Normalmente existem duas pilhas no ambiente de execução, uma para os frames 
+     e variáveis locais, e outra para avaliação de expressões.
+
+(  ) Variáveis locais são armazenadas dentro dos frames.
+
+(  ) o link dinâmico fica dentro do frame e serve para o retorno ao contexto 
+     em que a função/método foi chamado, ao final de sua execução.
+
+(  ) cada vez que um método/função é chamado é criado um novo frame.
+
+(  ) um frame é removido ao final da execução de cada método/função.
+
+(  ) se a implementação da linguagem não possuir uma heap não é possível 
+     implementar recursão.
+
+(  ) a geração de código funciona praticamente da mesma forma em máquinas de
+     pilha e em máquinas com registradores.
+
+(  ) em máquinas que possuem registradores, muitas vezes a passagem de 
+     parâmetros e resultado de funções é feito usando registradores.
+
+(  ) O tempo de vida de uma variável alocada na pilha é limitado ao tempo de
+     vida do procedimento/método.
+
+(  ) A geração de código pode ser feita utilizando templates.
+
+(  ) A representação direta de registros é feita através da justaposição de seus campos.
+
+(  ) backpatching é um mecanismo para ajuste do endereço de desvios realizados 
+     na geração de código e cujos endereços não eram conhecidos inicialmente.
+
+(  ) A gerência automática de alocação não impede a existência de ponteiros perdidos.
+
+(  ) Normalmente a heap é organizada de forma a crescer em direção à pilha e vice-versa.
+
+(  ) É possível armazenar variáveis locais e parâmetros estaticamente, mas
+     apenas se a linguagem não suportar recursão.
+
+- (2.0) Descreva como são organizados/alocados na memória classes e objetos 
+  em uma linguagem orientada a objetos. Explique como funciona 
+  o mecanismo de herança. De exemplos.

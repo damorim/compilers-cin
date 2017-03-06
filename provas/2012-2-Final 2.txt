@@ -1,0 +1,62 @@
+Final de compiladores 2012.1
+Prof. Marcelo d'Amorim
+
+1. (1,0 ponto) Explique para que serve e de um exemplo de um diagrama
+de Tombstone.
+
+2. (2,5 ponto) Escreva um parser recursivo descente para gram‡tica
+abaixo.
+
+A ::= Id "(" B ")"
+B ::= Id | Id "," B
+
+onde Id ::= [a-ZA-Z]+
+
+4. (1,5 pontos) ***Ilustre*** como um parser bottom-up faria para
+reconhecer a string "foo ( a , b , c )".  Dica: Inicie construindo a
+deriva‹o ˆ direita para a string acima (a partir desta
+gram‡tica).
+
+5. (2,5 pontos) Coloque os programas abaixo em formato SSA
+
+  int foo(int x) {
+    int y = 0;
+    if (x > 10) {
+      y = 1;
+    } 
+    return y;
+  }
+
+  int bar(int x) {
+    int y = 0;
+    while (x < 10) {
+      y++;
+    }
+    return y;
+  } 
+
+6. (2,5 pontos) Construa o **call-graph** para a fun‹o drive() do
+programa abaixo.  Considere duas alternativas.  Na primeira,
+ter’amos condi›es de saber que a fun‹o drive s—
+pode ser chamadas a partir de contextos que passam objectos do tipo
+"Car".  Na segunda alternativa n‹o temos esta informa‹o.
+
+  interface Vehicle {                 |     void drive(Vehicle v) {
+    void run();                       |       v.run();
+  }                                   |     }
+  class Bycicle extends Vehicle {     | 
+    void run() {                      |
+      startPedalling();               |
+    }
+    void startPedalling() {É}
+  }
+  class Car extends Vehicle {
+    void run() {
+      startEngine();
+      pushGasPedal(); É 
+    }
+    void startEngine() {É}
+    void pushGasPedal() {É}
+  }
+  
+  

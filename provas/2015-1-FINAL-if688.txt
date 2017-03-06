@@ -1,0 +1,24 @@
+Compiladores (IF688)
+Prova Final e Segunda Chamada
+
+Centro de Informática - UFPE
+Prof. Marcelo d'Amorim
+
+1. Descreva entrada e saída dos vários componentes de um compilador.
+
+
+Questões 2 e 3: A gramática abaixo define uma categoria sintática para expressões, chamada EXP, e uma categoria sintática para comandos, chamada STMT.
+
+STMT => if (EXP) then STMT
+      | Id[EXP] := EXP
+
+2. Escreva uma árvore sintática abstrata (AST) para um comando pertencente a linguagem acima.
+
+
+3. Descreva informalmente regras de tipo para o comando “id” e para o comando de atribuição em array.
+
+
+4. Sobre ambiente de execução, para que serve coleta de lixo (garbage collection)? Explique algumas das consequências em se usar coleta de lixo.
+
+
+5. Explique o funcionamento da coleta de lixo "mark-and-sweep".

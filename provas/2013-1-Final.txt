@@ -1,0 +1,43 @@
+Final Compiladores IF688 - 2013-1
+Prof. Marcelo d'Amorim
+
+1. (2,5 pontos) Utilize diagramas de Tombstone para descrever o seguinte cenário.  João escreveu em Assembly (As) um compilador de C# para Assembly.  Maria escreveu em C# um compilador de Java para C#.  Explique **também** como é possível produzir código **executável** a partir de programas escritos em C#.
+
+2. (2,5 pontos) Descreva o "points-to graph" para o programa abaixo.  Lembrando: Os vértices de um "points-to graph" são células de memória resultantes de alocações e as arestas são referências de uma célula para outra.
+
+class LinkedList {
+ private Node first, last;
+ LinkedList(int v) { first = last = new Node(v); }
+ void add(int v) { 
+   Node tmp = last; 
+   last = new Node(v);
+   tmp.next = last;
+ }
+ void append(LinkedList l) {
+   last.next = l.first;
+ }
+ static class Node {
+   int val; Node next;
+   Node(int v) { this.val = v; }
+ }
+ public static void main(String[] args) {
+   LinkedList ll = new LinkedList(5);
+   ll.add(Integer.parseInt(args[0]));
+   LinkedList tmp;
+   if (Boolean.parseBoolean(args[1])) {
+     tmp = crazyListOne();
+   } else {
+     tmp = crazyListTwo();
+   }
+   ll.append(tmp);
+ }
+}
+
+3. (2,5 pontos) O que é "slicing" de código?  Qual a diferença entre slicing "backward" e slicing "forward"?
+
+4. (2,5 pontos) Explique os passos para se colocar um programa no formato SSA.
+
+
+
+
+Boa Sorte!

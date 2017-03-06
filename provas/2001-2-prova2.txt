@@ -1,0 +1,41 @@
+Prova de Compiladores - 2/2001 - 29/04/2001
+===========================================
+
+1) (2.0) Quais as vantagens de se gerar um codigo intermediario antes
+   da geracao de codigo final (assembler)?
+
+2) (2.0) De que formas variaveis podem ser armazenadas na memoria? 
+   (i.e. em que partes da memoria variaveis podem ser alocadas?) 
+   Em que situacoes uma variavel deve ser alocada em cada uma delas,
+   e por que?
+
+3) (2.0) Descreva o funcionamento do processo de avaliacao de
+   funcoes recursivas na memoria (use fatorial como exemplo).
+
+4) (2.0) Qual o codigo intermediario (3 enderecos)
+   gerado pelos trechos de codigo abaixo:
+
+   a) FOR X := 20 TO T 
+      BEGIN 
+        W := 10 * X + W;
+        Y := 5 * V;
+        Z := Z + 10 * X;
+      END
+
+   b) A := 10;
+      B := 20;
+      C := 30;
+      WHILE D < A DO
+      BEGIN 
+        IF A > B THEN D := D + 3;
+        IF A > C THEN D := D + 2;
+        B := B - 5;
+      END
+
+5) (2.0) Baseado exclusivamente nos trechos de codigo acima,
+   verifique se sao possiveis otimizacoes no codigo intermediario.
+   Em caso afirmativo, mostre as otimizacoes possiveis no codigo, 
+   com seu nome, descricao de funcionamento e o codigo final apos 
+   as otimizacoes.
+
+

@@ -1,0 +1,21 @@
+Prova Final de Compiladores - 2/2002 - 17/03/2003
+=================================================
+
+Aluno: _____________________________________
+
+1 - descreva os varios tipos possiveis de alocacao e desalocacao 
+    de memoria dinamica (heap), indicando se ele existe, e, em caso positivo,
+    exemplo de linguagem(ns) que o utilize e como funciona.
+    a) (1.0) alocacao explicita de memoria na heap
+    b) (1.0) alocacao implicita de memoria na heap
+    c) (1.0) desalocacao explicita de memoria na heap
+    d) (1.0) desalocacao implicita de memoria na heap
+
+2 - Qual a diferenca entre fases e passos do processo de
+    compilacao? De exemplo de como cada um dos dois conceitos
+    e' utilizado. (2.0)
+
+3 - De exemplos dos tipos de erros que sao detectados:
+    a) pela analise sintatica (2.0)
+    b) pela analise contextual (2.0)
+
