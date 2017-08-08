@@ -5,11 +5,15 @@ import ast.*;
 
 public class TypeCheckerVisitor extends VisitorAdaptor {
 
+    // Symbol table associates a type (represented as string) to an
+    // identifier
     private Map<Id, String> symbolTable = new HashMap<Id, String>();
+
+    // This data structure associates types to expressions
     private Map<Expression, String> expressionTypes = new HashMap<Expression, String>();
 
     @Override
-    public void visit(Declaration decl) {
+    public void visit(Declaration decl) { // id : integer
         super.visit(decl);
         symbolTable.put(decl.getID(), decl.getType().toString());
     }
@@ -25,11 +29,13 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
     
     @Override
-    public void visit(Mod exp) { 
+    public void visit(Mod exp) {
+        /**
+         * em "e1 mod e2", e1 e e2 precisam ser inteiros
+         **/
         super.visit(exp);
         Expression e1 = exp.getE1();
         Expression e2 = exp.getE2();
-        // e1 e e2 precisam ser inteiros em "e1 mod e2"
         check(expressionTypes.get(e1), "int");
         check(expressionTypes.get(e2), "int");
         expressionTypes.put(exp, "int");
@@ -61,6 +67,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
         Expression e1 = exp.getE1();
         Expression e2 = exp.getE2();
         String type = expressionTypes.get(e1); // T1 -> T2
+        //TODO: deveria ter um check aqui...
         String t1 = type.substring(0, type.indexOf("-")).trim();
         String t2 = type.substring(type.indexOf(">")+1).trim();
         check(expressionTypes.get(e2), t1);

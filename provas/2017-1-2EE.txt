@@ -1,0 +1,66 @@
+﻿2EE IF688 (Compiladores), 27 de Junho de 2017
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+int a = 30;
+int b = 9 - (a / 5);
+int c;
+
+c = b * 4;
+if (c > 10) {
+ c = c - 10;
+}
+return c * (60 / a);
+
+
+
+2. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+for (int i = 0; i < n; i++) {
+ x = y + z;
+ a[i] = 6 * i + x * x;
+}
+
+
+
+3. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+for (i = 0; i < 10; ++i) {
+ j = 17 * i;
+}
+
+
+
+4. (2 pontos) Um garbage collector consegue eliminar memory leaks em
+um programa?  Explique.
+
+
+
+5. (2 pontos) Quais vantages e desvantagens do garbage collector
+mark-and-sweep em relacao ao garbage collectro reference counting.
+
+
+
+6. (1 ponto) Coloque o código abaixo no formato SSA.
+
+if (z > 1) {
+ x = 2;
+} else {
+ x = 1;
+ if (z > 2) {
+  z = x - 3;
+  x = 4;
+  x = x - 7;
+ } else {
+  y = x - 1;
+ }
+}
+
+
+
+7. (2 ponto) Voce poderia usar SSA para descobrir expressoes cujos
+valores podem ser definidos em tempo de compilacao?  Se sim, explique.
