@@ -12,7 +12,13 @@ public class Parser {
     }
 
     boolean is(String tokenType) {
-        return tokens.get(lookahead).type().equals(tokenType);
+        boolean result;
+        try {
+            result = tokens.get(lookahead).type().equals(tokenType);
+        } catch (Exception exception) {
+            result = false;
+        }
+        return result;
     }
 
     void match(String tokenType) {
@@ -24,18 +30,38 @@ public class Parser {
         }
     }
 
+    /** Grammar representation **/
+
+    /**
+     * (1) id op expr()
+     * (2) num
+     **/    
     void expr() {
-        match("id");
-        if (is("op")) {
-            match("op");
-            expr();
+        if (is("id")) {
+            match("id");
+            if (is("op")) {
+                match("op");
+                expr();
+            }            
+        } else if (is("num")) {
+            match("num");
+            if (is("op")) {
+                match("op");
+                expr();
+            }                     
+        } else {
+            throw new RuntimeException("Syntax Error!");
         }
+
     }
 
+    /**
+     * (1) if ( expr() ) then stmt()
+     * (2) id = expr()
+     **/
     void stmt() {
         if (is("if")) {
-            match("if"); match("op_par"); expr(); match("cl_par"); match("then"); stmt();            
-        } else if (is("id")) {
+            match("if"); match("op_par"); expr(); match("cl_par"); match("then"); stmt();                   } else if (is("id")) {
             match("id"); match("="); expr(); 
         } else {
             throw new RuntimeException("Syntax Error!");

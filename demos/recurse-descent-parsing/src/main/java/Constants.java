@@ -1,7 +1,7 @@
 public class Constants {
-    Token OPEN_PAR = new Token("op_par");
-    Token CLOSE_PAR = new Token("cl_par");
-    Token IF = new Token("if");
-    Token THEN = new Token("then");
-    Token EQUALS = new Token("=");
+    static Token OPEN_PAR = new Token("op_par");
+    static Token CLOSE_PAR = new Token("cl_par");
+    static Token IF = new Token("if");
+    static Token THEN = new Token("then");
+    static Token EQUALS = new Token("=");
 }
