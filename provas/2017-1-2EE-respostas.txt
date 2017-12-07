@@ -1,0 +1,156 @@
+﻿2EE IF688 (Compiladores), 27 de Junho de 2017
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+===
+
+int a = 30;
+int b = 9 - (a / 5);
+int c;
+
+c = b * 4;
+if (c > 10) {
+ c = c - 10;
+}
+return c * (60 / a);
+
+===
+
+R. a, b, c sao constantes.  Portanto, o compilador pode realizar
+"constant folding and propagation".  O resultado final eh um bloco que
+retorna um valor constante.
+
+return 4;
+
+
+2. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+
+for (int i = 0; i < n; i++) {
+ x = y + z;
+ a[i] = 6 * i + x * x;
+}
+
+R. Variaveis y e z nao variam dentro do loop.  Portanto, a expressao y
++ z é um invariante.  Consequentemente, a variavel x que é definida em
+funcao da expressao acima tambem tem o valor invariante.  Neste caso,
+o compilador otimizador aplicou "Detection of Loop Invariant" (na
+Analise) e "Loop Invariant Code Motion" para obter o programa abaixo.
+
+===
+x = y + z;
+tmp = x * x
+for (int i = 0; i < n; i++) {
+ a[i] = 6 * i + tmp;
+}
+===
+
+3. (1 ponto) Indique a otimizacao que o compilador pode realizar no
+programa abaixo e o programa resultante.
+
+for (i = 0; i < 10; ++i) {
+ j = 17 * i; // 0, 17, 17+17, 17+17+17, etc.
+
+}
+
+R. O compilador percebe que a variavel de inducao do loop -- "i" --
+esta sendo usada em uma operacao de multiplicacao envolvendo a
+constante 17. Neste caso, o compilador aplicao a otimizao de reducao
+de forca, trocando multiplicacao por soma, que eh uma operacao mais
+barata.
+
+===
+j = -17
+for (i = 0; i < 10; ++i) {
+ j = j + 17; 
+}
+===
+
+4. (2 pontos) Um garbage collector consegue eliminar memory leaks em
+um programa?  Explique.
+
+O garbage collector (GC) eh uma ferramenta que funciona de forma
+automatica dentro do compilador. O GC eh incapaz de reparar o estado
+do programa, eliminando memory leaks que foram introduzidos pelo
+programador, sem intencao.
+
+5. (2 pontos) Quais vantages e desvantagens do garbage collector
+mark-and-sweep em relacao ao garbage collectro reference counting.
+
+Mark-and-Sweep: Nao ha custo na execucao de instrucoes que manipulam a
+heap do programa.  Por outro lado, a execucao do algoritmo de limpeza
+demanda alto custo relacionado a propagacao das marcacoes atraves do
+grafo de objetos (heap) do programa.
+
+Reference Counting: Custo muito baixo de execucao do algoritmo de
+limpeza jah que a contagem de referencias jah foi realizada durante a
+execucao. Em principio, basta verificar o contador associado a cada
+objeto para fazer a limpeza. O pode ser eliminado se tem contador 0,
+que indica que o objeto nao eh apontado por nenhum outro.  Por outro
+lado, o custo de cada operacao eh maior jah que eh preciso manter o
+contadores de referencia atualizados.
+
+6. (1 ponto) Coloque o código abaixo no formato SSA.
+
+if (z > 1) {
+ x = 2;
+} else {
+ x = 1;
+ if (z > 2) {
+  z = x - 3;
+  x = 4;
+  x = x - 7;
+ } else {
+  y = x - 1;
+ }
+}
+
+===
+
+if (z0 > 1) {
+ x1 = 2;
+} else {
+ x2 = 1;
+ if (z0 > 2) {
+  z1 = x2 - 3;
+  x3 = 4;
+  x4 = x3 - 7;
+ } else {
+  y1 = x2 - 1;
+ }
+ z2 = phi(z1, z0);
+ x5 = phi(x4, x2);
+ y2 = phi(y1, y0);
+}
+x6 = phi(x1, x5);
+z3 = phi(z0, z2);
+y3 = phi(y0, y2);
+
+7. (2 ponto) Voce poderia usar SSA para descobrir expressoes cujos
+valores podem ser definidos em tempo de compilacao?  Se sim, explique.
+
+caso 1: exemplo
+===
+a1 = 30;
+...
+b = 9 - (a1 / 5); <--- expressao com valor estaticamente constante
+===
+
+caso 2: contra-exemplo
+if (..) {
+ a1 = 10;
+ ...
+} else {
+ ...
+ a2 = 20;
+}
+a3 = phi(a1, a2);
+b = 9 - (a3 / 5);
+
+R. Sim. Seria necessario identificar que todas as possiveis definicoes
+alcancaveis a partir das variaveis usadas na expressao possuem o mesmo
+valor constante.  No caso 2 acima, as duas definicoes alcancaveis por
+a3 -- a1 e a2 -- armazenam valores diferentes.
