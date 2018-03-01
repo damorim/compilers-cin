@@ -1,0 +1,32 @@
+Compiladores (IF688)
+Prova Final e Segunda Chamada, 2017.2
+
+Centro de Informática - UFPE
+
+A gramática abaixo define uma categoria sintática para expressões,
+chamada EXP, e uma categoria sintática para comandos, chamada STMT.  O
+símbolos ID e LIT representam, respectivamente, identificadores da
+linguagem e constantes inteiras.
+
+EXP ::= ID
+      | EXP > EXP
+      | LIT
+
+STMT ::= if (EXP) then STMT
+         | ID[EXP] := EXP
+
+1. Escreva uma árvore sintática abstrata (AST) para um comando pertencente a linguagem acima.
+
+
+2. Descreva informalmente regras de tipo para a linguagem acima.
+
+
+3. Escreva uma função com loop e, em seguida, coloque a função no formato SSA.
+
+
+4. Ilustre com exemplos as seguintes otimizações de código:
+
+ - Propagação de constantes (Constant Folding and Propagation)
+ - Elimintação de Subexpressão Comum (Common Subexpression Elimination)
+ - Redução de Força (Reduction of Strength)
+

@@ -1,0 +1,62 @@
+2EE IF688 (Compiladores), 12 de Dezembro de 2017
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Responda V (Verdadeiro) ou F (Falso) para as afirmações
+abaixo:
+
+( ) Um registro de ativação (um frame da pilha de chamadas) contém
+    endereço de retorno do chamador de uma função.
+
+( ) Considerando modelo de concorrência de memória compartilhada, uma
+    thread do programa possui sua própria pilha e contador de
+    instrução (PC).
+
+( ) Não é possível ter "memory leaks" em uma linguagem com tipos
+    fortes, como Java.
+  
+( ) O gerenciador de memória é embutido em um programa compilado e é
+    responsável por fazer a interface com o sistema operacional para
+    alocação e liberação da área de mémória de um programa.
+  
+( ) Objetos são normalmente alocados na área estática reservada a
+    execução do programa.
+
+
+2. (1 ponto) Para que serve um Garbage Collector (GC)?
+
+3. (1 ponto) Como funciona um GC baseado em reference counting?
+
+4. (1 ponto) Explique:
+
+  - Control-Flow Graph
+  - Call Graph
+  - Points-to Graph
+
+5. (2 pontos) Coloque o código abaixo no formato SSA.
+
+x = ...
+y = ...
+while (x > 0) {
+ if (x % 2 == 0)
+   x -= 2
+ else
+   x -= 1
+ y += 1
+}
+
+6. (2 pontos) Explique, através de um exemplo, como "constant folding
+and propagation" poderia ajudar na detecção de código morto.
+
+7. (2 pontos) O esquema de tradução abaixo ilustra uma otimização
+conhecida como "Common Subexpression Elimination" (CSE).  Explique
+como o formato SSA pode ser usado por um compilador para identificar
+oportunidades de CSE automaticamente.
+
+i = x + y + 1;
+j = x + y;
+
+=>
+
+t1 = x + y;
+i = t1 + 1;
+j = t1
