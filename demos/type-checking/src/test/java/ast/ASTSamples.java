@@ -4,11 +4,12 @@ import ast.visitors.*;
 
 public class ASTSamples {
 
-    //   x : integer ; x mod 10
+    //  x : integer ; x mod 10
     public static Node sample1() {
         Declaration d = new Declaration(new Id("x"), new IntType());
         Expression e = new Mod(new Id("x"), new Num(10));
         return new Program(d, e);
+        // equivalente a algo como Node ast = parse("x : integer ; x mod 10")
     }
 
     //   x : array [1] of integer ; x[0]

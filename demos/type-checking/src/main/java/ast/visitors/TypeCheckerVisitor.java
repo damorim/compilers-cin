@@ -42,7 +42,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
     
     @Override
-    public void visit(ArrayIndexing aiExp){
+    public void visit(ArrayIndexing aiExp){ // e1[e2]
         super.visit(aiExp);
         Expression e1 = aiExp.getE1();
         Expression e2 = aiExp.getE2();
@@ -62,15 +62,15 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
 
     @Override
-    public void visit(FunctionCall exp) {
+    public void visit(FunctionCall exp) { // E1(E2)
         super.visit(exp);
         Expression e1 = exp.getE1();
         Expression e2 = exp.getE2();
-        String type = expressionTypes.get(e1); // T1 -> T2
-        //TODO: deveria ter um check aqui...
-        String t1 = type.substring(0, type.indexOf("-")).trim();
-        String t2 = type.substring(type.indexOf(">")+1).trim();
-        check(expressionTypes.get(e2), t1);
+        String type = expressionTypes.get(e1); // ->(t1,t2)
+        check(type, "->"); // verifica se e1 eh funcao
+        String t1 = type.substring(type.indexOf("(")+1, type.indexOf(",")).trim();
+        String t2 = type.substring(type.indexOf(",")+1, type.indexOf(")")).trim();
+        check(expressionTypes.get(e2), t1); // verifica se e2 tem tipo consistente com e1
         expressionTypes.put(exp, t2);
     }    
     

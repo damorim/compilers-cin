@@ -11,6 +11,6 @@ public class FunctionType extends Type {
 
     @Override
     public String toString() {
-        return String.format("%s -> %s", t1, t2);
+        return String.format("->(%s,%s)", t1, t2);
     }    
 }
