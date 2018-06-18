@@ -1,0 +1,134 @@
+2EE IF688 (Compiladores), 12 de Dezembro de 2017
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Responda V (Verdadeiro) ou F (Falso) para as afirmações
+abaixo:
+
+(V) Um registro de ativação (um frame da pilha de chamadas) contém
+    endereço de retorno do chamador de uma função.
+
+(V) Considerando modelo de concorrência de memória compartilhada, uma
+    thread do programa possui sua própria pilha e contador de
+    instrução (PC).
+
+(F) Não é possível ter "memory leaks" em uma linguagem com tipos
+    fortes, como Java.
+
+(F) Não é possível ter "memory leaks" em Java.
+  
+(V) O gerenciador de memória é embutido em um programa compilado e é
+    responsável por fazer a interface com o sistema operacional para
+    alocação e liberação da área de mémória de um programa.
+  
+(F) Objetos são normalmente alocados na área estática reservada a
+    execução do programa.
+
+
+2. (1 ponto) Para que serve um Garbage Collector (GC)?
+
+Para liberar automaticamente a memória que foi alocada pelo
+programador, através de instruções como new e malloc, e que não podem
+ser mais acessadas pelo programa. Desta maneira, evitando problemas de
+liberação em excesso (que podem causar corrupção de memória).
+
+3. (1 ponto) Como funciona um GC baseado em reference counting?
+
+Neste tipo de algoritmo de GC, cada célula de memória contém um
+contador que indica número referências para aquela célula. No momento
+que um outro acesso é construido, o contador é incrementado. No
+momento que um acesso é destruído, o contador é decrementado. No
+momento que o contador chegar a zero, a célula pode ser liberada
+porque seguramente não há mais referências para aquele objeto.
+
+4. (1 ponto) Explique:
+
+  - Control-Flow Graph
+
+É um grafo que representa os possíveis fluxo de execução de um dado
+procedimento do programa. Os vértices deste grafo são blocos básicos
+(ver definição nos slides) e as arestas determinam fluxo de execução
+do programa. Os caminhos neste grafo refletem os caminhos de execução
+do programa.
+
+  - Call Graph
+
+É um grafo que representa estaticamente (ou seja, em tempo de
+compilação) as possíveis chamada que um procedimento pode fazer a
+outros. Não confundir com call stack, que é uma estrutura (pilha)
+mantida dinâmica (ou seja, em tempo de execução) para indicar os
+procedimento em execução num dado instante, refletindo o contexto de
+uma chamada.
+
+  - Points-to Graph
+
+É um grafo que representa estaticamente as possíveis células de
+memória que uma dada variável pode fazer referência. Isto habilita uma
+variedade de otimizações do compilador. Por exemplo, no código abaixo,
+é necessário saber se p e q podem apontar para o mesmo endereço de
+memória. Se for impossível isto acontecer, então o compilador pode
+seguramente eliminar o comando "if" por completo.
+
+if (p == q) {
+ ...// código morto?
+}
+
+5. (2 pontos) Coloque o código abaixo no formato SSA.
+
+x = ...
+y = ...
+while (x > 0) {
+ if (x % 2 == 0)
+   x -= 2
+ else
+   x -= 1
+ y += 1
+}
+=====
+x0 = ...
+y0 = ...
+while (x4 > 0) {
+ x4 = phi(x0, x3)
+ y2 = phi(y0, y1)
+ if (x4 % 2 == 0)
+   x1 = x4 - 2
+ else
+   x2 = x4 - 1
+ x3 = phi(x1,x2)
+ y1 = y2 + 1
+}
+
+6. (2 pontos) Explique, através de um exemplo, como "constant folding
+and propagation" poderia ajudar na detecção de código morto.
+
+if (x == 100) {
+ // codigo morto?
+}
+
+Se a sua analise for capaz de descobrir que a variavel x usada no
+comando if acima for uma constante, será possível determinar se a
+expressão de branch "x == 100" avaliará para verdade ou não. Caso o
+resultado for falso, o código pode ser eliminado. Seguramente, nunca
+será acessado.
+
+7. (2 pontos) O esquema de tradução abaixo ilustra uma otimização
+conhecida como "Common Subexpression Elimination" (CSE). Explique como
+o formato SSA pode ser usado por um compilador para identificar
+oportunidades de CSE automaticamente.
+
+i = x + y + 1;
+j = x + y;
+
+=>
+
+t1 = x + y;
+i = t1 + 1;
+j = t1
+
+======
+
+i1 = x0 + y0 + 1;
+... nao houve nenhuma definicao
+j1 = x0 + y0;
+
+
+

@@ -1,0 +1,81 @@
+Compiladores (IF688), 2018.2
+30 de Abril de 2018
+Prof. Marcelo d'Amorim
+
+1.[5 pontos] Responda V ou F para as afirmações abaixo:
+
+(    ) O "front-end" de um compilador é responsável por realizar
+otimizações no código.
+(    ) Um “cross compiler” é um compilador que produz código para uma
+máquina distinta daquela que ele executa.
+(    ) O processo de “bootstrapping” é caracterizado pela compilação
+de uma linguagem utilizando um compilador escrito na própria
+linguagem.
+(    ) A responsabilidade de verificar se uma sequência de caracteres
+pertence a linguagem é do analisador sintático
+(    ) Nem todos os tokens consumidos por um parser durante o processo
+de compilação são representados em uma árvore abstrata.
+(    ) Análise léxica produz árvores sintáticas.
+(    ) Checagem de tipos pode ser feita estaticamente ou
+dinamicamente.
+(    ) A verificação que o número e tipos de parâmetros que ocorrem em
+uma chamada de função são consistentes com as declaradas na função
+correspondente é feita durante a análise sintática.
+(    ) O compilador não gera erros durante a fase de análise léxica.
+(    ) Recursão à direita pode causar loop infinito e inviabilizar a
+construção de um parser recursivo descendente.
+(    ) Gramáticas de atributos podem ser usadas tanto para expressar
+regras de tipos como para expressar regras de construção dos nós de
+uma árvore sintática.
+(    ) Parsers recursivos descendentes são um exemplo de parser top-down.
+(    ) O compilador de Java gera código para um interpretador.
+(    ) A especificação de um analisador léxico é feita através de um
+conjunto de expressões regulares
+(    ) O componente de um compilador que checa que um "else" é sempre
+precedido por um "if" é um analisador semântico
+(    ) Parsers preditivos são aqueles que não realizam backtracking
+(    ) Análise dinâmica de tipos precisa manter informação de tipos
+associadas às variáveis do programa
+(    ) Análise dinâmica é mais eficiente e previsível que análise
+estática
+(    ) Gramáticas de atributos têm diversas aplicações, incluindo
+parsing e verificação de tipos.
+(    ) Visitors é um padrão de projeto que serve para navegar na AST e
+realizar atividades simples como descobrir quais identificadores estão
+visíveis no corpo de um loop.
+
+2. [2 pontos] Complete a definição da gramática de atributos abaixo que define
+regras para construção da árvore sintática.
+
+Program   := Vardecl ; Stmt 
+VarDecl   := boolean id 
+Exp       := BoolExp    { Exp.node = BoolExp.node }
+Stmt      := id = Exp
+           | If Exp then Stmt
+BoolExp   := True       { BoolExp.node = new BoolConstant(true); }
+           | False 
+           | id
+
+3) [3 pontos] Baseado na gramática abaixo, responda:
+
+Program ::= Statement | Statement ";" Program    -- Programa
+
+Statement := "print" Expression                  -- PrintExpression
+           | identifier "=" Expression           -- AssignmentExpression
+
+Expression := identifier                         -- Variable
+            | number                             -- Literal
+            | Expression "+" Expression          -- AddExpression
+            | Expression "*" Expression          -- MultExpression
+
+identifier ::= “a” | “b” | “c” | … | “z”
+
+number ::= “0” | “1” | … | “9” | number (number)*
+
+Obs. Tipos de dados associados aos símbolos não terminais aparecem no canto direito de cada produção.
+
+  a) Esta gramática estaria pronta para ser utilizada na escrita de um parser top-down descendente recursivo? Por que?
+  b) Mostre uma parse-tree para o programa “z = 9 + 8 * 7; print z;”
+  c) Mostre uma árvore sintática abstrata para o programa “z = 9 + 8 * 7; print z;”
+  d) Quais são os símbolos não-terminais que aparecem na gramática acima?
+  e) Quais são os símbolos terminais que aparecem na gramática acima?
