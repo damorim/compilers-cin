@@ -14,5 +14,5 @@ Sintese
 
 representacoes-intermediarias.pptx
 analise-estatica.pptx
-aplicacoes.pptx
 ambiente-exec-e-geracao-codigo.pptx
+aplicacoes.pptx
