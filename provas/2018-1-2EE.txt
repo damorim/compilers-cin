@@ -1,0 +1,106 @@
+Prof. Marcelo d'Amorim
+2EE Compiladores
+Recife, 25 de Junho de 2018
+
+
+1. (1 ponto) Marque a opção correta:
+
+- Variáveis globais são armazenadas
+  (  ) estaticamente  (  ) na pilha  (  ) na heap 
+
+- Normalmente a criação de um objeto resulta em modificação 
+  (  ) da área estática  (  ) da pilha  (  ) da heap 
+
+- Normalmente uma thread do programa possui sua própria pilha e contador (program counter)
+  (  ) verdadeiro  (  ) falso
+
+- Normalmente variáveis locais são armazenadas
+    (  ) estaticamente  (  ) na pilha  (  ) na heap
+
+- Normalmente o retorno de uma chamada de método modifica
+   (  ) a área estática  (  ) a pilha  (  ) a heap 
+
+
+2. (1 ponto) Construa o control flow graph (CFG) para o programa
+abaixo. Dica: primeiro transforme o "for" em "while" para depois
+construir o CFG.
+
+public static Integer[] insertionSort(Integer[] array) {
+  for (int i = 1; i < array.length; i++)
+  {
+    int a = array[i]; int j;
+    for (j = i - 1; j >= 0 && array[j] > a; j--)
+    {
+      array[j + 1] = array[j];
+      array[j] = a;
+    }
+  }
+  return array;
+}
+
+
+3. (1 ponto) Coloque o código abaixo no formato Static Single Assignment (SSA).
+
+int sum_to_n(int n)
+{
+   int x = 0;
+   while (n > 0)
+   {
+      x += n;
+      n--;
+   }
+   return x;
+}
+
+
+4. (1 ponto) Explique como analise de ponteiros poderia auxiliar na
+otimizacao do codigo abaixo e que otimizacao poderia ser realizada.
+
+if (obj.field == null)
+{
+ // algum codigo
+}
+
+
+5. (1.5 pontos) Voce poderia usar SSA para descobrir expressoes cujos
+valores podem ser definidos em tempo de compilacao?  Se sim, explique
+e mostre exemplos.
+
+
+6. (1.5 ponto) Indique qual otimizacao de codigo que vimos em sala o
+compilador pode realizar no programa abaixo e mostre o programa
+resultante.
+
+for (int i = 0; i < n; i++) {
+ x = y + z;
+ a[i] = 6 * i + x * x;
+}
+
+
+7. (1 ponto) Explique vantagens e desvantages de um coletor de lixo
+("garbage collector") "Mark-and-Sweep" versus um coletor de lixo
+"Reference Counting".
+
+
+8. (2 ponto) Ilustre o estado do programa em cada ponto indicado. O
+estado deve caracterizar heap, pilha de chamadas, pilha de operandos,
+area estatica e pc.
+
+class Cell {
+  int x; Cell(int x) { this.x = x; }
+}
+
+main()
+{
+  Cell[] cells = new Cell[2];
+  cells[0] = new Cell(10);
+  /*1*/ 
+  foo(cells);
+  /*3*/
+}
+
+void foo(Cell[] cells)
+{ 
+  cells[cells.length-1] = cells[0]; 
+  /*2*/
+}
