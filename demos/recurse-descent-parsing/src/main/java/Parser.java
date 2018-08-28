@@ -33,8 +33,9 @@ public class Parser {
     /** Grammar representation **/
 
     /**
-     * (1) id op expr()
-     * (2) num
+     * (1) id
+     * (2) id op expr()
+     * (3) num
      **/    
     void expr() {
         if (is("id")) {
@@ -42,17 +43,12 @@ public class Parser {
             if (is("op")) {
                 match("op");
                 expr();
-            }            
+            }
         } else if (is("num")) {
-            match("num");
-            if (is("op")) {
-                match("op");
-                expr();
-            }                     
+            match("num");       
         } else {
             throw new RuntimeException("Syntax Error!");
         }
-
     }
 
     /**
@@ -61,8 +57,16 @@ public class Parser {
      **/
     void stmt() {
         if (is("if")) {
-            match("if"); match("op_par"); expr(); match("cl_par"); match("then"); stmt();                   } else if (is("id")) {
-            match("id"); match("="); expr(); 
+            match("if"); 
+            match("op_par"); 
+            expr(); 
+            match("cl_par"); 
+            match("then"); 
+            stmt();                   } 
+        else if (is("id")) {
+            match("id"); 
+            match("="); 
+            expr(); 
         } else {
             throw new RuntimeException("Syntax Error!");
         }

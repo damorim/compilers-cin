@@ -31,6 +31,23 @@ public class BasicTest {
         tokens3.add(new TokenNum("10"));
         tokens3.add(new TokenOp("+"));        
         tokens3.add(new TokenNum("5"));        
-        (new Parser(tokens3)).stmt();                        
+        (new Parser(tokens3)).stmt();
+    }
+
+    @Test
+    public void testIf() {
+        // if ( a ) then  a = a + 1
+        java.util.List tokens3 = new java.util.ArrayList();
+        tokens3.add(Constants.IF);
+        tokens3.add(Constants.OPEN_PAR);
+        tokens3.add(new TokenId("a"));
+        tokens3.add(Constants.CLOSE_PAR);
+        tokens3.add(Constants.THEN);
+        tokens3.add(new TokenId("a"));
+        tokens3.add(Constants.EQUALS);
+        tokens3.add(new TokenNum("a"));
+        tokens3.add(new TokenOp("+"));        
+        tokens3.add(new TokenNum("1"));        
+        (new Parser(tokens3)).stmt();
     }
 }
