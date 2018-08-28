@@ -1,0 +1,39 @@
+Prof. Marcelo d'Amorim
+Final e Segunda Chamada Compiladores
+Recife, 4 de Julho de 2018
+
+1. [2 pontos] Escreva um parser recursivo descendente para a gramática
+abaixo.
+
+A := Id "(" B ")"
+B := Id | Id "," B
+
+
+
+2. [2 pontos] Considerando o fragmento abaixo de uma gramática para
+uma linguagem imperativa qualquer.
+
+STMT => if (EXP) then STMT
+      | Id := EXP
+
+Descreva informalmente regras de tipo associadas a cada um dos
+comandos--"if" e atribuição.
+
+
+
+3. [2 pontos] Explique vantanges e desvantages de se usar coletores de
+lixo.
+
+
+
+4. [2 pontos] Explique o que são dependência de dados e qual sua
+relação com o formato SSA.
+
+
+
+
+5. [2 pontos] Ilustre com exemplos as seguintes otimizações de código:
+
+ - Desdobramento e Propagação de constantes (Constant Folding and Propagation)
+ - Eliminação de Subexpressão Comum (Common Subexpression Elimination)
+ - Redução de Força (Reduction of Strength)
