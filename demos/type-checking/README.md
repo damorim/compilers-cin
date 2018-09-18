@@ -1,10 +1,10 @@
 This demo project serves to illustrate basic concepts in
 type-checking.  We base our discussion in the following grammar.
 
-  P = D ; E 
-  D = id : T
-  T = char | integer | array [ num ] of T | T -> T
-  E = literal | num | E mod E | E[E] | id | E(E)
+  P = D ; E <br>
+  D = id : T <br>
+  T = char | integer | array [ num ] of T | T -> T <br>
+  E = literal | num | E mod E | E[E] | id | E(E) <br>
 
 Example programs in this language:
 

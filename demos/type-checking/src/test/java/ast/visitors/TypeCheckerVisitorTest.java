@@ -48,7 +48,6 @@ public class TypeCheckerVisitorTest {
     public void functionTest() {
         Program p = (Program) ASTSamples.sample7();
         TypeCheckerVisitor vis = new TypeCheckerVisitor();
-        System.out.println("" + p + vis);
         p.accept(vis);
     }
 
@@ -57,6 +56,13 @@ public class TypeCheckerVisitorTest {
         Program p = (Program) ASTSamples.sample8();
         TypeCheckerVisitor vis = new TypeCheckerVisitor();
         p.accept(vis);
-    }    
+    }
+
+    @Test(expected=TypeError.class)
+    public void badIndex() {
+        Program p = (Program) ASTSamples.sample9();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        p.accept(vis);
+    }        
     
 }
