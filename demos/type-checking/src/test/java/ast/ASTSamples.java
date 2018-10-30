@@ -54,12 +54,18 @@ public class ASTSamples {
         return new Program(d, e);
     }
 
-    //   x : char - int ; x(5)
+    //   x : char -> int ; x(5)
     public static Node sample8() {
         Declaration d = new Declaration(new Id("x"), new FunctionType(new CharType(),new IntType()));
         Expression e = new FunctionCall(new Id("x"), new Num(5));
         return new Program(d, e);
     }
 
+    //   x : array [1] of integer ; x[1]
+    public static Node sample9() {
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
+        Expression e = new ArrayIndexing(new Id("x"), new Num(1));
+        return new Program(d, e);
+    }
 
 }

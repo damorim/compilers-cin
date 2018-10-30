@@ -7,4 +7,8 @@ public class Num extends Expression {
     public Num(int i) {
         this.i = i;
     }
+
+    public int getVal() {
+        return i;
+    }
 }

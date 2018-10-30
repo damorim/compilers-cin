@@ -1,0 +1,223 @@
+Compiladores (IF688), 2018.2
+30 de Abril de 2018
+Prof. Marcelo d'Amorim
+
+1.[5 pontos] Responda V ou F para as afirmações abaixo:
+
+(  F  ) O "front-end" de um compilador é responsável por realizar
+otimizações no código.
+
+    O "front-end" do compilador é responsável pela atividade de
+    análise (em contraste com a atividade de síntese, que é realizada
+    pelo "back-end" do compilador). Mais especificamente, o front-end
+    procura por erros léxicos, sintáticos, e semânticos e, caso não
+    descubra nenhum erro destas naturezas, produz uma árvore
+    sintática, que é passada para processamento pelo "back-end" do
+    compilador.
+
+(  V  ) Um “cross compiler” é um compilador que produz código para uma
+máquina distinta daquela que ele executa.
+
+    Imagine que vc. tem um compilador instalado na sua máquina, que
+    usa arquitetura x86. Um cross-compiler poderia produzir código
+    para uma arquitetura diferente da arquitetura do compilador. Neste
+    caso, ao invés de produzir código para x86 poderia produzir código
+    para ARM ou MIPS.
+
+(  V  ) O processo de “bootstrapping” é caracterizado pela compilação
+de uma linguagem utilizando um compilador escrito na própria
+linguagem.
+
+   O processo de "bootstraping" se inicia quando o desenvolvedor
+   escreve um compilador em linguagem de máquina (M) para um conjunto
+   rudimentar/básico de instruções da linguagem de interesse, digamos
+   linguagem L. De posso de um compilador "rudimentar" para L, pode-se
+   escrever um compilador mais sofisticado para L, pois já existe um
+   compilador de L para M (linguagem de máquina).
+
+(  F  ) A responsabilidade de verificar se uma sequência de caracteres
+pertence a linguagem é do analisador sintático.
+
+   O lexer (/scanner), e não o parser (analisador sintático), é
+   responsável por esta atividade.
+
+(  V  ) Nem todos os tokens consumidos por um parser durante o processo
+de compilação são representados em uma árvore abstrata.
+
+   Tokens como chaves e parenteses, por exemplo, sao descartados pelo
+   parser, pois sao desnecessarios nas etapas de compilacao
+   seguintes. Estes tokens ajudam o parser a identificar inicio e fim
+   de alguns elementos gramaticais.
+
+(  F  ) Análise léxica produz árvores sintáticas.
+
+   Análise sintática produz árvores sintáticas. O lexer produz tokens.
+
+
+(  V  ) Checagem de tipos pode ser feita estaticamente ou
+dinamicamente.
+
+
+   Correto. Nosso foco foi em checagem de tipos estáticas.
+   
+(  F  ) A verificação que o número e tipos de parâmetros que ocorrem em
+uma chamada de função são consistentes com as declaradas na função
+correspondente é feita durante a análise sintática.
+
+   Esta verificação é feito pelo checador de tipos durante a análise
+   semântica.
+
+(  F  ) O compilador não gera erros durante a fase de análise léxica.
+
+   Erros léxicos, apesar de menos comuns, podem acontecer. Imagine a
+   situação de um identificador que inicia com número.
+
+(  F  ) Recursão à direita pode causar loop infinito e inviabilizar a
+construção de um parser recursivo descendente.
+
+   Recursão à esquerda é que é problemática.
+
+(  V  ) Gramáticas de atributos podem ser usadas tanto para expressar
+regras de tipos como para expressar regras de construção dos nós de
+uma árvore sintática.
+
+   Correto. Na prática, porém, o uso de gramática de atributos para
+   construção de parsers é bem mais comum.
+
+(  V  ) Parsers recursivos descendentes são um exemplo de parser
+top-down.
+
+   ...
+
+(  V  ) O compilador de Java gera código para um interpretador.
+
+   A máquina virtual Java (JVM) é um interpretador. Vale salientar,
+   entretanto, que várias JVMs, hoje em dia, possuem o recurso de
+   "Just in Time Compilation", que gera código executável durante a
+   execução do programa. Com isto, é possível obter eficiência
+   comparável, em alguns casos, a linguagens que compilam diretamente
+   para código objeto.
+
+(  V  ) A especificação de um analisador léxico é feita através de um
+conjunto de expressões regulares
+
+  ...
+
+(  F  ) O analisador semântico é o componente do compilador que checa se
+um "else" é sempre precedido por um "if"
+
+  O parser é o componente que faz checagens estruturais como esta.
+
+(  V  ) Parsers preditivos são aqueles que não realizam backtracking
+
+  Correto de acordo com definição.
+
+(  V  ) Análise dinâmica de tipos precisa manter informação de tipos
+associadas às variáveis do programa
+
+
+(  F  ) Análise dinâmica é mais eficiente e previsível que análise
+estática
+
+(  V  ) Gramáticas de atributos têm diversas aplicações, incluindo
+parsing e verificação de tipos.
+
+(  V  ) Visitors é um padrão de projeto que serve para navegar na AST e
+realizar atividades simples como descobrir quais identificadores estão
+visíveis no corpo de um loop.
+
+2. [2 pontos] Complete a definição da gramática de atributos abaixo que define
+regras para construção da árvore sintática.
+
+Program   := Vardecl ; Stmt { Program.node = new Program(VarDecl.node,
+Stmt.node); }
+VarDecl   := boolean id  { VarDecl.node = new
+VariableDeclaration("boolean", id.lexval); }
+Exp       := BoolExp    { Exp.node = BoolExp.node }
+Stmt      := id = Exp   { Stmt.node = new Assignment(id.lexval, Exp.node); }
+           | If Exp then Stmt { Stmt.node = new ITE(Exp.node, Stmt.node); }
+BoolExp   := True       { BoolExp.node = new BoolConstant(true); }
+           | False      { BoolExp.node = new BoolConstant(false); }
+           | id         { BoolExp.node = new BoolExpId(id.lexval); }
+
+
+--- tipos de dados para dar suporte a construcao das regras ---
+class Program {
+  VarDecl decl;
+  Stmt stmt;
+}
+
+class VariableDeclaration {
+  String type;
+  String id;
+}
+
+interface Exp  {}
+interface BoolExp extends Exp { }
+class BoolExpId implements BoolExp {
+  String id;
+}
+class BoolConstant implements BoolExp {
+  boolean cte;
+}
+class BoolExpId implements BoolExp {
+  String id;
+}
+
+interface Stmt {}
+
+class ITE implements Stmt {
+  BoolExp exp;
+  Stmt stmt;
+}
+
+class Assignment implement Stmt {
+  String id;
+  Exp exp;
+}
+
+
+3) [3 pontos] Baseado na gramática abaixo, responda:
+
+Program ::= Statement | Statement ";" Program    -- Programa
+
+Statement := "print" Expression                  -- PrintExpression
+           | identifier "=" Expression           -- AssignmentExpression
+
+Expression := identifier                         -- Variable
+            | number                             -- Literal
+            | Expression "+" Expression          -- AddExpression
+            | Expression "*" Expression          -- MultExpression
+
+identifier ::= “a” | “b” | “c” | … | “z”
+
+number ::= “0” | “1” | … | “9” | number (number)*
+
+Obs. Tipos de dados associados aos símbolos não terminais aparecem no canto direito de cada produção.
+
+  a) Esta gramática estaria pronta para ser utilizada na escrita de um
+  parser top-down descendente recursivo? Por que?
+
+  Nao. Porque há uma recursão à esquerda em Expression.
+
+  b) Mostre uma parse-tree para o programa “z = 9 + 8 * 7; print z;”
+
+  
+
+  c) Mostre uma árvore sintática abstrata para o programa “z = 9 + 8 *
+  7; print z;”
+
+  new Program (new Statement[]{
+     new Assignment(new Id("z"), new BinaryExpression("+", new Number(9), new BinaryExpression("*", new Number(8), new Number(7)))),
+     new Print(new Id("z"))}
+  );
+
+  d) Quais são os símbolos não-terminais que aparecem na gramática
+  acima?
+
+  Program, Statement, e Expression
+
+  e) Quais são os símbolos terminais que aparecem na gramática acima?
+
+  "print", identifier, number, "+", ";", etc.
+  
