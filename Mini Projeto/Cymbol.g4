@@ -72,8 +72,6 @@ stat : varDecl
 
 expr : ID '(' exprList? ')'                      #FunctionCallExpr
      | op=('+' | '-') expr                       #SignedExpr
-     | '!' expr                                  #NotExpr
-     | expr op=('<' | '>' | '<=' | '>=') expr    #ComparisonExpr
      | expr op=('*' | '/') expr                  #MulDivExpr
      | expr op=('+' | '-') expr                  #AddSubExpr
      | ID                                        #VarIdExpr
