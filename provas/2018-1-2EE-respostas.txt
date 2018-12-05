@@ -1,0 +1,170 @@
+﻿Prof. Marcelo d'Amorim
+2EE Compiladores
+Recife, 25 de Junho de 2018
+
+
+1. (1 ponto) Marque a opção correta:
+
+- Variáveis globais são armazenadas
+  ( X ) estaticamente  (  ) na pilha  (  ) na heap 
+
+- Normalmente a criação de um objeto resulta em modificação 
+  (  ) da área estática  (  ) da pilha  ( X ) da heap 
+
+- Normalmente uma thread do programa possui sua própria pilha e contador (program counter)
+  ( X ) verdadeiro  (  ) falso
+
+- Normalmente variáveis locais são armazenadas
+    (  ) estaticamente  ( X ) na pilha  (  ) na heap
+
+- Normalmente o retorno de uma chamada de método modifica
+   (  ) a área estática  ( X ) a pilha  (  ) a heap 
+
+
+2. (1 ponto) Construa o control flow graph (CFG) para o programa
+abaixo. Dica: primeiro transforme o "for" em "while" para depois
+construir o CFG.
+
+public static Integer[] insertionSort(Integer[] array) {
+  for (int i = 1; i < array.length; i++)
+  {
+    int a = array[i]; int j;
+    for (j = i - 1; j >= 0 && array[j] > a; j--)
+    {
+      array[j + 1] = array[j];
+      array[j] = a;
+    }
+  }
+  return array;
+}
+
+public static Integer[] insertionSort(Integer[] array) {  
+ 1:  int i = 1;
+ 2:  while(i < array.length) 
+ 3:  {
+ 4:    int a = array[i]; int j;
+ 5:    j = i - 1	;
+ 6:    while(j >= 0 && array[j] > a) 
+ 7:    {
+ 8:      array[j + 1] = array[j];
+ 9:      array[j] = a;
+10:      j--;
+11:    }
+12:    i++;
+13:  }
+14:  return array;
+}
+
+3. (1 ponto) Coloque o código abaixo no formato Static Single Assignment (SSA).
+
+int sum_to_n(int n)
+{
+   int x = 0;
+   while (n > 0)
+   {
+      x += n;
+      n--;
+   }
+   return x;
+}
+
+int sum_to_n(int n0)
+{
+   int x0 = 0;
+   n1 = phi(n0, n2);
+   x1 = phi(x0, x2);
+   while (n1 > 0)
+   {
+      x2 = x1 + n1;
+      n2 = n1 - 1;
+   }
+   return x1;
+}
+
+4. (1 ponto) Explique como analise de ponteiros poderia auxiliar na
+otimizacao do codigo abaixo e que otimizacao poderia ser realizada.
+
+if (obj.field == null)
+{
+ // algum codigo
+}
+
+Primeira parte da pergunta: Analise de ponteiros poderia dizer quais as possiveis celulas de memoria referenciadas por obj e por obj.field. Normalmente esta representacao eh realizada atraves de conjuntos. Vamos supor que a analise diga que obj.field = S. Ou seja, todas as possiveis celulas de memoria referenciadas por obj.field aparecem como elementos deste conjunto S. Consequentemente, poderiamos verificar se null pertence a S. Se null *nao* pertencer a S, podemos concluir que eh impossivel uma execucao real entrar neste bloco de codigo destacado por "algum codigo". Portanto, poderiamos eliminar este bloco por inteiro.
+
+Segunda parte da pergunta: Dead-code elimination poderia descartar este codigo.
+
+5. (1.5 pontos) Voce poderia usar SSA para descobrir expressoes cujos
+valores podem ser definidos em tempo de compilacao?  Se sim, explique
+e mostre exemplos.
+
+(* Ha um exemplo nos slides mostrando uma otimizacao semelhante *)
+
+exemplo negativo:
+n = 1
+if (x > 0)
+  n = 2
+x = n * 2
+=>
+n0 = 1
+if (x0 > 0)
+  n1 = 2
+n2 = phi(n0, n1)
+x1 = n2 * 2
+
+SSA conseguiu rastrear as definicoes e perceber que apesar das definicoes estarem associadas a valores constantes, as constantes possuem valores distintos: 1 e 2. Sendo assim, nao eh possivel simplificar a expressao n * 2. Mas, note que SSA permitiu perceber isto.
+
+exemplo positivo:
+n0 = 2
+...
+x = n0 * 2
+
+Neste caso, SSA habilita uma simplificacao de "n0 * 2" para "4".
+
+6. (1.5 ponto) Indique qual otimizacao de codigo que vimos em sala o
+compilador pode realizar no programa abaixo e mostre o programa
+resultante.
+
+int i = 0;
+x = y + z;
+tmp = x * x;
+tmp2 = 0;
+while (i < n) {
+ a[i] = tmp2 + tmp;
+ tmp2 = tmp2 + 6;
+ i = i + 1;
+}
+
+Loop-invariant code motion
+Induction variable strength reduction
+
+7. (1 ponto) Explique vantagens e desvantages de um coletor de lixo
+("garbage collector") "Mark-and-Sweep" versus um coletor de lixo
+"Reference Counting".
+
+Mark-and-Sweep eh mais economico no consumo de memoria. Precisa de apenas um bit por celula de memoria na heap para registrar que a celula foi ou nao marcada para liberacao de espaco. Por outro lado, eh mais custoso desobrir quais celulas precisam de limpeza. O GC precisa fazer a varredura de toda heap a partir de raizes (referenciais iniciais) para fazer a marcacao. A consequencia disto eh que o uso de Mark-and-Sweep para certas aplicacao (como as de tempo real) eh proibitiva.
+
+Reference-counting: Principal vantagem eh que nao eh preciso decidir quanto o GC deve executar, pois este algoritmo executa a cada instrucao possivelmente atualizando contador de cada celula de memoria. Uma consequencia positiva eh que nao ha interrupcoes na execucao o que oferece um grau de previsibilidade de execucao maior em relacao a alternativa do mark-and-sweep. Isto eh importante para aplicacoes de tempo real. Por outro lado, ocupa mais espaco em memoria e a implementacao eh mais complexa. Por exemplo, nao eh trivial o tratamento de estruturas de dados ciclicas.
+
+
+8. (2 ponto) Ilustre o estado do programa em cada ponto indicado. O
+estado deve caracterizar heap, pilha de chamadas, pilha de operandos,
+area estatica e pc.
+
+class Cell {
+  int x; Cell(int x) { this.x = x; }
+}
+
+main()
+{
+  Cell[] cells = new Cell[2];
+  cells[0] = new Cell(10);
+  /*1*/ 
+  foo(cells);
+  /*3*/
+}
+
+void foo(Cell[] cells)
+{ 
+  cells[cells.length-1] = cells[0]; 
+  /*2*/
+}
