@@ -56,44 +56,44 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 | # | Data | Assunto | Observação |
 |:---:|:----:|:----------------------:|:----------------------|
-| 01 | 18/02/2019 (qua) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
-| 02 | 20/02/2019 (sex) | [Introdução](2018-08-17.md) | --- |
-| 03 | 25/02/2019 (qua) | [Conceitos Básicos](2018-08-22.md) | --- |
-| 04 | 27/02/2019 (sex) | [Conceitos Básicos](2018-08-24.md) | --- |
-| 05 | 04/03/2019 (qua) | Carnaval - ponto facultativo | --- |
-| 06 | 06/03/2019 (sex) | Data Magna - Feriado Estadual | --- |
-| 07 | 11/03/2019 (qua) | [Análise Léxica](atividades/02-FirstFollow) | --- |
-| -- | 13/03/2019 (sex) | [Análise Sintática]()| --- |
-| 08 | 18/03/2019 (qua) | [Análise Sintática)](2018-09-12.md) | --- |
-| 09 | 20/03/2019 (sex) | [Demo](2018-09-14.md) | --- |
-| -- | 25/03/2019 (ter) | [Aula Prática 1]() | --- |
-| 10 | 27/03/2019 (qua) | [Análise Semântica](2018-09-19.md) | --- |
-| 11 | 01/04/2019 (sex) | [Análise Semântica](2018-09-21.md) | --- |
+| 01 | 18/02/2019 (seg) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
+| 02 | 20/02/2019 (qua) | [Introdução](/slides-aulas/intro.pptx) | --- |
+| 03 | 25/02/2019 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| 04 | 27/02/2019 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| -- | 04/03/2019 (seg) | **Carnaval - ponto facultativo** | --- |
+| -- | 06/03/2019 (qua) | **Data Magna - Feriado Estadual** | --- |
+| 05 | 11/03/2019 (seg) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
+| 06 | 13/03/2019 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
+| 07 | 18/03/2019 (seg) | [Análise Sintática)](/slides-aulas/analise-sintatica.pptx) | --- |
+| 08 | 20/03/2019 (qua) | [Demo](/demos) | --- |
+| 09 | 25/03/2019 (seg) | [Aula Prática 1]() | --- |
+| 10 | 27/03/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 11 | 01/04/2019 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 12 | 03/04/2019 (qua) | [Aula Prática 2](2018-09-26.md) | --- |
-| 13 | 08/04/2019 (sex) | [Aula Prática 3](atividades/03-SimpleInterpreter) | --- |
-| 14 | 10/04/2019 (qua) | [Aula de Revisão](2018-10-03.md) | --- |
-| 15 | 15/04/2019 (sex) | Aula reservada para consulta com o professor | --- |
+| 13 | 08/04/2019 (seg) | [Aula Prática 3](atividades/03-SimpleInterpreter) | --- |
+| 14 | 10/04/2019 (qua) | Aula de Revisão | --- |
+| 15 | 15/04/2019 (seg) | Aula reservada para consulta com o professor | --- |
 | 16 | 17/04/2019 (qua) | Aula reservada para consulta com o professor| --- |
-| -- | 22/04/2019 (sex) | **1º Exercício Escolar** | --- |
-| -- | 24/04/2019 (ter) | [Representações Intermediárias]() | --- |
-| 17 | 29/04/2019 (qua) | [Representações Intermediárias](2018-10-17.md) | --- |
-| 18 | 01/05/2019 (sex) | Dia Mundial do Trabalho - Feriado Nacional | --- |
-| 19 | 06/05/2019 (qua) | [Análise Estática e Otimização](2018-10-24.md) | --- |
-| 20 | 08/05/2019 (sex) | [Apresentação da Especificação do Mini Projeto](2018-10-26.md) | --- |
-| 21 | 13/05/2019 (qua) | [Análise Estática e Otimização](2018-10-31.md) | --- |
-| -- | 15/05/2019 (sex) | [Análise Estática e Otimização]()| --- |
-| 22 | 20/05/2019 (qua) | [Slicing](2018-11-07.md) | --- |
-| 23 | 22/05/2019 (sex) | Acompanhamento com Monitores | Professor em viagem |
-| 24 | 27/05/2019(qua) | Acompanhamento com Monitores | Professor em viagem |
-| 25 | 29/05/2019 (sex) | Acompanhamento com Monitores | Professor em viagem |
-| 25 | 03/06/2019 (sex) | [Gerenciamento de Memória e Geração de Código](2018-11-21.md) | --- |
-| 26 | 05/06/2019 (qua) | [Gerenciamento de Memória e Geração de Código](2018-11-21.md) | --- |
-| 27 | 10/06/2019 (sex) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 28 | 12/06/2019 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 29 | 17/06/2019 (sex) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 30 | 19/06/2019 (qua) | Aula de Revisão | --- |
-| 31 | 24/06/2019 (sex) | São João - Feriado Estadual| --- |
-| 32 | 26/06/2019 (qua) | 2º Exercício Escolar | --- |
-| 33 | 01/07/2019 (sex) |Revisão de Provas | --- |
-| 34 | 03/07/2019 (qua) | **Prova Final e segunda chamada**  | --- |
+| 17 | 22/04/2019 (seg) | **1º Exercício Escolar** | --- |
+| 18 | 24/04/2019 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 29/04/2019 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| -- | 01/05/2019 (qua) | **Dia Mundial do Trabalho - Feriado Nacional** | --- |
+| 20 | 06/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
+| 21 | 08/05/2019 (qua) | [Apresentação da Especificação do Mini Projeto]() | --- |
+| 22 | 13/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
+| 23 | 15/05/2019 (qua) | [Análise Estática e Otimização]()| --- |
+| 24 | 20/05/2019 (seg) | [Slicing]() | --- |
+| 25 | 22/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
+| 26 | 27/05/2019 (seg) | Acompanhamento com Monitores | Professor em viagem |
+| 27 | 29/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
+| 28 | 03/06/2019 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 29 | 05/06/2019 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 30 | 10/06/2019 (seg) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 31 | 12/06/2019 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 32 | 17/06/2019 (seg) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 33 | 19/06/2019 (qua) | Aula de Revisão | --- |
+| -- | 24/06/2019 (seg) | **São João - Feriado Estadual**| --- |
+| 34 | 26/06/2019 (qua) | 2º Exercício Escolar | --- |
+| 35 | 01/07/2019 (seg) |Revisão de Provas | --- |
+| 36 | 03/07/2019 (qua) | **Prova Final e segunda chamada**  | --- |
 | -- | 19/07/2019 (qua) | Último dia para lançamento de notas no SIG@ referentes a 2019.1| ---|
