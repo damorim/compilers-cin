@@ -20,7 +20,7 @@ O conteúdo planejado inclui uma introdução aos princípios e técnicas de con
 
 ### Bibliografia Sugerida
 
-- [Alfred V. Aho & Monica S. Lam &  Ravi Sethi Jeffrey. Compiladores: princípios, técnicas e ferramentas.](https://www.saraiva.com.br/compiladores-principios-tecnicas-e-ferramentas-1998960.html)
+- [Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ulmann, Compilers: Principles, Techniques and Tools , 2nd Edition, Addison Wesley, 2007](https://www.saraiva.com.br/compiladores-principios-tecnicas-e-ferramentas-1998960.html)
 
 
 ### Objetivos
@@ -49,7 +49,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 - Observação:
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
 ### Notas
-- [clique aqui](alunos.md)
+- [Clique aqui](alunos.md)
 
 ### Plano de Ensino
 
@@ -68,11 +68,11 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 06 | 13/03/2019 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
 | 07 | 18/03/2019 (seg) | [Análise Sintática)](/slides-aulas/analise-sintatica.pptx) | --- |
 | 08 | 20/03/2019 (qua) | [Demo](/demos) | --- |
-| 09 | 25/03/2019 (seg) | [Aula Prática 1]() | --- |
+| 09 | 25/03/2019 (seg) | [Aula Prática 1](/AP1) | --- |
 | 10 | 27/03/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 11 | 01/04/2019 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 03/04/2019 (qua) | [Aula Prática 2](2018-09-26.md) | --- |
-| 13 | 08/04/2019 (seg) | [Aula Prática 3](atividades/03-SimpleInterpreter) | --- |
+| 12 | 03/04/2019 (qua) | [Aula Prática 2](/AP2) | --- |
+| 13 | 08/04/2019 (seg) | [Aula Prática 3](/AP3) | --- |
 | 14 | 10/04/2019 (qua) | Aula de Revisão | --- |
 | 15 | 15/04/2019 (seg) | Aula reservada para consulta com o professor | --- |
 | 16 | 17/04/2019 (qua) | Aula reservada para consulta com o professor| --- |
@@ -81,7 +81,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 19 | 29/04/2019 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
 | -- | 01/05/2019 (qua) | **Dia Mundial do Trabalho - Feriado Nacional** | --- |
 | 20 | 06/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
-| 21 | 08/05/2019 (qua) | [Apresentação da Especificação do Mini Projeto]() | --- |
+| 21 | 08/05/2019 (qua) | [Apresentação da Especificação do Mini Projeto](/mini-projeto) | --- |
 | 22 | 13/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
 | 23 | 15/05/2019 (qua) | [Análise Estática e Otimização]()| --- |
 | 24 | 20/05/2019 (seg) | [Slicing]() | --- |
