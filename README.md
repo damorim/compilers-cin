@@ -48,6 +48,8 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 - Observação:
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
+### Notas
+- [clique aqui](alunos.md)
 
 ### Plano de Ensino
 
