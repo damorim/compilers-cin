@@ -28,6 +28,8 @@ public class ParserExample {
         } finally {
             in.close();
         }
+
+        PrettyPrintVisitor pp = new PrettyPrintVisitor();
         
         System.out.println(compUnit.toString());
     }

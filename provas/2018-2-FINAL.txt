@@ -1,0 +1,28 @@
+Prof. Marcelo d'Amorim
+Final e Segunda Chamada Compiladores
+Recife, 13 de Dezembro de 2018
+
+1. [5 pontos] Responda:
+
+  - qual a vantagem de se organizar um compilador em dois módulos:
+    front-end e back-end?
+
+  - qual a utilidade de um cross-compiler?
+
+  - por que o backend de um compilador frequentemente gera código
+    assembly ao invés de código de máquina diretamente?
+
+  - por que o uso de um coletor de lixo "mark-and-sweep" nao seria uma
+    boa ideia para a execução de um sistema de tempo real?
+
+  - por que nao é viavel usar um parser recursivo descendente para
+    qualquer gramática?
+
+
+2. [3 pontos] Considerando uma linguagem imperativa qualquer, descreva
+regras de tipo que vc. usaria para o comando de atribuição em arrays.
+
+
+3. [2 pontos] Ilustre, com exemplo, a otimização de código abaixo.
+
+ - Movimentação de código invariante de loop ("Loop Invariant Code Motion")

@@ -1,0 +1,70 @@
+IF688-Compiladores, 2018.2
+9 de Outubro de 2018
+Marcelo d'Amorim
+
+1. [2 pontos] Responda V ou F para as afirmações abaixo:
+
+(   ) Um “cross compiler” é um compilador que produz código para uma
+máquina distinta daquela que ele executa.
+
+(   ) O processo de “bootstrapping” é caracterizado pela compilação de
+uma linguagem utilizando um compilador escrito na própria linguagem.
+
+(   ) Diagramas de "tombstone" servem para descrever uma cadeia de
+compilação. Pode ser usado, por exemplo, para descrever como código
+objeto pode ser obtido para uma dada linguagem origem.
+
+(   ) Nem todos os tokens consumidos por um parser durante o processo de
+compilação são representados em uma árvore abstrata.
+
+(   ) Checagem de tipos pode ser feita estaticamente ou dinamicamente.
+
+(   ) A verificação que o número e tipos de parâmetros que ocorrem em
+uma chamada de função são consistentes com as declaradas na função
+correspondente é feita durante a análise sintática.
+
+(   ) Recursão à direita pode causar loop infinito e inviabilizar a
+construção de um parser recursivo descendente.
+
+(   ) Gramáticas de atributos podem ser usadas tanto para expressar
+regras de tipos como para expressar regras de construção dos nós de
+uma árvore sintática.
+
+(   ) O front-end de um compilador é responsável por realizar
+otimizações do código.
+
+(   ) É responsabilidade do analisador semântico checar se o "else"
+sempre aparece associado a um "if"
+
+
+2. [2 pontos] Construa a árvore abstrata (AST) para o programa seguinte.
+
+  int x = 10; print (x+1);
+
+Considere a gramática a seguir:
+
+Pgm ::= VarDecl; Stmt
+VarDecl ::= Type Id
+Type ::= int
+       | bool
+Stmt ::= print Exp
+Exp ::= Exp + Exp
+      | Exp - Exp
+      | Id
+      | Num
+
+
+3. [2 pontos] Descreva um "visitor" para listar todos os
+identificadores usados em um programa da linguagem acima.
+
+4. [1 pontos] É possível usar a gramática acima, sem modificações,
+para escrever um parser recursivo descendente? Explique.
+
+5. [1 ponto] Cite vantagens e desvantagens de se usar checagem de
+tipos estática versus dinâmica.
+
+6. [1 ponto] Cite dois exemplos de erros semânticos que um compilador
+(da linguagem de sua preferência) gera.
+
+7. [1 ponto] O que são e para que servem gramáticas de atributos?
+
