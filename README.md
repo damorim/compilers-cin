@@ -37,7 +37,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 ### Recursos
 
 - [Google Classroom](http://classroom.google.com) - Código:  5ub3mb5
- - [Repositório Github](github.com/damorim/compilers-cin)
+- [Repositório Github]( http://github.com/damorim/compilers-cin)
 
 ### Ferramentas
 - [Antlr (ANother Tool for Language Recognition)](https://www.antlr.org/)
