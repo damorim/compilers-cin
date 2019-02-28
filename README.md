@@ -5,7 +5,7 @@
 ### Instrutores
 
 * **Professor** 
-  * Marcelo d'Amorim  (damorim@cin.ufpe.br)
+  * [Marcelo d'Amorim](http://cin.ufpe.br/~damorim/) (damorim@cin.ufpe.br)
 * **Monitores** 
   * Felipe Cavalcanti Guerra Ramos
   * Marco Polo Munt Rocha 
@@ -18,10 +18,12 @@
 Este curso explora os princípios, algoritmos, e estruturas de dados envolvidos na teoria e implementação de compiladores. 
 O conteúdo planejado inclui uma introdução aos princípios e técnicas de construção de compiladores, conceitos básicos da teoria de linguagens, análise léxica, análise sintática, análise semântica, representação de código intermediário, ambientes de execução, análise estática, otimização de código, geração de código.
 
-### Bibliografia Sugerida
+### Referências
 
+#### Bibliografia
 - [Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ulmann, Compilers: Principles, Techniques and Tools , 2nd Edition, Addison Wesley, 2007](https://www.saraiva.com.br/compiladores-principios-tecnicas-e-ferramentas-1998960.html)
-
+#### Online
+- [MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-sma-5502-fall-2005/)
 
 ### Objetivos
 
@@ -35,6 +37,11 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 ### Recursos
 
 - [Google Classroom](http://classroom.google.com) - Código:  5ub3mb5
+ - [Repositório Github](github.com/damorim/compilers-cin)
+
+### Ferramentas
+- [Antlr (ANother Tool for Language Recognition)](https://www.antlr.org/)
+- [LLVM](https://llvm.org/)
 
 ### Avaliação
 * (`N1`+`N2`)/2, onde:
@@ -48,6 +55,10 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 - Observação:
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
+
+### Provas anteriores
+- [Clique aqui](/provas)
+
 ### Notas
 - [Clique aqui](alunos.md)
 
@@ -66,7 +77,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | -- | 06/03/2019 (qua) | **Data Magna - Feriado Estadual** | --- |
 | 05 | 11/03/2019 (seg) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
 | 06 | 13/03/2019 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
-| 07 | 18/03/2019 (seg) | [Análise Sintática)](/slides-aulas/analise-sintatica.pptx) | --- |
+| 07 | 18/03/2019 (seg) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
 | 08 | 20/03/2019 (qua) | [Demo](/demos) | --- |
 | 09 | 25/03/2019 (seg) | [Aula Prática 1](/AP1) | --- |
 | 10 | 27/03/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
