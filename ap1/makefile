@@ -1,4 +1,5 @@
-FILENAME = Exp
+FILENAME = C
+ROOTRULE = file
 
 SHELL = /bin/bash
 ANTLR = antlr-4.5.3-complete.jar
@@ -7,10 +8,10 @@ GRUN = java org.antlr.v4.gui.TestRig
 CLASSFILES = $(shell echo autogen/$(FILENAME){{Base,}Listener,Lexer,Parser}.class)
 TOKENFILES = $(shell echo autogen/$(FILENAME){Lexer,}.tokens)
 JAVAFILES = $(shell echo autogen/$(FILENAME){{Base,}Listener,Lexer,Parser}.java)
-.PHONY: classpath clean run
+.PHONY: classpath clean run sublime
 
 run: $(CLASSFILES) | classpath
-	$(GRUN) $(FILENAME) s -gui
+	$(GRUN) $(FILENAME) $(ROOTRULE) -gui
 
 $(CLASSFILES) $(JAVAFILES) $(TOKENFILES): autogen/$(FILENAME).g4 | classpath
 	$(ANTLR4) autogen/$(FILENAME).g4
@@ -26,4 +27,12 @@ autogen:
 	mkdir autogen
 
 clean:
-	-rm -rf autogen
+	-rm -rf autogen sublime_text_3
+
+sublime: | sublime_text_3
+	./sublime_text_3/sublime_text
+
+sublime_text_3:
+	curl -O https://download.sublimetext.com/sublime_text_3_build_3200_x64.tar.bz2
+	tar xvjf sublime_text_3_build_3200_x64.tar.bz2
+	rm sublime_text_3_build_3200_x64.tar.bz2
