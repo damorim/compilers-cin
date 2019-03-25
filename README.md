@@ -11,7 +11,7 @@
   * Marco Polo Munt Rocha 
   
 ### Horário e Local de Aulas
-* Segunda-feira (13h-15h) e Quarta-feira (8h-10h), E-112
+* Segunda-feira (10-12h) e Quarta-feira (8h-10h), E-112
 
 ### Ementa
 
