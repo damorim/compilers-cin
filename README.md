@@ -82,10 +82,10 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 09 | 25/03/2019 (seg) | [Aula Prática 1](/AP1) | --- |
 | 10 | 27/03/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 11 | 01/04/2019 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 03/04/2019 (qua) | [Aula Prática 2](/AP2) | --- |
-| 13 | 08/04/2019 (seg) | [Aula Prática 3](/AP3) | --- |
-| 14 | 10/04/2019 (qua) | Aula de Revisão | --- |
-| 15 | 15/04/2019 (seg) | Aula reservada para consulta com o professor | --- |
+| 12 | 03/04/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 13 | 08/04/2019 (seg) | [Aula Prática 2](/AP2) | --- |
+| 14 | 10/04/2019 (qua) | [Aula Prática 3](/AP3) | --- |
+| 15 | 15/04/2019 (seg) | Aula de Revisão | --- |
 | 16 | 17/04/2019 (qua) | Aula reservada para consulta com o professor| --- |
 | 17 | 22/04/2019 (seg) | **1º Exercício Escolar** | --- |
 | 18 | 24/04/2019 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
