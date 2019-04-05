@@ -16,7 +16,7 @@ PYFILES = $(shell echo $(PYAUTOGEN)/$(FILENAME){Listener,Lexer,Parser}.py)
 
 # ----------------------------- python rules --------------------------
 run: $(PYFILES)
-	python $(PYDIR)/src/main.py
+	python3 $(PYDIR)/src/main.py
 
 $(PYFILES): $(PYAUTOGEN)/$(FILENAME).g4 | classpath
 	$(ANTLR4) -Dlanguage=Python3 $<
@@ -54,7 +54,5 @@ sublime: | sublime_text_3
 	./sublime_text_3/sublime_text
 
 sublime_text_3:
-	curl -O https://download.sublimetext.com/sublime_text_3_build_3200_x64.tar.bz2
-	tar xvjf sublime_text_3_build_3200_x64.tar.bz2
-	rm sublime_text_3_build_3200_x64.tar.bz2
+	curl https://download.sublimetext.com/sublime_text_3_build_3200_x64.tar.bz2 | tar xvj
 
