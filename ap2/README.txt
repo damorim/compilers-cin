@@ -1,3 +1,19 @@
+O que fazer: modifique o arquivo TestExtendVisitor.py para que o interpretador gerado seja capaz de
+retornar o resultado correto das expressões dadas como entrada. Os tipos de expressões que o
+interpretador deve ser capaz de calcular estão definidas pela gramática grammars/Test.g4.
+
+make                    : compila, se necessário, e executa o interpretador - digite a entrada, [enter] e [ctrl]+[d]
+make < arquivo.txt      : o mesmo, mas dá como entrada o conteúdo do arquivo, para não ter que digitá-la toda a vez
+make tree		        : compila e desenha a árvore sintática das expressões dadas como entrada 
+make tree < arquivo.txt : o mesmo, mas etc.
+make sublime            : baixa, extrai e abre o editor de texto sublime
+make clean              : remove arquivos e pastas gerados durante a compilação e o sublime
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------VERSÃO-ANTIGA-----------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
 Arquivo Readme para 2ª Aula Prática de Compiladores de 2017.2
 Última atualização em 21 de Setembro de 2017 - 23:55 por Ihago Henrique Lucena e Silva - ihls@cin.ufpe.br.
 

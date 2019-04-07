@@ -11,15 +11,19 @@ JAVAFILES = $(shell echo autogen/$(FILENAME){{Base,}Listener,Lexer,Parser}.java)
 
 PYDIR = antlr4-python3-runtime-4.7.2
 PYAUTOGEN = $(PYDIR)/src/autogen
-PYFILES = $(shell echo $(PYAUTOGEN)/$(FILENAME){Listener,Lexer,Parser}.py)
+PYFILES = $(shell echo $(PYAUTOGEN)/$(FILENAME){Visitor,Lexer,Parser}.py)
 .PHONY: classpath clean run sublime tree
 
 # ----------------------------- python rules --------------------------
-run: $(PYFILES)
+
+run: $(PYAUTOGEN)/$(FILENAME)ExtendVisitor.py $(PYFILES)
 	python3 $(PYDIR)/src/main.py
 
+$(PYAUTOGEN)/$(FILENAME)ExtendVisitor.py: $(FILENAME)ExtendVisitor.py | $(PYAUTOGEN)
+	cp $< $@
+
 $(PYFILES): $(PYAUTOGEN)/$(FILENAME).g4 | classpath
-	$(ANTLR4) -Dlanguage=Python3 $<
+	$(ANTLR4) -Dlanguage=Python3 $< -visitor -no-listener
 
 $(PYAUTOGEN)/$(FILENAME).g4: grammars/$(FILENAME).g4 | $(PYAUTOGEN)
 	cp $< $@
@@ -50,7 +54,7 @@ autogen:
 clean:
 	-rm -rf autogen sublime_text_3 $(PYAUTOGEN)
 
-sublime: | sublime_text_3
+sublime: sublime_text_3
 	./sublime_text_3/sublime_text
 
 sublime_text_3:

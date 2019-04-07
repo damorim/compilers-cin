@@ -1,9 +1,5 @@
 from antlr4 import *
-if __name__ is not None and "." in __name__:
-    from .autogen.TestParser import TestParser
-else:
-    from autogen.TestParser import TestParser
-
+from autogen.TestParser import TestParser 
 from autogen.TestVisitor import TestVisitor
 
 class TestExtendVisitor(TestVisitor):
