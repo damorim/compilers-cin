@@ -6,9 +6,17 @@ make                    : compila, se necessário, e executa o interpretador - d
 make < arquivo.txt      : o mesmo, mas dá como entrada o conteúdo do arquivo, para não ter que digitá-la toda a vez
 make tree		        : compila e desenha a árvore sintática das expressões dadas como entrada 
 make tree < arquivo.txt : o mesmo, mas etc.
+
 make sublime            : baixa, extrai e abre o editor de texto sublime
 make clean              : remove arquivos e pastas gerados durante a compilação e o sublime
 
+obs1.: além de redirecionar a entrada para um arquivo é possível recebê-la da saída de outro programa
+echo "x = 2 + 3;" | make
+echo "y = 5 * 2;" | make tree
+
+obs2: [ctrl]+[d] insere EOF (end of file) no terminal
+
+Quando terminar, anexe TestExtenndVisitor.py à atividade da ap2 no google classroom.
 
 ----------------------------------------------------------------------------------------------------------
 ----------------------------------------------VERSÃO-ANTIGA-----------------------------------------------

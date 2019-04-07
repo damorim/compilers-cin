@@ -33,6 +33,4 @@ sublime: | sublime_text_3
 	./sublime_text_3/sublime_text
 
 sublime_text_3:
-	curl -O https://download.sublimetext.com/sublime_text_3_build_3200_x64.tar.bz2
-	tar xvjf sublime_text_3_build_3200_x64.tar.bz2
-	rm sublime_text_3_build_3200_x64.tar.bz2
+	curl https://download.sublimetext.com/sublime_text_3_build_3207_x64.tar.bz2 | tar xvj
