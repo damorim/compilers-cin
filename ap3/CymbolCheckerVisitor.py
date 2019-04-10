@@ -3,19 +3,22 @@ from autogen.CymbolParser import CymbolParser
 from autogen.CymbolVisitor import CymbolVisitor
 
 class Type:
-	VOID = "VOID"
-	INT = "INT"
+	VOID = "void"
+	INT = "int"
+
 
 class CymbolCheckerVisitor(CymbolVisitor):
-	id_table = []
+	id_values = {}
 
 	def visitIntExpr(self, ctx:CymbolParser.IntExprContext):
 		print("visting "+Type.INT)
 		return Type.INT
 
+
+
 	def visitVarDecl(self, ctx:CymbolParser.VarDeclContext):
 		var_name = ctx.ID().getText()
-		tyype = ctx.tyype().getText().upper()
+		tyype = ctx.tyype().getText()
 		print("tyype = " + tyype)
 		
 		if (tyype == Type.VOID):
@@ -31,10 +34,12 @@ class CymbolCheckerVisitor(CymbolVisitor):
 					exit(2)
 
 			result = tyype
-			self.id_table.append((var_name, tyype))
+			self.id_values[var_name] = tyype
 
 		print("saved variable " + var_name + " of type " + tyype)
 		return result
+
+
 
 	def visitAddSubExpr(self, ctx:CymbolParser.AddSubExprContext):
 		left = ctx.expr()[0].accept(self)
@@ -49,3 +54,8 @@ class CymbolCheckerVisitor(CymbolVisitor):
 		
 		print("addition or subtraction of " + left + " " + right + " that results in a " + result)
 		return result
+
+
+
+	def aggregateResult(self, aggregate:Type, next_result:Type):
+		return next_result if next_result != None else aggregate
