@@ -2,41 +2,50 @@ from antlr4 import *
 from autogen.CymbolParser import CymbolParser 
 from autogen.CymbolVisitor import CymbolVisitor
 
+class Type:
+	VOID = "VOID"
+	INT = "INT"
+
 class CymbolCheckerVisitor(CymbolVisitor):
+	id_table = []
 
-	# Visit a parse tree produced by CymbolParser#Expressions.
-	def visitExpressions(self, ctx:CymbolParser.ExpressionsContext):
-		return self.visitChildren(ctx)
+	def visitIntExpr(self, ctx:CymbolParser.IntExprContext):
+		print("visting "+Type.INT)
+		return Type.INT
 
-	# Visit a parse tree produced by CymbolParser#Assign.
-	def visitAssign(self, ctx:CymbolParser.AssignContext):
-		print("ZA WARUDO",ctx.ID())
-		return self.visitChildren(ctx)
-
-	# Visit a parse tree produced by CymbolParser#AddSub.
-	def visitAddSub(self, ctx:CymbolParser.AddSubContext):
-		left = self.visit(ctx.expr()[0])
-		right= self.visit(ctx.expr()[1])
-		print("TOKI O TOMARE  ",left,"   ", right)
-		print(ctx.op.text)
-		if (ctx.op.text == '+'):
-			print("KONO DIO DA ", str(int(left) + int(right)))
+	def visitVarDecl(self, ctx:CymbolParser.VarDeclContext):
+		var_name = ctx.ID().getText()
+		tyype = ctx.tyype().getText().upper()
+		print("tyype = " + tyype)
+		
+		if (tyype == Type.VOID):
+			result = Type.VOID
+			print("Mensagem de erro 1...")
+			exit(1)
 		else:
-			print("KONO DIO DA ", str(int(left) - int(right)))
-		return self.visitChildren(ctx)
+			if ctx.expr() != None:
+				init = ctx.expr().accept(self)
+				print("init = " + init)
+				if init != tyype:
+					print("Mensagem de erro 2...")
+					exit(2)
 
-	# Visit a parse tree produced by CymbolParser#Int.
-	def visitInt(self, ctx:CymbolParser.IntContext):
-		return int(ctx.INT().getText())
-	
-	# Visit a parse tree produced by CymbolParser#Identifier.
-	def visitIdentifier(self, ctx:CymbolParser.IdentifierContext):
-		return self.visitChildren(ctx)
+			result = tyype
+			self.id_table.append((var_name, tyype))
 
-	# Visit a parse tree produced by CymbolParser#Paren.
-	def visitParen(self, ctx:CymbolParser.ParenContext):
-		return self.visitChildren(ctx)
+		print("saved variable " + var_name + " of type " + tyype)
+		return result
 
-	# Visit a parse tree produced by CymbolParser#MultDiv.
-	def visitMultDiv(self, ctx:CymbolParser.MultDivContext):
-		return self.visitChildren(ctx) 
+	def visitAddSubExpr(self, ctx:CymbolParser.AddSubExprContext):
+		left = ctx.expr()[0].accept(self)
+		right = ctx.expr()[1].accept(self)
+
+		if left == Type.INT and right == Type.INT:
+			result = Type.INT
+		else:
+			reult = Type.VOID
+			print("Mensagem de erro 3...")
+			exit()
+		
+		print("addition or subtraction of " + left + " " + right + " that results in a " + result)
+		return result

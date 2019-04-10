@@ -1,6 +1,6 @@
 GRAMMAR = Cymbol
 VISITOR = $(GRAMMAR)CheckerVisitor
-ROOTRULE = file_
+ROOTRULE = fiile
 
 SHELL = /bin/bash
 JAR = antlr-4.7.2-complete.jar
@@ -17,14 +17,17 @@ PYFILES = $(shell echo $(PYAUTOGEN)/$(GRAMMAR){Visitor,Lexer,Parser}.py)
 
 # ----------------------------- python rules --------------------------
 
-run: $(PYAUTOGEN)/$(VISITOR).py $(PYFILES)
+run: $(PYAUTOGEN)/$(VISITOR).py $(PYFILES) autogen/$(GRAMMAR)Visitor.py
 	python3 $(PYDIR)/src/main.py
 
 $(PYAUTOGEN)/$(VISITOR).py: $(VISITOR).py | $(PYAUTOGEN)
 	cp $< $@
 
 $(PYFILES): $(PYAUTOGEN)/$(GRAMMAR).g4 | classpath
-	$(PYAUTOGEN); $(ANTLR4) -Dlanguage=Python3 $< -visitor -no-listener
+	$(ANTLR4) -Dlanguage=Python3 $< -visitor -no-listener
+
+autogen/$(GRAMMAR)Visitor.py: $(PYAUTOGEN)/$(GRAMMAR)Visitor.py | autogen
+	cp $< $@
 
 $(PYAUTOGEN)/$(GRAMMAR).g4: grammars/$(GRAMMAR).g4 | $(PYAUTOGEN)
 	cp $< $@
@@ -59,7 +62,7 @@ sublime_text_3:
 	curl https://download.sublimetext.com/sublime_text_3_build_3207_x64.tar.bz2 | tar xvj
 
 vscode: VSCode-linux-x64
-	./$</code
+	./$</bin/code
 
 VSCode-linux-x64:
 	curl https://az764295.vo.msecnd.net/stable/0dd516dd412d42323fc3464531b1c715d51c4c1a/code-stable-1554390792.tar.gz | tar xvz

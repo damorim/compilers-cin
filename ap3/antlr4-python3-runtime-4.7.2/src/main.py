@@ -2,7 +2,7 @@ import sys
 from antlr4 import *
 from autogen.CymbolLexer import CymbolLexer
 from autogen.CymbolParser import CymbolParser
-from autogen.CymbolExtendVisitor import CymbolExtendVisitor
+from autogen.CymbolCheckerVisitor import CymbolCheckerVisitor
 
 def main (argv):
 	inpt = 0 if len(argv) <= 1 else argv[1]
@@ -11,10 +11,8 @@ def main (argv):
 	stream = CommonTokenStream(lexer)
 	parser = CymbolParser(stream)
 	tree = parser.stat()
-	visitor = CymbolExtendVisitor()
+	visitor = CymbolCheckerVisitor()
 	visitor = tree.accept(visitor)
-
-	print("checagem de tipos bem sucedida")
 
 if __name__ == '__main__':
 	main(sys.argv)
