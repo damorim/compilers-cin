@@ -10,7 +10,7 @@ def main (argv):
 	lexer = CymbolLexer(input_stream)
 	stream = CommonTokenStream(lexer)
 	parser = CymbolParser(stream)
-	tree = parser.stat()
+	tree = parser.fiile()
 	visitor = CymbolCheckerVisitor()
 	visitor = tree.accept(visitor)
 
