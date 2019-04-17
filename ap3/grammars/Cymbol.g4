@@ -44,23 +44,23 @@ WS           : [ \t\n\r]+ -> skip;
 
 
 //Parser
-file : (funcDecl | varDecl)+ EOF?
-     ;
+fiile : (funcDecl | varDecl)+ EOF?
+      ;
 
-varDecl : type ID ('=' expr)? ';'
+varDecl : tyype ID ('=' expr)? ';'
         ;
 
-type : TYPEINT                                   #FormTypeInt
-     | TYPEVOID                                  #FormTypeVoid
-     ;
+tyype : TYPEINT                                   #FormTypeInt
+      | TYPEVOID                                  #FormTypeVoid
+      ;
 
-funcDecl : type ID '(' paramTypeList? ')' block
+funcDecl : tyype ID '(' paramTypeList? ')' block
          ;
 
 paramTypeList : paramType (',' paramType)*
               ;
 
-paramType : type ID
+paramType : tyype ID
           ;
 
 block : '{' stat* '}'

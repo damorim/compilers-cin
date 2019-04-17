@@ -1,6 +1,21 @@
-﻿Arquivo Readme para 1ª Aula Prática de Compiladores de 2018.2
-Última atualização em 05 de Setembro de 2017 - 13:50 por Ihago Henrique Lucena e Silva - ihls@cin.ufpe.br.
+﻿O que fazer: É para implementar o que está indicado no arquivo ap1/grammars/C.g4 de forma que ele consiga gerar a árvore sintática de ap1/teste.c corretamente.
+Tem um makefile em ap1 que já compila e roda a gramática, então não precisa instalar nada do que fala o readme, é só digitar ”make” na pasta ap1 pelo terminal e digitar a entrada, ou digitar “make < um_arquivo.c” para não ter que ficar digitando toda vez.
+O arquivo test.c, obviamente vai gerar uma árvore incorreta no início, então para ver como é uma árvore sintática correta, digite “make” e depois insira
+3 * 5;
+e aperte [enter] e depois [ctrl] + [d]
+crtl + d insere um EOF (end of file)
 
+Quando terminar, anexe C.g4 à ativiade da ap1 no google classroom
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------VERSÃO-ANTIGA-----------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+
+
+.Arquivo Readme para 1ª Aula Prática de Compiladores de 2018.2
+Última atualização em 05 de Setembro de 2017 - 13:50 por Ihago Henrique Lucena e Silva - ihls@cin.ufpe.br.
 
 
 ====================================================================================================
