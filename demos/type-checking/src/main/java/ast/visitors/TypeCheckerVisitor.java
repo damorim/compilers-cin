@@ -18,13 +18,13 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
 
     @Override
-    public void visit(Id exp) {
+    public void visit(Id exp) { //TODO: check if needed
         symbolTable.put(exp, symbolTable.get(exp));
     }
     
     @Override
-    public void visit(Num exp) {
-        symbolTable.put(exp, "int");
+    public void visit(Num exp) { 
+        symbolTable.put(exp, "int"); // should add Num(5) -> "int" to symbol table
     }
     
     @Override
@@ -73,7 +73,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
 
         if (e2 instanceof Num) {
             int val = ((Num) e2).getVal();
-            if (val >= val1) {
+            if (val < 0 || val >= val1) {
                 throw new TypeError();
             }
         }
@@ -83,7 +83,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
     
     @Override
-    public void visit(Literal exp) {
+    public void visit(Literal exp) { // '5' -> "char"
         symbolTable.put(exp, "char");
     }
 

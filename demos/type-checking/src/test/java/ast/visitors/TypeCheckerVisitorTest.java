@@ -16,6 +16,13 @@ public class TypeCheckerVisitorTest {
         p.accept(vis);
     }
 
+    @Test(expected=TypeError.class)    
+    public void arrayIndexing2() {
+        Program p = (Program) ASTSamples.sample10();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        p.accept(vis);
+    }    
+
     @Test(expected=TypeError.class)
     public void arrayIndexingExceptional() {
         Program p = (Program) ASTSamples.sample3();
