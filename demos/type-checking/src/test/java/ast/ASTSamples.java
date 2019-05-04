@@ -68,4 +68,11 @@ public class ASTSamples {
         return new Program(d, e);
     }
 
+    //   x : array [1] of integer ; x[-1]
+    public static Node sample10() {
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
+        Expression e = new ArrayIndexing(new Id("x"), new Num(-1));
+        return new Program(d, e);
+    }    
+
 }

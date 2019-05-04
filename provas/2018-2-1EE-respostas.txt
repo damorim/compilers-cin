@@ -1,0 +1,123 @@
+﻿IF688-Compiladores, 2018.2
+9 de Outubro de 2018
+Marcelo d'Amorim
+
+1. [2 pontos] Responda V ou F para as afirmações abaixo:
+
+( V ) Um “cross compiler” é um compilador que produz código para uma
+máquina distinta daquela que ele executa.
+
+( V ) O processo de “bootstrapping” é caracterizado pela compilação de
+uma linguagem utilizando um compilador escrito na própria linguagem.
+
+( V ) Diagramas de "tombstone" servem para descrever uma cadeia de
+compilação. Pode ser usado, por exemplo, para descrever como código
+objeto pode ser obtido para uma dada linguagem origem.
+
+( V ) Nem todos os tokens consumidos por um parser durante o processo de
+compilação são representados em uma árvore abstrata.
+
+( V ) Checagem de tipos pode ser feita estaticamente ou dinamicamente.
+
+( F ) A verificação que o número e tipos de parâmetros que ocorrem em
+uma chamada de função são consistentes com as declaradas na função
+correspondente é feita durante a análise sintática.
+
+( F ) Recursão à direita pode causar loop infinito e inviabilizar a
+construção de um parser recursivo descendente.
+
+( V ) Gramáticas de atributos podem ser usadas tanto para expressar
+regras de tipos como para expressar regras de construção dos nós de
+uma árvore sintática.
+
+( F ) O front-end de um compilador é responsável por realizar
+otimizações do código.
+
+( F ) É responsabilidade do analisador semântico checar se o "else"
+sempre aparece associado a um "if"
+
+
+2. [2 pontos] Construa a árvore abstrata (AST) para o programa seguinte.
+
+  int x; x = 10; print (x+1);
+
+Considere a gramática a seguir:
+
+Pgm ::= VarDecl; Stmts
+VarDecl ::= Type Id
+Type ::= int
+       | bool
+Stmts ::= Stmts Stmt | Stmt
+Stmt ::= print Exp
+       | id = Exp
+Exp ::= Exp + Exp
+      | Exp - Exp
+      | Id
+      | Num
+
+-- AST representada de maneira programatica
+
+Program p = new Program(new VarDeclaration(new Type("int"), new Identifier("x")),new ListStmt(new ListStmt(new AssignmentStmt(new Id("x"), new Number(10)), new PrintStatement(new Add(new Id("x"), new Number(1))))))
+
+-- vc. pode representar a AST visualmente tambem (ou adicionalmente), se preferir
+
+
+3. [2 pontos] Descreva um "visitor" para listar todos os
+identificadores usados em um programa da linguagem acima.
+
+...
+class Node {
+  public void accept(Visitor vis) 
+  {
+    vis.visit(this);
+  }
+}
+
+class Program extends Node {}
+...
+
+public interface Visitor {
+  public void visit(Program p);
+  public void visit(VarDeclaration vd);
+  public void visit(Type t);
+  ...
+}
+
+public class VisitorAdaptor extends Visitor {
+  public void visit(Program p)
+  {
+     p.vd.acccept(this);
+     p.ls.accept(this);
+  }
+  ...
+}
+
+public class IdVisitor extends VisitorAdaptor {
+  List l = new ArrayList();
+  public void visit(Id id) {
+    l.add(id);
+  }
+}
+
+
+IdVisitor v = new IdVisitor();
+p.accept(v);
+System.out.println(v.l);
+
+4. [1 pontos] É possível usar a gramática acima, sem modificações,
+para escrever um parser recursivo descendente? Explique.
+
+Nao. Ha recursao a esquerda.
+
+5. [1 ponto] Cite vantagens e desvantagens de se usar checagem de
+tipos estática versus dinâmica.
+
+A checagem estatica permite que o programador perceba erros de tipo durante a compilacao do program. Isto eh, antes que o programa seja executado. Por outro lado, exige que o programador escreva anotacoes de tipo no codigo e restringe certo tipos de construcao do programa.
+
+A chegagem dinamica permite uma maior flexibilidade na forma de programacao e nao exige anotacoes de tipo. Por outro lado, erros podem ser percebido apenas em tempo de execucao e o custo da execucao pode ser mais alto porque a checagem de tipos eh feita em tempo de execucao.
+
+6. [1 ponto] Cite dois exemplos de erros semânticos que um compilador
+(da linguagem de sua preferência) gera.
+
+7. [1 ponto] O que são e para que servem gramáticas de atributos?
+
