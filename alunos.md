@@ -12,7 +12,7 @@ CRISTIANO SANTOS DE OLIVEIRA         |  10.0  |   7.4  |  4.38  |        |      
 DECEZARIS AUGUSTO DE MELO PEREIRA    |   0.0  |   5.5  |  0.00  |        |        |        |        |        |
 DOUGLAS SANTOS DA SILVA VASCONCELOS  |   8.5  |   8.5  |  1.46  |        |        |        |        |        |
 ENALDO CORREA DA SILVA               |   2.5  |   8.9  |  5.52  |        |        |        |        |        |
-ERIK DE GOUVEIA ZAMBOM               |  10.0  |   9.8  |  0.00  |        |        |        |        |        |
+ERIK DE GOUVEIA ZAMBOM               |  10.0  |   9.8  |  5.52  |        |        |        |        |        |
 FERNANDO DE BARROS WANDERLEY NETO    |  10.0  |   7.5  |  4.95  |        |        |        |        |        |
 FILIPE ANTONIO CUMARU SILVA ALVES    |  10.0  |  10.0  |  8.57  |        |        |        |        |        |
 GABRIEL MENDES MATOS                 |  10.0  |   9.3  |  8.57  |        |        |        |        |        |
@@ -30,7 +30,7 @@ MATEUS GONCALVES MACHADO             |   8.5  |   8.4  |  4.38  |        |      
 MATEUS VALGUEIRO TEIXEIRA            |  10.0  |   9.8  |  6.41  |        |        |        |        |        |
 MIGUEL LUIZ PESSOA DA CRUZ SILVA     |  10.0  |   5.0  |  0.00  |        |        |        |        |        |
 MIKAHEL LEAL DIAS                    |  10.0  |   0.0  |  9.14  |        |        |        |        |        |
-MITTERRAND VIEIRA MONTEIRO           |  10.0  |   3.9  |  0.00  |        |        |        |        |        |
+MITTERRAND VIEIRA MONTEIRO           |  10.0  |   3.9  |  5.52  |        |        |        |        |        |
 NATHAN MARTINS FREIRE                |  10.0  |   9.8  |  9.51  |        |        |        |        |        |
 PAULO SALGADO FILHO                  |  10.0  |   0.0  |  5.86  |        |        |        |        |        |
 PEDRO KEMPTER BRANT                  |  10.0  |   9.8  |  5.73  |        |        |        |        |        |
