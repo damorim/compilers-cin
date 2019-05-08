@@ -60,7 +60,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 - [Clique aqui](/provas)
 
 ### Notas
-- [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc/edit#gid=735529987)
+- [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc/edit#gid=1175215147)
 
 ### Plano de Ensino
 
