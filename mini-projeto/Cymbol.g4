@@ -47,7 +47,7 @@ WS           : [ \t\n\r]+ -> skip;
 fiile : (funcDecl | varDecl)+ EOF?
      ;
 
-varDecl : type ID ('=' expr)? ';'
+varDecl : tyype ID ('=' expr)? ';'
         ;
 
 tyype : TYPEINT                                  
@@ -55,7 +55,7 @@ tyype : TYPEINT
      | TYPEBOOLEAN                               
      ;
 
-funcDecl : type ID '(' paramTypeList? ')' block
+funcDecl : tyype ID '(' paramTypeList? ')' block
          ;
 
 paramTypeList : paramType (',' paramType)*
@@ -108,8 +108,8 @@ expr : ID '(' exprList? ')'
      | expr op=('<' | '>' | '<=' | '>=') expr    
      | expr op=('*' | '/') expr                  
      | expr op=('+' | '-') expr                  
-     | expr op=("&&"|"||") expr                  
-     | expr op=("=="|"!=") expr                 
+     | expr op=('&&'| '||') expr                  
+     | expr op=('=='| '!=') expr                 
      | ID                                        
      | INT                                       
      | FLOAT                                     
