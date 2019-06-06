@@ -99,11 +99,11 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 25 | 22/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
 | 26 | 27/05/2019 (seg) | Acompanhamento com Monitores | Professor em viagem |
 | 27 | 29/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
-| 28 | 03/06/2019 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 28 | 03/06/2019 (seg) | Não tem aula | --- |
 | 29 | 05/06/2019 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 30 | 10/06/2019 (seg) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 31 | 12/06/2019 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 32 | 17/06/2019 (seg) | Aula de Revisão | --- |
+| 30 | 10/06/2019 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 31 | 12/06/2019 (qua) | Aula de Revisão| --- |
+| 32 | 17/06/2019 (seg) | Aula Reservada para a Entrega do Mini Projeto| --- |
 | 33 | 19/06/2019 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
 | -- | 24/06/2019 (seg) | **São João - Feriado Estadual**| --- |
 | 34 | 26/06/2019 (qua) | 2º Exercício Escolar | --- |
