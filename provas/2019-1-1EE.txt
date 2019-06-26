@@ -1,0 +1,63 @@
+Compiladores (IF688) - 1EE
+Prof. Marcelo d'Amorim
+22 de Abril de 2019
+
+1. [1 ponto] Marque cada uma das sentenças abaixo com os símbolos
+correspondentes às etapas do front-end de um compilador para uma
+linguagem de programação qualquer: análise léxica (L), análise
+sintática (S), análise semântica (Se), todas (T), nenhuma das
+alternativas (N).
+
+(   ) Verifica se os parâmetros de uma chamada de uma função
+correspondem aos parâmetros da declaração da função.
+(   ) Verifica se o abre parênteses casa com um fecha parênteses.
+(   ) Reporta erros ao usuário.
+(   ) Levanta um erro se uma palavra reservada (e.g., int) é usada
+onde se espera um identificador.
+(   ) Realiza otimização de código.
+
+2. [2 pontos] A gramática abaixo tem como terminais o conjunto
+T = {[, ], +, -, a, b, c}, como não-terminais o conjunto NT = {A, B, C},
+dentre os quais o símbolo inicial A.
+
+A → [ AB ] | a
+B → epsilon | + AC | C b
+C → epsilon | - AB c
+
+Escreva parser recursivo descendente na linguagem de sua
+preferência. (Seja breve.)
+
+3. [2 pontos] Considere a gramática de atributos abaixo. Nas ações, as
+operações And, Or, e Not são construtores de um tipo de dados para
+representação da árvore de sintaxe abstrata (AST). Construa a parse
+tree (árvore de sintaxe concreta) da entrada ¬(A ∧ (A => B)), e anote
+a mesma com os valores dos atributos de cada nó, seguindo o esquema de
+ações da gramática. Destaque o valor do atributo G.p ao final.
+
+BNF              Ações Semânticas
+-------------------------------------------
+G ::= F          G.p = F.p
+F ::= F1 ∧ F2    F.p = And(F1.p, F2.p)
+F ::= F1 ∨ F2    F.p = Or(F1.p, F2.p)
+F :: ¬F1         F.p = Not(F1.p)
+F :: F1 => F2    F.p = Or(Not(F1.p), F2.p)
+F :: (F1)        F.p = F1.p
+F :: id          F.p = id.lexeme
+-------------------------------------------
+
+4. [3 pontos] Expressões condicionais ternárias tem o formato exp0 ?
+exp1 : exp2. O valor desta expressão será o valor de exp1, se exp0 for
+verdadeiro, ou exp2, caso contrário.
+
+(a) Construa uma AST para o comando de
+atribuição max = x > y ? x : y;.
+
+(b) Descreva, informalmente, a verificação de tipos necessária para
+checar que não há erros (de tipo) neste comando. Você pode assumir que
+os identificadores já foram declarados e que seus tipos podem ser
+recuperados de uma tabela de símbolos.
+
+5. [2 pontos] Um erro comum que programadores cometem é escrever
+expressões envolvendo variáveis não inicializadas.  Apresente uma
+possível estratégia para auxiliar os programadores a identificar este
+problema em tempo de compilação.

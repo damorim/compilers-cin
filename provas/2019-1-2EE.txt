@@ -1,0 +1,49 @@
+﻿2EE IF688 (Compiladores), 26 de Junho de 2019
+Prof. Marcelo d'Amorim
+
+1. (2 pontos) O código abaixo descreve o cálculo do produto entre dois
+vetores A e B. O código está implementado em uma linguagem de
+representação intermediária qualquer (irrelevante para este
+problema). Otimize este código indicando o nome das otimizações vistas
+em sala de aula que vc. aplicou.
+
+   dp = 0.
+   i  = 0
+L: t1 = i*8
+   t2 = A[t1]
+   t3 = i*8
+   t4 = B[t3]
+   t5 = t2*t4
+   dp = dp+t5
+   i  = i+1
+   if i<n goto L
+
+2. (1 ponto) Construa o Control-Flow Graph (CFG) para o código acima.
+
+3. (2 pontos) Sobre Garbage Collection (GC):
+
+ (a) Por que linguagens com coleta automática de lixo (GC) podem ser
+   problemáticas para implementação de sistemas de tempo real?
+
+ (b) Qual vantagem de se usar uma implementação Mark-and-Sweep em
+   comparação com Reference Counting?
+
+4. (1 ponto) Coloque o código abaixo no formato SSA.
+
+  if (tmp) x = 1;
+  print(x)
+
+5. (1 ponto) O que acontece com o estado de um programa em execução quando:
+
+  (a) Uma chamada de função é feita
+  (b) Uma chamada de função termina/retorna
+
+6. (1 ponto) Como um assembler ajuda na construção do "back-end" de um
+compilador?
+
+7.  (2 pontos) Explique uma das aplicações de compiladores abaixo,
+discutidas na nossa última aula.
+
+  (a) Slicing de Código
+  (b) Model Checking de Programas
+
