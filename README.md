@@ -108,5 +108,6 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | -- | 24/06/2019 (seg) | **São João - Feriado Estadual**| --- |
 | 34 | 26/06/2019 (qua) | 2º Exercício Escolar | --- |
 | 35 | 01/07/2019 (seg) |Revisão de Provas | --- |
-| 36 | 15/07/2019 (seq) | **Prova Final e segunda chamada**  | --- |
+| 36 | 10/07/2019 (qua) | **Prova Final**  | --- |
+| 37 | 15/07/2019 (seg) | **Segunda Chamada**| --- |
 | -- | 19/07/2019 (qua) | Último dia para lançamento de notas no SIG@ referentes a 2019.1| ---|
