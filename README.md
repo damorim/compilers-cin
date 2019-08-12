@@ -8,10 +8,9 @@
   * [Marcelo d'Amorim](http://cin.ufpe.br/~damorim/) (damorim@cin.ufpe.br)
 * **Monitores** 
   * Felipe Cavalcanti Guerra Ramos
-  * Marco Polo Munt Rocha 
   
 ### Horário e Local de Aulas
-* Segunda-feira (10-12h) e Quarta-feira (8h-10h), E-112
+* Terça-feira (15h-17h) e Quinta-feira (13h-15h), E-123	
 
 ### Ementa
 
@@ -60,7 +59,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 - [Clique aqui](/provas)
 
 ### Notas
-- [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc/edit#gid=1175215147)
+- [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc)
 
 ### Plano de Ensino
 
@@ -69,45 +68,39 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 | # | Data | Assunto | Observação |
 |:---:|:----:|:----------------------:|:----------------------|
-| 01 | 18/02/2019 (seg) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
-| 02 | 20/02/2019 (qua) | [Introdução](/slides-aulas/intro.pptx) | --- |
-| 03 | 25/02/2019 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
-| 04 | 27/02/2019 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
-| -- | 04/03/2019 (seg) | **Carnaval - ponto facultativo** | --- |
-| -- | 06/03/2019 (qua) | **Data Magna - Feriado Estadual** | --- |
-| 05 | 11/03/2019 (seg) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
-| 06 | 13/03/2019 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
-| 07 | 18/03/2019 (seg) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
-| 08 | 20/03/2019 (qua) | [Demo](/demos) | --- |
-| 09 | 25/03/2019 (seg) | [Aula Prática 1](/AP1) | --- |
-| 10 | 27/03/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 11 | 01/04/2019 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 03/04/2019 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 13 | 08/04/2019 (seg) | [Aula Prática 2](/AP2) | --- |
-| 14 | 10/04/2019 (qua) | [Aula Prática 3](/AP3) | --- |
-| 15 | 15/04/2019 (seg) | Aula de Revisão | --- |
-| 16 | 17/04/2019 (qua) | Aula reservada para consulta com o professor| --- |
-| 17 | 22/04/2019 (seg) | **1º Exercício Escolar** | --- |
-| 18 | 24/04/2019 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 19 | 29/04/2019 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| -- | 01/05/2019 (qua) | **Dia Mundial do Trabalho - Feriado Nacional** | --- |
-| 20 | 06/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
-| 21 | 08/05/2019 (qua) | [Apresentação da Especificação do Mini Projeto](/mini-projeto) | --- |
-| 22 | 13/05/2019 (seg) | [Análise Estática e Otimização]() | --- |
-| 23 | 15/05/2019 (qua) | [Análise Estática e Otimização]()| --- |
-| 24 | 20/05/2019 (seg) | [Slicing]() | --- |
-| 25 | 22/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
-| 26 | 27/05/2019 (seg) | Acompanhamento com Monitores | Professor em viagem |
-| 27 | 29/05/2019 (qua) | Acompanhamento com Monitores | Professor em viagem |
-| 28 | 03/06/2019 (seg) | Não tem aula | --- |
-| 29 | 05/06/2019 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 30 | 10/06/2019 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 31 | 12/06/2019 (qua) | Aula de Revisão| --- |
-| 32 | 17/06/2019 (seg) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 33 | 19/06/2019 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| -- | 24/06/2019 (seg) | **São João - Feriado Estadual**| --- |
-| 34 | 26/06/2019 (qua) | 2º Exercício Escolar | --- |
-| 35 | 01/07/2019 (seg) |Revisão de Provas | --- |
-| 36 | 10/07/2019 (qua) | **Prova Final**  | --- |
-| 37 | 15/07/2019 (seg) | **Segunda Chamada**| --- |
-| -- | 19/07/2019 (qua) | Último dia para lançamento de notas no SIG@ referentes a 2019.1| ---|
+| 00 | 06/08/2019 (ter) | Sem Aula | --- |
+| 01 | 08/08/2019 (qui) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
+| 02 | 13/08/2019 (ter) | [Introdução](/slides-aulas/intro.pptx) | --- |
+| 03 | 15/02/2019 (qui) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| 04 | 20/08/2019 (ter) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| 05 | 22/08/2019 (qui) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
+| 06 | 27/08/2019 (ter) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
+| 07 | 29/08/2019 (qui) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
+| 08 | 03/09/2019 (ter) | [Demo](/demos) | --- |
+| 09 | 05/09/2019 (qui) | [Aula Prática 1](/AP1) | --- |
+| 10 | 10/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 11 | 12/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 12 | 17/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 13 | 19/09/2019 (qui) | [Aula Prática 2](/AP2) | --- |
+| 14 | 24/09/2019 (ter) | [Aula Prática 3](/AP3) | --- |
+| 15 | 26/09/2019 (qui) | Aula de Revisão | --- |
+| 16 | 01/10/2019 (ter) | Aula reservada para consulta com o professor| --- |
+| 17 | 03/10/2019 (qui) | **1º Exercício Escolar** | --- |
+| 18 | 08/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 20 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
+| 21 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
+| 22 | 22/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
+| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](/mini-projeto) | --- |
+| 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
+| 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
+| 26 | 05/11/2019 (ter) | [Slicing]() | --- |
+| 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 28 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 29 | 14/11/2019 (qui) | Aula de Revisão| --- |
+| 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
+| 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 32 | 26/11/2019 (ter) | 2º Exercício Escolar | --- |
+| 33 | 28/11/2019 (qui) | Revisão de Provas | --- |
+| 34 | 03/12/2019 (ter) | **Prova Final e Segunda Chamada**  | --- |
+| -- | 21/12/2019 (sab) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
