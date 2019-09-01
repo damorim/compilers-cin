@@ -35,7 +35,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 ### Recursos
 
-- [Google Classroom](http://classroom.google.com) - Código:  5ub3mb5
+- [Google Classroom](http://classroom.google.com) - Código:  cq4r5gd
 - [Repositório Github]( http://github.com/damorim/compilers-cin)
 
 ### Ferramentas
@@ -100,7 +100,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 29 | 14/11/2019 (qui) | Aula de Revisão| --- |
 | 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
 | 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 32 | 26/11/2019 (ter) | 2º Exercício Escolar | --- |
+| 32 | 26/11/2019 (ter) | **2º Exercício Escolar** | --- |
 | 33 | 28/11/2019 (qui) | Revisão de Provas | --- |
 | 34 | 03/12/2019 (ter) | **Prova Final e Segunda Chamada**  | --- |
 | -- | 21/12/2019 (sab) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
