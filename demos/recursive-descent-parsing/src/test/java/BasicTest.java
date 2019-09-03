@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.Assert;
 
 public class BasicTest {
 
@@ -9,7 +10,9 @@ public class BasicTest {
         tokens.add(new TokenId("a"));
         tokens.add(Constants.EQUALS);
         tokens.add(new TokenId("b"));
-        (new Parser(tokens)).stmt();
+        Parser p = new Parser(tokens);
+        p.stmt();
+        Assert.assertEquals(p.lookahead, tokens.size());
     }
 
     @Test
@@ -19,7 +22,9 @@ public class BasicTest {
         tokens2.add(new TokenId("a"));
         tokens2.add(Constants.EQUALS);
         tokens2.add(new TokenNum("10"));
-        (new Parser(tokens2)).stmt();        
+        Parser p = new Parser(tokens2);
+        p.stmt();
+        Assert.assertEquals(p.lookahead, tokens2.size());
     }
 
     @Test
@@ -30,8 +35,10 @@ public class BasicTest {
         tokens3.add(Constants.EQUALS);
         tokens3.add(new TokenNum("10"));
         tokens3.add(new TokenOp("+"));        
-        tokens3.add(new TokenNum("5"));        
-        (new Parser(tokens3)).stmt();
+        tokens3.add(new TokenNum("5"));
+        Parser p = new Parser(tokens3);
+        p.stmt();
+        Assert.assertEquals(p.lookahead, tokens3.size());
     }
 
     @Test
@@ -47,7 +54,21 @@ public class BasicTest {
         tokens3.add(Constants.EQUALS);
         tokens3.add(new TokenNum("a"));
         tokens3.add(new TokenOp("+"));        
-        tokens3.add(new TokenNum("1"));        
-        (new Parser(tokens3)).stmt();
+        tokens3.add(new TokenNum("1"));
+        Parser p = new Parser(tokens3);
+        p.stmt();
+        Assert.assertEquals(p.lookahead, tokens3.size());        
     }
+
+    @Test(expected=java.lang.RuntimeException.class)
+    public void testFour() {
+        // x + +
+        java.util.List tokens3 = new java.util.ArrayList();
+        tokens3.add(new TokenId("x"));
+        tokens3.add(new TokenOp("+"));
+        tokens3.add(new TokenOp("+"));        
+        Parser p = new Parser(tokens3);
+        p.stmt(); // should throw Syntax Error
+    }
+    
 }
