@@ -2,7 +2,8 @@
 grammar C;
 
 /* regra raiz da gramática */
-file: (statement | directive | func_decl)*
+file
+	: (statement | directive | func_decl)*
 	;
 
 directive
@@ -33,7 +34,8 @@ func_call
 	: 'implementar'
 	;
 
-type: 'int'
+type
+	: 'int'
 	;
 
 /* implementar mais regras gramaticais, se precisar */
@@ -51,6 +53,8 @@ WS  : [ \t\r\n]+ -> skip ;
 /*
 MANUAL
 
+substitua 'implementar' por uma implementação
+
 caracteres especiais para expressões regulares {
 	'xyz'   ->  os caracteres rodeados por ' ' são interpretados literalmente 
 	\x		->  altera a interpretação do caracter x, se ele tiver outra (\t: tab, \(: o caracter que abre parênteses)
@@ -60,6 +64,10 @@ caracteres especiais para expressões regulares {
 	[x]		->  equivalente a 'x'
 	x*		->  aceita 0 ou mais x's
 	x+		->  aceita 1 ou mais x's
+	x?		->  aceita 0 ou 1 x
+	.       ->  aceita qualquer caracter
+	.*      ->  aceita 0 ou mais caracteres diferentes de \n (guloso)
+	.*?     ->  aceita 0 ou mais caracteres diferentes de \n (não-guloso)
 
 	no ANTLR esses caracteres especiais podem ser utilizados nas regras da gramática também
 	ex.:

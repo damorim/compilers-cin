@@ -1,0 +1,39 @@
+Prova de Segunda Chamada (e Final) de Compiladores, 2019.1
+Marcelo d'Amorim
+15 de Julho, 2019
+
+A gramática abaixo define uma categoria sintática para expressões,
+chamada EXP, e uma categoria sintática para comandos, chamada STMT.  O
+símbolos ID e LIT representam, respectivamente, identificadores da
+linguagem e constantes inteiras.
+
+EXP ::= ID
+      | EXP > EXP
+      | LIT
+
+STMT ::= if EXP then STMT
+      | print EXP
+
+1. [1 ponto] Escreva uma árvore sintática abstrata (AST) para um
+comando pertencente a linguagem acima.
+
+2. [3 pontos] Complemente a gramática acima com:
+
+   (1) declaração de variáveis com tipos inteiro e arrays de inteiros
+
+   (2) comando de atribuição a variável (considere casos onde variável é de tipo array)
+
+
+3. [3 pontos] Descreva ao lado de cada produção gramatical a regra de tipo
+correspondente que poderia ser checada durante a análise semântica
+
+
+4. [1 ponto] Coloque o código abaixo no formato SSA
+
+  if (x > y) then
+    if (x < z) then
+      x = 10
+
+5. [2 pontos] Para que serve uma gramática de atributos? E qual a
+diferença entre uma gramática de atribuitos sintetizados e uma
+gramática de atributos herdados?

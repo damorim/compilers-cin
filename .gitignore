@@ -5,3 +5,4 @@
 *.out
 *.o
 */provas-leopoldo
+**/*.class

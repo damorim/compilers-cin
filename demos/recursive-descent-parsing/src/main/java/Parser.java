@@ -3,7 +3,7 @@ import java.util.List;
 public class Parser {
 
     List<Token> tokens;
-    int lookahead;
+    public int lookahead;
 
     // In practice, tokens are sent to the parser one-by-one as
     // opposed to all-at-once
@@ -35,7 +35,8 @@ public class Parser {
     /**
      * (1) id
      * (2) id op expr()
-     * (3) num
+     * (3) num op expr()
+     * (4) num
      **/    
     void expr() {
         if (is("id")) {
@@ -45,7 +46,11 @@ public class Parser {
                 expr();
             }
         } else if (is("num")) {
-            match("num");       
+            match("num");
+            if (is("op")) {
+                match("op");
+                expr();
+            }            
         } else {
             throw new RuntimeException("Syntax Error!");
         }
@@ -62,7 +67,8 @@ public class Parser {
             expr(); 
             match("cl_par"); 
             match("then"); 
-            stmt();                   } 
+            stmt();
+        } 
         else if (is("id")) {
             match("id"); 
             match("="); 
