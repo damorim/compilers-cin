@@ -1,0 +1,259 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+$(DBG)	makefile	/^$(DBG): $(SOURCE) $(HEADER)$/;"	t
+$(EXE)	makefile	/^$(EXE): $(SOURCE) $(HEADER)$/;"	t
+ASSIGN_STATEMENT	include/ast.h	/^	ASSIGN_STATEMENT,$/;"	e	enum:AST_Types
+AST	include/ast.h	/^typedef union AST AST;$/;"	t	typeref:union:AST
+AST	include/ast.h	/^union AST {$/;"	u
+AST_HEADER	include/ast.h	/^#define AST_HEADER$/;"	d
+AST_Types	include/ast.h	/^enum AST_Types {$/;"	g
+BINARY_EXPRESSION	include/ast.h	/^	BINARY_EXPRESSION,$/;"	e	enum:AST_Types
+CFLAGS	makefile	/^CFLAGS = -flto -Wall -Wno-parentheses -Wno-missing-braces -Wno-unused-variable -Wno-unused-but-s/;"	m
+DBG	makefile	/^	DBG = compiler_db$/;"	m
+DBG	makefile	/^	DBG = compiler_db.exe$/;"	m
+DECLARATION	include/ast.h	/^	DECLARATION,$/;"	e	enum:AST_Types
+EXE	makefile	/^	EXE = compiler$/;"	m
+EXE	makefile	/^	EXE = compiler.exe$/;"	m
+EXPRESSION	include/ast.h	/^	EXPRESSION,$/;"	e	enum:AST_Types
+EXPRESSION_STATEMENT	include/ast.h	/^	EXPRESSION_STATEMENT,$/;"	e	enum:AST_Types
+ExprReturn	include/visitor.h	/^struct ExprReturn {$/;"	s
+ExprReturn	include/visitor.h	/^typedef struct ExprReturn ExprReturn;$/;"	t	typeref:struct:ExprReturn
+FLOAT	include/lexer.h	/^	FLOAT,          \/\/ floating point number literal$/;"	e	enum:TokenType
+FUNCTION_CALL_EXPRESSION	include/ast.h	/^	FUNCTION_CALL_EXPRESSION,$/;"	e	enum:AST_Types
+FUNCTION_DECLARATION	include/ast.h	/^	FUNCTION_DECLARATION,$/;"	e	enum:AST_Types
+HEADER	makefile	/^HEADER = $(addprefix include\/, lexer.h parser.h ast.h visitor.h)$/;"	m
+IDENTIFIER	include/lexer.h	/^	IDENTIFIER,     \/\/ variable or function name$/;"	e	enum:TokenType
+IDENTIFIER_EXPRESSION	include/ast.h	/^	IDENTIFIER_EXPRESSION,$/;"	e	enum:AST_Types
+INI_MAX_COLUMNS	src/ast.c	/^#define INI_MAX_COLUMNS /;"	d	file:
+INI_MAX_ROWS	src/ast.c	/^#define INI_MAX_ROWS /;"	d	file:
+INTEGER	include/lexer.h	/^	INTEGER,        \/\/ integer number literal$/;"	e	enum:TokenType
+LEXER_HEADER	include/lexer.h	/^#define LEXER_HEADER$/;"	d
+LITERAL_EXPRESSION	include/ast.h	/^	LITERAL_EXPRESSION,$/;"	e	enum:AST_Types
+List	include/ast.h	/^struct List {$/;"	s
+List	include/ast.h	/^typedef struct List List;$/;"	t	typeref:struct:List
+Memory	src/ast.c	/^struct Memory {$/;"	s	file:
+Memory	src/ast.c	/^typedef struct Memory Memory;$/;"	t	typeref:struct:Memory	file:
+OUT	makefile	/^	OUT = tmp.exe$/;"	m
+OUT	makefile	/^	OUT = tmp.out$/;"	m
+PARSER_HEADER	include/parser.h	/^#define PARSER_HEADER$/;"	d
+RETURN	include/lexer.h	/^	RETURN,         \/\/ return$/;"	e	enum:TokenType
+RETURN_STATEMENT	include/ast.h	/^	RETURN_STATEMENT,$/;"	e	enum:AST_Types
+SOURCE	makefile	/^SOURCE = $(addprefix src\/, lexer.c parser.c ast.c visitor.c main.c)$/;"	m
+STATEMENT	include/ast.h	/^	STATEMENT,$/;"	e	enum:AST_Types
+STRING	include/lexer.h	/^	STRING,         \/\/ a string delimited by " "$/;"	e	enum:TokenType
+STRING_SIZE	src/lexer.c	/^#define STRING_SIZE /;"	d	file:
+TYPE	include/lexer.h	/^	TYPE,           \/\/ int, float, etc$/;"	e	enum:TokenType
+TYPE_FLOAT	include/lexer.h	/^	TYPE_FLOAT,     \/\/ float specifically$/;"	e	enum:TokenType
+TYPE_INT	include/lexer.h	/^	TYPE_INT,       \/\/ int specifically$/;"	e	enum:TokenType
+Token	include/lexer.h	/^struct Token {$/;"	s
+Token	include/lexer.h	/^typedef struct Token Token;$/;"	t	typeref:struct:Token
+TokenType	include/lexer.h	/^enum TokenType {$/;"	g
+UNARY_MINUS_EXPRESSION	include/ast.h	/^	UNARY_MINUS_EXPRESSION,$/;"	e	enum:AST_Types
+UNKNOWN	include/lexer.h	/^	UNKNOWN = 0x80, \/\/ unrecognized character$/;"	e	enum:TokenType
+VARIABLE_DECLARATION	include/ast.h	/^	VARIABLE_DECLARATION,$/;"	e	enum:AST_Types
+VARIABLE_DECLARATION_LIST	include/ast.h	/^	VARIABLE_DECLARATION_LIST,$/;"	e	enum:AST_Types
+VISITOR_HEADER	include/visitor.h	/^#define VISITOR_HEADER$/;"	d
+__anon0050531e010a	include/visitor.h	/^	union {$/;"	u	struct:ExprReturn
+__anona4e73416010a	include/ast.h	/^    union {$/;"	u	union:AST
+__anona4e734160208	include/ast.h	/^        struct {$/;"	s	union:AST::__anona4e73416010a
+__anona4e734160308	include/ast.h	/^        struct {$/;"	s	union:AST::__anona4e73416010a
+__anona4e734160408	include/ast.h	/^    struct {$/;"	s	union:AST
+__anona4e734160508	include/ast.h	/^    struct {$/;"	s	union:AST
+__anona4e734160608	include/ast.h	/^    struct {$/;"	s	union:AST
+__anona4e73416070a	include/ast.h	/^        union {$/;"	u	struct:AST::__anona4e734160608
+__anona4e734160808	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160608::__anona4e73416070a
+__anona4e734160908	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160608::__anona4e73416070a
+__anona4e734160a08	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160608::__anona4e73416070a
+__anona4e734160b08	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160608::__anona4e73416070a
+__anona4e734160c08	include/ast.h	/^    struct {$/;"	s	union:AST
+__anona4e734160d0a	include/ast.h	/^        union {$/;"	u	struct:AST::__anona4e734160c08
+__anona4e734160e08	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160c08::__anona4e734160d0a
+__anona4e734160f08	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160c08::__anona4e734160d0a
+__anona4e734161008	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160c08::__anona4e734160d0a
+__anona4e73416110a	include/ast.h	/^				union {$/;"	u	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161008
+__anona4e734161208	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160c08::__anona4e734160d0a
+__anona4e734161308	include/ast.h	/^            struct {$/;"	s	union:AST::__anona4e734160c08::__anona4e734160d0a
+__anona4e734161408	include/ast.h	/^    struct {$/;"	s	union:AST
+__anona4e73416150a	include/ast.h	/^		union {$/;"	u	struct:AST::__anona4e734161408
+__anonaa03b0ce010a	include/lexer.h	/^	union { long int_value; double float_value; long id_hash; long type_type; };$/;"	u	struct:Token
+__anonb4d85ab5010a	src/ast.c	/^    union {$/;"	u	struct:Memory	file:
+a	test_ok.c	/^int a = 3 * 5 - 2 + 1;$/;"	v	typeref:typename:int
+add_to_file	src/ast.c	/^AST *add_to_file (AST *file, AST *decl) {$/;"	f	typeref:typename:AST *
+add_to_list	src/ast.c	/^AST *add_to_list (AST *list, AST *node) {$/;"	f	typeref:typename:AST *
+all	makefile	/^all: $(EXE) $(DBG) compiler.s tags$/;"	t
+all_columns_full	src/ast.c	/^#define all_columns_full(/;"	d	file:
+alloc_ast	src/ast.c	/^AST *alloc_ast () {$/;"	f	typeref:typename:AST *
+alloc_astptr	src/ast.c	/^List *alloc_astptr () {$/;"	f	typeref:typename:List *
+alloc_id	src/ast.c	/^AST *alloc_id () {$/;"	f	typeref:typename:AST *
+alloc_str	src/ast.c	/^char *alloc_str (int length) {$/;"	f	typeref:typename:char *
+alloc_token	src/ast.c	/^Token *alloc_token () {$/;"	f	typeref:typename:Token *
+array	src/ast.c	/^        AST **array;$/;"	m	union:Memory::__anonb4d85ab5010a	typeref:typename:AST **	file:
+asm	makefile	/^asm: compiler.s$/;"	t
+assign	include/ast.h	/^            } assign; \/\/ '='$/;"	m	union:AST::__anona4e734160608::__anona4e73416070a	typeref:struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160908
+ast	include/ast.h	/^    AST *ast;$/;"	m	struct:List	typeref:typename:AST *
+ast	src/ast.c	/^} ast, astptr, str, id_buffer, token_buffer;$/;"	v	typeref:struct:Memory
+astptr	src/ast.c	/^} ast, astptr, str, id_buffer, token_buffer;$/;"	v	typeref:struct:Memory
+b	test_ok.c	/^int b = -4 + a * 3;$/;"	v	typeref:typename:int
+binary_expr	include/ast.h	/^            } binary_expr; \/\/ '+', '-', '*', '\/'$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a	typeref:struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160e08
+block	include/ast.h	/^            AST *block;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160208	typeref:typename:AST *
+buffpos	include/lexer.h	/^	char *filename, *file_buffer, *buffpos, *start, *line_start;$/;"	m	struct:Token	typeref:typename:char ***
+c	test_ok.c	/^int c = a \/ b * - 1;$/;"	v	typeref:typename:int
+clean	makefile	/^clean:$/;"	t
+column	include/lexer.h	/^	int length, line, column, line_span; \/\/ number of lines the token spans$/;"	m	struct:Token	typeref:typename:int
+columns_allocated	src/ast.c	/^    int columns_allocated;$/;"	m	struct:Memory	typeref:typename:int	file:
+compiler.s	makefile	/^compiler.s: $(SOURCE) $(HEADER)$/;"	t
+current_column	src/ast.c	/^    int current_column;$/;"	m	struct:Memory	typeref:typename:int	file:
+current_row	src/ast.c	/^    int current_row; \/\/ at current column$/;"	m	struct:Memory	typeref:typename:int	file:
+current_scope	src/visitor.c	/^int current_scope = 0;$/;"	v	typeref:typename:int
+d	test_ok.c	/^int d = c * a + b \/ c - a;$/;"	v	typeref:typename:int
+debug	makefile	/^debug: $(DBG)$/;"	t
+decl	include/ast.h	/^    } decl; \/\/ base type$/;"	m	union:AST	typeref:union:AST::__anona4e73416010a
+decl_type	include/ast.h	/^            char decl_type; \/\/ useless space to match union fields$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160308	typeref:typename:char
+decl_type	include/ast.h	/^            char decl_type;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160208	typeref:typename:char
+divideByZero	test_error.c	/^int divideByZero = 2\/var1;$/;"	v	typeref:typename:int
+e	test_ok.c	/^int e = a - b + c * -d;$/;"	v	typeref:typename:int
+err	src/lexer.c	/^#define err(/;"	d	file:
+err	src/main.c	/^#define err(/;"	d	file:
+err	src/parser.c	/^#define err(/;"	d	file:
+expr	include/ast.h	/^                AST *expr;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160808	typeref:typename:AST *
+expr	include/ast.h	/^                AST *expr;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160908	typeref:typename:AST *
+expr	include/ast.h	/^                AST *expr;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160a08	typeref:typename:AST *
+expr	include/ast.h	/^                AST *expr;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160b08	typeref:typename:AST *
+expr	include/ast.h	/^                AST *expr;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160f08	typeref:typename:AST *
+expr	include/ast.h	/^            AST *expr;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160308	typeref:typename:AST *
+expr	include/ast.h	/^            } expr; \/\/ 'e'$/;"	m	union:AST::__anona4e734160608::__anona4e73416070a	typeref:struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160b08
+expr	include/ast.h	/^    } expr; \/\/ base type$/;"	m	union:AST	typeref:struct:AST::__anona4e734160c08
+expr_list	include/ast.h	/^                AST *expr_list;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161308	typeref:typename:AST *
+file_buffer	include/lexer.h	/^	char *filename, *file_buffer, *buffpos, *start, *line_start;$/;"	m	struct:Token	typeref:typename:char **
+filename	include/lexer.h	/^	char *filename, *file_buffer, *buffpos, *start, *line_start;$/;"	m	struct:Token	typeref:typename:char *
+first	include/ast.h	/^        List *first;$/;"	m	struct:AST::__anona4e734160408	typeref:typename:List *
+float_value	include/ast.h	/^					double float_value;$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161008::__anona4e73416110a	typeref:typename:double
+float_value	include/ast.h	/^			double float_value;$/;"	m	union:AST::__anona4e734161408::__anona4e73416150a	typeref:typename:double
+float_value	include/lexer.h	/^	union { long int_value; double float_value; long id_hash; long type_type; };$/;"	m	union:Token::__anonaa03b0ce010a	typeref:typename:double
+float_value	include/visitor.h	/^		double float_value;$/;"	m	union:ExprReturn::__anon0050531e010a	typeref:typename:double
+function	include/ast.h	/^        } function; \/\/ 'f'$/;"	m	union:AST::__anona4e73416010a	typeref:struct:AST::__anona4e73416010a::__anona4e734160208
+function_call	include/ast.h	/^            } function_call; \/\/ 'c'$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a	typeref:struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161308
+hash	include/ast.h	/^        int hash;$/;"	m	struct:AST::__anona4e734161408	typeref:typename:int
+id	include/ast.h	/^                AST *id;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160808	typeref:typename:AST *
+id	include/ast.h	/^                AST *id;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160908	typeref:typename:AST *
+id	include/ast.h	/^                AST *id;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161208	typeref:typename:AST *
+id	include/ast.h	/^                AST *id;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161308	typeref:typename:AST *
+id	include/ast.h	/^            AST *id;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160208	typeref:typename:AST *
+id	include/ast.h	/^            AST *id;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160308	typeref:typename:AST *
+id	include/ast.h	/^            } id; \/\/ 'i'$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a	typeref:struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161208
+id	include/ast.h	/^        AST *id;$/;"	m	struct:AST::__anona4e734160508	typeref:typename:AST *
+id	include/ast.h	/^    } id;$/;"	m	union:AST	typeref:struct:AST::__anona4e734161408
+id_buffer	src/ast.c	/^} ast, astptr, str, id_buffer, token_buffer;$/;"	v	typeref:struct:Memory
+id_hash	include/lexer.h	/^	union { long int_value; double float_value; long id_hash; long type_type; };$/;"	m	union:Token::__anonaa03b0ce010a	typeref:typename:long
+init_memory	src/ast.c	/^void init_memory () {$/;"	f	typeref:typename:void
+int_value	include/ast.h	/^					long int_value;$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161008::__anona4e73416110a	typeref:typename:long
+int_value	include/ast.h	/^			long int_value;$/;"	m	union:AST::__anona4e734161408::__anona4e73416150a	typeref:typename:long
+int_value	include/lexer.h	/^	union { long int_value; double float_value; long id_hash; long type_type; };$/;"	m	union:Token::__anonaa03b0ce010a	typeref:typename:long
+int_value	include/visitor.h	/^		long int_value;$/;"	m	union:ExprReturn::__anon0050531e010a	typeref:typename:long
+jenkins_hash	src/lexer.c	/^int jenkins_hash (char *string, int length) {$/;"	f	typeref:typename:int
+keywords_strings	src/lexer.c	/^char keywords_strings[] = "int\\nfloat\\nreturn\\n";$/;"	v	typeref:typename:char[]
+keywords_types	src/lexer.c	/^unsigned char keywords_types[] = { TYPE, TYPE, RETURN };$/;"	v	typeref:typename:unsigned char[]
+last	include/ast.h	/^        List *last;$/;"	m	struct:AST::__anona4e734160408	typeref:typename:List *
+left_expr	include/ast.h	/^                AST *left_expr;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160e08	typeref:typename:AST *
+length	include/ast.h	/^        int length;$/;"	m	struct:AST::__anona4e734161408	typeref:typename:int
+length	include/lexer.h	/^	int length, line, column, line_span; \/\/ number of lines the token spans$/;"	m	struct:Token	typeref:typename:int
+line	include/lexer.h	/^	int length, line, column, line_span; \/\/ number of lines the token spans$/;"	m	struct:Token	typeref:typename:int
+line_span	include/lexer.h	/^	int length, line, column, line_span; \/\/ number of lines the token spans$/;"	m	struct:Token	typeref:typename:int
+line_start	include/lexer.h	/^	char *filename, *file_buffer, *buffpos, *start, *line_start;$/;"	m	struct:Token	typeref:typename:char *****
+list	include/ast.h	/^    } list; \/\/ expr_list param_type_list stat_block\/block file var_decl_list$/;"	m	union:AST	typeref:struct:AST::__anona4e734160408
+literal	include/ast.h	/^            } literal; \/\/ 'n'$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a	typeref:struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161008
+locate_id	src/ast.c	/^AST *locate_id (char *string, int hash, int length) {$/;"	f	typeref:typename:AST *
+main	src/main.c	/^int main (int argc, char **argv) {$/;"	f	typeref:typename:int
+new_assign_stat	src/ast.c	/^AST *new_assign_stat (AST *id, AST *expr) {$/;"	f	typeref:typename:AST *
+new_binary_expr	src/ast.c	/^AST *new_binary_expr (AST *left_expr, char op, AST *right_expr) {$/;"	f	typeref:typename:AST *
+new_expr_stat	src/ast.c	/^AST *new_expr_stat (AST *expr) {$/;"	f	typeref:typename:AST *
+new_file	src/ast.c	/^AST *new_file (AST *decl) {$/;"	f	typeref:typename:AST *
+new_function_call	src/ast.c	/^AST *new_function_call (AST *id, AST *expr_list) {$/;"	f	typeref:typename:AST *
+new_function_decl	src/ast.c	/^AST *new_function_decl (int type, AST *id, AST *param_type_list, AST *block) {$/;"	f	typeref:typename:AST *
+new_id_expr	src/ast.c	/^AST *new_id_expr (AST *id) {$/;"	f	typeref:typename:AST *
+new_identifier	src/ast.c	/^AST *new_identifier (Token *token) {$/;"	f	typeref:typename:AST *
+new_list	src/ast.c	/^AST *new_list (AST *node) {$/;"	f	typeref:typename:AST *
+new_literal	src/ast.c	/^AST *new_literal (int type, void *value) {$/;"	f	typeref:typename:AST *
+new_param_type	src/ast.c	/^AST *new_param_type (int type, AST *id) {$/;"	f	typeref:typename:AST *
+new_return_stat	src/ast.c	/^AST *new_return_stat (AST *expr) {$/;"	f	typeref:typename:AST *
+new_unary_minus	src/ast.c	/^AST *new_unary_minus (AST *expr) {$/;"	f	typeref:typename:AST *
+new_var_decl	src/ast.c	/^AST *new_var_decl (int type, AST *id, AST *expr) {$/;"	f	typeref:typename:AST *
+new_var_decl_list	src/ast.c	/^AST *new_var_decl_list (AST *ast) {$/;"	f	typeref:typename:AST *
+next	include/ast.h	/^    List *next;$/;"	m	struct:List	typeref:typename:List *
+next_ir_number	src/visitor.c	/^int next_ir_number;$/;"	v	typeref:typename:int
+next_scope	src/visitor.c	/^int next_scope = 1;$/;"	v	typeref:typename:int
+next_token	src/lexer.c	/^int next_token (Token *restrict token) {$/;"	f	typeref:typename:int
+num_items	include/ast.h	/^        int num_items;$/;"	m	struct:AST::__anona4e734160408	typeref:typename:int
+obsolete_ir_for_globals	src/visitor.c	/^int obsolete_ir_for_globals;$/;"	v	typeref:typename:int
+operation	include/ast.h	/^				char operation;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160e08	typeref:typename:char
+param_type	include/ast.h	/^    } param_type;$/;"	m	union:AST	typeref:struct:AST::__anona4e734160508
+param_type_list	include/ast.h	/^            AST *param_type_list;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160208	typeref:typename:AST *
+parse_declaration	src/parser.c	/^AST *parse_declaration (Token *token) {$/;"	f	typeref:typename:AST *
+parse_declaration_parameters	src/parser.c	/^AST *parse_declaration_parameters (Token *token) {$/;"	f	typeref:typename:AST *
+parse_expression	include/parser.h	/^#define parse_expression(/;"	d
+parse_expression_op	src/parser.c	/^AST *parse_expression_op (Token *token, int prev_op) {$/;"	f	typeref:typename:AST *
+parse_file	src/parser.c	/^AST *parse_file (const char *filename) { \/\/ TODO: return the AST root$/;"	f	typeref:typename:AST *
+parse_statement	src/parser.c	/^AST *parse_statement (Token *token) {$/;"	f	typeref:typename:AST *
+ptrs	src/ast.c	/^        List **ptrs;$/;"	m	union:Memory::__anonb4d85ab5010a	typeref:typename:List **	file:
+read_file	src/parser.c	/^static char *read_file (const char *filename) {$/;"	f	typeref:typename:char *	file:
+release	makefile	/^release: $(EXE)$/;"	t
+resize_if_needed	src/ast.c	/^void resize_if_needed (Memory* mem, unsigned long type_size, int input_length) {$/;"	f	typeref:typename:void
+ret	include/ast.h	/^            } ret; \/\/ 'r'$/;"	m	union:AST::__anona4e734160608::__anona4e73416070a	typeref:struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160a08
+right_expr	include/ast.h	/^                AST *right_expr;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160e08	typeref:typename:AST *
+root	src/ast.c	/^AST *root = NULL;$/;"	v	typeref:typename:AST *
+row_full	src/ast.c	/^#define row_full(/;"	d	file:
+rows_allocated	src/ast.c	/^    int rows_allocated; \/\/ at current column$/;"	m	struct:Memory	typeref:typename:int	file:
+start	include/lexer.h	/^	char *filename, *file_buffer, *buffpos, *start, *line_start;$/;"	m	struct:Token	typeref:typename:char ****
+stat	include/ast.h	/^    } stat; \/\/ base type$/;"	m	union:AST	typeref:struct:AST::__anona4e734160608
+str	src/ast.c	/^} ast, astptr, str, id_buffer, token_buffer;$/;"	v	typeref:struct:Memory
+string	include/ast.h	/^        char *string;$/;"	m	struct:AST::__anona4e734161408	typeref:typename:char *
+strings	src/ast.c	/^        char **strings;$/;"	m	union:Memory::__anonb4d85ab5010a	typeref:typename:char **	file:
+strline	src/lexer.c	/^char *strline (const Token *restrict token) {$/;"	f	typeref:typename:char *
+strtoken	src/lexer.c	/^char *strtoken (const Token *restrict token) {$/;"	f	typeref:typename:char *
+tags	makefile	/^tags: $(SOURCE) $(HEADER)$/;"	t
+teste1	test_error.c	/^int teste1=linha2coluna8_24;$/;"	v	typeref:typename:int
+teste2	test_error.c	/^int teste2 = linha3coluna10_27\/linha3coluna28_45;$/;"	v	typeref:typename:int
+teste3	test_error.c	/^int teste3 = 1 +        linha4coluna21_38;$/;"	v	typeref:typename:int
+teste4	test_error.c	/^int teste4 = linha7coluna10_27 * ( 1 - linha7coluna36_53);$/;"	v	typeref:typename:int
+token	include/ast.h	/^		Token *token;$/;"	m	struct:AST::__anona4e734161408	typeref:typename:Token *
+token_buffer	src/ast.c	/^} ast, astptr, str, id_buffer, token_buffer;$/;"	v	typeref:struct:Memory
+tokens	src/ast.c	/^		Token **tokens;$/;"	m	union:Memory::__anonb4d85ab5010a	typeref:typename:Token **	file:
+tree	src/ast.c	/^        AST **tree;$/;"	m	union:Memory::__anonb4d85ab5010a	typeref:typename:AST **	file:
+type	include/ast.h	/^				int type;$/;"	m	struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734161008	typeref:typename:int
+type	include/ast.h	/^		int type;$/;"	m	struct:AST::__anona4e734161408	typeref:typename:int
+type	include/ast.h	/^                int type;$/;"	m	struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160808	typeref:typename:int
+type	include/ast.h	/^            int type;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160208	typeref:typename:int
+type	include/ast.h	/^            int type;$/;"	m	struct:AST::__anona4e73416010a::__anona4e734160308	typeref:typename:int
+type	include/ast.h	/^        char type;$/;"	m	struct:AST::__anona4e734160608	typeref:typename:char
+type	include/ast.h	/^        char type;$/;"	m	struct:AST::__anona4e734160c08	typeref:typename:char
+type	include/ast.h	/^        char type;$/;"	m	union:AST::__anona4e73416010a	typeref:typename:char
+type	include/ast.h	/^        int type;$/;"	m	struct:AST::__anona4e734160508	typeref:typename:int
+type	include/lexer.h	/^	int type; \/\/ type_type (one line above) = TYPE_INT or TYPE_FLOAT$/;"	m	struct:Token	typeref:typename:int
+type	include/visitor.h	/^	int type; \/\/ TYPE_INT, TYPE_FLOAT$/;"	m	struct:ExprReturn	typeref:typename:int
+type_type	include/lexer.h	/^	union { long int_value; double float_value; long id_hash; long type_type; };$/;"	m	union:Token::__anonaa03b0ce010a	typeref:typename:long
+unary_minus	include/ast.h	/^            } unary_minus; \/\/ 'm'$/;"	m	union:AST::__anona4e734160c08::__anona4e734160d0a	typeref:struct:AST::__anona4e734160c08::__anona4e734160d0a::__anona4e734160f08
+var1	test_error.c	/^int var1 = 0;$/;"	v	typeref:typename:int
+var_decl	include/ast.h	/^            } var_decl; \/\/ 'd'$/;"	m	union:AST::__anona4e734160608::__anona4e73416070a	typeref:struct:AST::__anona4e734160608::__anona4e73416070a::__anona4e734160808
+var_decl_list	include/ast.h	/^			List var_decl_list;$/;"	m	union:AST::__anona4e734160608::__anona4e73416070a	typeref:typename:List
+variable	include/ast.h	/^        } variable; \/\/ 'v'$/;"	m	union:AST::__anona4e73416010a	typeref:struct:AST::__anona4e73416010a::__anona4e734160308
+visit_add	src/visitor.c	/^ExprReturn visit_add (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_assign_stat	src/visitor.c	/^void visit_assign_stat (AST *assign) {$/;"	f	typeref:typename:void
+visit_block	src/visitor.c	/^void visit_block (AST *block, AST *params) {$/;"	f	typeref:typename:void
+visit_div	src/visitor.c	/^ExprReturn visit_div (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_expr	src/visitor.c	/^ExprReturn visit_expr (AST *expr) {$/;"	f	typeref:typename:ExprReturn
+visit_file	src/visitor.c	/^void visit_file (AST *root) {$/;"	f	typeref:typename:void
+visit_function_call	src/visitor.c	/^ExprReturn visit_function_call (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_function_decl	src/visitor.c	/^void visit_function_decl (AST *ast) {$/;"	f	typeref:typename:void
+visit_id	src/visitor.c	/^ExprReturn visit_id (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_literal	src/visitor.c	/^ExprReturn visit_literal (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_mul	src/visitor.c	/^ExprReturn visit_mul (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_return_stat	src/visitor.c	/^void visit_return_stat (AST *ast) {$/;"	f	typeref:typename:void
+visit_stat	src/visitor.c	/^void visit_stat (AST *stat) {$/;"	f	typeref:typename:void
+visit_sub	src/visitor.c	/^ExprReturn visit_sub (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_unary_minus	src/visitor.c	/^ExprReturn visit_unary_minus (AST *ast) {$/;"	f	typeref:typename:ExprReturn
+visit_var_decl	src/visitor.c	/^void visit_var_decl (AST *ast) {$/;"	f	typeref:typename:void
