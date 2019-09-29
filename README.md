@@ -88,9 +88,9 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 17 | 03/10/2019 (qui) | Aula reservada para consulta com o professor| --- |
 | 18 | 08/10/2019 (ter) | **1º Exercício Escolar** | --- |
 | 19 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 19 | 15/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 21 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
-| 22 | 22/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
+| 21 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
+| 22 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
+| 19 | 22/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
 | 23 | 24/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
 | 24 | 29/10/2019 (ter) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
 | 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
