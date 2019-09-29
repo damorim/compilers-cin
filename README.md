@@ -56,7 +56,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
 
 ### Provas anteriores
-- [Clique aqui](/provas)
+- [Clique aqui](github.com/damorim/compilers-cin/tree/master/provas)
 
 ### Notas
 - [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc)
@@ -76,31 +76,32 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 05 | 22/08/2019 (qui) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
 | 06 | 27/08/2019 (ter) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
 | 07 | 29/08/2019 (qui) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
-| 08 | 03/09/2019 (ter) | [Demo](/demos) | --- |
-| 09 | 05/09/2019 (qui) | [Aula Prática 1](/AP1) | --- |
+| 08 | 03/09/2019 (ter) | [Demo](github.com/damorim/compilers-cin/tree/master/demos) | --- |
+| 09 | 05/09/2019 (qui) | [Aula Prática 1](github.com/damorim/compilers-cin/tree/master/ap1) | --- |
 | 10 | 10/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 11 | 12/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 17/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 13 | 19/09/2019 (qui) | [Aula Prática 2](/AP2) | --- |
-| 14 | 24/09/2019 (ter) | [Aula Prática 3](/AP3) | --- |
-| 15 | 26/09/2019 (qui) | Aula de Revisão | --- |
-| 16 | 01/10/2019 (ter) | Aula reservada para consulta com o professor| --- |
-| 17 | 03/10/2019 (qui) | **1º Exercício Escolar** | --- |
-| 18 | 08/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 19 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 20 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
-| 21 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
-| 22 | 22/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
-| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](/mini-projeto) | --- |
-| 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
-| 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
-| 26 | 05/11/2019 (ter) | [Slicing]() | --- |
-| 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 28 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 29 | 14/11/2019 (qui) | Aula de Revisão| --- |
-| 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 32 | 26/11/2019 (ter) | **2º Exercício Escolar** | --- |
-| 33 | 28/11/2019 (qui) | Revisão de Provas | --- |
-| 34 | 03/12/2019 (ter) | **Prova Final e Segunda Chamada**  | --- |
-| -- | 21/12/2019 (sab) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
+| 12 | 17/09/2019 (ter) | Sem Aula | --- |
+| 12 | 19/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 13 | 24/09/2019 (ter) | [Aula Prática 2](github.com/damorim/compilers-cin/tree/master/ap2) | --- |
+| 14 | 26/09/2019 (qui) | [Aula Prática 3](github.com/damorim/compilers-cin/tree/master/ap3) | --- |
+| 15 | 01/10/2019 (ter) | Aula de Revisão | --- |
+| 16 | 03/10/2019 (qui) | Aula reservada para consulta com o professor| --- |
+| 17 | 08/10/2019 (ter) | **1º Exercício Escolar** | --- |
+| 18 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 15/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 20 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
+| 21 | 22/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
+| 22 | 24/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
+| 23 | 29/10/2019 (ter) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
+| 24 | 31/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
+| 25 | 05/11/2019 (ter) | [Análise Estática e Otimização]()| --- |
+| 26 | 07/11/2019 (qui) | [Slicing]() | --- |
+| 27 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 28 | 14/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 29 | 19/11/2019 (ter) | Aula de Revisão| --- |
+| 30 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto| --- |
+| 31 | 26/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 32 | 28/11/2019 (qui) | **2º Exercício Escolar** | --- |
+| 33 | 03/12/2019 (ter) | Revisão de Provas | --- |
+| 34 | 05/12/2019 (qui) | **Prova Final e Segunda Chamada**  | --- |
+| -- | 21/12/2019 (sáb) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
