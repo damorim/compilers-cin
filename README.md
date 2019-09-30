@@ -85,23 +85,22 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 14 | 24/09/2019 (ter) | [Aula Prática 2](github.com/damorim/compilers-cin/tree/master/ap2) | --- |
 | 15 | 26/09/2019 (qui) | [Aula Prática 3](github.com/damorim/compilers-cin/tree/master/ap3) | --- |
 | 16 | 01/10/2019 (ter) | Aula de Revisão | --- |
-| 17 | 03/10/2019 (qui) | Aula reservada para consulta com o professor| --- |
-| 18 | 08/10/2019 (ter) | **1º Exercício Escolar** | --- |
-| 19 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 17 | 03/10/2019 (qui) | **1º Exercício Escolar** | --- |
+| 18 | 08/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 10/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
 | 21 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
-| 22 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
-| 19 | 22/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 23 | 24/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
-| 24 | 29/10/2019 (ter) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
-| 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]() | --- |
-| 26 | 05/11/2019 (ter) | [Análise Estática e Otimização]()| --- |
-| 27 | 07/11/2019 (qui) | [Slicing]() | --- |
+| 22 | 17/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 22/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
+| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
+| 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
+| 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
+| 26 | 05/11/2019 (ter) | [Slicing]() | --- |
+| 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
 | 27 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 29 | 14/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 30 | 19/11/2019 (ter) | Aula de Revisão| --- |
-| 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 32 | 26/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 33 | 28/11/2019 (qui) | **2º Exercício Escolar** | --- |
-| 34 | 03/12/2019 (ter) | Revisão de Provas | --- |
-| 35 | 05/12/2019 (qui) | **Prova Final e Segunda Chamada**  | --- |
+| 29 | 14/11/2019 (qui) | Aula de Revisão| --- |
+| 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
+| 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 32 | 26/11/2019 (ter) | **2º Exercício Escolar** | --- |
+| 33 | 28/11/2019 (qui) | Revisão de Provas | --- |
+| 34 | 03/12/2019 (ter) | **Prova Final e Segunda Chamada**  | --- |
 | -- | 21/12/2019 (sáb) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
