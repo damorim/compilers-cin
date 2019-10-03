@@ -73,6 +73,20 @@ public class ASTSamples {
         Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
         Expression e = new ArrayIndexing(new Id("x"), new Num(-1));
         return new Program(d, e);
+    }
+
+    // x: array[1] of integer; x [ 5 mod 3 ]
+    public static Node sample11() {
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
+        Expression e = new ArrayIndexing(new Id("x"), new Mod(new Num(5), new Num(3)));
+        return new Program(d, e);
+    }
+
+    // x: array[1] of integer; x [a]
+    public static Node sample12() {
+        Declaration d = new Declaration(new Id("x"), new ArrayType(1, new IntType()));
+        Expression e = new ArrayIndexing(new Id("x"), new Id("a"));
+        return new Program(d, e);
     }    
 
 }

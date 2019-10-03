@@ -18,7 +18,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     }
 
     @Override
-    public void visit(Id exp) { //TODO: check if needed
+    public void visit(Id exp) { // TODO: remove this!
         symbolTable.put(exp, symbolTable.get(exp));
     }
     
@@ -56,7 +56,7 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
 
         String arType = symbolTable.get(e1);
         check(arType, "array ");
-        check(symbolTable.get(e2), "int");
+        check(symbolTable.get(e2), "int"); 
 
         // identificando partes relevantes a partir da string do array
         String regex = "array \\[(.*?)\\] of (.*)";
@@ -109,7 +109,8 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
     
     private static void check(String s1, String s2) {
         if (s1 == null) {
-            throw new RuntimeException("Could not find type");
+            //throw new RuntimeException("Could not find type");
+            throw new TypeError();
         } 
         if (!s1.startsWith(s2)) {
             throw new TypeError();

@@ -70,6 +70,20 @@ public class TypeCheckerVisitorTest {
         Program p = (Program) ASTSamples.sample9();
         TypeCheckerVisitor vis = new TypeCheckerVisitor();
         p.accept(vis);
-    }        
+    }
+
+    @Test
+    public void modIndexing() {
+        Program p = (Program) ASTSamples.sample11();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        p.accept(vis);
+    }
+
+    @Test(expected=TypeError.class)
+    public void badIndex2() {
+        Program p = (Program) ASTSamples.sample12();
+        TypeCheckerVisitor vis = new TypeCheckerVisitor();
+        p.accept(vis);
+    }    
     
 }
