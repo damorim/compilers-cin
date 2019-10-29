@@ -333,7 +333,7 @@ AST *new_function_decl (int type, AST *id, AST *param_decl_list, AST *stat_block
 	return ast;
 }
 
-char *strlinea (const AbbrevToken *restrict token) {
+char *strlinea (const AbbrevToken *token) {
 	int i;
 	char *ptr = token->line_start;
 #define STRING_SIZE 256

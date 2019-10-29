@@ -94,7 +94,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
 | 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
 | 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
-| 26 | 05/11/2019 (ter) | [Slicing]() | --- |
+| 26 | 05/11/2019 (ter) | [Aplicações  de Compiladores]() | --- |
 | 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
 | 27 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
 | 29 | 14/11/2019 (qui) | Aula de Revisão| --- |

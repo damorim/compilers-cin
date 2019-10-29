@@ -47,9 +47,9 @@ enum TypeType {
 
 
 // function prototypes
-int next_token (Token *restrict token);
-char *strtoken (const Token *restrict token);
-char *strline (const Token *restrict token);
+int next_token (Token *token);
+char *strtoken (const Token *token);
+char *strline (const Token *token);
 int jenkins_hash (char *string, int length);
 
 #endif // LEXER_HEADER

@@ -11,7 +11,7 @@ char keywords_strings[] = "int\nfloat\nvoid\nreturn\n";
 unsigned char keywords_types[] = { TYPE_INT, TYPE_FLOAT, TYPE_VOID, RETURN };
 
 
-int next_token (Token *restrict token) {
+int next_token (Token *token) {
 	// token->buffpos must be one character after the end of the token on return
 	char c;
 	while (1) {
@@ -219,7 +219,7 @@ int next_token (Token *restrict token) {
 }
 
 
-char *strtoken (const Token *restrict token) {
+char *strtoken (const Token *token) {
 #define STRING_SIZE 128
 	static char string[STRING_SIZE];
 	int ncopy = (token->length >= STRING_SIZE) ? STRING_SIZE-1 : token->length;
@@ -232,7 +232,7 @@ char *strtoken (const Token *restrict token) {
 }
 
 
-char *strline (const Token *restrict token) {
+char *strline (const Token *token) {
 	int i;
 	char *ptr = token->start - token->column + 1;
 #define STRING_SIZE 256
