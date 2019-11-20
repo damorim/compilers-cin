@@ -35,8 +35,8 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 ### Recursos
 
-- [Google Classroom](http://classroom.google.com) - Código:  cq4r5gd
-- [Repositório Github]( http://github.com/damorim/compilers-cin)
+- [Google Classroom](https://classroom.google.com) - Código:  cq4r5gd
+- [Repositório Github](https://github.com/damorim/compilers-cin)
 
 ### Ferramentas
 - [Antlr (ANother Tool for Language Recognition)](https://www.antlr.org/)
@@ -56,7 +56,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
 
 ### Provas anteriores
-- [Clique aqui](github.com/damorim/compilers-cin/tree/master/provas)
+- [Clique aqui](https://github.com/damorim/compilers-cin/tree/master/provas)
 
 ### Notas
 - [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc)
@@ -76,14 +76,14 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 05 | 22/08/2019 (qui) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
 | 06 | 27/08/2019 (ter) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
 | 07 | 29/08/2019 (qui) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
-| 08 | 03/09/2019 (ter) | [Demo](github.com/damorim/compilers-cin/tree/master/demos) | --- |
-| 09 | 05/09/2019 (qui) | [Aula Prática 1](github.com/damorim/compilers-cin/tree/master/ap1) | --- |
+| 08 | 03/09/2019 (ter) | [Demo](https://github.com/damorim/compilers-cin/tree/master/demos) | --- |
+| 09 | 05/09/2019 (qui) | [Aula Prática 1](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
 | 10 | 10/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 11 | 12/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 12 | 17/09/2019 (ter) | Sem Aula | --- |
 | 13 | 19/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 14 | 24/09/2019 (ter) | [Aula Prática 2](github.com/damorim/compilers-cin/tree/master/ap2) | --- |
-| 15 | 26/09/2019 (qui) | [Aula Prática 3](github.com/damorim/compilers-cin/tree/master/ap3) | --- |
+| 14 | 24/09/2019 (ter) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
+| 15 | 26/09/2019 (qui) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
 | 16 | 01/10/2019 (ter) | Aula de Revisão | --- |
 | 17 | 03/10/2019 (qui) | **1º Exercício Escolar** | --- |
 | 18 | 08/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
@@ -91,16 +91,17 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 21 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
 | 22 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
 | 19 | 22/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
-| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
+| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
 | 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
 | 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
 | 26 | 05/11/2019 (ter) | [Aplicações  de Compiladores]() | --- |
 | 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
 | 27 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 29 | 14/11/2019 (qui) | Aula de Revisão| --- |
+| 29 | 14/11/2019 (qui) | Sem Aula | --- |
 | 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 31 | 21/11/2019 (qui) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 32 | 26/11/2019 (ter) | **2º Exercício Escolar** | --- |
-| 33 | 28/11/2019 (qui) | Revisão de Provas | --- |
-| 34 | 03/12/2019 (ter) | **Prova Final e Segunda Chamada**  | --- |
+| 31 | 21/11/2019 (qui) | Aula de Revisão| --- |
+| 32 | 26/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 33 | 28/11/2019 (qui) | **2º Exercício Escolar** | --- |
+| 34 | 03/12/2019 (ter) | Revisão de Provas | --- |
+| 35 | 05/12/2019 (qui) | **Prova Final e Segunda Chamada**  | --- |
 | -- | 21/12/2019 (sáb) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
