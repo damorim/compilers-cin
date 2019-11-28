@@ -1,0 +1,141 @@
+﻿2EE IF688 (Compiladores), 6 de Dezembro de 2018
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Marque as opções corretas:
+
+- Um registro de ativação contém endereço de retorno do chamador de
+  uma função.
+  (x) verdadeiro ( ) falso
+  
+- Uma linguagem com gerenciamento manual de memória é mais suceptível
+  a erros como memory leaks e acesso indevido de memória.
+  (x) verdadeiro ( ) falso
+  
+- O garbage collector "mark-and-sweep" pode ser ativado (entrar em
+  execução) a qualquer momento durante a execução do programa.
+  (x) verdadeiro ( ) falso
+
+- O garbage collector "reference counting" não onera o custo execução
+  de uma instrução.
+  (  ) verdadeiro (x) falso
+
+- O gerenciador de memória é embutido em um programa compilado e é
+  responsável por fazer a interface com o sistema operacional.
+  (x) verdadeiro (  ) falso  
+
+2. (4 pontos) Indique qual otmização vista em sala (ou otimizações) o
+compilador pode realizar em cada um dos trechos de código abaixo. É
+necessário indicar o nome da otimização e dizer precisamente o que ela
+faz e porque ela faz.
+
+a)   c = 5;
+     for (i=0; i<N; i++){
+       x[i]=c*i;
+     }
+
+     strength reduction (reducao de forca) =>
+     c = 5;
+     last = -5;
+     for (i=0; i<N; i++){
+       x[i] = last + c;
+       last = x[i];
+     }
+
+b)   for (i=0; i<N; i++){
+       x=x+k;
+       for (j=0; j<N; j++){
+         a[i][j]=100*N+10*i+j+x;
+       }
+     }
+
+     loop invariant code motion =>
+     for (i=0; i<N; i++){
+       x=x+k;
+       tmp1 = 100*N+10*i;
+       for (j=0; j<N; j++){
+         a[i][j]=tmp1+j+x;
+       }
+     }
+
+     loop invariant code motion =>
+     tmp2=100*N
+     for (i=0; i<N; i++){
+       x=x+k;
+       tmp1=tmp2+10*i;
+       for (j=0; j<N; j++){
+         a[i][j]=tmp1+j+x;
+       }
+     }
+
+
+3. (1 ponto) Coloque o código abaixo no formato SSA e indique suas
+dependências de dados
+
+int z = -1;
+void diff(int x, int y) {
+  if (x > y) {
+    int tmp = x;
+    x = y;
+    y = tmp;
+  }
+  z = y - x;
+}
+
+SSA --->
+
+int z0 = -1;
+void diff(int x0, int y0) {
+  if (x0 > y0) {
+    int tmp0 = x0;
+    x1 = y0;
+    y1 = tmp0;
+  }
+  x2=phi(x0,x1);
+  y2=phi(y0,y1)
+  z1 = y2 - x2;
+}
+
+4. (1 ponto) Considere o fragmento de código de três endereços ao lado
+e construa seu Control Flow Graph (CFG).
+
+I: s = t + u
+R: t = t * 2
+   if (t<v) goto F
+   z = t - s
+   if (f<v) goto I
+F: w = 2 + z
+   s = w - 3
+   if (s>v) goto R
+   x = w
+   z = x*s
+
+(no quadro)
+
+5. (1 ponto) Uma prática comum de programação defensiva é verificar se
+os paramêtros de uma função satisfazem suas pré-condições. O exemplo
+abaixo mostra uma situação destas onde os parâmetros de mesmo tipo não
+podem apontar para o mesmo objeto. Explique como análise de ponteiros
+pode ajudar na otimização de um trecho de código como este.
+
+foo(T o1, T o2) {
+  if (o1 == o2) { ... /* levante exceção */ }
+  else {
+    ... /* corpo da função */
+  }
+}
+
+Analise de ponteiros calcula um conjunto de possiveis enderecos de memoria que uma dada variavel ponte apontar em uma dada linha do programa. Neste exemplo, analise de ponteiros diria que o1 pode apontar para qualquer elemento de S1, o tal conjunto de possiveis enderecos. Da mesma forma, analise de ponteiros diria que o2 esta associado ao conjunto S2. Se estes conjuntos forem disjuntos (intersecao vazia), o compilador percebera que a expressao o1==o2 nunca podera ser satisfeita. Desta forma, o compilador pode substitutir o trecho de codigo acima por:
+
+foo(T o1, T o2) {
+    ... /* corpo da função */
+}
+
+6. (2 pontos) Indique vantagens que o uso de uma representação
+intermediária de código pode trazer para a construção de um
+compilador. Cite exemplo(s).
+
+- Modularidade permite a divisao entre front-end e back-end possibilitanto maior produtividade na construcao de novos compiladores
+
+- Permite concentracao de esforco de otimizacao (independente de plataforma) em uma dada representacao.
+
+- Facilitam o processo de traducao a medida que deixam explicito algum aspecto importante para traducao que antes estava implicito no codigo fonte. Por exemplo, a representacao de 3 enderecoes deixa explicita ordem de precedencia e associatividade de operadores e a representacao SSA deixa explicito as dependencias de dados que sao muito importantes para varias analises de codigo, incluindo otimizacoes e verificacoes de tipos.
