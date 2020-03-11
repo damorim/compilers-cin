@@ -7,10 +7,11 @@
 * **Professor** 
   * [Marcelo d'Amorim](http://cin.ufpe.br/~damorim/) (damorim@cin.ufpe.br)
 * **Monitores** 
-  * Felipe Cavalcanti Guerra Ramos
+  * Felipe Cavalcanti Guerra Ramos (fcgr@cin.ufpe.br)
+  * Rodrigo Brayner Lyra (rbl2@cin.ufpe.br)
   
 ### Horário e Local de Aulas
-* Terça-feira (15h-17h) e Quinta-feira (13h-15h), E-123	
+* Segunda-feira (10h-12h) e Quarta-feira (8h-10h), E-131	
 
 ### Ementa
 
@@ -35,7 +36,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 ### Recursos
 
-- [Google Classroom](https://classroom.google.com) - Código:  cq4r5gd
+- [Google Classroom](https://classroom.google.com) - Código:  5fcvpvn
 - [Repositório Github](https://github.com/damorim/compilers-cin)
 
 ### Ferramentas
@@ -68,40 +69,40 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 | # | Data | Assunto | Observação |
 |:---:|:----:|:----------------------:|:----------------------|
-| 00 | 06/08/2019 (ter) | Sem Aula | --- |
-| 01 | 08/08/2019 (qui) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
-| 02 | 13/08/2019 (ter) | [Introdução](/slides-aulas/intro.pptx) | --- |
-| 03 | 15/02/2019 (qui) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
-| 04 | 20/08/2019 (ter) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
-| 05 | 22/08/2019 (qui) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
-| 06 | 27/08/2019 (ter) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
-| 07 | 29/08/2019 (qui) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
-| 08 | 03/09/2019 (ter) | [Demo](https://github.com/damorim/compilers-cin/tree/master/demos) | --- |
-| 09 | 05/09/2019 (qui) | [Aula Prática 1](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
-| 10 | 10/09/2019 (ter) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 11 | 12/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 17/09/2019 (ter) | Sem Aula | --- |
-| 13 | 19/09/2019 (qui) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 14 | 24/09/2019 (ter) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
-| 15 | 26/09/2019 (qui) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
-| 16 | 01/10/2019 (ter) | Aula de Revisão | --- |
-| 17 | 03/10/2019 (qui) | **1º Exercício Escolar** | --- |
-| 18 | 08/10/2019 (ter) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 19 | 10/10/2019 (qui) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 21 | 15/10/2019 (ter) | Acompanhamento com Monitores | Professor em viagem |
-| 22 | 17/10/2019 (qui) | Acompanhamento com Monitores | Professor em viagem |
-| 19 | 22/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
-| 23 | 24/10/2019 (qui) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
-| 24 | 29/10/2019 (ter) | [Análise Estática e Otimização]() | --- |
-| 25 | 31/10/2019 (qui) | [Análise Estática e Otimização]()| --- |
-| 26 | 05/11/2019 (ter) | [Aplicações  de Compiladores]() | --- |
-| 27 | 07/11/2019 (qui) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 27 | 12/11/2019 (ter) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 29 | 14/11/2019 (qui) | Sem Aula | --- |
-| 30 | 19/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 31 | 21/11/2019 (qui) | Aula de Revisão| --- |
-| 32 | 26/11/2019 (ter) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 33 | 28/11/2019 (qui) | **2º Exercício Escolar** | --- |
-| 34 | 03/12/2019 (ter) | Revisão de Provas | --- |
-| 35 | 05/12/2019 (qui) | **Prova Final e Segunda Chamada**  | --- |
-| -- | 21/12/2019 (sáb) | Último dia para lançamento de notas no SIG@ referentes a 2019.2| ---|
+| 01 | 02/03/2020 (seg) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
+| 02 | 04/03/2020 (qua) | [Introdução](/slides-aulas/intro.pptx) | --- |
+| 03 | 09/03/2020 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| 04 | 11/03/2020 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
+| 05 | 16/03/2020 (seg) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
+| 06 | 18/03/2020 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
+| 07 | 23/03/2020 (seg) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
+| 08 | 25/03/2020 (qua) | [Demo](https://github.com/damorim/compilers-cin/tree/master/demos) | --- |
+| 09 | 30/03/2020 (seg) | [Aula Prática 1](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
+| 10 | 01/04/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 11 | 06/04/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 12 | 08/04/2020 (qua) | Sem Aula | --- |
+| 13 | 13/04/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 14 | 15/04/2020 (qua) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
+| 15 | 20/04/2020 (seg) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
+| 16 | 22/04/2020 (qua) | Aula de Revisão | --- |
+| 17 | 27/04/2020 (seg) | **1º Exercício Escolar** | --- |
+| 18 | 29/04/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 19 | 04/05/2020 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 21 | 06/05/2020 (qua) | Acompanhamento com Monitores | Professor em viagem |
+| 22 | 11/05/2020 (seg) | Acompanhamento com Monitores | Professor em viagem |
+| 19 | 13/05/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 23 | 18/05/2020 (seg) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
+| 24 | 20/05/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 25 | 25/05/2020 (seg) | [Análise Estática e Otimização]()| --- |
+| 26 | 27/05/2020 (qua) | [Aplicações  de Compiladores]() | --- |
+| 27 | 01/06/2020 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 27 | 03/06/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 29 | 08/06/2020 (seg) | Sem Aula | --- |
+| 30 | 10/06/2020 (qua) | Aula Reservada para a Entrega do Mini Projeto| --- |
+| 31 | 15/06/2020 (seg) | Aula de Revisão| --- |
+| 32 | 17/06/2020 (qua) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 33 | 22/06/2020 (seg) | **2º Exercício Escolar** | --- |
+| 34 | 24/06/2020 (qua) | Feriado Estadual | --- |
+| 35 | 29/06/2020 (seg) | Revisão de Provas | --- |
+| 36 | 01/07/2020 (seg) | **Prova Final e Segunda Chamada**  | --- |
+| -- | 21/07/2020 (ter) | Último dia para lançamento de notas no SIG@ referentes a 2020.1| ---|
