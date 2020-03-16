@@ -81,29 +81,29 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 10 | 01/04/2020 (qua) | [Aula Prática 1](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
 | 11 | 06/04/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 12 | 08/04/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 13 | 13/04/2020 (seg) | Sem Aula | --- |
-| 14 | 15/04/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 15 | 20/04/2020 (seg) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
-| 16 | 22/04/2020 (qua) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
-| 17 | 27/04/2020 (seg) | Aula de Revisão | --- |
-| 18 | 29/04/2020 (qua) | **1º Exercício Escolar** | --- |
+| 13 | 13/04/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 14 | 15/04/2020 (qua) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
+| 15 | 20/04/2020 (seg) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
+| 16 | 22/04/2020 (qua) | Aula de Revisão | --- |
+| 17 | 27/04/2020 (seg) | **1º Exercício Escolar** | --- |
+| 18 | 29/04/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
 | 19 | 04/05/2020 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 21 | 06/05/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 22 | 11/05/2020 (seg) | Acompanhamento com Monitores | Professor em viagem |
-| 19 | 13/05/2020 (qua) | Acompanhamento com Monitores | Professor em viagem |
-| 23 | 18/05/2020 (seg) | [Análise Estática e Otimização]() | --- |
-| 24 | 20/05/2020 (qua) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
-| 25 | 25/05/2020 (seg) | [Análise Estática e Otimização]() | --- |
-| 26 | 27/05/2020 (qua) | [Análise Estática e Otimização]()| --- |
-| 27 | 01/06/2020 (seg) | [Aplicações  de Compiladores]() | --- |
-| 27 | 03/06/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 29 | 08/06/2020 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 30 | 10/06/2020 (qua) | Sem Aula | --- |
-| 31 | 15/06/2020 (seg) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 32 | 17/06/2020 (qua) | Aula de Revisão| --- |
-| 33 | 22/06/2020 (seg) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 34 | 24/06/2020 (qua) | **2º Exercício Escolar** | --- |
-| 35 | 29/06/2020 (seg) | Feriado Estadual | --- |
-| 36 | 01/07/2020 (qua) | Revisão de Provas | --- |
-| 37 | 06/07/2020 (seg) | **Prova Final e Segunda Chamada**  | --- |
+| 21 | 06/05/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 22 | 11/05/2020 (seg) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
+| 19 | 13/05/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 23 | 18/05/2020 (seg) | [Análise Estática e Otimização]()| --- |
+| 24 | 20/05/2020 (qua) | [Aplicações  de Compiladores]() | --- |
+| 25 | 25/05/2020 (seg) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 26 | 27/05/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 27 | 01/06/2020 (seg) | Aula de Revisão| --- |
+| 27 | 03/06/2020 (qua) | Aula Reservada para a Entrega do Mini Projeto| --- |
+| 29 | 08/06/2020 (seg) | Aula Reservada para a Entrega do Mini Projeto | --- |
+| 30 | 10/06/2020 (qua) | **2º Exercício Escolar** | --- |
+| 31 | 15/06/2020 (seg) | Revisão de Provas | --- |
+| 32 | 17/06/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
+| 33 | 22/06/2020 (seg) |
+| 34 | 24/06/2020 (qua) | São João: Feriado Estadual | --- |
+| 35 | 29/06/2020 (seg) |
+| 36 | 01/07/2020 (qua) |
+| 37 | 06/07/2020 (seg) |
 | -- | 21/07/2020 (ter) | Último dia para lançamento de notas no SIG@ referentes a 2020.1| ---|
