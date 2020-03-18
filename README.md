@@ -73,7 +73,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 01 | 02/03/2020 (seg) | Sem Aula | --- |
 | 02 | 04/03/2020 (qua) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
 | 03 | 09/03/2020 (seg) | [Introdução](/slides-aulas/intro.pptx) | --- |
-| 04 | 11/03/2020 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | [linguagens formais e autômatos](https://youtu.be/sAp6p1fCHCg)<br>[ambiguidade, precedência, e associatividade](https://youtu.be/JZ_ZeZvO-gA) |
+| 04 | 11/03/2020 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | - [linguagens formais e autômatos](https://youtu.be/sAp6p1fCHCg)<br>- [ambiguidade, precedência, e associatividade](https://youtu.be/JZ_ZeZvO-gA) |
 | 05 | 16/03/2020 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | --- |
 | 06 | 18/03/2020 (qua) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
 | 07 | 23/03/2020 (seg) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
