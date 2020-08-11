@@ -82,12 +82,12 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 10 | 16/09/2020 (qua) | [**Projeto** - Módulo Lexer e Parser (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
 | 11 | 21/09/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
 | 12 | 23/09/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 13 | 26/09/2020 (sáb) | [**Projeto** - Entrega Módulo Lexer e Parser] | --- |
+| 13 | 26/09/2020 (sáb) | **Projeto** - Entrega Módulo Lexer e Parser | --- |
 | 14 | 28/09/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
 | 15 | 30/09/2020 (qua) | [**Projeto** - Módulo de Análise Semântica (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
 | 16 | 05/10/2020 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
 | 17 | 07/10/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 18 | 10/09/2020 (sáb) | [**Projeto** - Entrega Módulo de Análise Semântica] | --- |
+| 18 | 10/09/2020 (sáb) | **Projeto** - Entrega Módulo de Análise Semântica | --- |
 | 19 | 12/10/2020 (seg) | Feriado de Nossa Sra. de Aparecida | --- |
 | 20 | 14/10/2020 (qua) | [Análise Estática e Otimização]() | --- |
 | 21 | 19/10/2020 (seg) | [Análise Estática e Otimização]() | --- |
@@ -95,7 +95,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 23 | 24/10/2020 (sáb) | [**Projeto** - Módulo de Otimização (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
 | 24 | 26/10/2020 (seg) | [Aplicações  de Compiladores]() | --- |
 | 25 | 28/10/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 26 | 31/10/2020 (sáb) | [**Projeto** - Entrega Módulo de Otimização] | --- |
+| 26 | 31/10/2020 (sáb) | **Projeto** - Entrega Módulo de Otimização | --- |
 | 27 | 02/11/2020 (seg) | Feriado de Finados | --- |
 | 28 | 04/11/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
 | 29 | 07/11/2020 (sáb) | [**Projeto** - Módulo de Geração de Código (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/mini-projeto)| --- |
@@ -103,7 +103,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 31 | 11/11/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
 | 32 | 16/11/2020 (seg) |
 | 33 | 17/11/2020 (ter) | Último dia de aulas no Siga | --- |
-| 34 | 18/11/2020 (qua) | [**Projeto** - Entrega Módulo de Geração de Código] | --- |
+| 34 | 18/11/2020 (qua) | **Projeto** - Entrega Módulo de Geração de Código | --- |
 | 35 | 01/12/2020 (ter) | Último dia para realizar provas finais no Siga | --- |
 | 36 | 09/12/2020 (sex) | Último dia para lançamento de notas no Siga | --- |
 
