@@ -70,47 +70,40 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 | # | Data | Assunto | Vídeos |
 |:---:|:----:|:----------------------:|:----------------------|
-| 01 | 17/08/2020 (seg) | [Introdução, admin](/slides-aulas/intro.pptx) | --- |
+| 01 | 17/08/2020 (seg) | [Introdução](/slides-aulas/intro.pptx) (Aula Síncrona) | --- |
 | 02 | 19/08/2020 (qua) | [Introdução](/slides-aulas/intro.pptx) | --- |
-| 03 | 22/08/2020 (sáb) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | - [linguagens formais e autômatos](https://youtu.be/sAp6p1fCHCg)<br>- [ambiguidade, precedência, e associatividade](https://youtu.be/JZ_ZeZvO-gA) |
-| 04 | 24/08/2020 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | - [topdown e bottomup parsing, recursive-descent parsing](https://youtu.be/T3HvXoWhdj8)<br>- [AST e visitors](https://www.youtube.com/watch?v=3PMzwvr441U) |
-| 05 | 26/08/2020 (qua) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
-| 06 | 29/08/2020 (sáb) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
-| 07 | 31/08/2020 (seg) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
-| 08 | 02/09/2020 (qua) | [Demo](https://github.com/damorim/compilers-cin/tree/master/demos) | --- |
-| 09 | 05/09/2020 (sáb) | [Aula Prática 1](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
-| 10 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
-| 11 | 09/09/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 12 | 12/09/2020 (sáb) | Feriado de N. Sra. Aparecida | --- |
-| 13 | 14/09/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
-| 14 | 16/09/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
-| 15 | 19/09/2020 (sáb) | [Aula Prática 2](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
-| 16 | 21/09/2020 (seg) | [Aula Prática 3](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
-| 17 | 24/09/2020 (qua) | Aula de Revisão | --- |
-| 18 | 26/09/2020 (sáb) | **1º Exercício Escolar** | --- |
-| 19 | 28/09/2020 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 20 | 30/09/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
-| 21 | 03/10/2020 (sáb) | [Análise Estática e Otimização]() | --- |
-| 22 | 05/10/2020 (seg) | [Apresentação da Especificação do Mini Projeto](https://github.com/damorim/compilers-cin/tree/master/mini-projeto) | --- |
-| 23 | 07/10/2020 (qua) | [Análise Estática e Otimização]() | --- |
-| 24 | 10/10/2020 (sáb) | [Análise Estática e Otimização]()| --- |
-| 25 | 12/10/2020 (seg) | [Aplicações  de Compiladores]() | --- |
-| 26 | 14/10/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 27 | 17/10/2020 (sáb) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
-| 28 | 19/10/2020 (seg) | Aula de Revisão| --- |
-| 29 | 21/10/2020 (qua) | Aula Reservada para a Entrega do Mini Projeto| --- |
-| 30 | 24/10/2020 (sáb) | Aula Reservada para a Entrega do Mini Projeto | --- |
-| 31 | 26/10/2020 (seg) | **2º Exercício Escolar** | --- |
-| 32 | 28/10/2020 (qua) | Revisão de Provas | --- |
-| 33 | 31/10/2020 (sáb) | **Prova Final e Segunda Chamada**  | --- |
-| 34 | 02/11/2020 (seg) | Feriado de Finados | --- |
-| 35 | 04/11/2020 (qua) |
-| 36 | 07/11/2020 (sáb) |
-| 37 | 09/11/2020 (seg) |
-| 38 | 11/11/2020 (qua) |
-| 39 | 14/11/2020 (sáb) |
-| 40 | 16/11/2020 (seg) |
-| -- | 17/11/2020 (ter) | Último dia de aulas no Siga | --- |
-| -- | 01/12/2020 (ter) | Último dia para realizar provas finais no Siga | --- |
-| -- | 09/12/2020 (sex) | Último dia para lançamento de notas no Siga | --- |
+| 03 | 24/08/2020 (seg) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | - [linguagens formais e autômatos](https://youtu.be/sAp6p1fCHCg)<br>- [ambiguidade, precedência, e associatividade](https://youtu.be/JZ_ZeZvO-gA) |
+| 04 | 26/08/2020 (qua) | [Conceitos Básicos](/slides-aulas/conceitos-basicos.pptx) | - [topdown e bottomup parsing, recursive-descent parsing](https://youtu.be/T3HvXoWhdj8)<br>- [AST e visitors](https://www.youtube.com/watch?v=3PMzwvr441U) |
+| 05 | 31/08/2020 (seg) | [Análise Léxica](/slides-aulas/analise-lexica.pptx) | --- |
+| 06 | 02/09/2020 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx)| --- |
+| 07 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
+| 08 | 09/09/2020 (qua) | [Análise Sintática](/slides-aulas/analise-sintatica.pptx) | --- |
+| 09 | 14/09/2020 (seg) | [Demo](https://github.com/damorim/compilers-cin/tree/master/demos) | --- |
+| 10 | 16/09/2020 (qua) | [**Projeto** - Módulo Lexer e Parser (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap1) | --- |
+| 11 | 21/09/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 12 | 23/09/2020 (qua) | [Análise Semântica](/slides-aulas/analise-semantica.pptx) | --- |
+| 13 | 26/09/2020 (sáb) | [**Projeto** - Entrega Módulo Lexer e Parser] | --- |
+| 14 | 28/09/2020 (seg) | [Análise Semântica](/slides-aulas/analise-semantica.pptx)  | --- |
+| 15 | 30/09/2020 (qua) | [**Projeto** - Módulo de Análise Semântica (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap2) | --- |
+| 16 | 05/10/2020 (seg) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 17 | 07/10/2020 (qua) | [Representações Intermediárias](/slides-aulas/representacoes-intermediarias.pptx) | --- |
+| 18 | 10/09/2020 (sáb) | [**Projeto** - Entrega Módulo de Análise Semântica] | --- |
+| 19 | 12/10/2020 (seg) | Feriado de Nossa Sra. de Aparecida | --- |
+| 20 | 14/10/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 21 | 19/10/2020 (seg) | [Análise Estática e Otimização]() | --- |
+| 22 | 21/10/2020 (qua) | [Análise Estática e Otimização]() | --- |
+| 23 | 24/10/2020 (sáb) | [**Projeto** - Módulo de Otimização (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/ap3) | --- |
+| 24 | 26/10/2020 (seg) | [Aplicações  de Compiladores]() | --- |
+| 25 | 28/10/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 26 | 31/10/2020 (sáb) | [**Projeto** - Entrega Módulo de Otimização] | --- |
+| 27 | 02/11/2020 (seg) | Feriado de Finados | --- |
+| 28 | 04/11/2020 (qua) | [Gerenciamento de Memória e Geração de Código](/slides-aulas/ambiente-exec-e-geracao-codigo.pptx) | --- |
+| 29 | 07/11/2020 (sáb) | [**Projeto** - Módulo de Geração de Código (Aula Síncrona)](https://github.com/damorim/compilers-cin/tree/master/mini-projeto)| --- |
+| 30 | 09/11/2020 (seg) | 
+| 31 | 11/11/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
+| 32 | 16/11/2020 (seg) |
+| 33 | 17/11/2020 (ter) | Último dia de aulas no Siga | --- |
+| 34 | 18/11/2020 (qua) | [**Projeto** - Entrega Módulo de Geração de Código] | --- |
+| 35 | 01/12/2020 (ter) | Último dia para realizar provas finais no Siga | --- |
+| 36 | 09/12/2020 (sex) | Último dia para lançamento de notas no Siga | --- |
 
