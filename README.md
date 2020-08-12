@@ -70,40 +70,42 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 | # | Data | Assunto| Material | Síncrona |
 |:---:|:----:|:----------------------:|:----------------------|:----:|
-| 01 | 17/08/2020 (seg) | Introdução | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 02 | 19/08/2020 (qua) | Introdução | --- |
-| 03 | 24/08/2020 (seg) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/sAp6p1fCHCg)<br>- [Vídeo 2](https://youtu.be/JZ_ZeZvO-gA) |
-| 04 | 26/08/2020 (qua) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/T3HvXoWhdj8)<br>- [Vídeo 2](https://www.youtube.com/watch?v=3PMzwvr441U) |
-| 05 | 31/08/2020 (seg) | Análise Léxica | --- |
-| 06 | 02/09/2020 (qua) | Análise Sintática| --- |
-| 07 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
-| 08 | 09/09/2020 (qua) | Análise Sintática | --- |
-| 09 | 14/09/2020 (seg) | Demo | --- |
-| 10 | 16/09/2020 (qua) | **Projeto** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 11 | 21/09/2020 (seg) | Análise Semântica | --- |
-| 12 | 23/09/2020 (qua) | Análise Semântica | --- |
-| 13 | 26/09/2020 (sáb) | **Entrega de Projeto** - Módulo Lexer e Parser | --- |
-| 14 | 28/09/2020 (seg) | Análise Semântica  | --- |
-| 15 | 30/09/2020 (qua) | **Projeto** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 16 | 05/10/2020 (seg) | Representações Intermediárias | --- |
-| 17 | 07/10/2020 (qua) | Representações Intermediárias | --- |
-| 18 | 10/09/2020 (sáb) | **Entrega de Projeto** - Módulo de Análise Semântica | --- |
-| 19 | 12/10/2020 (seg) | Feriado de Nossa Sra. de Aparecida | --- |
-| 20 | 14/10/2020 (qua) | Análise Estática e Otimização | --- |
-| 21 | 19/10/2020 (seg) | Análise Estática e Otimização | --- |
-| 22 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
-| 23 | 24/10/2020 (sáb) | **Projeto** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 24 | 26/10/2020 (seg) | Aplicações  de Compiladores | --- |
-| 25 | 28/10/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- |
-| 26 | 31/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Otimização | --- |
-| 27 | 02/11/2020 (seg) | Feriado de Finados | --- |
-| 28 | 04/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- |
-| 29 | 07/11/2020 (sáb) | **Projeto** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 30 | 09/11/2020 (seg) | 
-| 31 | 11/11/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
-| 32 | 16/11/2020 (seg) |
-| 33 | 17/11/2020 (ter) | Último dia de aulas no Siga | --- |
-| 34 | 18/11/2020 (qua) | **Entrega de Projeto** - Módulo de Geração de Código | --- |
-| 35 | 01/12/2020 (ter) | Último dia para realizar provas finais no Siga | --- |
-| 36 | 09/12/2020 (sex) | Último dia para lançamento de notas no Siga | --- |
-
+| 01 | 24/08/2020 (seg) | Introdução | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 02 | 26/08/2020 (qua) | Introdução | --- |
+| 03 | 31/08/2020 (seg) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/sAp6p1fCHCg)<br>- [Vídeo 2](https://youtu.be/JZ_ZeZvO-gA) |
+| 04 | 02/09/2020 (qua) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/T3HvXoWhdj8)<br>- [Vídeo 2](https://www.youtube.com/watch?v=3PMzwvr441U) |
+| 05 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
+| 06 | 09/09/2020 (qua) | Análise Léxica | --- |
+| 07 | 14/09/2020 (seg) | Análise Sintática| --- |
+| 08 | 16/09/2020 (qua) | Análise Sintática | --- |
+| 09 | 21/09/2020 (seg) | Demo | --- |
+| 10 | 23/09/2020 (qua) | **Projeto** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 11 | 28/09/2020 (seg) | Análise Semântica | --- |
+| 12 | 30/09/2020 (qua) | Análise Semântica | --- |
+| 13 | 03/10/2020 (sáb) | **Entrega de Projeto** - Módulo Lexer e Parser | --- |
+| 14 | 05/10/2020 (seg) | Análise Semântica  | --- |
+| 15 | 07/10/2020 (qua) | **Projeto** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida | --- |
+| 17 | 14/10/2020 (qua) | Representações Intermediárias | --- |
+| 18 | 17/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Análise Semântica | --- |
+| 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
+| 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
+| 21 | 26/10/2020 (seg) | Análise Estática e Otimização | --- |
+| 22 | 28/10/2020 (qua) | Análise Estática e Otimização | --- |
+| 23 | 31/10/2020 (sáb) | **Projeto** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 24 | 02/11/2020 (seg) | Feriado de Finados | --- |
+| 25 | 04/11/2020 (qua) | Aplicações  de Compiladores | --- |
+| 26 | 07/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Otimização | --- |
+| 27 | 09/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- | 
+| 28 | 11/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- |
+| 29 | 14/11/2020 (sáb) | **Projeto** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 30 | 16/11/2020 (seg) |
+| 31 | 18/11/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
+| 32 | 23/11/2020 (seg) |
+| -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
+| 33 | 25/11/2020 (qua) | **Entrega de Projeto** - Módulo de Geração de Código | --- |
+| 34 | 30/11/2020 (seg) |
+| 35 | 02/12/2020 (qua) |
+| 36 | 07/12/2020 (seg) |
+| -- | 09/12/2020 (qua) | Último dia para realizar provas finais no Siga | --- |
+| -- | 17/12/2020 (qui) | Último dia para lançamento de notas no Siga | --- |
