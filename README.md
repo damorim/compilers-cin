@@ -90,22 +90,22 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 | 18 | 17/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Análise Semântica | --- |
 | 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
 | 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
-| 21 | 26/10/2020 (seg) | Análise Estática e Otimização | --- |
-| 22 | 28/10/2020 (qua) | Análise Estática e Otimização | --- |
-| 23 | 31/10/2020 (sáb) | **Projeto** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 24 | 02/11/2020 (seg) | Feriado de Finados | --- |
-| 25 | 04/11/2020 (qua) | Aplicações  de Compiladores | --- |
-| 26 | 07/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Otimização | --- |
-| 27 | 09/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- | 
-| 28 | 11/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- |
-| 29 | 14/11/2020 (sáb) | **Projeto** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 21 | 24/10/2020 (sáb) | Análise Estática e Otimização | --- |
+| 22 | 26/10/2020 (seg) | Análise Estática e Otimização | --- |
+| 23 | 28/10/2020 (qua) | **Projeto** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 24 | 31/10/2020 (sáb) | Aplicações  de Compiladores | --- |
+| 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
+| 26 | 04/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- | 
+| 27 | 07/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Otimização | --- |
+| 28 | 09/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- |
+| 29 | 11/11/2020 (qua) | **Projeto** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 30 | 16/11/2020 (seg) |
-| 31 | 18/11/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
+| 31 | 18/11/2020 (qua) |
 | 32 | 23/11/2020 (seg) |
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
 | 33 | 25/11/2020 (qua) | **Entrega de Projeto** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
-| 35 | 02/12/2020 (qua) |
+| 35 | 02/12/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
 | 36 | 07/12/2020 (seg) |
-| -- | 09/12/2020 (qua) | Último dia para realizar provas finais no Siga | --- |
+| 37 | 09/12/2020 (qua) | Último dia para realizar provas finais no Siga | --- |
 | -- | 17/12/2020 (qui) | Último dia para lançamento de notas no Siga | --- |
