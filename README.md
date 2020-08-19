@@ -36,7 +36,7 @@ Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
 
 ### Recursos
 
-- [Google Classroom](https://classroom.google.com) - Código:  5fcvpvn
+- [Google Classroom](https://classroom.google.com) - Código:  fhr37w7
 - [Repositório Github](https://github.com/damorim/compilers-cin)
 - [Canal no Youtube](https://www.youtube.com/channel/UCgWmrlXTGDUpWV0RjlEum2w)
 
