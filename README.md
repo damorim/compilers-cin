@@ -11,7 +11,7 @@
   * Rodrigo Brayner Lyra (rbl2@cin.ufpe.br)
   
 ### Horário e Local de Aulas
-* Segunda-feira (10h-12h) e Quarta-feira (8h-10h), pela internet
+* Segunda-feira (10h-12h) e Quarta-feira (10h-12h), pela internet
 
 ### Ementa
 
@@ -32,7 +32,7 @@ A disciplina apresenta conceitos básicos sobre interpretação, análise, e sí
 
 ### Metodologia
 
-Utilizaremos aulas tradicionais, aulas práticas e um mini projeto.
+Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e um projeto de avaliação, com múltiplas entregas.
 
 ### Recursos
 
