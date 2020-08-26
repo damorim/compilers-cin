@@ -71,7 +71,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | # | Data | Assunto| Material | Síncrona |
 |:---:|:----:|:----------------------:|:----------------------|:----:|
 | 01 | 24/08/2020 (seg) | Introdução | - [Vídeo 1](https://www.youtube.com/watch?v=a9AjEh3U0bY)<br>- [Vídeo 2](https://www.youtube.com/watch?v=wt_ZGKZm9vc) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 02 | 26/08/2020 (qua) | Introdução | --- |
+| 02 | 26/08/2020 (qua) | Introdução | - [Vídeo 1](https://www.youtube.com/watch?v=_46awgNgcTY)<br>- [Vídeo 2](https://www.youtube.com/watch?v=LifG72O0buo) |
 | 03 | 31/08/2020 (seg) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/sAp6p1fCHCg)<br>- [Vídeo 2](https://youtu.be/JZ_ZeZvO-gA) |
 | 04 | 02/09/2020 (qua) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/T3HvXoWhdj8)<br>- [Vídeo 2](https://www.youtube.com/watch?v=3PMzwvr441U) |
 | 05 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
