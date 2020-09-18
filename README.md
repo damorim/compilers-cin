@@ -45,6 +45,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 - [LLVM](https://llvm.org/)
 
 ### Avaliação
+<!--
 * (`N1`+`N2`)/2, onde:
   * `N1` = `Prova1` (70%) + `Aulas práticas` (30%)
     * `Prova1` = Teste com [assunto dado até o momento
@@ -52,7 +53,10 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
   * `N2` = `Prova2` (70%) + `Mini projeto` (30%)
     * `Prova2` = Teste com [assunto dado a partir de Prova1 
     * `Mini Projeto` = Projeto da cadeira
+-->
+* (Somatório das notas dos 4 Projetos) / 4
 * `Final`: Teste com todo o assunto da matéria
+
 
 - Observação:
   - Trabalhos **“CTRL-C + CTRL-V”** terão nota **zero** (vale tanto para cópia de colegas, como para trabalhos copiados da internet).
@@ -79,31 +83,31 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 07 | 14/09/2020 (seg) | Análise Sintática| - [Vídeo 1](https://youtu.be/g_15RR-Zvws)<br>- [Vídeo 2](https://youtu.be/tGXI9i6iEDg) |
 | 08 | 16/09/2020 (qua) | Análise Sintática | - [Vídeo 1](https://youtu.be/IPHfRyUjMTA)<br>- [Vídeo 2](https://youtu.be/tOP41g0dY38) |
 | 09 | 21/09/2020 (seg) | Análise Semântica | --- |
-| 10 | 23/09/2020 (qua) | **Projeto** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 10 | 23/09/2020 (qua) | **Projeto 1** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 11 | 28/09/2020 (seg) | Análise Semântica | --- |
 | 12 | 30/09/2020 (qua) | Demo | --- |
-| 13 | 03/10/2020 (sáb) | **Entrega de Projeto** - Módulo Lexer e Parser | --- |
+| 13 | 03/10/2020 (sáb) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
 | 14 | 05/10/2020 (seg) | Análise Semântica  | --- |
-| 15 | 07/10/2020 (qua) | **Projeto** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 15 | 07/10/2020 (qua) | **Projeto 2** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida | --- |
 | 17 | 14/10/2020 (qua) | Representações Intermediárias | --- |
-| 18 | 17/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Análise Semântica | --- |
+| 18 | 17/10/2020 (sáb) | **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
 | 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
 | 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
 | 21 | 24/10/2020 (sáb) | Análise Estática e Otimização | --- |
 | 22 | 26/10/2020 (seg) | Análise Estática e Otimização | --- |
-| 23 | 28/10/2020 (qua) | **Projeto** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 23 | 28/10/2020 (qua) | **Projeto 3** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 24 | 31/10/2020 (sáb) | Aplicações  de Compiladores | --- |
 | 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
 | 26 | 04/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- | 
-| 27 | 07/10/2020 (sáb) | **Entrega de Projeto** - Módulo de Otimização | --- |
+| 27 | 07/10/2020 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
 | 28 | 09/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- |
-| 29 | 11/11/2020 (qua) | **Projeto** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 30 | 16/11/2020 (seg) |
 | 31 | 18/11/2020 (qua) |
 | 32 | 23/11/2020 (seg) |
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
-| 33 | 25/11/2020 (qua) | **Entrega de Projeto** - Módulo de Geração de Código | --- |
+| 33 | 25/11/2020 (qua) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
 | 35 | 02/12/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
 | 36 | 07/12/2020 (seg) |
