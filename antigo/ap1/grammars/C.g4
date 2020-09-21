@@ -2,52 +2,10 @@
 grammar C;
 
 /* regra raiz da gramática */
-file
-	: (statement | directive | func_decl)*
-	;
-
-directive
-	: 'implementar'
-	;
-
-func_decl
-	: 'implementar'
-	;
-
-statement
-	: var_decl ';'
-	| expr ';'
-	| 'implementar'
-	;
-
-var_decl
-	: 'implementar' 
-	;
-
-expr: expr '*' expr
-	| func_call
-	| INT
-	| 'implementar'
-	;
-
-func_call
-	: 'implementar'
-	;
-
-type
-	: 'int'
-	;
-
-/* implementar mais regras gramaticais, se precisar */
-
+file :  ;
 
 
 /* lexer */  
-STR : ["].*?["] ;
-INT : [0-9]+ ;
-WS  : [ \t\r\n]+ -> skip ;
-/* implementar mais expressões regulares, se precisar*/
-
 
 
 /*
