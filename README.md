@@ -85,7 +85,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 09 | 21/09/2020 (seg) | Análise Semântica | - [Vídeo 1](https://youtu.be/rddmb82Z8ck)<br> | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 10 | 23/09/2020 (qua) | **Projeto 1** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 11 | 28/09/2020 (seg) | Análise Semântica | --- |
-| 12 | 30/09/2020 (qua) | Demo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 12 | 30/09/2020 (qua) | Demo de Análise Semântica | - [Vídeo 1](https://www.youtube.com/watch?v=gOkLvleyzaM) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 13 | 03/10/2020 (sáb) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
 | 14 | 05/10/2020 (seg) | Análise Semântica  | --- |
 | 15 | 07/10/2020 (qua) | **Projeto 2** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
