@@ -10,7 +10,8 @@ Geração de Lexer/Parser/Visitor
 	
 2. Mova os arquivos gerados para o diretório 'antlr4-python3-runtime-4.7.2/src/autogen'
 
-3. Edite o arquivo 'SuaGramaticaVisitor.py' para implementar os requisitos pedidos.
+3. Edite o arquivo 'GrammarCheckerVisitor.py' para implementar os requisitos pedidos.
+obs.: O arquivo GrammarCheckerVisitor.py também deve estar no diretório 'antlr4-python3-runtime-4.7.2/src/autogen'.
 
 4. Execute o comando:
 	'python antlr4-python3-runtime-4.7.2/src/main.py < ArquivoTeste.c' 
