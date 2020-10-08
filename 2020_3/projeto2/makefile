@@ -13,7 +13,7 @@ JAVAFILES = $(shell echo autogen/$(GRAMMAR){{Base,}Listener,Lexer,Parser}.java)
 PYDIR = antlr4-python3-runtime-4.7.2
 PYAUTOGEN = $(PYDIR)/src/autogen
 PYFILES = $(shell echo $(PYAUTOGEN)/$(GRAMMAR){Visitor,Lexer,Parser}.py)
-.PHONY: classpath clean run tree
+.PHONY: classpath clean run tree adapt
 
 # ----------------------------- python rules --------------------------
 
@@ -27,7 +27,7 @@ $(PYFILES): $(PYAUTOGEN)/$(GRAMMAR).g4 | classpath
 	$(ANTLR4) -Dlanguage=Python3 $< -visitor -no-listener
 
 autogen/$(GRAMMAR)Visitor.py: $(PYAUTOGEN)/$(GRAMMAR)Visitor.py | autogen
-	ln -fs ../../../$< $@
+	ln -fs ../$< $@
 
 $(PYAUTOGEN)/$(GRAMMAR).g4: $(GRAMMAR).g4 | $(PYAUTOGEN)
 	ln -fs ../../../$< $@
@@ -53,7 +53,12 @@ autogen/$(GRAMMAR).g4: $(GRAMMAR).g4 | autogen
 autogen:
 	mkdir $@
 
+#------------------------ adapt to python ----------------------------
+
+adapt: $(GRAMMAR).g4
+	sed -Ei -e 's:\<file\>:fiile:g' -e 's:\<type\>:tyype:g' $(GRAMMAR).g4
+
 #---------------------------- clean ---------------------------------- 
 
 clean:
-	-rm -rf autogen $(PYAUTOGEN)
+	find . -name __pycache__ | xargs rm -rf autogen $(PYAUTOGEN)
