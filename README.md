@@ -88,9 +88,9 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 12 | 30/09/2020 (qua) | Demo de Análise Semântica | - [Vídeo 1](https://www.youtube.com/watch?v=gOkLvleyzaM) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 13 | 03/10/2020 (sáb) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
 | 14 | 05/10/2020 (seg) | Análise Semântica  | --- |
-| 15 | 07/10/2020 (qua) | **Projeto 2** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida | --- |
-| 17 | 14/10/2020 (qua) | Representações Intermediárias | --- |
+| 15 | 07/10/2020 (qua) | **Projeto 2** - Módulo de Análise Semântica | --- | 
+| 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida<br>**Acompanhamento do projeto (20:00h-21:30h)** | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 17 | 14/10/2020 (qua) | Representações Intermediárias<br>**Acompanhamento do projeto (10:00h-11:30h) e (20:00h-21:30h)** | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 18 | 17/10/2020 (sáb) | **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
 | 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
 | 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
