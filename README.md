@@ -98,7 +98,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
 | 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
 | 21 | 24/10/2020 (sáb) | Análise Estática e Otimização | --- |
-| 22 | 26/10/2020 (seg) | Análise Estática e Otimização | --- |
+| 22 | 26/10/2020 (seg) | Análise Estática e Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 23 | 28/10/2020 (qua) | **Projeto 3** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 24 | 31/10/2020 (sáb) | Aplicações  de Compiladores | --- |
 | 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
