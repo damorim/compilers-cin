@@ -95,20 +95,20 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida<br>**Acompanhamento do projeto (20:00h-21:30h)** | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 17 | 14/10/2020 (qua) | Representações Intermediárias<br>**Acompanhamento do projeto (10:00h-11:30h) e (20:00h-21:30h)** | - [Vídeo 1](https://youtu.be/0L0f3ufUdgI) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 18 | 17/10/2020 (sáb) | **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
-| 19 | 19/10/2020 (seg) | Representações Intermediárias | --- |
-| 20 | 21/10/2020 (qua) | Análise Estática e Otimização | --- |
-| 21 | 24/10/2020 (sáb) | Análise Estática e Otimização | --- |
-| 22 | 26/10/2020 (seg) | Análise Estática e Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 19 | 19/10/2020 (seg) |  | --- |
+| 20 | 21/10/2020 (qua) |  | --- |
+| 21 | 24/10/2020 (sáb) |  | --- |
+| 22 | 26/10/2020 (seg) |  | --- | 
 | 23 | 28/10/2020 (qua) | **Projeto 3** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 24 | 31/10/2020 (sáb) | Aplicações  de Compiladores | --- |
 | 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
-| 26 | 04/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | --- | 
+| 26 | 04/11/2020 (qua) | Representações Intermediárias | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 27 | 07/10/2020 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
-| 28 | 09/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- |
-| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 30 | 16/11/2020 (seg) |
-| 31 | 18/11/2020 (qua) |
-| 32 | 23/11/2020 (seg) |
+| 28 | 09/11/2020 (seg) | Análise Estática e Otimização | --- |
+| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização | --- | 
+| 30 | 16/11/2020 (seg) | Análise Estática e Otimização
+| 31 | 18/11/2020 (qua) | Gerenciamento de Memória e Geração de Código
+| 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
 | 33 | 25/11/2020 (qua) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
