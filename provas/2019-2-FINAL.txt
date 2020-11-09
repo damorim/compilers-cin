@@ -1,0 +1,25 @@
+Prof. Marcelo d'Amorim
+Final e Segunda Chamada Compiladores
+Recife, 5 de Dezembro de 2019
+
+1. [3 pontos] Descreva uma gramática livre de contexto para uma
+linguagem de programação com as seguintes características:
+
+- declaração de variáveis com tipos char, bool, e int
+- constantes para char, bool, e int
+- declaração de função
+- atribuição
+- chamada de função
+
+2. [1 ponto] É possível escrever um parser recursivo descendente para
+a gramática do quesito anterior? Explique.
+
+3. [3 pontos] Descreva, em linguagem natural, regras de tipo para cada
+uma das produções da sua gramática
+
+4. [3 pontos] Ilustre, com exemplos, as otimização de código abaixo.
+
+ - Desdobramento e propagação de constantes ("Constant Folding and Propagation")
+ - Movimentação de código invariante de loop ("Loop Invariant Code Motion")
+ - Redução de força ("Strength Reduction")
+ - Eliminação de subexpressões comum ("Common Subexpression Elimination")

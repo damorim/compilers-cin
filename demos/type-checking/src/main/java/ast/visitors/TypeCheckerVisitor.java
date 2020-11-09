@@ -17,8 +17,9 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
         symbolTable.put(decl.getID(), decl.getType().toString());
     }
 
+    // TODO: remove this function.
     @Override
-    public void visit(Id exp) { // TODO: remove this!
+    public void visit(Id exp) { 
         symbolTable.put(exp, symbolTable.get(exp));
     }
     
@@ -65,12 +66,14 @@ public class TypeCheckerVisitor extends VisitorAdaptor {
         int val1 = -1;
         String arrayType = "";
         if (matcher.matches()) {
+            // TODO: we should raise a type error and not Java parse int error if not a constant integer
             val1 = Integer.parseInt(matcher.group(1));
             arrayType = matcher.group(2);
         } else {
             throw new RuntimeException("Could not identify type");
         }
 
+        // check if access is within array bounds
         if (e2 instanceof Num) {
             int val = ((Num) e2).getVal();
             if (val < 0 || val >= val1) {

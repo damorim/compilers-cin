@@ -1,0 +1,64 @@
+2EE IF688 (Compiladores), 28 de Dezembro de 2019
+Prof. Marcelo d'Amorim
+
+1. (1 ponto) Responda V (Verdadeiro) ou F (Falso) para as afirmações
+abaixo:
+
+( ) O registro de ativação contém o endereço de retorno do chamador da
+    função.
+
+( ) Considerando o modelo de concorrência de memória compartilhada,
+    uma thread do programa possui sua própria pilha e contador de
+    instrução (PC).
+
+( ) Objetos são normalmente alocados na área estática reservada a
+    execução do programa.
+
+( ) Programas escritos em linguagens de programação que não possuem
+coleta de lixo automática (i.e., "garbage collector") são mais
+vulneráveis a "memory leaks" e "dangling references".
+
+
+2. (1 ponto) Em um coletor de lixo do tipo "Mark and Sweep", a busca
+por células de memória que podem ser liberadas da heap do program se
+inicia a partir de um conjuto de ponteiros. Estes ponteiros estão
+armazenados em que parte do estado de um programa em execução?
+
+
+3. (2 pontos) Sobre o código abaixo:
+3.1 Construa o CFG 
+3.2 Coloque o código no formato SSA
+
+int function foo(int x, int y, int z) {
+  if (z > 1) {
+   x = 2;
+  } else {
+   x = 1;
+   if (z > 2) {
+    z = x - 3;
+    x = 4;
+    x = x - 7;
+   } else {
+    y = x - 1;
+   }
+  }
+}
+
+
+4. (4 pontos) Ilustre um exemplo das seguintes otimizações de
+código. O exemplo deve ser simples e mostrar o código antes e depois
+da otimização.
+
+4.1 Constant folding and propagation
+4.2 Common subexpression elimination
+4.3 Strength reduction
+4.4 Loop invariant code motion
+
+
+5. (1 ponto) Quais desvantages de se usar coletores de lixo
+automáticos?
+
+
+6. (1 ponto) Cite características importantes da representação de
+código da infrastrutura de compilação LLVM-a LLVM IR---, que
+vc. trabalhou no mini-projeto no segundo módulo desta disciplina.
