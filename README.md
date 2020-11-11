@@ -104,9 +104,9 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
 | 26 | 04/11/2020 (qua) | Representações Intermediárias | - [Vídeo 1](https://youtu.be/nSoEDfJlzww)<br>- [Vídeo 2](https://youtu.be/W88O4elZOUs)<br>- [Vídeo 3](https://youtu.be/JSGXK6oUkLs) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 27 | 07/10/2020 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
-| 28 | 09/11/2020 (seg) | Análise Estática e Otimização | --- |
-| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização | --- | 
-| 30 | 16/11/2020 (seg) | Análise Estática e Otimização
+| 28 | 09/11/2020 (seg) | Análise Estática e Otimização | - [Vídeo 1](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Vídeo 2](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
+| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização e Aula | - [Vídeo 1](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 30 | 16/11/2020 (seg) | Análise Estática e Otimização | - [Vídeo 1](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
 | 31 | 18/11/2020 (qua) | Gerenciamento de Memória e Geração de Código
 | 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
