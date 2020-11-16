@@ -77,23 +77,23 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 
 | # | Data | Assunto| Material | Síncrona |
 |:---:|:----:|:----------------------:|:----------------------|:----:|
-| 01 | 24/08/2020 (seg) | Introdução | - [Vídeo 1](https://www.youtube.com/watch?v=a9AjEh3U0bY)<br>- [Vídeo 2](https://www.youtube.com/watch?v=wt_ZGKZm9vc) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 02 | 26/08/2020 (qua) | Introdução | - [Vídeo 1](https://www.youtube.com/watch?v=_46awgNgcTY)<br>- [Vídeo 2](https://www.youtube.com/watch?v=LifG72O0buo) |
-| 03 | 31/08/2020 (seg) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/sAp6p1fCHCg)<br>- [Vídeo 2](https://youtu.be/JZ_ZeZvO-gA) |
-| 04 | 02/09/2020 (qua) | Conceitos Básicos | - [Vídeo 1](https://youtu.be/T3HvXoWhdj8)<br>- [Vídeo 2](https://www.youtube.com/watch?v=3PMzwvr441U) |
+| 01 | 24/08/2020 (seg) | Introdução | - [Aula 1](https://www.youtube.com/watch?v=a9AjEh3U0bY)<br>- [Aula 2](https://www.youtube.com/watch?v=wt_ZGKZm9vc) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 02 | 26/08/2020 (qua) | Introdução | - [Aula 3](https://www.youtube.com/watch?v=_46awgNgcTY)<br>- [Aula 4](https://www.youtube.com/watch?v=LifG72O0buo) |
+| 03 | 31/08/2020 (seg) | Conceitos Básicos | - [Aula 5](https://youtu.be/sAp6p1fCHCg)<br>- [Aula 6](https://youtu.be/JZ_ZeZvO-gA) |
+| 04 | 02/09/2020 (qua) | Conceitos Básicos | - [Aula 7](https://youtu.be/T3HvXoWhdj8)<br>- [Aula 8](https://www.youtube.com/watch?v=3PMzwvr441U) |
 | 05 | 07/09/2020 (seg) | Feriado da Independência do Brasil | --- |
-| 06 | 09/09/2020 (qua) | Análise Léxica | - [Vídeo 1](https://www.youtube.com/watch?v=tR0cNVTaX0M) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 07 | 14/09/2020 (seg) | Análise Sintática | - [Vídeo 1](https://youtu.be/g_15RR-Zvws)<br>- [Vídeo 2](https://youtu.be/tGXI9i6iEDg) |
-| 08 | 16/09/2020 (qua) | Análise Sintática | - [Vídeo 1](https://youtu.be/IPHfRyUjMTA)<br>- [Vídeo 2](https://youtu.be/tOP41g0dY38) |
-| 09 | 21/09/2020 (seg) | Análise Semântica | - [Vídeo 1](https://youtu.be/rddmb82Z8ck)<br> | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 06 | 09/09/2020 (qua) | Análise Léxica | - [Aula 9](https://www.youtube.com/watch?v=tR0cNVTaX0M) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 07 | 14/09/2020 (seg) | Análise Sintática | - [Aula 10](https://youtu.be/g_15RR-Zvws)<br>- [Aula 11](https://youtu.be/tGXI9i6iEDg) |
+| 08 | 16/09/2020 (qua) | Análise Sintática | - [Aula 12](https://youtu.be/IPHfRyUjMTA)<br>- [Aula 13](https://youtu.be/tOP41g0dY38) |
+| 09 | 21/09/2020 (seg) | Análise Semântica | - [Aula 14](https://youtu.be/rddmb82Z8ck)<br> | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 10 | 23/09/2020 (qua) | **Projeto 1** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 11 | 28/09/2020 (seg) | Análise Semântica | - [Vídeo 1](https://www.youtube.com/watch?v=Yk2TACEu6fQ) |
-| 12 | 30/09/2020 (qua) | Demo de Análise Semântica | - [Vídeo 1](https://www.youtube.com/watch?v=gOkLvleyzaM) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 11 | 28/09/2020 (seg) | Análise Semântica | - [Aula 15](https://www.youtube.com/watch?v=Yk2TACEu6fQ) |
+| 12 | 30/09/2020 (qua) | Demo de Análise Semântica | - [Aula 16](https://www.youtube.com/watch?v=gOkLvleyzaM) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 13 | 03/10/2020 (sáb) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
 | 14 | 05/10/2020 (seg) | Análise Semântica  | --- |
 | 15 | 07/10/2020 (qua) | **Projeto 2** - Módulo de Análise Semântica | --- | 
 | 16 | 12/10/2020 (seg) | Feriado de N. Sra. de Aparecida<br>**Acompanhamento do projeto (20:00h-21:30h)** | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 17 | 14/10/2020 (qua) | Representações Intermediárias<br>**Acompanhamento do projeto (10:00h-11:30h) e (20:00h-21:30h)** | - [Vídeo 1](https://youtu.be/0L0f3ufUdgI) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 17 | 14/10/2020 (qua) | Representações Intermediárias<br>**Acompanhamento do projeto (10:00h-11:30h) e (20:00h-21:30h)** | - [Aula 17](https://youtu.be/0L0f3ufUdgI) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 18 | 17/10/2020 (sáb) | **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
 | 19 | 19/10/2020 (seg) |  | --- |
 | 20 | 21/10/2020 (qua) |  | --- |
@@ -102,13 +102,13 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 23 | 28/10/2020 (qua) | **Projeto 3** - Módulo de Otimização | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 24 | 31/10/2020 (sáb) | Aplicações  de Compiladores | --- |
 | 25 | 02/11/2020 (seg) | Feriado de Finados | --- |
-| 26 | 04/11/2020 (qua) | Representações Intermediárias | - [Vídeo 1](https://youtu.be/nSoEDfJlzww)<br>- [Vídeo 2](https://youtu.be/W88O4elZOUs)<br>- [Vídeo 3](https://youtu.be/JSGXK6oUkLs) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 26 | 04/11/2020 (qua) | Representações Intermediárias | - [Aula 18](https://youtu.be/nSoEDfJlzww)<br>- [Aula 19](https://youtu.be/W88O4elZOUs)<br>- [Aula 20](https://youtu.be/JSGXK6oUkLs) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 27 | 07/10/2020 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
-| 28 | 09/11/2020 (seg) | Análise Estática e Otimização | - [Vídeo 1](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Vídeo 2](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
-| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização e Aula | - [Vídeo 1](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 30 | 16/11/2020 (seg) | Análise Estática e Otimização | - [Vídeo 1](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
-| 31 | 18/11/2020 (qua) | Gerenciamento de Memória e Geração de Código
-| 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código
+| 28 | 09/11/2020 (seg) | Análise Estática e Otimização | - [Aula 21](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Aula 22](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
+| 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização e Aula | - [Aula 23](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 30 | 16/11/2020 (seg) | Análise Estática e Otimização | - [Aula 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
+| 31 | 18/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | - [Aula 25](https://youtu.be/KjB45HQutdk) |
+| 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- |
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
 | 33 | 25/11/2020 (qua) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
