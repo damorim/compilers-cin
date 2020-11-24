@@ -108,7 +108,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 29 | 11/11/2020 (qua) | **Projeto 4** - Módulo de Geração de Código<br>Análise Estática e Otimização e Aula | - [Aula 23](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 30 | 16/11/2020 (seg) | Análise Estática e Otimização | - [Aula 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
 | 31 | 18/11/2020 (qua) | Gerenciamento de Memória e Geração de Código | - [Aula 25](https://youtu.be/KjB45HQutdk) |
-| 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | --- |
+| 32 | 23/11/2020 (seg) | Gerenciamento de Memória e Geração de Código | - [Aula 26](https://youtu.be/jp-Fn5Mpjek) |
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
 | 33 | 25/11/2020 (qua) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
