@@ -112,7 +112,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | -- | 24/11/2020 (ter) | Último dia de aulas no Siga | --- |
 | 33 | 25/11/2020 (qua) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
 | 34 | 30/11/2020 (seg) |
-| 35 | 02/12/2020 (qua) | **Prova Final e Segunda Chamada**  | --- |
-| 36 | 07/12/2020 (seg) |
+| 35 | 02/12/2020 (qua) |   | --- |
+| 36 | 07/12/2020 (seg) | **Prova Final e Segunda Chamada** | --- |
 | 37 | 09/12/2020 (qua) | Último dia para realizar provas finais no Siga | --- |
 | -- | 17/12/2020 (qui) | Último dia para lançamento de notas no Siga | --- |
