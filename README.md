@@ -80,21 +80,21 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 02 | 27/01/2021 (qua) | Introdução | - [Aula 3](https://www.youtube.com/watch?v=_46awgNgcTY)<br>- [Aula 4](https://www.youtube.com/watch?v=LifG72O0buo) |
 | 03 | 01/02/2021 (seg) | Conceitos Básicos | - [Aula 5](https://youtu.be/sAp6p1fCHCg)<br>- [Aula 6](https://youtu.be/JZ_ZeZvO-gA) |
 | 04 | 03/02/2021 (qua) | Conceitos Básicos | - [Aula 7](https://youtu.be/T3HvXoWhdj8)<br>- [Aula 8](https://www.youtube.com/watch?v=3PMzwvr441U) |
-| 05 | 08/02/2021 (seg) |  Análise Léxica | - [Aula 9](https://www.youtube.com/watch?v=tR0cNVTaX0M) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 05 | 08/02/2021 (seg) | Análise Léxica | - [Aula 9](https://www.youtube.com/watch?v=tR0cNVTaX0M) | 
 | 06 | 10/02/2021 (qua) | Análise Sintática | - [Aula 10](https://youtu.be/g_15RR-Zvws)<br>- [Aula 11](https://youtu.be/tGXI9i6iEDg) |
 | 07 | 15/02/2021 (seg) | Carnaval | --- |
 | 08 | 17/02/2021 (qua) | Quarta-feira de Cinzas | --- |
 | 09 | 22/02/2021 (seg) | Análise Sintática | - [Aula 12](https://youtu.be/IPHfRyUjMTA)<br>- [Aula 13](https://youtu.be/tOP41g0dY38) |
-| 10 | 24/02/2021 (qua) | Análise Semântica | - [Aula 14](https://youtu.be/rddmb82Z8ck)<br> | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 11 | 01/03/2021 (seg) | **Projeto 1** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 10 | 24/02/2021 (qua) | Análise Semântica | - [Aula 14](https://youtu.be/rddmb82Z8ck)<br> | 
+| 11 | 01/03/2021 (seg) | **Projeto 1** - Módulo Lexer e Parser | --- |
 | 12 | 03/03/2021 (qua) | Análise Semântica | - [Aula 15](https://www.youtube.com/watch?v=Yk2TACEu6fQ) |
-| 13 | 08/03/2021 (seg) | Demo de Análise Semântica | - [Aula 16](https://www.youtube.com/watch?v=gOkLvleyzaM) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 13 | 08/03/2021 (seg) | Demo de Análise Semântica | - [Aula 16](https://www.youtube.com/watch?v=gOkLvleyzaM) |
 | 14 | 10/03/2021 (qua) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
 | 15 | 15/03/2021 (seg) | **Projeto 2** - Módulo de Análise Semântica | --- | 
 | 16 | 17/03/2021 (qua) | Análise Semântica  | --- |
 | 17 | 22/03/2021 (seg) | Representações Intermediárias| - [Aula 17](https://youtu.be/0L0f3ufUdgI) |
 | 18 | 24/03/2021 (qua) | Aplicações  de Compiladores<br> **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
-| 19 | 29/03/2021 (seg) | Representações Intermediárias<br> **Projeto 3** - Módulo de Otimização | - [Aula 18](https://youtu.be/nSoEDfJlzww)<br>- [Aula 19](https://youtu.be/W88O4elZOUs)<br>- [Aula 20](https://youtu.be/JSGXK6oUkLs) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
+| 19 | 29/03/2021 (seg) | Representações Intermediárias<br> **Projeto 3** - Módulo de Otimização | - [Aula 18](https://youtu.be/nSoEDfJlzww)<br>- [Aula 19](https://youtu.be/W88O4elZOUs)<br>- [Aula 20](https://youtu.be/JSGXK6oUkLs) |
 | 20 | 31/03/2021 (qua) | Análise Estática e Otimização | - [Aula 21](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Aula 22](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
 | 21 | 05/04/2021 (seg) | Análise Estática e Otimização | - [Aula 23](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) |
 | 22 | 07/04/2021 (qua) | Análise Estática e Otimização | - [Aula 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
