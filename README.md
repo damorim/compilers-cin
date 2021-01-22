@@ -110,7 +110,3 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 32 | 05/05/2021 (qua) | **Prova Final e Segunda Chamada** | --- |
 | 33 | 06/05/2021 (qui) | Último dia para realizar provas finais no Siga | --- |
 | 34 | 08/05/2021 (sáb) | Último dia para lançamento de notas no Siga | --- |
-| 35 | 02/12/2021 (qua) |   | --- |
-| 36 | 07/12/2021 (seg) | 
-| 37 | 09/12/2021 (qua) | 
-| -- | 17/12/2021 (qui) | 
