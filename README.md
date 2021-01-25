@@ -21,8 +21,7 @@ O conteúdo planejado inclui uma introdução aos princípios e técnicas de con
 
 #### Bibliografia
 - [Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ulmann, Compilers: Principles, Techniques and Tools , 2nd Edition, Addison Wesley, 2007](https://www.saraiva.com.br/compiladores-principios-tecnicas-e-ferramentas-1998960.html)
-#### Online
-- [MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-sma-5502-fall-2005/)
+- [MIT Courseware](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-sma-5502-fall-2005/)
 
 ### Objetivos
 
@@ -40,7 +39,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 - [Playlist no Youtube](https://www.youtube.com/playlist?list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN)
 
 ### Ferramentas
-- [Antlr (ANother Tool for Language Recognition)](https://www.antlr.org/)
+- [ANTLR (ANother Tool for Language Recognition)](https://www.antlr.org/)
 - [LLVM](https://llvm.org/)
 
 ### Avaliação
