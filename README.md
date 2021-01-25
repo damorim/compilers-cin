@@ -71,8 +71,8 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 **Atenção!** 
 *Este plano de ensino está sujeito a alterações durante o semestre, visite frequentemente a página para obter a versão mais atualizada, ou acompanhe os updates no repositório.*
 
-| # | Data | Assunto| Material | Síncrona |
-|:---:|:----:|:----------------------:|:----------------------|:----:|
+| # | Data | Assunto| Material | Conteúdo Síncrono* |
+|:---:|:----:|:----------------------:|:----------------------|:-------:|
 | 01 | 25/01/2021 (seg) | Introdução | - [Aula 1](https://www.youtube.com/watch?v=a9AjEh3U0bY)<br>- [Aula 2](https://www.youtube.com/watch?v=wt_ZGKZm9vc) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
 | 02 | 27/01/2021 (qua) | Introdução | - [Aula 3](https://www.youtube.com/watch?v=_46awgNgcTY)<br>- [Aula 4](https://www.youtube.com/watch?v=LifG72O0buo) |
 | 03 | 01/02/2021 (seg) | Conceitos Básicos | - [Aula 5](https://youtu.be/sAp6p1fCHCg)<br>- [Aula 6](https://youtu.be/JZ_ZeZvO-gA) |
@@ -83,21 +83,21 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 08 | 17/02/2021 (qua) | Quarta-feira de Cinzas | --- |
 | 09 | 22/02/2021 (seg) | Análise Sintática | - [Aula 12](https://youtu.be/IPHfRyUjMTA)<br>- [Aula 13](https://youtu.be/tOP41g0dY38) |
 | 10 | 24/02/2021 (qua) | Análise Semântica | - [Aula 14](https://youtu.be/rddmb82Z8ck)<br> | 
-| 11 | 01/03/2021 (seg) | **Projeto 1** - Módulo Lexer e Parser | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 12 | 03/03/2021 (qua) | Análise Semântica | - [Aula 15](https://www.youtube.com/watch?v=Yk2TACEu6fQ) |
-| 13 | 08/03/2021 (seg) | Demo de Análise Semântica | - [Aula 16](https://www.youtube.com/watch?v=gOkLvleyzaM) |
-| 14 | 10/03/2021 (qua) | **Entrega do Projeto 1** - Módulo Lexer e Parser | --- |
-| 15 | 15/03/2021 (seg) | **Projeto 2** - Módulo de Análise Semântica | --- | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 16 | 17/03/2021 (qua) | Análise Semântica  | --- |
-| 17 | 22/03/2021 (seg) | Representações Intermediárias| - [Aula 17](https://youtu.be/0L0f3ufUdgI) |
-| 18 | 24/03/2021 (qua) | Aplicações  de Compiladores<br> **Entrega do Projeto 2** - Módulo de Análise Semântica | --- |
-| 19 | 29/03/2021 (seg) | Representações Intermediárias<br> **Projeto 3** - Módulo de Otimização | - [Aula 18](https://youtu.be/nSoEDfJlzww)<br>- [Aula 19](https://youtu.be/W88O4elZOUs)<br>- [Aula 20](https://youtu.be/JSGXK6oUkLs) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 20 | 31/03/2021 (qua) | Análise Estática e Otimização | - [Aula 21](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Aula 22](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
-| 21 | 05/04/2021 (seg) | Análise Estática e Otimização | - [Aula 23](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) |
-| 22 | 07/04/2021 (qua) | Análise Estática e Otimização | - [Aula 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
+| 11 | 01/03/2021 (seg) | Análise Semântica<br> **Projeto 1** - Módulo Lexer e Parser\** | - [Aula 15](https://www.youtube.com/watch?v=Yk2TACEu6fQ) |
+| 12 | 03/03/2021 (qua) | Demo de Análise Semântica | - [Aula 16](https://www.youtube.com/watch?v=gOkLvleyzaM) |
+| 13 | 08/03/2021 (seg) | Representações Intermediárias | - [Aula 17](https://youtu.be/0L0f3ufUdgI) |
+| 14 | 10/03/2021 (qua) | Representações Intermediárias<br> **Entrega do Projeto 1** - Módulo Lexer e Parser | - [Aula 18](https://youtu.be/nSoEDfJlzww)<br>- [Aula 19](https://youtu.be/W88O4elZOUs) |
+| 15 | 15/03/2021 (seg) | Representações Intermediárias<br> **Projeto 2** - Módulo de Análise Semântica\** | - [Aula 20](https://youtu.be/JSGXK6oUkLs) |
+| 16 | 17/03/2021 (qua) | Aplicações  de Compiladores  | --- |
+| 17 | 22/03/2021 (seg) | Análise Estática e Otimização | - [Aula 21](https://www.youtube.com/watch?v=6kbzPixAA3I&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=21)<br>- [Aula 22](https://www.youtube.com/watch?v=e6ew0qlkYpY&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=22) |
+| 18 | 24/03/2021 (qua) | Análise Estática e Otimização<br> **Entrega do Projeto 2** - Módulo de Análise Semântica | - [Aula 23](https://www.youtube.com/watch?v=MfGrZxG2FEM&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=23) |
+| 19 | 29/03/2021 (seg) | **Projeto 3** - Módulo de Otimização\** | --- |
+| 20 | 31/03/2021 (qua) | Análise Estática e Otimização | - [Aula 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
+| 21 | 05/04/2021 (seg) | Gerenciamento de Memória e Geração de Código | - [Aula 25](https://youtu.be/KjB45HQutdk) |
+| 22 | 07/04/2021 (qua) | Gerenciamento de Memória e Geração de Código | - [Aula 26](https://youtu.be/jp-Fn5Mpjek) |
 | 23 | 10/04/2021 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
-| 24 | 12/04/2021 (seg) | Gerenciamento de Memória e Geração de Código<br> **Projeto 4** - Módulo de Geração de Código | - [Aula 25](https://youtu.be/KjB45HQutdk) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
-| 25 | 14/04/2021 (qua) | Gerenciamento de Memória e Geração de Código | - [Aula 26](https://youtu.be/jp-Fn5Mpjek) |
+| 24 | 12/04/2021 (seg) | **Projeto 4** - Módulo de Geração de Código\** | --- | 
+| 25 | 14/04/2021 (qua) | 
 | 26 | 19/04/2021 (seg) | 
 | 27 | 21/04/2021 (qua) | 
 | 28 | 26/04/2021 (seg) | **Entrega do Projeto 4** - Módulo de Geração de Código | --- |
@@ -107,3 +107,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 32 | 05/05/2021 (qua) | **Prova Final e Segunda Chamada** | --- |
 | 33 | 06/05/2021 (qui) | Último dia para realizar provas finais no Siga | --- |
 | 34 | 08/05/2021 (sáb) | Último dia para lançamento de notas no Siga | --- |
+
+
+\* Aulas em que o professor apresentará conteúdo da disciplina de forma síncrona.<br>
+\** Apresentação dos projetos será passada pelo Classroom. Serão combinados com a turma horários durante a semana para tirar dúvidas sobre o projeto.
