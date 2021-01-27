@@ -71,6 +71,10 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 **Atenção!** 
 *Este plano de ensino está sujeito a alterações durante o semestre, visite frequentemente a página para obter a versão mais atualizada, ou acompanhe os updates no repositório.*
 
+\* Aulas em que o professor apresentará conteúdo da disciplina de forma síncrona. Haverá encontro pelo Google Meet (link através do classroom) em todas as datas marcadas. <br>
+\** Apresentação dos projetos será passada pelo Classroom. Serão combinados com a turma horários durante a semana para tirar dúvidas sobre o projeto.
+
+
 | # | Data | Assunto| Material | Conteúdo Síncrono* |
 |:---:|:----:|:----------------------:|:----------------------|:-------:|
 | 01 | 25/01/2021 (seg) | Introdução | - [Aula 1](https://www.youtube.com/watch?v=a9AjEh3U0bY)<br>- [Aula 2](https://www.youtube.com/watch?v=wt_ZGKZm9vc) | <img src="https://w0.pngwave.com/png/883/914/logo-angle-font-checkmark-png-clip-art.png" alt="drawing" width="50"/>
@@ -108,6 +112,3 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 33 | 06/05/2021 (qui) | Último dia para realizar provas finais no Siga | --- |
 | 34 | 08/05/2021 (sáb) | Último dia para lançamento de notas no Siga | --- |
 
-
-\* Aulas em que o professor apresentará conteúdo da disciplina de forma síncrona.<br>
-\** Apresentação dos projetos será passada pelo Classroom. Serão combinados com a turma horários durante a semana para tirar dúvidas sobre o projeto.
