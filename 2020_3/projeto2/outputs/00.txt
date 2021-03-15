@@ -1,0 +1,14 @@
+ERROR: trying to return a non void expression from void function 'doing' in line 21 and column 1
+WARNING: possible loss of information assigning float expression to int variable 'f' in line 49 and column 5
+WARNING: possible loss of information assigning float expression to int variable 'f' in line 50 and column 1
+WARNING: possible loss of information assigning float expression to int variable 'f' in line 51 and column 1
+WARNING: possible loss of information assigning float expression to int variable 'hello' in line 53 and column 5
+WARNING: possible loss of information assigning float expression to int variable 'hello' in line 54 and column 1
+WARNING: possible loss of information assigning float expression to int variable 'hello' in line 55 and column 1
+WARNING: possible loss of information converting float expression to int expression in parameter 0 of function 'square' in line 65 and column 5
+WARNING: possible loss of information converting float expression to int expression in parameter 0 of function 'fatorial' in line 66 and column 5
+WARNING: possible loss of information converting float expression to int expression in parameter 0 of function 'square' in line 67 and column 5
+ERROR: trying to assign 'void' expression to variable 'k' in line 71 and column 5
+ERROR: binary operator '+' used on type void in line 72 and column 24
+ERROR: undefined variable 'uv' in line 74 and column 1
+ERROR: trying to return void expression from function 'main' in line 75 and column 1

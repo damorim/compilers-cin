@@ -1,0 +1,16 @@
+WARNING: possible loss of information assigning float expression to int variable 'a' in line 23 and column 2
+WARNING: possible loss of information returning float expression from int function 'scalar' in line 30 and column 1
+WARNING: possible loss of information converting float expression to int expression in parameter 0 of function 'scalar' in line 38 and column 10
+WARNING: possible loss of information assigning float expression to int variable 'valor1' in line 38 and column 1
+WARNING: possible loss of information initializing float expression to int array 'ai' at index 3 of array literal in line 40 and column 5
+WARNING: possible loss of information assigning float expression to int variable 'k' in line 41 and column 5
+ERROR: trying to assign 'char *' expression to variable 'v' in line 46 and column 5
+ERROR: trying to assign 'char *' expression to variable 'kik' in line 47 and column 7
+ERROR: trying to assign 'char *' expression to variable 'v' in line 48 and column 1
+ERROR: trying to initialize 'char *' expression to 'int' array 'kkkk' at index 1 of array literal in line 49 and column 5
+WARNING: possible loss of information initializing float expression to int array 'kkkk' at index 2 of array literal in line 49 and column 5
+ERROR: undefined array 'kkk' in line 50 and column 5
+ERROR: array expression must be an integer, but it is float in line 50 and column 5
+ERROR:  array 'kkk' index out of bounds in line 50 and column 5
+ERROR: incorrect number of parameters for function 'scalar' in line 51 and column 8. Expecting 2, but 3 were given
+ERROR: trying to return a non void expression from void function 'main' in line 51 and column 1
