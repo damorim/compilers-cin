@@ -11,6 +11,5 @@ ERROR: trying to initialize 'char *' expression to 'int' array 'kkkk' at index 1
 WARNING: possible loss of information initializing float expression to int array 'kkkk' at index 2 of array literal in line 49 and column 5
 ERROR: undefined array 'kkk' in line 50 and column 5
 ERROR: array expression must be an integer, but it is float in line 50 and column 5
-ERROR:  array 'kkk' index out of bounds in line 50 and column 5
 ERROR: incorrect number of parameters for function 'scalar' in line 51 and column 8. Expecting 2, but 3 were given
 ERROR: trying to return a non void expression from void function 'main' in line 51 and column 1
