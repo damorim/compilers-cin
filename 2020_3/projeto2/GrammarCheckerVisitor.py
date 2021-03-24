@@ -10,35 +10,58 @@ else:
 '''
 COMO RESGATAR INFORMAÇÕES DA ÁRVORE
 
-Observe o seu Grammar.g4. Cada regra sintática gea uma função com o nome corespondente no Visitor e na ordem em que está na gramática. Para deixar na ordem em que você colocou, substitua as funções dentro de "class GrammarCheckerVisitor(ParseTreeVisitor)" pelas que apareem em autogem/GrammarVisitor.g4 depois do make ser rodado. Mas antes algumas mudanças precisam ser feitas em Grammar.g4. Primeiro copie-a do projeto1 para o projeto2. Depois adicione o tipo "VOID: 'void'" no lexer e na regra de "type" no parser (só "| VOID" aqui). Agora, por causa de conflitos com Python, substitua as regras file por fiile e type por type ("make adjust" substitui automaticamente). Use prints temporários para ver se está no caminho certo.  "make tree" agora desenha a árvore sintática, se quiser vê-la para qualquer input, enquanto "make" roda este visitor sobre o a árvore gerada a partir de Grammar.g4 alimentada pelo input.
+Observe o seu Grammar.g4. Cada regra sintática gera uma função com o nome corespondente no Visitor e na ordem em que está na gramática.
 
+Se for utilizar sua gramática do projeto 1, por causa de conflitos com Python, substitua as regras file por fiile e type por tyype. Use prints temporários para ver se está no caminho certo.  
+"make tree" agora desenha a árvore sintática, se quiser vê-la para qualquer input, enquanto "make" roda este visitor sobre o a árvore gerada a partir de Grammar.g4 alimentada pelo input.
 
-expr = ctx.expression().accept(self)  # entra no nó expression e seus filhos e retorna alguma coisa
+Exemplos:
 
-for i in range(len(ctx.identifier())): # para cada identficador que este nó possui...
-    ident = ctx.identifier()[i].accept(self) # ...pegue o i-ésimo
+# Obs.: Os exemplos abaixo utilizam nós 'expression', mas servem apra qualquer tipo de nó
+
+self.visitChildren(ctx) # visita todos os filhos do nó atual
+expr = self.visit(ctx.expression())  # visita a subárvore do nó expression e retorna o valor retornado na função "visitRegra"
+
+for i in range(len(ctx.expression())): # para cada expressão que este nó possui...
+    ident = ctx.expression(i) # ...pegue a i-ésima expressão
+
 
 if ctx.FLOAT() != None: # se houver um FLOAT (em vez de INT ou VOID) neste nó (parser)
-    return Type.FLOAT # retorne float
+    return Type.FLOAT # retorne tipo float
+
+ctx.identifier().getText()  # Obtém o texto contido no nó (neste caso, será obtido o nome do identifier)
+
+token = ctx.identifier(i).IDENTIFIER().getPayload() # Obtém o token referente à uma determinada regra léxica (neste caso, IDENTIFIER)
+token.line      # variável com a linha do token
+token.column    # variável com a coluna do token
 '''
 
-# retorne Type.INT, etc para fazer checagem de tipos
+
+# Dica: Retorne Type.INT, Type.FLOAT, etc. Nos nós e subnós das expressões para fazer a checagem de tipos enquanto percorre a expressão.
 class Type:
     VOID = "void"
     INT = "int"
     FLOAT = "float"
+    STRING = "char *"
 
 class GrammarCheckerVisitor(ParseTreeVisitor):
-    ids_defined = {} # armazenar informações necessárias para cada identifier definido
+    ids_defined = {} # Dicionário para armazenar as informações necessárias para cada identifier definido
+    inside_what_function = "" # String que guarda a função atual que o visitor está visitando. Útil para acessar dados da função durante a visitação da árvore sintática da função.
 
     # Visit a parse tree produced by GrammarParser#fiile.
     def visitFiile(self, ctx:GrammarParser.FiileContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GrammarParser#function_definition.
+     # Visit a parse tree produced by GrammarParser#function_definition.
     def visitFunction_definition(self, ctx:GrammarParser.Function_definitionContext):
-        return self.visitChildren(ctx)
+        tyype = ctx.tyype().getText()
+        name = ctx.identifier().getText()
+        params = self.visit(ctx.arguments())
+        self.ids_defined[name] = tyype, params, None
+        self.inside_what_function = name
+        self.visit(ctx.body())
+        return
 
 
     # Visit a parse tree produced by GrammarParser#body.
@@ -140,8 +163,3 @@ class GrammarCheckerVisitor(ParseTreeVisitor):
     def visitIdentifier(self, ctx:GrammarParser.IdentifierContext):
         return self.visitChildren(ctx)
 
-
-    #del GrammarParser
-
-    #def aggregateResult(self, aggregate:Type, next_result:Type):
-        #return next_result if next_result != None else aggregate
