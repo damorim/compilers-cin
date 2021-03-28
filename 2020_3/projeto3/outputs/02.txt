@@ -1,0 +1,20 @@
+line 4 Expression 3 * 5 simplified to: 15
+line 4 Expression 15 - 2 simplified to: 13
+line 4 Expression 13 + 1 simplified to: 14
+line 7 Expression 14 * 3 simplified to: 42
+line 7 Expression 4 + 42 simplified to: 46
+line 9 Expression 14 * 46 simplified to: 644
+line 9 Expression - 1 simplified to: -1
+line 9 Expression 644 * -1 simplified to: -644
+line 11 Expression -644 * 14 simplified to: -9016
+line 11 Expression 46 * -644 simplified to: -29624
+line 11 Expression -9016 + -29624 simplified to: -38640
+line 11 Expression -38640 - 14 simplified to: -38654
+line 13 Expression 14 - 46 simplified to: -32
+line 13 Expression - -38654 simplified to: 38654
+line 13 Expression -644 * 38654 simplified to: -24893176
+line 13 Expression -32 + -24893176 simplified to: -24893208
+line 15 Expression 14 + 46 simplified to: 60
+line 15 Expression 60 + -644 simplified to: -584
+line 15 Expression -24893208 >= -584 simplified to: 0
+line 18 Expression 14 * 46 simplified to: 644

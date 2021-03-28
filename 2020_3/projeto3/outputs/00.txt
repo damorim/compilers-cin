@@ -1,0 +1,5 @@
+line 10 Expression 3 / 0.3 simplified to: 10.0
+line 11 Expression 2 - 0.3 simplified to: 1.7
+line 11 Expression 3 * 1.7 simplified to: 5.1
+line 11 Expression 5.1 + 4 simplified to: 9.1
+line 12 Expression 0 * 3 simplified to: 0

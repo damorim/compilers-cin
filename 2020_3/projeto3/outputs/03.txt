@@ -1,0 +1,5 @@
+line 23 Expression 2 * 10 simplified to: 20
+line 23 Expression 20 / 5 simplified to: 4.0
+line 37 Expression - 1 simplified to: -1
+line 38 Expression 33 - 1 simplified to: 32
+line 38 Expression -1 + 821 simplified to: 820
