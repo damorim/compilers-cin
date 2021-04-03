@@ -191,9 +191,7 @@ class GrammarCheckerVisitor(ParseTreeVisitor):
                 except:
                     token = ctx.array().identifier().IDENTIFIER().getPayload()
                     print("ERROR: undefined array '" + name + "' in line " + str(token.line) + " and column " + str(token.column))
-                array_index = self.visit(ctx.array())
-                if array_index < 0 or array_index >= array_length:
-                    print("ERROR:  array '" + name + "' index out of bounds in line " + str(token.line) + " and column " + str(token.column))
+                self.visit(ctx.array())
 
                 #print("array index = " + str(array_index))
 
