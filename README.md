@@ -98,9 +98,9 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 | 19 | 29/03/2021 (seg) | **Projeto 3** - Módulo de Otimização\** | --- |
 | 20 | 31/03/2021 (qua) | Análise Estática e Otimização | - [Vídeo 24](https://www.youtube.com/watch?v=JybRzPrE0lc&list=PLYo1KpY72qAWRGJqsnG2jqocOQsNAo3cN&index=24) |
 | 21 | 05/04/2021 (seg) | Gerenciamento de Memória e Geração de Código | - [Vídeo 25](https://youtu.be/KjB45HQutdk) |
-| 22 | 07/04/2021 (qua) | Gerenciamento de Memória e Geração de Código | - [Vídeo 26](https://youtu.be/jp-Fn5Mpjek) |
+| 22 | 07/04/2021 (qua) | --- | --- |
 | 23 | 10/04/2021 (sáb) | **Entrega do Projeto 3** - Módulo de Otimização | --- |
-| 24 | 12/04/2021 (seg) | **Projeto 4** - Módulo de Geração de Código\** | --- | 
+| 24 | 12/04/2021 (seg) | Gerenciamento de Memória e Geração de Código<br> **Projeto 4** - Módulo de Geração de Código\** | - [Vídeo 26](https://youtu.be/jp-Fn5Mpjek)  | 
 | 25 | 14/04/2021 (qua) | 
 | 26 | 19/04/2021 (seg) | 
 | 27 | 21/04/2021 (qua) | 
