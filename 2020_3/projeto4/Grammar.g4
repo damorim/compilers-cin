@@ -19,6 +19,7 @@ statement
 	| variable_assignment ';'
 	| expression ';'
 	| RETURN expression ';'
+	| RETURN ';'
 	| for_loop
 	| if_statement
 	| body
@@ -113,7 +114,7 @@ IDENTIFIER : [a-zA-Z_][a-zA-Z_0-9]* ;
 INTEGER : [0-9]+ ;
 FLOATING : [0-9]+'.'[0-9]+ ;
 STRING : '"' .*? '"' ;
-WHITESPACE : [ \t\n] -> skip ;
+WHITESPACE : [ \t\n\r] -> skip ;
 
 /*
 MANUAL

@@ -80,16 +80,22 @@ class GrammarCheckerVisitor(ParseTreeVisitor):
     def visitStatement(self, ctx:GrammarParser.StatementContext):
         if ctx.RETURN() != None:
             token = ctx.RETURN().getPayload()
-            tyype, cte_value, ir_register = self.visit(ctx.expression())
             function_type, params, cte_value, ir_register = self.ids_defined[self.inside_what_function]
-            if function_type == Type.INT and tyype == Type.FLOAT:
-                err("WARNING: possible loss of information returning float expression from int function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
-            elif function_type == Type.VOID and tyype != Type.VOID:
-                err("ERROR: trying to return a non void expression from void function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
-                exit(-1)
-            elif function_type != Type.VOID and tyype == Type.VOID:
+            if ctx.expression() != None:
+                tyype, cte_value, ir_register = self.visit(ctx.expression())
+                if function_type == Type.INT and tyype == Type.FLOAT:
+                    err("WARNING: possible loss of information returning float expression from int function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
+                elif function_type != Type.VOID and tyype == Type.VOID:
+                    err("ERROR: trying to return void expression from function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
+                    exit(-1)
+                elif function_type == Type.VOID and tyype != Type.VOID:
+                    err("ERROR: trying to return a non void expression from void function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
+                    exit(-1)
+            elif function_type != Type.VOID:
                 err("ERROR: trying to return void expression from function '" + self.inside_what_function + "' in line " + str(token.line) + " and column " + str(token.column) + "\n")
                 exit(-1)
+
+
 
         else:
             self.visitChildren(ctx)
@@ -373,7 +379,6 @@ class GrammarCheckerVisitor(ParseTreeVisitor):
                 else:
                     cte_value = None
 
-        #err(tyype + ": " + str(cte_value) + ", " + str(ir_register) + "\n")
         return tyype, cte_value, ir_register
 
 
