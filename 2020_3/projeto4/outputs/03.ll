@@ -36,24 +36,24 @@ define i32 @scalar(i32 %0, i32 %1) {
 }
 
 define float @fscalar(float %0, float %1) {
-%a = alloca float, align 4
-store float %0, float* %a, align 4
-%b = alloca float, align 4
-store float %1, float* %b, align 4
+  %a = alloca float, align 4
+  store float %0, float* %a, align 4
+  %b = alloca float, align 4
+  store float %1, float* %b, align 4
 
-%result = alloca float, align 4
-%3 = load float, float* %a, align 4
-%4 = load float, float* %b, align 4
-%5 = fadd float %3, %4
-%6 = fsub float %3, %4
-%7 = fdiv float %5, %6
-%8 = fmul float %3, %4
-%9 = fmul float %7, %8
-%10 = fdiv float %3, %4
-%11 = fdiv float %9, %10
-store float %11, float* %result, align 4
-%12 = load float, float* %result, align 4
-ret float %12
+  %result = alloca float, align 4
+  %3 = load float, float* %a, align 4
+  %4 = load float, float* %b, align 4
+  %5 = fadd float %3, %4
+  %6 = fsub float %3, %4
+  %7 = fdiv float %5, %6
+  %8 = fmul float %3, %4
+  %9 = fmul float %7, %8
+  %10 = fdiv float %3, %4
+  %11 = fdiv float %9, %10
+  store float %11, float* %result, align 4
+  %12 = load float, float* %result, align 4
+  ret float %12
 }
 
 
