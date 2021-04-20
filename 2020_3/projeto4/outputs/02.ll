@@ -47,27 +47,26 @@ define i32 @main() {
 	%e = alloca float, align 4
 	store float 0xc177bd7180000000, float* %e, align 4
 
-	%f = alloca i32, align 4
-	store i32 0x4084202220000000, i32* %f, align 4
+	%f = alloca float, align 4
+	store float 0x4084202220000000, float* %f, align 4
 
-	%g = alloca i32, align 4
-	store i32 0x4084902220000000, i32* %g, align 4
+	%g = alloca float, align 4
+	store float 0x4084902220000000, float* %g, align 4
 
 	%h = alloca float, align 4
 	%1 = load float, float* @glob1, align 4
-	%2 = load float, float* %g, align 4
-	%3 = fadd float %1, %2
-	store float %3, float* %h, align 4
+	%2 = fadd float 0x4084902220000000, %1
+	store float %2, float* %h, align 4
 
 	%i = alloca float, align 4
-	%4 = call float @return3()
-	%5 = fadd float %4, 5.0
-	%6 = load float, float* %h, align 4
-	%7 = fmul float %5, %6
-	store float %7, float* %i, align 4
+	%3 = call float @return3()
+	%4 = fadd float %3, 5.0
+	%5 = load float, float* %h, align 4
+	%6 = fmul float %4, %5
+	store float %6, float* %i, align 4
 
-	%8 = load i32, i32* @glob2, align 4
-	%9 = add i32 38070, %8
+	%7 = load i32, i32* @glob2, align 4
+	%8 = add i32 38070, %7
 
-	ret i32 %5
+	ret i32 %8
 }
