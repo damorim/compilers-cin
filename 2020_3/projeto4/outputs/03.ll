@@ -68,16 +68,11 @@ define i32 @main() {
   %tk0 = alloca i32, align 4
   store i32 -1, i32* %tk0, align 4
 
-  %1 = load i32, i32* %quantas_trincas, align 4
-  %2 = load i32, i32* %tk2, align 4
-  %3 = sub i32 %1, %2
-  %4 = load i32, i32* %valor1, align 4
-  %5 = call i32 @scalar(i32 %3, i32 %4)
-  %6 = load i32, i32* %tk0, align 4
-  %7 = sub i32 %5, %6
-  store i32 %7, i32* %valor1, align 4
+  %1 = call i32 @scalar(i32 32, i32 821)
+  %2 = sub i32 %1, -1
+  store i32 %2, i32* %valor1, align 4
 
-  %8 = load i32, i32* %valor1, align 4
-  ret i32 %8
+  %3 = load i32, i32* %valor1, align 4
+  ret i32 %3
 }
 
