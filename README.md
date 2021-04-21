@@ -63,7 +63,7 @@ Utilizaremos aulas gravadas pelo professor, aulas de projeto com a monitoria e u
 - [Clique aqui](https://github.com/damorim/compilers-cin/tree/master/provas)
 
 ### Notas
-- [Clique aqui](https://docs.google.com/spreadsheets/d/1bBrZeFmS-fFnsUazjbqWenF_2S8vPdO3VOEtcmWQOMc/edit?usp=sharing)
+- [Clique aqui](https://docs.google.com/spreadsheets/d/16pLfdPXkm5ESwB7Wi2EYw4OPds8xbGWEczyDD6lEyGw/edit?usp=sharing)
 
 
 ### Plano de Ensino
